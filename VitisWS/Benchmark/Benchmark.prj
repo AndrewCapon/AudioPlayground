@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Benchmark" location="/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS/Benchmark" platform="/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS/AudioPlatformStandalone/export/AudioPlatformStandalone/AudioPlatformStandalone.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" systemProject="Benchmark_system" sysConfig="AudioPlatformStandalone" runtime="C/C++" cpu="standalone_domain" cpuInstance="processor_microblaze_0" os="standalone" mssSignature="d844a3ab58683a2aba3eaeb6277382f0">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.832158150">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1837552401">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="dhrystone"/>
+</sdkproject:SdkProject>

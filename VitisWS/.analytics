@@ -1,0 +1,90 @@
+timestamp=[2025-11-30 15:45:14], mode=WORKBENCH_START, duration=0:00:05.262, duration_ms=5262, data={}
+timestamp=[2025-11-30 15:45:14], mode=WORKBENCH_UI_INIT, duration=0:00:00.538, duration_ms=538, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-11-30 15:45:15], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.597, duration_ms=597, data={}
+timestamp=[2025-11-30 15:45:46], mode=PLATFORM_CREATION, duration=0:00:01.897, duration_ms=1897, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-11-30 15:46:00], mode=PLATFORM_GENERATION, duration=0:00:07.621, duration_ms=7621, data={name=AudioPlaygroundStandalone}
+timestamp=[2025-11-30 15:46:21], mode=APP_CREATION, duration=0:00:02.031, duration_ms=2031, data={name=Benchmark, project_type=sdk, os=standalone, processor=processor_microblaze_0, runtime=C/C++, platform=AudioPlaygroundStandalone, application_type=application}
+timestamp=[2025-11-30 15:46:27], mode=BUILD, duration=0:00:00.781, duration_ms=781, data={name=Benchmark, configuration=Debug, clean_build=false}
+timestamp=[2025-11-30 15:47:05], mode=BUILD, duration=0:00:00.810, duration_ms=810, data={name=Benchmark, configuration=Release, clean_build=false}
+timestamp=[2025-11-30 19:29:31], mode=BUILD, duration=0:00:00.817, duration_ms=817, data={name=Benchmark, configuration=Release, clean_build=false}
+timestamp=[2025-12-01 08:21:13], mode=BUILD, duration=0:00:00.458, duration_ms=458, data={name=Benchmark, configuration=Release, clean_build=false}
+timestamp=[2025-12-01 08:23:23], mode=APP_CREATION, duration=0:00:05.453, duration_ms=5453, data={name=Standalone, project_type=sdk, os=standalone, processor=processor_microblaze_0, runtime=C/C++, platform=AudioPlaygroundStandalone, application_type=application}
+timestamp=[2025-12-01 08:30:47], mode=BUILD, duration=0:00:01.239, duration_ms=1239, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 08:31:13], mode=BUILD, duration=0:00:00.556, duration_ms=556, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 08:31:28], mode=BUILD, duration=0:00:00.531, duration_ms=531, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 08:31:47], mode=BUILD, duration=0:00:00.556, duration_ms=556, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 08:55:30], mode=BUILD, duration=0:00:00.556, duration_ms=556, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 08:55:50], mode=BUILD, duration=0:00:00.576, duration_ms=576, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 08:56:09], mode=BUILD, duration=0:00:01.320, duration_ms=1320, data={name=Standalone, configuration=Release, clean_build=false}
+timestamp=[2025-12-01 09:02:17], mode=BUILD, duration=0:00:00.455, duration_ms=455, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 09:04:26], mode=PLATFORM_GENERATION, duration=0:00:08.374, duration_ms=8374, data={name=AudioPlaygroundStandalone}
+timestamp=[2025-12-01 09:04:28], mode=BUILD, duration=0:00:01.389, duration_ms=1389, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 09:05:23], mode=PLATFORM_GENERATION, duration=0:00:05.747, duration_ms=5747, data={name=AudioPlaygroundStandalone}
+timestamp=[2025-12-01 09:05:31], mode=PLATFORM_GENERATION, duration=0:00:07.394, duration_ms=7394, data={name=AudioPlaygroundStandalone}
+timestamp=[2025-12-01 09:05:34], mode=BUILD, duration=0:00:00.451, duration_ms=451, data={name=Standalone, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 09:05:37], mode=BUILD, duration=0:00:01.168, duration_ms=1168, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 09:06:51], mode=BUILD, duration=0:00:00.473, duration_ms=473, data={name=Standalone, configuration=Release, clean_build=true}
+timestamp=[2025-12-01 09:06:52], mode=BUILD, duration=0:00:01.494, duration_ms=1494, data={name=Standalone, configuration=Release, clean_build=false}
+timestamp=[2025-12-01 09:13:47], mode=BUILD, duration=0:00:00.463, duration_ms=463, data={name=Standalone, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 09:13:48], mode=BUILD, duration=0:00:00.955, duration_ms=955, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 09:14:04], mode=BUILD, duration=0:00:01.183, duration_ms=1183, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 09:21:43], mode=WORKBENCH_START, duration=0:00:06.783, duration_ms=6783, data={}
+timestamp=[2025-12-01 09:21:44], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.224, duration_ms=224, data={}
+timestamp=[2025-12-01 09:21:44], mode=WORKBENCH_UI_INIT, duration=0:00:00.748, duration_ms=748, data={editors_count=12, platform_editors_count=1, projects_count=7, platform_projects_count=1, active_platform_editor=false, projects=AudioPlaygroundStandalone,Benchmark,Benchmark_system,RemoteSystemsTempFiles,Shared,Standalone,Standalone_system}
+timestamp=[2025-12-01 09:22:02], mode=BUILD, duration=0:00:01.180, duration_ms=1180, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 09:22:44], mode=PLATFORM_GENERATION, duration=0:00:08.218, duration_ms=8218, data={name=AudioPlaygroundStandalone}
+timestamp=[2025-12-01 09:22:46], mode=BUILD, duration=0:00:01.136, duration_ms=1136, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 09:25:50], mode=BUILD, duration=0:00:00.461, duration_ms=461, data={name=Standalone, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 09:25:51], mode=BUILD, duration=0:00:01.182, duration_ms=1182, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 09:27:54], mode=BUILD, duration=0:00:01.128, duration_ms=1128, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 09:41:02], mode=BUILD, duration=0:00:01.111, duration_ms=1111, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 10:25:32], mode=PLATFORM_GENERATION, duration=0:00:08.237, duration_ms=8237, data={name=AudioPlaygroundStandalone}
+timestamp=[2025-12-01 10:25:34], mode=BUILD, duration=0:00:01.147, duration_ms=1147, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 10:27:21], mode=PLATFORM_CREATION, duration=0:00:01.733, duration_ms=1733, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-12-01 10:27:32], mode=PLATFORM_GENERATION, duration=0:00:07.420, duration_ms=7420, data={name=AudioPlatformStandalone}
+timestamp=[2025-12-01 10:27:38], mode=BUILD, duration=0:00:00.475, duration_ms=475, data={name=Standalone, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 10:28:38], mode=BUILD, duration=0:00:01.101, duration_ms=1101, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 10:29:41], mode=BUILD, duration=0:00:00.455, duration_ms=455, data={name=Standalone, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 10:29:43], mode=BUILD, duration=0:00:00.458, duration_ms=458, data={name=Standalone, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 10:29:44], mode=BUILD, duration=0:00:01.124, duration_ms=1124, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 10:30:38], mode=BUILD, duration=0:00:00.468, duration_ms=468, data={name=Benchmark, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 10:32:34], mode=PLATFORM_CREATION, duration=0:00:01.542, duration_ms=1542, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-12-01 10:33:00], mode=PLATFORM_GENERATION, duration=0:00:07.485, duration_ms=7485, data={name=AudioPlatformStandalone}
+timestamp=[2025-12-01 10:33:01], mode=BUILD, duration=0:00:00.457, duration_ms=457, data={name=Benchmark, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 10:33:02], mode=BUILD, duration=0:00:00.978, duration_ms=978, data={name=Benchmark, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 10:34:15], mode=PLATFORM_GENERATION, duration=0:00:08.304, duration_ms=8304, data={name=AudioPlatformStandalone}
+timestamp=[2025-12-01 10:34:16], mode=BUILD, duration=0:00:00.462, duration_ms=462, data={name=Benchmark, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 10:34:16], mode=BUILD, duration=0:00:00.780, duration_ms=780, data={name=Benchmark, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 10:45:45], mode=PLATFORM_GENERATION, duration=0:00:08.480, duration_ms=8480, data={name=AudioPlatformStandalone}
+timestamp=[2025-12-01 10:45:46], mode=BUILD, duration=0:00:00.469, duration_ms=469, data={name=Benchmark, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 10:45:47], mode=BUILD, duration=0:00:00.762, duration_ms=762, data={name=Benchmark, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 10:48:31], mode=PLATFORM_GENERATION, duration=0:00:08.271, duration_ms=8271, data={name=AudioPlatformStandalone}
+timestamp=[2025-12-01 10:48:31], mode=BUILD, duration=0:00:00.464, duration_ms=464, data={name=Benchmark, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 10:48:32], mode=BUILD, duration=0:00:00.802, duration_ms=802, data={name=Benchmark, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 11:01:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.175, duration_ms=175, data={}
+timestamp=[2025-12-01 11:01:28], mode=WORKBENCH_START, duration=0:00:06.892, duration_ms=6892, data={}
+timestamp=[2025-12-01 11:01:29], mode=WORKBENCH_UI_INIT, duration=0:00:00.859, duration_ms=859, data={editors_count=13, platform_editors_count=0, projects_count=7, platform_projects_count=1, active_platform_editor=false, projects=AudioPlatformStandalone,Benchmark,Benchmark_system,RemoteSystemsTempFiles,Shared,Standalone,Standalone_system}
+timestamp=[2025-12-01 11:01:56], mode=PLATFORM_GENERATION, duration=0:00:08.291, duration_ms=8291, data={name=AudioPlatformStandalone}
+timestamp=[2025-12-01 11:01:57], mode=BUILD, duration=0:00:00.538, duration_ms=538, data={name=Benchmark, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 11:01:58], mode=BUILD, duration=0:00:00.755, duration_ms=755, data={name=Benchmark, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 11:02:29], mode=BUILD, duration=0:00:00.451, duration_ms=451, data={name=Benchmark, configuration=Release, clean_build=true}
+timestamp=[2025-12-01 11:02:29], mode=BUILD, duration=0:00:00.829, duration_ms=829, data={name=Benchmark, configuration=Release, clean_build=false}
+timestamp=[2025-12-01 11:30:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.195, duration_ms=195, data={}
+timestamp=[2025-12-01 11:30:11], mode=WORKBENCH_START, duration=0:00:06.889, duration_ms=6889, data={}
+timestamp=[2025-12-01 11:30:12], mode=WORKBENCH_UI_INIT, duration=0:00:00.870, duration_ms=870, data={editors_count=13, platform_editors_count=0, projects_count=7, platform_projects_count=1, active_platform_editor=false, projects=AudioPlatformStandalone,Benchmark,Benchmark_system,RemoteSystemsTempFiles,Shared,Standalone,Standalone_system}
+timestamp=[2025-12-01 11:31:07], mode=PLATFORM_GENERATION, duration=0:00:08.168, duration_ms=8168, data={name=AudioPlatformStandalone}
+timestamp=[2025-12-01 11:31:08], mode=BUILD, duration=0:00:00.513, duration_ms=513, data={name=Benchmark, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 11:31:09], mode=BUILD, duration=0:00:00.782, duration_ms=782, data={name=Benchmark, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 11:31:46], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=Benchmark, configuration=Release, clean_build=true}
+timestamp=[2025-12-01 11:31:46], mode=BUILD, duration=0:00:00.864, duration_ms=864, data={name=Benchmark, configuration=Release, clean_build=false}
+timestamp=[2025-12-01 11:32:49], mode=BUILD, duration=0:00:01.149, duration_ms=1149, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 11:34:46], mode=BUILD, duration=0:00:00.497, duration_ms=497, data={name=Standalone, configuration=Debug, clean_build=true}
+timestamp=[2025-12-01 11:34:47], mode=BUILD, duration=0:00:01.125, duration_ms=1125, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 11:35:20], mode=BUILD, duration=0:00:00.460, duration_ms=460, data={name=Standalone, configuration=Release, clean_build=true}
+timestamp=[2025-12-01 11:35:21], mode=BUILD, duration=0:00:01.208, duration_ms=1208, data={name=Standalone, configuration=Release, clean_build=false}
+timestamp=[2025-12-01 12:32:10], mode=BUILD, duration=0:00:00.458, duration_ms=458, data={name=Standalone, configuration=Release, clean_build=false}
+timestamp=[2025-12-01 12:32:29], mode=PLATFORM_GENERATION, duration=0:00:08.271, duration_ms=8271, data={name=AudioPlatformStandalone}
+timestamp=[2025-12-01 12:32:32], mode=BUILD, duration=0:00:01.112, duration_ms=1112, data={name=Standalone, configuration=Debug, clean_build=false}
+timestamp=[2025-12-01 12:32:36], mode=BUILD, duration=0:00:01.176, duration_ms=1176, data={name=Standalone, configuration=Release, clean_build=false}
+timestamp=[2025-12-01 12:33:41], mode=BUILD, duration=0:00:00.448, duration_ms=448, data={name=Standalone, configuration=Release, clean_build=true}
+timestamp=[2025-12-01 12:33:42], mode=BUILD, duration=0:00:01.190, duration_ms=1190, data={name=Standalone, configuration=Release, clean_build=false}
