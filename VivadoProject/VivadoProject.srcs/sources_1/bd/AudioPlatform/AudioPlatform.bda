@@ -458,97 +458,6 @@
                 "SV": "xilinx.com:ip:axi_bram_ctrl:4.1",
                 "TM": "data",
                 "TU": "memory"
-            },
-            "V18": {
-                "VT": "ACE",
-                "BA": "0x40000000",
-                "HA": "0x4000FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/audio_components/dma/axi_cdma_0",
-                "MI": "M_AXI",
-                "MS": "SEG_axi_gpio_0_Reg",
-                "MV": "xilinx.com:ip:axi_cdma:4.1",
-                "SX": "/outputs/axi_gpio_0",
-                "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_gpio:2.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V19": {
-                "VT": "ACE",
-                "BA": "0x40600000",
-                "HA": "0x4060FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/audio_components/dma/axi_cdma_0",
-                "MI": "M_AXI",
-                "MS": "SEG_axi_uartlite_0_Reg",
-                "MV": "xilinx.com:ip:axi_cdma:4.1",
-                "SX": "/outputs/axi_uartlite_0",
-                "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_uartlite:2.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V20": {
-                "VT": "ACE",
-                "BA": "0x41200000",
-                "HA": "0x4120FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/audio_components/dma/axi_cdma_0",
-                "MI": "M_AXI",
-                "MS": "SEG_microblaze_0_axi_intc_Reg",
-                "MV": "xilinx.com:ip:axi_cdma:4.1",
-                "SX": "/processor/microblaze_0_axi_intc",
-                "SI": "s_axi",
-                "MM": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_intc:4.1",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V21": {
-                "VT": "ACE",
-                "BA": "0x41C00000",
-                "HA": "0x41C0FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/audio_components/dma/axi_cdma_0",
-                "MI": "M_AXI",
-                "MS": "SEG_axi_timer_0_Reg",
-                "MV": "xilinx.com:ip:axi_cdma:4.1",
-                "SX": "/processor/axi_timer_0",
-                "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_timer:2.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V22": {
-                "VT": "ACE",
-                "BA": "0x44A00000",
-                "HA": "0x44A0FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/audio_components/dma/axi_cdma_0",
-                "MI": "M_AXI",
-                "MS": "SEG_axi_cdma_0_Reg",
-                "MV": "xilinx.com:ip:axi_cdma:4.1",
-                "SX": "/audio_components/dma/axi_cdma_0",
-                "SI": "S_AXI_LITE",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_cdma:4.1",
-                "TM": "both",
-                "TU": "register"
             }
         },
         "edges": [
@@ -632,31 +541,6 @@
             },
             {
                 "src": "V17",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V18",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V19",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V20",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V21",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V22",
                 "trg": "V2",
                 "EH": "2"
             }

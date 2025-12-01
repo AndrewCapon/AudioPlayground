@@ -1863,13 +1863,8 @@
                 "mode": "Slave",
                 "bridges": [
                   "M00_AXI",
-                  "M01_AXI",
-                  "M02_AXI",
                   "M03_AXI",
-                  "M04_AXI",
-                  "M05_AXI",
-                  "M06_AXI",
-                  "M07_AXI"
+                  "M06_AXI"
                 ]
               }
             }
@@ -3623,13 +3618,7 @@
                 "value": "8"
               },
               "C_DEBUG_ENABLED": {
-                "value": "2"
-              },
-              "C_DEBUG_EXTERNAL_TRACE": {
-                "value": "0"
-              },
-              "C_DEBUG_PROFILE_SIZE": {
-                "value": "16384"
+                "value": "1"
               },
               "C_DIV_ZERO_EXCEPTION": {
                 "value": "1"

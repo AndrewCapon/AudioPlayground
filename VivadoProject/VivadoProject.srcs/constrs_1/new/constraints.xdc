@@ -159,3 +159,6 @@ set_clock_groups -asynchronous -group [get_clocks clk_out2_AudioPlatform_clk_wiz
 #set_property -dict { PACKAGE_PIN R19   IOSTANDARD LVCMOS33 } [get_ports { RamWEn     }]; #IO_L10N_T1_D15_14 Sch=sram-we
 #set_property -dict { PACKAGE_PIN N19   IOSTANDARD LVCMOS33 } [get_ports { RamCEn     }]; #IO_L9N_T1_DQS_D13_14 Sch=sram-ce
 
+
+set_clock_groups -asynchronous -group [get_clocks clk_out1_AudioPlatform_clk_wiz_100_0] -group [get_clocks clk_out1_AudioPlatform_clk_wiz_audio_0]
+set_clock_groups -asynchronous -group [get_clocks clk_out2_AudioPlatform_clk_wiz_100_0] -group [get_clocks clk_out1_AudioPlatform_clk_wiz_audio_0]

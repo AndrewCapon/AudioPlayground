@@ -3,7 +3,6 @@
 	<name>Benchmark</name>
 	<comment>Created by Vitis v2024.2</comment>
 	<projects>
-		<project>AudioPlatformStandalone</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
