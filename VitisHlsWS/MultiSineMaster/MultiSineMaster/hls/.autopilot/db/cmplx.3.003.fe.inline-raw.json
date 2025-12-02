@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "MultiSineMaster.cpp",
+    "fileloc": 31,
+    "instructions": 44,
+    "loads": {
+      "G": 2,
+      "T": 1
+    },
+    "name": "MultiSineMaster",
+    "stores": {
+      "G": 2,
+      "T": 2
+    },
+    "total_instructions": 44
+  }
+}

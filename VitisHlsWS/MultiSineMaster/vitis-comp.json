@@ -1,0 +1,12 @@
+{
+  "name": "MultiSineMaster",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "MultiSineMaster"
+  },
+  "template": "empty_hls_component"
+}

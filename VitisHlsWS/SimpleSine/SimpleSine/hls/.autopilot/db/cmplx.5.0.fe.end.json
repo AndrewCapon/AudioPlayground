@@ -1,0 +1,31 @@
+{
+    "0": {
+        "name": "SimpleSine",
+        "file": "SimpleSine.cpp",
+        "fileloc": "76",
+        "instructions": "21",
+        "total_instructions": "49",
+        "calls": "1",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "SimpleSine_Pipeline_VITIS_LOOP_96_1",
+        "file": "SimpleSine.cpp",
+        "fileloc": "96",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "L": "4",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "0": {
+        "name": "MultiSine",
+        "file": "MultiSine.cpp",
+        "fileloc": "33",
+        "instructions": "63",
+        "total_instructions": "63",
+        "calls": "",
+        "basicblocks": "5",
+        "loads": {
+            "G": "2",
+            "L": "5",
+            "T": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "10",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

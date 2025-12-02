@@ -1,0 +1,18 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "SimpleSine.cpp",
+    "fileloc": 76,
+    "instructions": 38,
+    "loads": {
+      "G": 1,
+      "T": 1
+    },
+    "name": "SimpleSine",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 38
+  }
+}

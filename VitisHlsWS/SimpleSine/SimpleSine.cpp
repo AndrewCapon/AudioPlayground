@@ -1,0 +1,61 @@
+#include "SimpleSine.h"
+
+FrequencyMultiplierType f =  4096.0f/cSampleRate;
+
+PhaseType FrequencyToAccumPerSample(const FrequencyType &frequency)
+{
+    PhaseType       acumPerSample;
+
+    acumPerSample = f * frequency;
+    return acumPerSample;
+}
+
+void InitSinTable(DataType sine_lut[cSineLutSize]) 
+{
+    int i;
+    float fAngle    = 0.0;
+    float fAngleInc = (M_PI * 2.0f)/cSineLutSize;
+
+    for (i = 0; i < cSineLutSize; i++) 
+    {
+        float f = sin(fAngle);
+        sine_lut[i] = f;
+        fAngle += fAngleInc;
+    }
+}
+
+DataType  sine_lut[cSineLutSize];
+
+#if DEBUG
+void SimpleSine(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples], uint32_t debug[cBlockSamples])
+#else
+void SimpleSine(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples])
+#endif
+{
+    #pragma HLS INTERFACE mode=s_axilite    port=return         bundle=BUS_A
+    #pragma HLS INTERFACE mode=s_axilite    port=accumulator    bundle=BUS_A        s
+    #pragma HLS INTERFACE mode=s_axilite    port=phaseInc       bundle=BUS_A
+    #pragma HLS INTERFACE mode=s_axilite    port=samples        bundle=BUS_A
+#if DEBUG    
+    #pragma HLS INTERFACE mode=s_axilite    port=debug          bundle=BUS_A
+#endif
+
+    InitSinTable(sine_lut);
+
+    for(int block = 0; block < cBlockSize; block++)
+    {
+        // Now generate the samples, no interpolation
+        accumulator += phaseInc;
+#if USE_FLOAT
+#pragma HLS pipeline off        
+        if(accumulator > cSineLutSize)
+            accumulator -= cSineLutSize;
+#endif                    
+        PhaseIndexType address;
+        address = PhaseIndexType(accumulator); 
+        samples[block] = sine_lut[(int)address]; 
+#if DEBUG        
+        debug[block] = accumulator.range();
+#endif        
+    }  
+}

@@ -15,6 +15,7 @@ public:
 			{
 				XTmrCtr_SetOptions(&m_instance, 0, XTC_AUTO_RELOAD_OPTION);
 				XTmrCtr_Start(&m_instance, 0);
+				m_pTimer0Value = reinterpret_cast<uint32_t *>(m_instance.BaseAddress + XTC_TCR_OFFSET);
 			}
 	}
 
@@ -29,11 +30,12 @@ public:
 
 	FORCE_INLINE uint32_t GetValue(void)
 	{
-		return XTmrCtr_ReadReg(m_instance.BaseAddress, 0, XTC_TCR_OFFSET);
-//		return XTmrCtr_GetValue(&m_Instance, 0);
+		return *m_pTimer0Value;
+//		return XTmrCtr_ReadReg(m_instance.BaseAddress, 0, XTC_TCR_OFFSET);
 	}
 
 private:
 	XTmrCtr 	m_instance;
   bool			m_bIsConfigured = false;
+  volatile uint32_t *m_pTimer0Value = nullptr;
 };

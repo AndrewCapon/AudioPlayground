@@ -22,7 +22,7 @@ public:
 			if( XAxiCdma_CfgInitialize(&m_instance, m_pConfig, m_pConfig->BaseAddress) == XST_SUCCESS)
 			{
 				// add the interrupot handler to point into the XAxiCdma driver not us. The driver will call us.
-				m_bIsConfigured = systemHandler.AddInterruptCallback(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_AUDIO_COMPONENTS_DMA_AXI_CDMA_0_CDMA_INTROUT_INTR, XAxiCdma_IntrHandler, &m_instance);
+				m_bIsConfigured = systemHandler.AddInterruptCallback(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_AUDIO_COMPONENTS_AUDIO_BRAM_AXI_CDMA_0_CDMA_INTROUT_INTR, XAxiCdma_IntrHandler, &m_instance);
 			}
 		}
 

@@ -4,7 +4,7 @@
     "xci_name": "AudioPlatform_SimpleSine_0_0",
     "cell_name": "audio_components/SimpleSine_0",
     "component_reference": "xilinx.com:hls:SimpleSine:1.0",
-    "ip_revision": "2114347782",
+    "ip_revision": "2114372527",
     "gen_directory": "../../../../../../VivadoProject.gen/sources_1/bd/AudioPlatform/ip/AudioPlatform_SimpleSine_0_0",
     "parameters": {
       "component_parameters": {
@@ -34,7 +34,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114347782" } ],
+        "IPREVISION": [ { "value": "2114372527" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../VivadoProject.gen/sources_1/bd/AudioPlatform/ip/AudioPlatform_SimpleSine_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

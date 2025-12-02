@@ -2,6 +2,7 @@
 #include "Debug.h"
 #include "SystemHandlerStandalone.h"
 #include "SimpleSine.h"
+#include "SimpleSineMaster.h"
 #include "MultiSine.h"
 #include "Bram.h"
 #include "CodeTimer.h"
@@ -23,6 +24,7 @@ volatile uint32_t SamplesDMA[cBlockSamples*cVoices] __attribute__((aligned (64))
 SystemHandlerStandalone systemHandler;
 HardwareSystem hardwareSystem(systemHandler);
 SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesDMA);
+SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesDMA);
 MultiSine multiSine(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID);
 
 
@@ -43,34 +45,11 @@ int main(void)
 	if(hardwareSystem.IsConfigured())
 	{
 		Debug &debug = hardwareSystem.GetDebug();
-
-//		// test timer
-//		static const constexpr char *sTimerLabels[3] =
-//		{
-//			"Timer0    ",
-//			"gpioTime  ",
-//			"timerTime "
-//		};
-//
-//		CodeTimer<3> t("SimpleSine", const_cast<const char **>(sTimerLabels), hardwareSystem.GetTimer());
-//		t.SetAutoLog(0, 1000);
-//
-//		while(true)
-//		{
-//			t.StartTiming(0);
-//
-//			debug.SetDebug(Debug::dpPio29_processing, 1);
-//			MB_Sleep(1);
-//			debug.SetDebug(Debug::dpPio29_processing, 0);
-//
-//			t.StopTiming(0);
-//
-//		}
-
 		for(uint8_t uVoice = 0; uVoice < cVoices; uVoice++)
 		{
 			float fFrequency = 1000.0f * (uVoice+1);
 			simpleSine.SetFrequency(uVoice, fFrequency);
+			simpleSineMaster.SetFrequency(uVoice, fFrequency);
 			multiSine.SetFrequency(uVoice, fFrequency);
 		}
 
@@ -140,7 +119,7 @@ int main(void)
       	}
 
 				debug.SetDebug(Debug::dpPio29_processing, 1);
-				simpleSine.ProcessBlocking();
+				simpleSineMaster.ProcessBlocking();
 				debug.SetDebug(Debug::dpPio29_processing, 0);
 
 				debug.SetDebug(Debug::dpPio29_processing, 1);

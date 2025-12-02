@@ -111,7 +111,11 @@
                                 								
                                 <option id="xilinx.gnu.mb.compiler.inferred.mul.1806389917" name="Hardware Multiplier" superClass="xilinx.gnu.mb.compiler.inferred.mul" value="xilinx.gnu.mb.compiler.inferred.mul.32bit" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.271399453" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes"/>
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.271399453" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=Standalone,fileType=bspInclude}"/>
+                                    								
+                                </option>
                                 								
                                 <option id="xilinx.gnu.compiler.dircategory.includes.1583317490" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
                                     									
@@ -347,7 +351,11 @@
                                 								
                                 <option id="xilinx.gnu.mb.compiler.inferred.mul.1293413104" name="Hardware Multiplier" superClass="xilinx.gnu.mb.compiler.inferred.mul" value="xilinx.gnu.mb.compiler.inferred.mul.32bit" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.625629801" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes"/>
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.625629801" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=Standalone,fileType=bspInclude}"/>
+                                    								
+                                </option>
                                 								
                                 <option id="xilinx.gnu.compiler.dircategory.includes.1244541447" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
                                     									

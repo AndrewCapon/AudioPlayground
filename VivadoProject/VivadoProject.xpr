@@ -48,7 +48,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../AudioPlatform/AudioPlatformHlsWS"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../VitisHlsWS"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -128,14 +128,53 @@
         <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_AxisToI2sFifo_0_0/AudioPlatform_AxisToI2sFifo_0_0.xci">
           <Proxy FileSetName="AudioPlatform_AxisToI2sFifo_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_MultiSine_0_0/AudioPlatform_MultiSine_0_0.xci">
+          <Proxy FileSetName="AudioPlatform_MultiSine_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_SimpleSineMaster_0_0/AudioPlatform_SimpleSineMaster_0_0.xci">
+          <Proxy FileSetName="AudioPlatform_SimpleSineMaster_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_SimpleSine_0_0/AudioPlatform_SimpleSine_0_0.xci">
+          <Proxy FileSetName="AudioPlatform_SimpleSine_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_axi_bram_ctrl_0_bram_0/AudioPlatform_axi_bram_ctrl_0_bram_0.xci">
           <Proxy FileSetName="AudioPlatform_axi_bram_ctrl_0_bram_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_axi_interconnect_0_imp_auto_cc_0/AudioPlatform_axi_interconnect_0_imp_auto_cc_0.xci">
+          <Proxy FileSetName="AudioPlatform_axi_interconnect_0_imp_auto_cc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_axi_interconnect_0_imp_auto_pc_0/AudioPlatform_axi_interconnect_0_imp_auto_pc_0.xci">
+          <Proxy FileSetName="AudioPlatform_axi_interconnect_0_imp_auto_pc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_axi_interconnect_0_imp_auto_pc_1/AudioPlatform_axi_interconnect_0_imp_auto_pc_1.xci">
+          <Proxy FileSetName="AudioPlatform_axi_interconnect_0_imp_auto_pc_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_axi_interconnect_0_imp_auto_pc_2/AudioPlatform_axi_interconnect_0_imp_auto_pc_2.xci">
+          <Proxy FileSetName="AudioPlatform_axi_interconnect_0_imp_auto_pc_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_axi_interconnect_0_imp_auto_pc_3/AudioPlatform_axi_interconnect_0_imp_auto_pc_3.xci">
+          <Proxy FileSetName="AudioPlatform_axi_interconnect_0_imp_auto_pc_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_axi_interconnect_0_imp_auto_pc_4/AudioPlatform_axi_interconnect_0_imp_auto_pc_4.xci">
+          <Proxy FileSetName="AudioPlatform_axi_interconnect_0_imp_auto_pc_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_axi_interconnect_0_imp_auto_pc_5/AudioPlatform_axi_interconnect_0_imp_auto_pc_5.xci">
+          <Proxy FileSetName="AudioPlatform_axi_interconnect_0_imp_auto_pc_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_axi_interconnect_0_imp_auto_pc_6/AudioPlatform_axi_interconnect_0_imp_auto_pc_6.xci">
+          <Proxy FileSetName="AudioPlatform_axi_interconnect_0_imp_auto_pc_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_axi_interconnect_0_imp_auto_pc_7/AudioPlatform_axi_interconnect_0_imp_auto_pc_7.xci">
+          <Proxy FileSetName="AudioPlatform_axi_interconnect_0_imp_auto_pc_7"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_clk_wiz_100_0/AudioPlatform_clk_wiz_100_0.xci">
           <Proxy FileSetName="AudioPlatform_clk_wiz_100_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_clk_wiz_audio_0/AudioPlatform_clk_wiz_audio_0.xci">
           <Proxy FileSetName="AudioPlatform_clk_wiz_audio_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_dlmb_bram_if_cntlr_0/AudioPlatform_dlmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="AudioPlatform_dlmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="AudioPlatform.bd" FileRelPathName="ip/AudioPlatform_ibuf_0_0/AudioPlatform_ibuf_0_0.xci">
           <Proxy FileSetName="AudioPlatform_ibuf_0_0"/>
@@ -163,9 +202,6 @@
         </FileInfo>
         <CompFileExtendedInfo CompFileName="DmaTestInterconnect.bd" FileRelPathName="ip/DmaTestInterconnect_AxisToI2sFifo_0_1/DmaTestInterconnect_AxisToI2sFifo_0_1.xci">
           <Proxy FileSetName="DmaTestInterconnect_AxisToI2sFifo_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DmaTestInterconnect.bd" FileRelPathName="ip/DmaTestInterconnect_MultiSine_0_0/DmaTestInterconnect_MultiSine_0_0.xci">
-          <Proxy FileSetName="DmaTestInterconnect_MultiSine_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DmaTestInterconnect.bd" FileRelPathName="ip/DmaTestInterconnect_axi_bram_ctrl_0_0/DmaTestInterconnect_axi_bram_ctrl_0_0.xci">
           <Proxy FileSetName="DmaTestInterconnect_axi_bram_ctrl_0_0"/>
@@ -328,12 +364,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="DmaTestInterconnect_MultiSine_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DmaTestInterconnect_MultiSine_0_0" RelGenDir="$PGENDIR/DmaTestInterconnect_MultiSine_0_0">
-      <Config>
-        <Option Name="TopModule" Val="DmaTestInterconnect_MultiSine_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="DmaTestInterconnect_microblaze_0_axi_intc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DmaTestInterconnect_microblaze_0_axi_intc_0" RelGenDir="$PGENDIR/DmaTestInterconnect_microblaze_0_axi_intc_0">
       <Config>
         <Option Name="TopModule" Val="DmaTestInterconnect_microblaze_0_axi_intc_0"/>
@@ -397,6 +427,84 @@
     <FileSet Name="AudioPlatform_microblaze_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_microblaze_0_0" RelGenDir="$PGENDIR/AudioPlatform_microblaze_0_0">
       <Config>
         <Option Name="TopModule" Val="AudioPlatform_microblaze_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_SimpleSine_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_SimpleSine_0_0" RelGenDir="$PGENDIR/AudioPlatform_SimpleSine_0_0">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_SimpleSine_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_MultiSine_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_MultiSine_0_0" RelGenDir="$PGENDIR/AudioPlatform_MultiSine_0_0">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_MultiSine_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_dlmb_bram_if_cntlr_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_dlmb_bram_if_cntlr_0" RelGenDir="$PGENDIR/AudioPlatform_dlmb_bram_if_cntlr_0">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_dlmb_bram_if_cntlr_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_axi_interconnect_0_imp_auto_pc_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_4" RelGenDir="$PGENDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_4">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_axi_interconnect_0_imp_auto_pc_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_axi_interconnect_0_imp_auto_pc_7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_7" RelGenDir="$PGENDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_7">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_axi_interconnect_0_imp_auto_pc_7"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_axi_interconnect_0_imp_auto_pc_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_1" RelGenDir="$PGENDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_1">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_axi_interconnect_0_imp_auto_pc_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_axi_interconnect_0_imp_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_0" RelGenDir="$PGENDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_0">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_axi_interconnect_0_imp_auto_pc_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_axi_interconnect_0_imp_auto_pc_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_3" RelGenDir="$PGENDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_3">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_axi_interconnect_0_imp_auto_pc_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_axi_interconnect_0_imp_auto_pc_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_2" RelGenDir="$PGENDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_2">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_axi_interconnect_0_imp_auto_pc_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_SimpleSineMaster_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_SimpleSineMaster_0_0" RelGenDir="$PGENDIR/AudioPlatform_SimpleSineMaster_0_0">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_SimpleSineMaster_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_axi_interconnect_0_imp_auto_pc_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_6" RelGenDir="$PGENDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_6">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_axi_interconnect_0_imp_auto_pc_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_axi_interconnect_0_imp_auto_cc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_axi_interconnect_0_imp_auto_cc_0" RelGenDir="$PGENDIR/AudioPlatform_axi_interconnect_0_imp_auto_cc_0">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_axi_interconnect_0_imp_auto_cc_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="AudioPlatform_axi_interconnect_0_imp_auto_pc_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_5" RelGenDir="$PGENDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_5">
+      <Config>
+        <Option Name="TopModule" Val="AudioPlatform_axi_interconnect_0_imp_auto_pc_5"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -533,16 +641,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="DmaTestInterconnect_MultiSine_0_0_synth_1" Type="Ft3:Synth" SrcSet="DmaTestInterconnect_MultiSine_0_0" Part="xc7a35tcpg236-1" ConstrsSet="DmaTestInterconnect_MultiSine_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DmaTestInterconnect_MultiSine_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/DmaTestInterconnect_MultiSine_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/DmaTestInterconnect_MultiSine_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="DmaTestInterconnect_microblaze_0_axi_intc_0_synth_1" Type="Ft3:Synth" SrcSet="DmaTestInterconnect_microblaze_0_axi_intc_0" Part="xc7a35tcpg236-1" ConstrsSet="DmaTestInterconnect_microblaze_0_axi_intc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DmaTestInterconnect_microblaze_0_axi_intc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/DmaTestInterconnect_microblaze_0_axi_intc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/DmaTestInterconnect_microblaze_0_axi_intc_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
@@ -585,9 +683,7 @@
     </Run>
     <Run Id="AudioPlatform_lmb_bram_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_lmb_bram_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_lmb_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_lmb_bram_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_lmb_bram_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_lmb_bram_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -597,9 +693,7 @@
     </Run>
     <Run Id="AudioPlatform_axi_bram_ctrl_0_bram_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_axi_bram_ctrl_0_bram_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_bram_ctrl_0_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_axi_bram_ctrl_0_bram_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_bram_ctrl_0_bram_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_bram_ctrl_0_bram_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -609,9 +703,7 @@
     </Run>
     <Run Id="AudioPlatform_ibuf_0_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_ibuf_0_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_ibuf_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_ibuf_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_ibuf_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_ibuf_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -621,9 +713,7 @@
     </Run>
     <Run Id="AudioPlatform_clk_wiz_100_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_clk_wiz_100_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_clk_wiz_100_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_clk_wiz_100_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_clk_wiz_100_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_clk_wiz_100_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -633,9 +723,7 @@
     </Run>
     <Run Id="AudioPlatform_clk_wiz_audio_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_clk_wiz_audio_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_clk_wiz_audio_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_clk_wiz_audio_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_clk_wiz_audio_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_clk_wiz_audio_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -644,6 +732,46 @@
       <RQSFiles/>
     </Run>
     <Run Id="AudioPlatform_AxisToI2sFifo_0_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_AxisToI2sFifo_0_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_AxisToI2sFifo_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_AxisToI2sFifo_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_AxisToI2sFifo_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_AxisToI2sFifo_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_microblaze_0_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_microblaze_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_microblaze_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_microblaze_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_SimpleSine_0_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_SimpleSine_0_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_SimpleSine_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_SimpleSine_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_SimpleSine_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_SimpleSine_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_MultiSine_0_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_MultiSine_0_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_MultiSine_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_MultiSine_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_MultiSine_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_MultiSine_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_dlmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_dlmb_bram_if_cntlr_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_dlmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_dlmb_bram_if_cntlr_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_dlmb_bram_if_cntlr_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -655,7 +783,115 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="AudioPlatform_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_microblaze_0_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_microblaze_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_microblaze_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_microblaze_0_0_synth_1" ParallelReportGen="true">
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_4_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_4" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_4_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_4_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_4_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_7_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_7" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_7" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_7_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_7_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_7_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_1_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_1" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_1_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_3_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_3" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_3_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_3_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_3_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_2_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_2" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_2_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_SimpleSineMaster_0_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_SimpleSineMaster_0_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_SimpleSineMaster_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_SimpleSineMaster_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_SimpleSineMaster_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_SimpleSineMaster_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_6_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_6" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_6_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_6_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_6_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_cc_0_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_axi_interconnect_0_imp_auto_cc_0" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_cc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_axi_interconnect_0_imp_auto_cc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_cc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_cc_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_5_synth_1" Type="Ft3:Synth" SrcSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_5" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/AudioPlatform_axi_interconnect_0_imp_auto_pc_5_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_5_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_5_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -855,23 +1091,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="DmaTestInterconnect_MultiSine_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="DmaTestInterconnect_MultiSine_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DmaTestInterconnect_MultiSine_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/DmaTestInterconnect_MultiSine_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/DmaTestInterconnect_MultiSine_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="DmaTestInterconnect_microblaze_0_axi_intc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="DmaTestInterconnect_microblaze_0_axi_intc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DmaTestInterconnect_microblaze_0_axi_intc_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/DmaTestInterconnect_microblaze_0_axi_intc_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/DmaTestInterconnect_microblaze_0_axi_intc_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
@@ -942,9 +1161,7 @@
     </Run>
     <Run Id="AudioPlatform_lmb_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_lmb_bram_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_lmb_bram_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_lmb_bram_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_lmb_bram_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -961,9 +1178,7 @@
     </Run>
     <Run Id="AudioPlatform_axi_bram_ctrl_0_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_bram_ctrl_0_bram_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_axi_bram_ctrl_0_bram_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_bram_ctrl_0_bram_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_bram_ctrl_0_bram_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -980,9 +1195,7 @@
     </Run>
     <Run Id="AudioPlatform_ibuf_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_ibuf_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_ibuf_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_ibuf_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_ibuf_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -999,9 +1212,7 @@
     </Run>
     <Run Id="AudioPlatform_clk_wiz_100_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_clk_wiz_100_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_clk_wiz_100_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_clk_wiz_100_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_clk_wiz_100_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1018,9 +1229,7 @@
     </Run>
     <Run Id="AudioPlatform_clk_wiz_audio_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_clk_wiz_audio_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_clk_wiz_audio_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_clk_wiz_audio_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_clk_wiz_audio_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1036,6 +1245,74 @@
       <RQSFiles/>
     </Run>
     <Run Id="AudioPlatform_AxisToI2sFifo_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_AxisToI2sFifo_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_AxisToI2sFifo_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_AxisToI2sFifo_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_AxisToI2sFifo_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_microblaze_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_microblaze_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_microblaze_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_microblaze_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_microblaze_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_SimpleSine_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_SimpleSine_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_SimpleSine_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_SimpleSine_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_SimpleSine_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_MultiSine_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_MultiSine_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_MultiSine_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_MultiSine_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_MultiSine_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_dlmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_dlmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_dlmb_bram_if_cntlr_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_dlmb_bram_if_cntlr_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
           <Desc>Default settings for Implementation.</Desc>
@@ -1054,7 +1331,178 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="AudioPlatform_microblaze_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_microblaze_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_microblaze_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_microblaze_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_microblaze_0_0_impl_1" ParallelReportGen="true">
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_4_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_axi_interconnect_0_imp_auto_pc_4_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_4_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_4_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_7_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_7" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_axi_interconnect_0_imp_auto_pc_7_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_7_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_7_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_axi_interconnect_0_imp_auto_pc_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_1_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_axi_interconnect_0_imp_auto_pc_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_3_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_axi_interconnect_0_imp_auto_pc_3_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_3_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_3_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_axi_interconnect_0_imp_auto_pc_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_2_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_SimpleSineMaster_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_SimpleSineMaster_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_SimpleSineMaster_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_SimpleSineMaster_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_SimpleSineMaster_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_6_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_axi_interconnect_0_imp_auto_pc_6_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_6_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_6_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_cc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_cc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_axi_interconnect_0_imp_auto_cc_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_cc_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_cc_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="AudioPlatform_axi_interconnect_0_imp_auto_pc_5_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="AudioPlatform_axi_interconnect_0_imp_auto_pc_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="AudioPlatform_axi_interconnect_0_imp_auto_pc_5_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_5_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/AudioPlatform_axi_interconnect_0_imp_auto_pc_5_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
           <Desc>Default settings for Implementation.</Desc>

@@ -3,6 +3,9 @@
 #include "defines.h"
 #include "Timer.h"
 
+#define HANDLE_WRAP 1
+#define ENABLE_CODE_TIMING 0
+
 template <unsigned int SIZE>
 class CodeTimer
 {
@@ -15,6 +18,7 @@ public:
 		ClearAll();
 	}
 
+#if ENABLE_CODE_TIMING
 	FORCE_INLINE void Clear(uint32_t index)
 	{
 		m_uCount[index] = 0;
@@ -77,11 +81,15 @@ public:
 		uint32_t uResult;
 
 		uint32_t uNowValue = m_timer.GetValue();
+
+#if HANDLE_WRAP
 		if(uNowValue < m_uValue[uIndex])
 			uResult = uNowValue + (0xffffffff - m_uValue[uIndex]);
 		else
 			uResult = uNowValue - m_uValue[uIndex];
-
+#else
+		uResult = uNowValue - m_uValue[uIndex];
+#endif
 		m_uValue[uIndex] = uNowValue;
 
 		return uResult;
@@ -94,6 +102,58 @@ public:
 			printf("  %s [%lu] %lu - %lu\n", m_sTimerLabels[uIndex], GetCount(uIndex), GetIterationTime(uIndex, uUseIterationCount), GetIterationTime(uIndex));
 		ClearAll();
 	}
+#else
+	FORCE_INLINE void Clear(uint32_t index)
+	{
+	}
+
+	FORCE_INLINE void ClearAll(void)
+	{
+	}
+
+	FORCE_INLINE void StartTiming(uint32_t uIndex)
+	{
+	}
+
+	FORCE_INLINE void StopTiming(uint32_t uIndex)
+	{
+	}
+
+	FORCE_INLINE void TransitionTiming(uint32_t uFromIndex, uint32_t uToIndex)
+	{
+	}
+
+	FORCE_INLINE uint32_t GetTotalTime(uint32_t uIndex)
+	{
+		return 0;
+	}
+
+	FORCE_INLINE uint32_t GetCount(uint32_t uIndex)
+	{
+		return 0;
+	}
+
+	FORCE_INLINE uint32_t GetIterationTime(uint32_t uIndex, uint32_t uIterationCount)
+	{
+		return 0;
+	}
+
+	FORCE_INLINE uint32_t GetIterationTime(uint32_t uIndex)
+	{
+		return 0;
+	}
+
+
+	FORCE_INLINE uint32_t GetTimeDifference(uint32_t uIndex)
+	{
+		return 0;
+	}
+
+	FORCE_INLINE void LogTimes(uint32_t uUseIterationCount)
+	{
+	}
+
+#endif
 private:
 	const char *m_pName;
 	const char **m_sTimerLabels;

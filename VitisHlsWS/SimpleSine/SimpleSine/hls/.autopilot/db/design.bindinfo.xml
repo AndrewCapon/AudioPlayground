@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln99_fu_134_p2" SOURCE="SimpleSine.cpp:99" VARIABLE="add_ln99" MODULE="SimpleSine_Pipeline_VITIS_LOOP_96_1" LOOP="VITIS_LOOP_96_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="block_fu_114_p2" SOURCE="SimpleSine.cpp:96" VARIABLE="block" MODULE="SimpleSine_Pipeline_VITIS_LOOP_96_1" LOOP="VITIS_LOOP_96_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op seteq" ID="" IMPL="auto" LATENCY="0" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln96_fu_120_p2" SOURCE="SimpleSine.cpp:96" VARIABLE="icmp_ln96" MODULE="SimpleSine_Pipeline_VITIS_LOOP_96_1" LOOP="VITIS_LOOP_96_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="sine_lut_U" SOURCE="" VARIABLE="sine_lut" MODULE="SimpleSine_Pipeline_VITIS_LOOP_96_1" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="6" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE="24 4096 1"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="" RTLNAME="BUS_A_s_axi_U" SOURCE="" VARIABLE="" MODULE="SimpleSine" LOOP="" BUNDLEDNAME="BUS_A" DSP="0" BRAM="2" URAM="0" USAGE="interface" STORAGESUBTYPE="s_axilite" STORAGESIZE=""/>
+	<BindNode BINDTYPE="interface" DISPLAY="bind_storage bram" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="" SOURCE="" VARIABLE="samples" MODULE="SimpleSine" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="interface" STORAGESUBTYPE="bram" STORAGESIZE="24 0 1"/>
+</BindInfo>

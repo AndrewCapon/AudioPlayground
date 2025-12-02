@@ -1,0 +1,18 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "SimpleSineMaster.cpp",
+    "fileloc": 32,
+    "instructions": 28,
+    "loads": {
+      "G": 1,
+      "T": 1
+    },
+    "name": "SimpleSineMaster",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 28
+  }
+}

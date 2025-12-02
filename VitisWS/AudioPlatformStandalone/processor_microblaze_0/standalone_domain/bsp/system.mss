@@ -25,21 +25,27 @@ BEGIN DRIVER
 END
 
 BEGIN DRIVER
+ PARAMETER DRIVER_NAME = SimpleSineMaster
+ PARAMETER DRIVER_VER = 1.0
+ PARAMETER HW_INSTANCE = audio_components_SimpleSineMaster_0
+END
+
+BEGIN DRIVER
  PARAMETER DRIVER_NAME = SimpleSine
  PARAMETER DRIVER_VER = 1.0
  PARAMETER HW_INSTANCE = audio_components_SimpleSine_0
 END
 
 BEGIN DRIVER
- PARAMETER DRIVER_NAME = axicdma
- PARAMETER DRIVER_VER = 4.14
- PARAMETER HW_INSTANCE = audio_components_dma_axi_cdma_0
+ PARAMETER DRIVER_NAME = bram
+ PARAMETER DRIVER_VER = 4.11
+ PARAMETER HW_INSTANCE = audio_components_audio_bram_audio_bram_axi_bram_ctrl_0
 END
 
 BEGIN DRIVER
- PARAMETER DRIVER_NAME = bram
- PARAMETER DRIVER_VER = 4.11
- PARAMETER HW_INSTANCE = audio_components_dma_dma_bram_axi_bram_ctrl_0
+ PARAMETER DRIVER_NAME = axicdma
+ PARAMETER DRIVER_VER = 4.14
+ PARAMETER HW_INSTANCE = audio_components_audio_bram_axi_cdma_0
 END
 
 BEGIN DRIVER

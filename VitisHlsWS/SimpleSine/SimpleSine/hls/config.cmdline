@@ -1,0 +1,3 @@
+relativeroot=/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine
+original_argv=--mode hls --package --config /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine/hls_config.cfg --work_dir SimpleSine 
+

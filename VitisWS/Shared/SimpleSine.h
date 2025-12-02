@@ -162,9 +162,7 @@ public:
 		XSimplesine_Set_accumulator_i(&m_instance, m_uAccumulators[m_uCurrentVoice]);
 		XSimplesine_Set_phaseInc(&m_instance, m_uPhaseIncs[m_uCurrentVoice]);
 		m_codeTimer.StartTiming(ctContinueStart);
-		volatile uint32_t v = XSimplesine_ReadReg(m_instance.Bus_a_BaseAddress, XSIMPLESINE_BUS_A_ADDR_AP_CTRL);
 		XSimplesine_Start(&m_instance);
-		volatile uint32_t v2 = XSimplesine_ReadReg(m_instance.Bus_a_BaseAddress, XSIMPLESINE_BUS_A_ADDR_AP_CTRL);
 		m_codeTimer.StopTiming(ctContinueStart);
 		m_codeTimer.StopTiming(ctContinueProcessing);
 	}
@@ -187,9 +185,7 @@ public:
 		m_codeTimer.StopTiming(ctUpdateData);
 
 		m_codeTimer.StartTiming(ctStartStart);
-		volatile uint32_t v = XSimplesine_ReadReg(m_instance.Bus_a_BaseAddress, XSIMPLESINE_BUS_A_ADDR_AP_CTRL);
 		XSimplesine_Start(&m_instance);
-		volatile uint32_t v2 = XSimplesine_ReadReg(m_instance.Bus_a_BaseAddress, XSIMPLESINE_BUS_A_ADDR_AP_CTRL);
 		m_codeTimer.StopTiming(ctStartStart);
 
 		m_codeTimer.StopTiming(ctStartProcessing);

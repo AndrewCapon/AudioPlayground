@@ -1,0 +1,7 @@
+MultiSineMaster_accumulators_RAM_AUTO_1R1W
+MultiSineMaster_sine_lut_ROM_AUTO_1R
+MultiSineMaster_gmem_m_axi
+MultiSineMaster_BUS_A_s_axi
+MultiSineMaster_control_s_axi
+MultiSineMaster_flow_control_loop_delay_pipe
+MultiSineMaster
