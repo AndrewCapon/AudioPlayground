@@ -29470,9 +29470,7 @@ namespace hls {
 PhaseType FrequencyToAccumPerSample(const FrequencyType &frequency);
 
 
-
-
-    __attribute__((sdx_kernel("MultiSine", 0))) void MultiSine(const PhaseType phaseInc[cVoices], DataType samples[cBlockSamples]);
+    __attribute__((sdx_kernel("MultiSine", 0))) void MultiSine(const PhaseType phaseInc[cVoices], DataType samples[cBlockSamples], uint32_t debug[cBlockSamples]);
 # 2 "MultiSine.cpp" 2
 
 FrequencyMultiplierType f = 4096.0f/cSampleRate;
@@ -29503,9 +29501,9 @@ DataType sine_lut[cSineLutSize];
 PhaseType accumulators[cVoices];
 
 
+    __attribute__((sdx_kernel("MultiSine", 0))) void MultiSine(const PhaseType phaseInc[cVoices], DataType samples[cVoices * cBlockSamples], uint32_t debug[cBlockSamples])
 
 
-    __attribute__((sdx_kernel("MultiSine", 0))) void MultiSine(const PhaseType phaseInc[cVoices], DataType samples[cVoices * cBlockSamples])
 
 {
 #line 1 "directive"
@@ -29516,16 +29514,15 @@ PhaseType accumulators[cVoices];
 #pragma HLS INTERFACE mode=s_axilite port=phaseInc bundle=BUS_A
 #pragma HLS INTERFACE mode=s_axilite port=samples bundle=BUS_A
 
-
+#pragma HLS INTERFACE mode=s_axilite port=debug bundle=BUS_A
 
 
  InitSinTable(sine_lut);
-
-
-    VITIS_LOOP_46_1: for(int b = 0; b < cBlockSamples; b++)
+# 58 "MultiSine.cpp"
+    VITIS_LOOP_58_1: for(int b = 0; b < cBlockSamples; b++)
     {
         int sineIdx = b;
-        VITIS_LOOP_49_2: for(int i = 0; i < cVoices; i++)
+        VITIS_LOOP_61_2: for(int i = 0; i < cVoices; i++)
         {
             accumulators[i] += phaseInc[i];
             PhaseIndexType address;
@@ -29534,5 +29531,5 @@ PhaseType accumulators[cVoices];
             sineIdx+=cBlockSamples;
         }
     }
-# 81 "MultiSine.cpp"
+# 93 "MultiSine.cpp"
 }

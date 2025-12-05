@@ -35,6 +35,10 @@ module MultiSine_BUS_A_s_axi
     input  wire [2:0]                    phaseInc_address0,
     input  wire                          phaseInc_ce0,
     output wire [31:0]                   phaseInc_q0,
+    input  wire [5:0]                    debug_address0,
+    input  wire                          debug_ce0,
+    input  wire                          debug_we0,
+    input  wire [31:0]                   debug_d0,
     input  wire [8:0]                    samples_address0,
     input  wire                          samples_ce0,
     input  wire                          samples_we0,
@@ -69,6 +73,9 @@ module MultiSine_BUS_A_s_axi
 // 0x020 ~
 // 0x03f : Memory 'phaseInc' (8 * 32b)
 //         Word n : bit [31:0] - phaseInc[n]
+// 0x100 ~
+// 0x1ff : Memory 'debug' (48 * 32b)
+//         Word n : bit [31:0] - debug[n]
 // 0x800 ~
 // 0xfff : Memory 'samples' (384 * 24b)
 //         Word n : bit [23:0] - samples[n]
@@ -83,6 +90,8 @@ localparam
     ADDR_ISR           = 12'h00c,
     ADDR_PHASEINC_BASE = 12'h020,
     ADDR_PHASEINC_HIGH = 12'h03f,
+    ADDR_DEBUG_BASE    = 12'h100,
+    ADDR_DEBUG_HIGH    = 12'h1ff,
     ADDR_SAMPLES_BASE  = 12'h800,
     ADDR_SAMPLES_HIGH  = 12'hfff,
     WRIDLE             = 2'd0,
@@ -133,6 +142,19 @@ localparam
     wire [31:0]                   int_phaseInc_q1;
     reg                           int_phaseInc_read;
     reg                           int_phaseInc_write;
+    wire [5:0]                    int_debug_address0;
+    wire                          int_debug_ce0;
+    wire [3:0]                    int_debug_be0;
+    wire [31:0]                   int_debug_d0;
+    wire [31:0]                   int_debug_q0;
+    wire [5:0]                    int_debug_address1;
+    wire                          int_debug_ce1;
+    wire                          int_debug_we1;
+    wire [3:0]                    int_debug_be1;
+    wire [31:0]                   int_debug_d1;
+    wire [31:0]                   int_debug_q1;
+    reg                           int_debug_read;
+    reg                           int_debug_write;
     wire [8:0]                    int_samples_address0;
     wire                          int_samples_ce0;
     wire [3:0]                    int_samples_be0;
@@ -163,6 +185,26 @@ MultiSine_BUS_A_s_axi_ram #(
     .we1       ( int_phaseInc_be1 ),
     .d1        ( int_phaseInc_d1 ),
     .q1        ( int_phaseInc_q1 )
+);
+// int_debug
+MultiSine_BUS_A_s_axi_ram #(
+    .MEM_STYLE ( "auto" ),
+    .MEM_TYPE  ( "T2P" ),
+    .BYTES     ( 4 ),
+    .DEPTH     ( 48 )
+) int_debug (
+    .clk0      ( ACLK ),
+    .address0  ( int_debug_address0 ),
+    .ce0       ( int_debug_ce0 ),
+    .we0       ( int_debug_be0 ),
+    .d0        ( int_debug_d0 ),
+    .q0        ( int_debug_q0 ),
+    .clk1      ( ACLK ),
+    .address1  ( int_debug_address1 ),
+    .ce1       ( int_debug_ce1 ),
+    .we1       ( int_debug_be1 ),
+    .d1        ( int_debug_d1 ),
+    .q1        ( int_debug_q1 )
 );
 // int_samples
 MultiSine_BUS_A_s_axi_ram #(
@@ -238,7 +280,7 @@ end
 assign ARREADY = (rstate == RDIDLE);
 assign RDATA   = rdata;
 assign RRESP   = 2'b00;  // OKAY
-assign RVALID  = (rstate == RDDATA) & !int_phaseInc_read & !int_samples_read;
+assign RVALID  = (rstate == RDDATA) & !int_phaseInc_read & !int_debug_read & !int_samples_read;
 assign ar_hs   = ARVALID & ARREADY;
 assign raddr   = ARADDR[ADDR_BITS-1:0];
 
@@ -295,6 +337,9 @@ always @(posedge ACLK) begin
         end
         else if (int_phaseInc_read) begin
             rdata <= int_phaseInc_q1;
+        end
+        else if (int_debug_read) begin
+            rdata <= int_debug_q1;
         end
         else if (int_samples_read) begin
             rdata <= int_samples_q1;
@@ -462,6 +507,14 @@ assign int_phaseInc_ce1      = ar_hs | (int_phaseInc_write & WVALID);
 assign int_phaseInc_we1      = int_phaseInc_write & w_hs;
 assign int_phaseInc_be1      = int_phaseInc_we1 ? WSTRB : 'b0;
 assign int_phaseInc_d1       = WDATA;
+// debug
+assign int_debug_address0    = debug_address0;
+assign int_debug_ce0         = debug_ce0;
+assign int_debug_address1    = ar_hs? raddr[7:2] : waddr[7:2];
+assign int_debug_ce1         = ar_hs | (int_debug_write & WVALID);
+assign int_debug_we1         = int_debug_write & w_hs;
+assign int_debug_be1         = int_debug_we1 ? WSTRB : 'b0;
+assign int_debug_d1          = WDATA;
 // samples
 assign int_samples_address0  = samples_address0;
 assign int_samples_ce0       = samples_ce0;
@@ -490,6 +543,30 @@ always @(posedge ACLK) begin
             int_phaseInc_write <= 1'b1;
         else if (w_hs)
             int_phaseInc_write <= 1'b0;
+    end
+end
+
+// int_debug_read
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_debug_read <= 1'b0;
+    else if (ACLK_EN) begin
+        if (ar_hs && raddr >= ADDR_DEBUG_BASE && raddr <= ADDR_DEBUG_HIGH)
+            int_debug_read <= 1'b1;
+        else
+            int_debug_read <= 1'b0;
+    end
+end
+
+// int_debug_write
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_debug_write <= 1'b0;
+    else if (ACLK_EN) begin
+        if (aw_hs && AWADDR[ADDR_BITS-1:0] >= ADDR_DEBUG_BASE && AWADDR[ADDR_BITS-1:0] <= ADDR_DEBUG_HIGH)
+            int_debug_write <= 1'b1;
+        else if (w_hs)
+            int_debug_write <= 1'b0;
     end
 end
 

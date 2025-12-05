@@ -11,7 +11,7 @@ int main()
     FrequencyType ufBaseFrequency = 100.0;
     for(int s = 0; s < cVoices; s++)
     {
-        FrequencyType ufFrequency = ufBaseFrequency;// * static_cast<FrequencyType>(s+1);
+        FrequencyType ufFrequency = ufBaseFrequency * (s+1);
         frequency[s] = ufFrequency;
         phaseInc[s] = FrequencyToAccumPerSample(ufFrequency);
     }
@@ -20,8 +20,10 @@ int main()
     // Display Frequencies
     printf("index, Frequency, PhaseInc\n");
     for(int nSine = 0; nSine < cVoices; nSine ++)
-        printf("%d, %f, %f\n", nSine, frequency[nSine].to_float(), phaseInc[nSine].to_float());
-
+    {
+        printf("%d, %f, %f - %x\n", nSine, frequency[nSine].to_float(), phaseInc[nSine].to_float(), phaseInc[nSine].V.VAL);
+    }
+    
     FILE *fp = fopen("MultiSine.csv","w");
 	if (!fp) {
 		printf("Can't open file\n");
@@ -33,6 +35,8 @@ int main()
     {
 #if DEBUG        
         MultiSineMaster(phaseInc, sines, debug);
+        for(int nVoice = 0; nVoice < cVoices; nVoice++)
+            printf("Debug[%u] = %x\n", nVoice, debug[nVoice]);
 #else
         MultiSineMaster(phaseInc, sines);
 #endif

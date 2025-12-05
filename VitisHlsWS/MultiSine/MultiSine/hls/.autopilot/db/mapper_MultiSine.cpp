@@ -243,8 +243,8 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-extern "C" void MultiSine(Byte<4>*, Byte<4>*);
-extern "C" void apatb_MultiSine_hw(volatile void * __xlx_apatb_param_phaseInc, volatile void * __xlx_apatb_param_samples) {
+extern "C" void MultiSine(Byte<4>*, Byte<4>*, Byte<4>*);
+extern "C" void apatb_MultiSine_hw(volatile void * __xlx_apatb_param_phaseInc, volatile void * __xlx_apatb_param_samples, volatile void * __xlx_apatb_param_debug) {
 using hls::sim::createStream;
   // Collect __xlx_phaseInc__tmp_vec
 std::vector<Byte<4>> __xlx_phaseInc__tmp_vec;
@@ -262,8 +262,16 @@ __xlx_samples__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_samples)[i]);
   int __xlx_size_param_samples = 384;
   int __xlx_offset_param_samples = 0;
   int __xlx_offset_byte_param_samples = 0*4;
+  // Collect __xlx_debug__tmp_vec
+std::vector<Byte<4>> __xlx_debug__tmp_vec;
+for (size_t i = 0; i < 48; ++i){
+__xlx_debug__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_debug)[i]);
+}
+  int __xlx_size_param_debug = 48;
+  int __xlx_offset_param_debug = 0;
+  int __xlx_offset_byte_param_debug = 0*4;
   // DUT call
-  MultiSine(__xlx_phaseInc__tmp_vec.data(), __xlx_samples__tmp_vec.data());
+  MultiSine(__xlx_phaseInc__tmp_vec.data(), __xlx_samples__tmp_vec.data(), __xlx_debug__tmp_vec.data());
 // print __xlx_apatb_param_phaseInc
 for (size_t i = 0; i < __xlx_size_param_phaseInc; ++i) {
 ((Byte<4>*)__xlx_apatb_param_phaseInc)[i] = __xlx_phaseInc__tmp_vec[__xlx_offset_param_phaseInc+i];
@@ -271,5 +279,9 @@ for (size_t i = 0; i < __xlx_size_param_phaseInc; ++i) {
 // print __xlx_apatb_param_samples
 for (size_t i = 0; i < __xlx_size_param_samples; ++i) {
 ((Byte<4>*)__xlx_apatb_param_samples)[i] = __xlx_samples__tmp_vec[__xlx_offset_param_samples+i];
+}
+// print __xlx_apatb_param_debug
+for (size_t i = 0; i < __xlx_size_param_debug; ++i) {
+((Byte<4>*)__xlx_apatb_param_debug)[i] = __xlx_debug__tmp_vec[__xlx_offset_param_debug+i];
 }
 }

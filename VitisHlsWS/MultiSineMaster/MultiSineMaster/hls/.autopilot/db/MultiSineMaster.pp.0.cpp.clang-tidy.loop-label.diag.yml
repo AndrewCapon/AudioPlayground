@@ -1,12 +1,12 @@
 ---
-MainSourceFile:  /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+MainSourceFile:  /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
 Diagnostics:     
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_676_1:  '
     FileOffset:      676
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          281060
         Length:          0
         ReplacementText: 'VITIS_LOOP_676_1: '
@@ -15,7 +15,7 @@ Diagnostics:
     FileOffset:      690
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          281526
         Length:          0
         ReplacementText: 'VITIS_LOOP_690_1: '
@@ -24,7 +24,7 @@ Diagnostics:
     FileOffset:      704
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          281993
         Length:          0
         ReplacementText: 'VITIS_LOOP_704_1: '
@@ -33,7 +33,7 @@ Diagnostics:
     FileOffset:      1248
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          565395
         Length:          0
         ReplacementText: 'VITIS_LOOP_1248_1: '
@@ -172,7 +172,7 @@ Diagnostics:
     FileOffset:      61
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1232328
         Length:          0
         ReplacementText: 'VITIS_LOOP_61_1: '
@@ -181,7 +181,7 @@ Diagnostics:
     FileOffset:      117
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1233153
         Length:          0
         ReplacementText: 'VITIS_LOOP_117_1: '
@@ -190,7 +190,7 @@ Diagnostics:
     FileOffset:      289
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1235811
         Length:          0
         ReplacementText: 'VITIS_LOOP_289_1: '
@@ -199,7 +199,7 @@ Diagnostics:
     FileOffset:      449
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1238545
         Length:          0
         ReplacementText: 'VITIS_LOOP_449_1: '
@@ -208,7 +208,7 @@ Diagnostics:
     FileOffset:      629
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1241706
         Length:          0
         ReplacementText: 'VITIS_LOOP_629_1: '
@@ -217,7 +217,7 @@ Diagnostics:
     FileOffset:      633
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1241787
         Length:          0
         ReplacementText: 'VITIS_LOOP_633_2: '
@@ -226,7 +226,7 @@ Diagnostics:
     FileOffset:      743
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1244096
         Length:          0
         ReplacementText: 'VITIS_LOOP_743_1: '
@@ -235,7 +235,7 @@ Diagnostics:
     FileOffset:      840
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1245601
         Length:          0
         ReplacementText: 'VITIS_LOOP_840_1: '
@@ -244,7 +244,7 @@ Diagnostics:
     FileOffset:      859
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1245831
         Length:          0
         ReplacementText: 'VITIS_LOOP_859_2: '
@@ -253,7 +253,7 @@ Diagnostics:
     FileOffset:      1173
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1252035
         Length:          0
         ReplacementText: 'VITIS_LOOP_1173_1: '
@@ -262,7 +262,7 @@ Diagnostics:
     FileOffset:      1256
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1253638
         Length:          0
         ReplacementText: 'VITIS_LOOP_1256_1: '
@@ -271,7 +271,7 @@ Diagnostics:
     FileOffset:      68
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1261518
         Length:          0
         ReplacementText: 'VITIS_LOOP_68_1: '
@@ -280,7 +280,7 @@ Diagnostics:
     FileOffset:      74
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1261668
         Length:          0
         ReplacementText: 'VITIS_LOOP_74_2: '
@@ -289,7 +289,7 @@ Diagnostics:
     FileOffset:      78
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1261765
         Length:          0
         ReplacementText: 'VITIS_LOOP_78_3: '
@@ -298,7 +298,7 @@ Diagnostics:
     FileOffset:      145
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1263636
         Length:          0
         ReplacementText: 'VITIS_LOOP_145_4: '
@@ -307,7 +307,7 @@ Diagnostics:
     FileOffset:      151
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1263786
         Length:          0
         ReplacementText: 'VITIS_LOOP_151_5: '
@@ -316,7 +316,7 @@ Diagnostics:
     FileOffset:      155
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1263883
         Length:          0
         ReplacementText: 'VITIS_LOOP_155_6: '
@@ -325,7 +325,7 @@ Diagnostics:
     FileOffset:      170
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1264264
         Length:          0
         ReplacementText: 'VITIS_LOOP_170_7: '
@@ -334,7 +334,7 @@ Diagnostics:
     FileOffset:      178
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1264495
         Length:          0
         ReplacementText: 'VITIS_LOOP_178_8: '
@@ -343,7 +343,7 @@ Diagnostics:
     FileOffset:      243
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1267942
         Length:          0
         ReplacementText: 'VITIS_LOOP_243_9: '
@@ -352,7 +352,7 @@ Diagnostics:
     FileOffset:      249
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1268094
         Length:          0
         ReplacementText: 'VITIS_LOOP_249_10: '
@@ -361,7 +361,7 @@ Diagnostics:
     FileOffset:      253
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1268194
         Length:          0
         ReplacementText: 'VITIS_LOOP_253_11: '
@@ -370,7 +370,7 @@ Diagnostics:
     FileOffset:      268
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1268576
         Length:          0
         ReplacementText: 'VITIS_LOOP_268_12: '
@@ -379,7 +379,7 @@ Diagnostics:
     FileOffset:      276
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1268814
         Length:          0
         ReplacementText: 'VITIS_LOOP_276_13: '
@@ -388,7 +388,7 @@ Diagnostics:
     FileOffset:      505
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1284369
         Length:          0
         ReplacementText: 'VITIS_LOOP_505_14: '
@@ -397,7 +397,7 @@ Diagnostics:
     FileOffset:      511
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1284521
         Length:          0
         ReplacementText: 'VITIS_LOOP_511_15: '
@@ -406,7 +406,7 @@ Diagnostics:
     FileOffset:      515
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1284620
         Length:          0
         ReplacementText: 'VITIS_LOOP_515_16: '
@@ -415,7 +415,7 @@ Diagnostics:
     FileOffset:      525
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1284797
         Length:          0
         ReplacementText: 'VITIS_LOOP_525_17: '
@@ -424,7 +424,7 @@ Diagnostics:
     FileOffset:      529
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1284895
         Length:          0
         ReplacementText: 'VITIS_LOOP_529_18: '
@@ -433,7 +433,7 @@ Diagnostics:
     FileOffset:      539
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1285180
         Length:          0
         ReplacementText: 'VITIS_LOOP_539_19: '
@@ -442,7 +442,7 @@ Diagnostics:
     FileOffset:      547
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1285435
         Length:          0
         ReplacementText: 'VITIS_LOOP_547_20: '
@@ -451,7 +451,7 @@ Diagnostics:
     FileOffset:      908
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1317674
         Length:          0
         ReplacementText: 'VITIS_LOOP_908_21: '
@@ -460,7 +460,7 @@ Diagnostics:
     FileOffset:      914
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1317826
         Length:          0
         ReplacementText: 'VITIS_LOOP_914_22: '
@@ -469,7 +469,7 @@ Diagnostics:
     FileOffset:      918
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1317926
         Length:          0
         ReplacementText: 'VITIS_LOOP_918_23: '
@@ -478,7 +478,7 @@ Diagnostics:
     FileOffset:      1034
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1320602
         Length:          0
         ReplacementText: 'VITIS_LOOP_1034_1: '
@@ -487,7 +487,7 @@ Diagnostics:
     FileOffset:      1040
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1320752
         Length:          0
         ReplacementText: 'VITIS_LOOP_1040_2: '
@@ -496,7 +496,7 @@ Diagnostics:
     FileOffset:      1044
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1320850
         Length:          0
         ReplacementText: 'VITIS_LOOP_1044_3: '
@@ -505,7 +505,7 @@ Diagnostics:
     FileOffset:      1131
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1324320
         Length:          0
         ReplacementText: 'VITIS_LOOP_1131_4: '
@@ -514,7 +514,7 @@ Diagnostics:
     FileOffset:      1137
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1324471
         Length:          0
         ReplacementText: 'VITIS_LOOP_1137_5: '
@@ -523,7 +523,7 @@ Diagnostics:
     FileOffset:      1141
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1324570
         Length:          0
         ReplacementText: 'VITIS_LOOP_1141_6: '
@@ -532,7 +532,7 @@ Diagnostics:
     FileOffset:      1160
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1325050
         Length:          0
         ReplacementText: 'VITIS_LOOP_1160_7: '
@@ -541,7 +541,7 @@ Diagnostics:
     FileOffset:      1167
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1325292
         Length:          0
         ReplacementText: 'VITIS_LOOP_1167_8: '
@@ -550,7 +550,7 @@ Diagnostics:
     FileOffset:      1283
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1330864
         Length:          0
         ReplacementText: 'VITIS_LOOP_1283_9: '
@@ -559,7 +559,7 @@ Diagnostics:
     FileOffset:      1289
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1331016
         Length:          0
         ReplacementText: 'VITIS_LOOP_1289_10: '
@@ -568,7 +568,7 @@ Diagnostics:
     FileOffset:      1293
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1331115
         Length:          0
         ReplacementText: 'VITIS_LOOP_1293_11: '
@@ -577,7 +577,7 @@ Diagnostics:
     FileOffset:      1313
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1331624
         Length:          0
         ReplacementText: 'VITIS_LOOP_1313_12: '
@@ -586,7 +586,7 @@ Diagnostics:
     FileOffset:      1320
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1331873
         Length:          0
         ReplacementText: 'VITIS_LOOP_1320_13: '
@@ -595,7 +595,7 @@ Diagnostics:
     FileOffset:      1582
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1349230
         Length:          0
         ReplacementText: 'VITIS_LOOP_1582_14: '
@@ -604,7 +604,7 @@ Diagnostics:
     FileOffset:      1588
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1349382
         Length:          0
         ReplacementText: 'VITIS_LOOP_1588_15: '
@@ -613,7 +613,7 @@ Diagnostics:
     FileOffset:      1592
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1349482
         Length:          0
         ReplacementText: 'VITIS_LOOP_1592_16: '
@@ -622,7 +622,7 @@ Diagnostics:
     FileOffset:      1616
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1349956
         Length:          0
         ReplacementText: 'VITIS_LOOP_1616_17: '
@@ -631,7 +631,7 @@ Diagnostics:
     FileOffset:      1623
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1350223
         Length:          0
         ReplacementText: 'VITIS_LOOP_1623_18: '
@@ -640,7 +640,7 @@ Diagnostics:
     FileOffset:      2053
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1388794
         Length:          0
         ReplacementText: 'VITIS_LOOP_2053_19: '
@@ -649,7 +649,7 @@ Diagnostics:
     FileOffset:      2059
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1388946
         Length:          0
         ReplacementText: 'VITIS_LOOP_2059_20: '
@@ -658,7 +658,7 @@ Diagnostics:
     FileOffset:      2063
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1389046
         Length:          0
         ReplacementText: 'VITIS_LOOP_2063_21: '
@@ -667,7 +667,7 @@ Diagnostics:
     FileOffset:      2193
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1391666
         Length:          0
         ReplacementText: 'VITIS_LOOP_2193_1: '
@@ -676,7 +676,7 @@ Diagnostics:
     FileOffset:      2200
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1391829
         Length:          0
         ReplacementText: 'VITIS_LOOP_2200_2: '
@@ -685,7 +685,7 @@ Diagnostics:
     FileOffset:      2204
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1391921
         Length:          0
         ReplacementText: 'VITIS_LOOP_2204_3: '
@@ -694,7 +694,7 @@ Diagnostics:
     FileOffset:      2251
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1393530
         Length:          0
         ReplacementText: 'VITIS_LOOP_2251_4: '
@@ -703,7 +703,7 @@ Diagnostics:
     FileOffset:      2258
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1393692
         Length:          0
         ReplacementText: 'VITIS_LOOP_2258_5: '
@@ -712,7 +712,7 @@ Diagnostics:
     FileOffset:      2262
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1393784
         Length:          0
         ReplacementText: 'VITIS_LOOP_2262_6: '
@@ -721,7 +721,7 @@ Diagnostics:
     FileOffset:      2280
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1394157
         Length:          0
         ReplacementText: 'VITIS_LOOP_2280_7: '
@@ -730,7 +730,7 @@ Diagnostics:
     FileOffset:      2335
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1396623
         Length:          0
         ReplacementText: 'VITIS_LOOP_2335_8: '
@@ -739,7 +739,7 @@ Diagnostics:
     FileOffset:      2342
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1396790
         Length:          0
         ReplacementText: 'VITIS_LOOP_2342_9: '
@@ -748,7 +748,7 @@ Diagnostics:
     FileOffset:      2346
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1396883
         Length:          0
         ReplacementText: 'VITIS_LOOP_2346_10: '
@@ -757,7 +757,7 @@ Diagnostics:
     FileOffset:      2364
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1397264
         Length:          0
         ReplacementText: 'VITIS_LOOP_2364_11: '
@@ -766,7 +766,7 @@ Diagnostics:
     FileOffset:      2453
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1402705
         Length:          0
         ReplacementText: 'VITIS_LOOP_2453_12: '
@@ -775,7 +775,7 @@ Diagnostics:
     FileOffset:      2460
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1402873
         Length:          0
         ReplacementText: 'VITIS_LOOP_2460_13: '
@@ -784,7 +784,7 @@ Diagnostics:
     FileOffset:      2464
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1402967
         Length:          0
         ReplacementText: 'VITIS_LOOP_2464_14: '
@@ -793,7 +793,7 @@ Diagnostics:
     FileOffset:      2474
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1403138
         Length:          0
         ReplacementText: 'VITIS_LOOP_2474_15: '
@@ -802,7 +802,7 @@ Diagnostics:
     FileOffset:      2478
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1403229
         Length:          0
         ReplacementText: 'VITIS_LOOP_2478_16: '
@@ -811,7 +811,7 @@ Diagnostics:
     FileOffset:      2489
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1403511
         Length:          0
         ReplacementText: 'VITIS_LOOP_2489_17: '
@@ -820,7 +820,7 @@ Diagnostics:
     FileOffset:      2497
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1403698
         Length:          0
         ReplacementText: 'VITIS_LOOP_2497_18: '
@@ -829,7 +829,7 @@ Diagnostics:
     FileOffset:      2822
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1438168
         Length:          0
         ReplacementText: 'VITIS_LOOP_2822_19: '
@@ -838,7 +838,7 @@ Diagnostics:
     FileOffset:      2829
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1438336
         Length:          0
         ReplacementText: 'VITIS_LOOP_2829_20: '
@@ -847,7 +847,7 @@ Diagnostics:
     FileOffset:      2833
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1438430
         Length:          0
         ReplacementText: 'VITIS_LOOP_2833_21: '
@@ -856,7 +856,7 @@ Diagnostics:
     FileOffset:      2921
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1440232
         Length:          0
         ReplacementText: 'VITIS_LOOP_2921_1: '
@@ -865,7 +865,7 @@ Diagnostics:
     FileOffset:      2928
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1440340
         Length:          0
         ReplacementText: 'VITIS_LOOP_2928_2: '
@@ -874,7 +874,7 @@ Diagnostics:
     FileOffset:      2932
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1440411
         Length:          0
         ReplacementText: 'VITIS_LOOP_2932_3: '
@@ -883,7 +883,7 @@ Diagnostics:
     FileOffset:      2947
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1440699
         Length:          0
         ReplacementText: 'VITIS_LOOP_2947_4: '
@@ -892,7 +892,7 @@ Diagnostics:
     FileOffset:      2979
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1441913
         Length:          0
         ReplacementText: 'VITIS_LOOP_2979_5: '
@@ -901,7 +901,7 @@ Diagnostics:
     FileOffset:      2986
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1442024
         Length:          0
         ReplacementText: 'VITIS_LOOP_2986_6: '
@@ -910,7 +910,7 @@ Diagnostics:
     FileOffset:      2990
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1442097
         Length:          0
         ReplacementText: 'VITIS_LOOP_2990_7: '
@@ -919,7 +919,7 @@ Diagnostics:
     FileOffset:      3005
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1442392
         Length:          0
         ReplacementText: 'VITIS_LOOP_3005_8: '
@@ -928,7 +928,7 @@ Diagnostics:
     FileOffset:      3055
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1445725
         Length:          0
         ReplacementText: 'VITIS_LOOP_3055_9: '
@@ -937,7 +937,7 @@ Diagnostics:
     FileOffset:      3062
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1445836
         Length:          0
         ReplacementText: 'VITIS_LOOP_3062_10: '
@@ -946,7 +946,7 @@ Diagnostics:
     FileOffset:      3066
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1445909
         Length:          0
         ReplacementText: 'VITIS_LOOP_3066_11: '
@@ -955,7 +955,7 @@ Diagnostics:
     FileOffset:      3081
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1446205
         Length:          0
         ReplacementText: 'VITIS_LOOP_3081_12: '
@@ -964,7 +964,7 @@ Diagnostics:
     FileOffset:      3218
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1465517
         Length:          0
         ReplacementText: 'VITIS_LOOP_3218_13: '
@@ -973,7 +973,7 @@ Diagnostics:
     FileOffset:      3225
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1465631
         Length:          0
         ReplacementText: 'VITIS_LOOP_3225_14: '
@@ -982,7 +982,7 @@ Diagnostics:
     FileOffset:      3229
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1465706
         Length:          0
         ReplacementText: 'VITIS_LOOP_3229_15: '
@@ -991,7 +991,7 @@ Diagnostics:
     FileOffset:      3244
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1465993
         Length:          0
         ReplacementText: 'VITIS_LOOP_3244_16: '
@@ -1000,7 +1000,7 @@ Diagnostics:
     FileOffset:      3404
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1491603
         Length:          0
         ReplacementText: 'VITIS_LOOP_3404_17: '
@@ -1009,7 +1009,7 @@ Diagnostics:
     FileOffset:      3411
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1491717
         Length:          0
         ReplacementText: 'VITIS_LOOP_3411_18: '
@@ -1018,7 +1018,7 @@ Diagnostics:
     FileOffset:      3415
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1491794
         Length:          0
         ReplacementText: 'VITIS_LOOP_3415_19: '
@@ -1027,7 +1027,7 @@ Diagnostics:
     FileOffset:      703
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1525905
         Length:          0
         ReplacementText: 'VITIS_LOOP_703_1: '
@@ -1036,7 +1036,7 @@ Diagnostics:
     FileOffset:      921
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1534294
         Length:          0
         ReplacementText: 'VITIS_LOOP_921_1: '
@@ -1045,7 +1045,7 @@ Diagnostics:
     FileOffset:      1345
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1553278
         Length:          0
         ReplacementText: 'VITIS_LOOP_1345_1: '
@@ -1054,7 +1054,7 @@ Diagnostics:
     FileOffset:      240
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1568187
         Length:          0
         ReplacementText: 'VITIS_LOOP_240_1: '
@@ -1063,7 +1063,7 @@ Diagnostics:
     FileOffset:      268
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1568708
         Length:          0
         ReplacementText: 'VITIS_LOOP_268_2: '
@@ -1072,7 +1072,7 @@ Diagnostics:
     FileOffset:      48
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1584718
         Length:          0
         ReplacementText: 'VITIS_LOOP_48_1: '
@@ -1081,7 +1081,7 @@ Diagnostics:
     FileOffset:      109
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1585879
         Length:          0
         ReplacementText: 'VITIS_LOOP_109_2: '
@@ -1090,7 +1090,7 @@ Diagnostics:
     FileOffset:      123
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1586188
         Length:          0
         ReplacementText: 'VITIS_LOOP_123_3: '
@@ -1099,7 +1099,7 @@ Diagnostics:
     FileOffset:      153
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1586698
         Length:          0
         ReplacementText: 'VITIS_LOOP_153_4: '
@@ -1108,7 +1108,7 @@ Diagnostics:
     FileOffset:      281
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1588634
         Length:          0
         ReplacementText: 'VITIS_LOOP_281_1: '
@@ -1117,7 +1117,7 @@ Diagnostics:
     FileOffset:      301
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1588999
         Length:          0
         ReplacementText: 'VITIS_LOOP_301_2: '
@@ -1126,7 +1126,7 @@ Diagnostics:
     FileOffset:      315
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1589307
         Length:          0
         ReplacementText: 'VITIS_LOOP_315_3: '
@@ -1135,7 +1135,7 @@ Diagnostics:
     FileOffset:      433
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1591146
         Length:          0
         ReplacementText: 'VITIS_LOOP_433_1: '
@@ -1144,7 +1144,7 @@ Diagnostics:
     FileOffset:      447
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1591471
         Length:          0
         ReplacementText: 'VITIS_LOOP_447_2: '
@@ -1153,7 +1153,7 @@ Diagnostics:
     FileOffset:      33
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1594177
         Length:          0
         ReplacementText: 'VITIS_LOOP_33_1: '
@@ -1162,7 +1162,7 @@ Diagnostics:
     FileOffset:      183
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1597102
         Length:          0
         ReplacementText: 'VITIS_LOOP_183_1: '
@@ -1171,7 +1171,7 @@ Diagnostics:
     FileOffset:      248
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1598400
         Length:          0
         ReplacementText: 'VITIS_LOOP_248_1: '
@@ -1180,7 +1180,7 @@ Diagnostics:
     FileOffset:      16
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1609479
         Length:          0
         ReplacementText: 'VITIS_LOOP_16_1: '
@@ -1189,7 +1189,7 @@ Diagnostics:
     FileOffset:      27
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1609654
         Length:          0
         ReplacementText: 'VITIS_LOOP_27_1: '
@@ -1198,7 +1198,7 @@ Diagnostics:
     FileOffset:      38
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1609815
         Length:          0
         ReplacementText: 'VITIS_LOOP_38_1: '
@@ -1207,7 +1207,7 @@ Diagnostics:
     FileOffset:      49
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1609977
         Length:          0
         ReplacementText: 'VITIS_LOOP_49_1: '
@@ -1216,7 +1216,7 @@ Diagnostics:
     FileOffset:      60
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1610151
         Length:          0
         ReplacementText: 'VITIS_LOOP_60_1: '
@@ -1225,7 +1225,7 @@ Diagnostics:
     FileOffset:      71
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1610326
         Length:          0
         ReplacementText: 'VITIS_LOOP_71_1: '
@@ -1234,7 +1234,7 @@ Diagnostics:
     FileOffset:      82
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1610487
         Length:          0
         ReplacementText: 'VITIS_LOOP_82_1: '
@@ -1243,7 +1243,7 @@ Diagnostics:
     FileOffset:      93
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1610649
         Length:          0
         ReplacementText: 'VITIS_LOOP_93_1: '
@@ -1252,7 +1252,7 @@ Diagnostics:
     FileOffset:      26
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_mad_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1682652
         Length:          0
         ReplacementText: 'VITIS_LOOP_26_1: '
@@ -1261,7 +1261,7 @@ Diagnostics:
     FileOffset:      40
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cbrt_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1684428
         Length:          0
         ReplacementText: 'VITIS_LOOP_40_1: '
@@ -1270,7 +1270,7 @@ Diagnostics:
     FileOffset:      49
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1689021
         Length:          0
         ReplacementText: 'VITIS_LOOP_49_1: '
@@ -1279,7 +1279,7 @@ Diagnostics:
     FileOffset:      81
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1689763
         Length:          0
         ReplacementText: 'VITIS_LOOP_81_2: '
@@ -1288,35 +1288,35 @@ Diagnostics:
     FileOffset:      169
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
         Offset:          1691459
         Length:          0
         ReplacementText: 'VITIS_LOOP_169_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_19_1:  '
-    FileOffset:      19
+    Message:         'Added loop label VITIS_LOOP_20_1:  '
+    FileOffset:      20
     FilePath:        MultiSineMaster.cpp
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
-        Offset:          1744632
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+        Offset:          1758095
         Length:          0
-        ReplacementText: 'VITIS_LOOP_19_1: '
+        ReplacementText: 'VITIS_LOOP_20_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_45_1:  '
-    FileOffset:      45
-    FilePath:        MultiSineMaster.cpp
-    Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
-        Offset:          1745414
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_45_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_48_2:  '
+    Message:         'Added loop label VITIS_LOOP_48_1:  '
     FileOffset:      48
     FilePath:        MultiSineMaster.cpp
     Replacements:    
-      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
-        Offset:          1745492
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+        Offset:          1758809
         Length:          0
-        ReplacementText: 'VITIS_LOOP_48_2: '
+        ReplacementText: 'VITIS_LOOP_48_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_51_2:  '
+    FileOffset:      51
+    FilePath:        MultiSineMaster.cpp
+    Replacements:    
+      - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
+        Offset:          1758874
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_51_2: '
 ...

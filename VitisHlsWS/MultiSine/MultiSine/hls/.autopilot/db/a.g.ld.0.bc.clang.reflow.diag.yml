@@ -512,12 +512,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: MultiSine.cpp, Line: 43, Column: 2 }
-Function:        _Z9MultiSinePK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EE
+Function:        _Z9MultiSinePK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EEPj
 Args:            
   - Callee:          'InitSinTable(ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
     DebugLoc:        { File: MultiSine.cpp, Line: 14, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'MultiSine(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
+  - Caller:          'MultiSine(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*, unsigned int*)'
     DebugLoc:        { File: MultiSine.cpp, Line: 35, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -526,7 +526,7 @@ Pass:            inline
 Name:            NeverInline
 Function:        apatb_MultiSine_ir
 Args:            
-  - Callee:          'MultiSine(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
+  - Callee:          'MultiSine(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*, unsigned int*)'
     DebugLoc:        { File: MultiSine.cpp, Line: 35, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_MultiSine_ir
@@ -537,8 +537,8 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_49_2
+  - LoopName:        VITIS_LOOP_61_2
   - String:          '> at '
-  - LoopLoc:         'MultiSine.cpp:49:26'
+  - LoopLoc:         'MultiSine.cpp:61:26'
   - String:          ' '
 ...

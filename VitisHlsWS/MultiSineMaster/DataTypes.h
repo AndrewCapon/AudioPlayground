@@ -2,8 +2,8 @@
 
 #include <ap_fixed.h>
 
-#define UNROLL 0
-#define DEBUG 1
+#define MASTER 0
+#define DEBUG 0
 
 const int cVoices = 8;
 const int cBlockSize = 48;

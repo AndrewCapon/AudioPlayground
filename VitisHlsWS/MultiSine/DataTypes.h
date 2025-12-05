@@ -3,7 +3,7 @@
 #include <ap_fixed.h>
 
 #define MASTER 0
-#define DEBUG 0
+#define DEBUG 1
 
 const int cVoices = 8;
 const int cBlockSize = 48;

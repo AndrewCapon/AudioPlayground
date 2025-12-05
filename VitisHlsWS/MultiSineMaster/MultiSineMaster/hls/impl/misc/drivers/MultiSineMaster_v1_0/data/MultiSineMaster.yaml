@@ -17,7 +17,7 @@ config:
     - XMultisinemaster_Config
 required:
     - compatible
-    - reg: 2
+    - reg
 additionalProperties:
    - interrupts
    - interrupt-parent

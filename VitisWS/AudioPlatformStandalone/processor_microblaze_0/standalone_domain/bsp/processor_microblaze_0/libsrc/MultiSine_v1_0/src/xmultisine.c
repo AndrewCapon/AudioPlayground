@@ -171,6 +171,101 @@ u32 XMultisine_Read_phaseInc_Bytes(XMultisine *InstancePtr, int offset, char *da
     return length;
 }
 
+u32 XMultisine_Get_debug_BaseAddress(XMultisine *InstancePtr) {
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    return (InstancePtr->Bus_a_BaseAddress + XMULTISINE_BUS_A_ADDR_DEBUG_BASE);
+}
+
+u32 XMultisine_Get_debug_HighAddress(XMultisine *InstancePtr) {
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    return (InstancePtr->Bus_a_BaseAddress + XMULTISINE_BUS_A_ADDR_DEBUG_HIGH);
+}
+
+u32 XMultisine_Get_debug_TotalBytes(XMultisine *InstancePtr) {
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    return (XMULTISINE_BUS_A_ADDR_DEBUG_HIGH - XMULTISINE_BUS_A_ADDR_DEBUG_BASE + 1);
+}
+
+u32 XMultisine_Get_debug_BitWidth(XMultisine *InstancePtr) {
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    return XMULTISINE_BUS_A_WIDTH_DEBUG;
+}
+
+u32 XMultisine_Get_debug_Depth(XMultisine *InstancePtr) {
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    return XMULTISINE_BUS_A_DEPTH_DEBUG;
+}
+
+u32 XMultisine_Write_debug_Words(XMultisine *InstancePtr, int offset, word_type *data, int length) {
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr -> IsReady == XIL_COMPONENT_IS_READY);
+
+    int i;
+
+    if ((offset + length)*4 > (XMULTISINE_BUS_A_ADDR_DEBUG_HIGH - XMULTISINE_BUS_A_ADDR_DEBUG_BASE + 1))
+        return 0;
+
+    for (i = 0; i < length; i++) {
+        *(int *)(InstancePtr->Bus_a_BaseAddress + XMULTISINE_BUS_A_ADDR_DEBUG_BASE + (offset + i)*4) = *(data + i);
+    }
+    return length;
+}
+
+u32 XMultisine_Read_debug_Words(XMultisine *InstancePtr, int offset, word_type *data, int length) {
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr -> IsReady == XIL_COMPONENT_IS_READY);
+
+    int i;
+
+    if ((offset + length)*4 > (XMULTISINE_BUS_A_ADDR_DEBUG_HIGH - XMULTISINE_BUS_A_ADDR_DEBUG_BASE + 1))
+        return 0;
+
+    for (i = 0; i < length; i++) {
+        *(data + i) = *(int *)(InstancePtr->Bus_a_BaseAddress + XMULTISINE_BUS_A_ADDR_DEBUG_BASE + (offset + i)*4);
+    }
+    return length;
+}
+
+u32 XMultisine_Write_debug_Bytes(XMultisine *InstancePtr, int offset, char *data, int length) {
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr -> IsReady == XIL_COMPONENT_IS_READY);
+
+    int i;
+
+    if ((offset + length) > (XMULTISINE_BUS_A_ADDR_DEBUG_HIGH - XMULTISINE_BUS_A_ADDR_DEBUG_BASE + 1))
+        return 0;
+
+    for (i = 0; i < length; i++) {
+        *(char *)(InstancePtr->Bus_a_BaseAddress + XMULTISINE_BUS_A_ADDR_DEBUG_BASE + offset + i) = *(data + i);
+    }
+    return length;
+}
+
+u32 XMultisine_Read_debug_Bytes(XMultisine *InstancePtr, int offset, char *data, int length) {
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr -> IsReady == XIL_COMPONENT_IS_READY);
+
+    int i;
+
+    if ((offset + length) > (XMULTISINE_BUS_A_ADDR_DEBUG_HIGH - XMULTISINE_BUS_A_ADDR_DEBUG_BASE + 1))
+        return 0;
+
+    for (i = 0; i < length; i++) {
+        *(data + i) = *(char *)(InstancePtr->Bus_a_BaseAddress + XMULTISINE_BUS_A_ADDR_DEBUG_BASE + offset + i);
+    }
+    return length;
+}
+
 u32 XMultisine_Get_samples_BaseAddress(XMultisine *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

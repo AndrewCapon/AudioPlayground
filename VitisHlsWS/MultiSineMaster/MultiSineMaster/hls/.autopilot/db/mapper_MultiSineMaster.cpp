@@ -243,8 +243,8 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-extern "C" void MultiSineMaster(Byte<4>*, int, int, Byte<4>*);
-extern "C" void apatb_MultiSineMaster_hw(volatile void * __xlx_apatb_param_phaseInc, volatile void * __xlx_apatb_param_samples, volatile void * __xlx_apatb_param_debug) {
+extern "C" void MultiSineMaster(Byte<4>*, int, int);
+extern "C" void apatb_MultiSineMaster_hw(volatile void * __xlx_apatb_param_phaseInc, volatile void * __xlx_apatb_param_samples) {
 using hls::sim::createStream;
   // Collect __xlx_phaseInc_samples__tmp_vec
 std::vector<Byte<4>> __xlx_phaseInc_samples__tmp_vec;
@@ -260,16 +260,8 @@ __xlx_phaseInc_samples__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_samples)[
   int __xlx_size_param_samples = 384;
   int __xlx_offset_param_samples = 8;
   int __xlx_offset_byte_param_samples = 8*4;
-  // Collect __xlx_debug__tmp_vec
-std::vector<Byte<4>> __xlx_debug__tmp_vec;
-for (size_t i = 0; i < 48; ++i){
-__xlx_debug__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_debug)[i]);
-}
-  int __xlx_size_param_debug = 48;
-  int __xlx_offset_param_debug = 0;
-  int __xlx_offset_byte_param_debug = 0*4;
   // DUT call
-  MultiSineMaster(__xlx_phaseInc_samples__tmp_vec.data(), __xlx_offset_byte_param_phaseInc, __xlx_offset_byte_param_samples, __xlx_debug__tmp_vec.data());
+  MultiSineMaster(__xlx_phaseInc_samples__tmp_vec.data(), __xlx_offset_byte_param_phaseInc, __xlx_offset_byte_param_samples);
 // print __xlx_apatb_param_phaseInc
 for (size_t i = 0; i < __xlx_size_param_phaseInc; ++i) {
 ((Byte<4>*)__xlx_apatb_param_phaseInc)[i] = __xlx_phaseInc_samples__tmp_vec[__xlx_offset_param_phaseInc+i];
@@ -277,9 +269,5 @@ for (size_t i = 0; i < __xlx_size_param_phaseInc; ++i) {
 // print __xlx_apatb_param_samples
 for (size_t i = 0; i < __xlx_size_param_samples; ++i) {
 ((Byte<4>*)__xlx_apatb_param_samples)[i] = __xlx_phaseInc_samples__tmp_vec[__xlx_offset_param_samples+i];
-}
-// print __xlx_apatb_param_debug
-for (size_t i = 0; i < __xlx_size_param_debug; ++i) {
-((Byte<4>*)__xlx_apatb_param_debug)[i] = __xlx_debug__tmp_vec[__xlx_offset_param_debug+i];
 }
 }

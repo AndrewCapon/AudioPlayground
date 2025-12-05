@@ -3,17 +3,17 @@
     "basicblocks": 25,
     "calls": "",
     "file": "MultiSineMaster.cpp",
-    "fileloc": 31,
-    "instructions": 84,
+    "fileloc": 34,
+    "instructions": 73,
     "loads": {
-      "G": 4,
-      "T": 4
+      "G": 2,
+      "T": 3
     },
     "name": "MultiSineMaster",
     "stores": {
-      "G": 2,
-      "T": 2
+      "G": 1,
+      "T": 1
     },
-    "total_instructions": 84
+    "total_instructions": 73
   }
 }

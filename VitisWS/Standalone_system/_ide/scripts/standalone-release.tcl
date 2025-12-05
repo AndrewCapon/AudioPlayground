@@ -11,9 +11,9 @@
 # 
 connect -url tcp:127.0.0.1:3121
 targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328BE3E73A" && level==0 && jtag_device_ctx=="jsn-Cmod A7 - 35T-210328BE3E73A-0362d093-0"}
-fpga -file /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS/Standalone/_ide/bitstream/AudioPlatform_wrapper_09_00.bit
+fpga -file /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS/Standalone/_ide/bitstream/AudioPlatform_wrapper.bit
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS/AudioPlatformStandalone/export/AudioPlatformStandalone/hw/AudioPlatform_wrapper_09_00.xsa -regs
+loadhw -hw /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS/AudioPlatformStandalone/export/AudioPlatformStandalone/hw/AudioPlatform_wrapper.xsa -regs
 configparams mdm-detect-bscan-mask 2
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 rst -system

@@ -614,5 +614,8 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:38:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="MultiSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=samples bundle=BUS_A" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MultiSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=debug bundle=BUS_A" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
 </xilinx:hls_fe_msgs>
 

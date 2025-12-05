@@ -42,6 +42,18 @@ PhaseType accumulators[cVoices];
 
     InitSinTable(sine_lut);
 
+//     int sineIdx = 0;
+//     for(int i = 0; i < cVoices; i++)
+//     {
+// #pragma HLS pipeline off        
+//         for(int b = 0; b < cBlockSamples; b++)
+//         {
+//             accumulators[i] += phaseInc[i];
+//             PhaseIndexType address;
+//             address = PhaseIndexType(accumulators[i]); 
+//             samples[sineIdx++] = sine_lut[(int)address]; 
+//         }
+//     }
 
     for(int b = 0; b < cBlockSamples; b++)
     {

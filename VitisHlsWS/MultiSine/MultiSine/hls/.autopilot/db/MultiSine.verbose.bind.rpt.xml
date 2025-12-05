@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MultiSine'" level="0">
-<item name = "Date">Sat Nov 15 13:08:33 2025
+<item name = "Date">Fri Dec  5 10:35:44 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">MultiSine</item>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_46_1_VITIS_LOOP_49_2">387, 387, 5, 1, 1, 384, yes</column>
+<column name="- VITIS_LOOP_58_1_VITIS_LOOP_61_2">387, 387, 5, 1, 1, 384, yes</column>
 </table>
 </item>
 </section>

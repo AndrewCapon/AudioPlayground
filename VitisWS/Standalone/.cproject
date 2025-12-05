@@ -43,7 +43,7 @@
                                 								
                                 <option id="xilinx.gnu.mb.assembler.usele.1824877448" name="Produce little endian code (-mlittle-endian)" superClass="xilinx.gnu.mb.assembler.usele" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.both.asm.option.include.paths.1962899549" superClass="xilinx.gnu.both.asm.option.include.paths" valueType="includePath">
+                                <option id="xilinx.gnu.both.asm.option.include.paths.1962899549" name="Include Paths (-I)" superClass="xilinx.gnu.both.asm.option.include.paths" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/Shared}&quot;"/>
                                     								
@@ -89,7 +89,7 @@
                             							
                             <tool id="xilinx.gnu.mb.cxx.toolchain.compiler.debug.1245726824" name="MicroBlaze g++ compiler" superClass="xilinx.gnu.mb.cxx.toolchain.compiler.debug">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1630430949" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1630430949" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.c.optimization.level.none" valueType="enumerated"/>
                                 								
                                 <option id="xilinx.gnu.compiler.option.debugging.level.1484808431" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
                                 								
@@ -117,7 +117,7 @@
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.compiler.dircategory.includes.1583317490" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+                                <option id="xilinx.gnu.compiler.dircategory.includes.1583317490" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="${resolvePlatformFile:project=Standalone,fileType=bspInclude}"/>
                                     									
@@ -283,7 +283,7 @@
                                 								
                                 <option id="xilinx.gnu.mb.assembler.usele.1252860978" name="Produce little endian code (-mlittle-endian)" superClass="xilinx.gnu.mb.assembler.usele" value="true" valueType="boolean"/>
                                 								
-                                <option id="xilinx.gnu.both.asm.option.include.paths.861352776" superClass="xilinx.gnu.both.asm.option.include.paths" valueType="includePath">
+                                <option id="xilinx.gnu.both.asm.option.include.paths.861352776" name="Include Paths (-I)" superClass="xilinx.gnu.both.asm.option.include.paths" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/Shared}&quot;"/>
                                     								
@@ -357,7 +357,7 @@
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.compiler.dircategory.includes.1244541447" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+                                <option id="xilinx.gnu.compiler.dircategory.includes.1244541447" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="${resolvePlatformFile:project=Standalone,fileType=bspInclude}"/>
                                     									

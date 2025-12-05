@@ -539,6 +539,17 @@
           </spirit:reset>
         </spirit:register>
         <spirit:register>
+          <spirit:name>Memory_debug</spirit:name>
+          <spirit:displayName>Memory_debug</spirit:displayName>
+          <spirit:description>Memory debug</spirit:description>
+          <spirit:addressOffset>256</spirit:addressOffset>
+          <spirit:size spirit:format="long">256</spirit:size>
+          <spirit:access>read-write</spirit:access>
+          <spirit:reset>
+            <spirit:value spirit:format="long">0</spirit:value>
+          </spirit:reset>
+        </spirit:register>
+        <spirit:register>
           <spirit:name>Memory_samples</spirit:name>
           <spirit:displayName>Memory_samples</spirit:displayName>
           <spirit:description>Memory samples</spirit:description>
@@ -566,7 +577,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9d825279</spirit:value>
+            <spirit:value>c1574dbb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -582,7 +593,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3f476130</spirit:value>
+            <spirit:value>4c4b2e23</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -598,7 +609,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4dc0f7c1</spirit:value>
+            <spirit:value>0f838550</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -614,7 +625,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>046846f2</spirit:value>
+            <spirit:value>273aa7ff</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -628,7 +639,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dffec782</spirit:value>
+            <spirit:value>78a0681f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1083,7 +1094,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/MultiSine.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_79913c75</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_79ba7e47</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1226,8 +1237,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Multisine</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114349309</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-11-15T13:09:22Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114377997</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-12-05T11:17:17Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1236,8 +1247,8 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="309e4186"/>
-      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="aacdf9c0"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="efa473a0"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="e4bd622a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c918f4ca"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6bb6a4d9"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="e8d63c58"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="53fb7cc4"/>

@@ -108,6 +108,15 @@ u32 XMultisine_Write_phaseInc_Words(XMultisine *InstancePtr, int offset, word_ty
 u32 XMultisine_Read_phaseInc_Words(XMultisine *InstancePtr, int offset, word_type *data, int length);
 u32 XMultisine_Write_phaseInc_Bytes(XMultisine *InstancePtr, int offset, char *data, int length);
 u32 XMultisine_Read_phaseInc_Bytes(XMultisine *InstancePtr, int offset, char *data, int length);
+u32 XMultisine_Get_debug_BaseAddress(XMultisine *InstancePtr);
+u32 XMultisine_Get_debug_HighAddress(XMultisine *InstancePtr);
+u32 XMultisine_Get_debug_TotalBytes(XMultisine *InstancePtr);
+u32 XMultisine_Get_debug_BitWidth(XMultisine *InstancePtr);
+u32 XMultisine_Get_debug_Depth(XMultisine *InstancePtr);
+u32 XMultisine_Write_debug_Words(XMultisine *InstancePtr, int offset, word_type *data, int length);
+u32 XMultisine_Read_debug_Words(XMultisine *InstancePtr, int offset, word_type *data, int length);
+u32 XMultisine_Write_debug_Bytes(XMultisine *InstancePtr, int offset, char *data, int length);
+u32 XMultisine_Read_debug_Bytes(XMultisine *InstancePtr, int offset, char *data, int length);
 u32 XMultisine_Get_samples_BaseAddress(XMultisine *InstancePtr);
 u32 XMultisine_Get_samples_HighAddress(XMultisine *InstancePtr);
 u32 XMultisine_Get_samples_TotalBytes(XMultisine *InstancePtr);

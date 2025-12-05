@@ -316,6 +316,24 @@
             },
             "V10": {
                 "VT": "AC",
+                "BA": "0x00030000",
+                "HA": "0x0003FFFF",
+                "BP": "C_S_AXI_CONTROL_BASEADDR",
+                "HP": "C_S_AXI_CONTROL_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processor/microblaze_0",
+                "MI": "M_AXI_DP",
+                "MS": "SEG_MultiSineMaster_0_Reg",
+                "MV": "xilinx.com:ip:microblaze:11.0",
+                "SX": "/audio_components/MultiSineMaster_0",
+                "SI": "s_axi_control",
+                "SS": "Reg",
+                "SV": "xilinx.com:hls:MultiSineMaster:1.0",
+                "TM": "data",
+                "TU": "register"
+            },
+            "V11": {
+                "VT": "AC",
                 "BA": "0x40000000",
                 "HA": "0x4000FFFF",
                 "BP": "C_BASEADDR",
@@ -332,7 +350,7 @@
                 "TM": "data",
                 "TU": "register"
             },
-            "V11": {
+            "V12": {
                 "VT": "AC",
                 "BA": "0x40600000",
                 "HA": "0x4060FFFF",
@@ -350,7 +368,7 @@
                 "TM": "data",
                 "TU": "register"
             },
-            "V12": {
+            "V13": {
                 "VT": "AC",
                 "BA": "0x41200000",
                 "HA": "0x4120FFFF",
@@ -369,7 +387,7 @@
                 "TM": "data",
                 "TU": "register"
             },
-            "V13": {
+            "V14": {
                 "VT": "AC",
                 "BA": "0x41C00000",
                 "HA": "0x41C0FFFF",
@@ -387,7 +405,7 @@
                 "TM": "data",
                 "TU": "register"
             },
-            "V14": {
+            "V15": {
                 "VT": "AC",
                 "BA": "0x44A00000",
                 "HA": "0x44A0FFFF",
@@ -405,7 +423,7 @@
                 "TM": "data",
                 "TU": "register"
             },
-            "V15": {
+            "V16": {
                 "VT": "AC",
                 "BA": "0x60000000",
                 "HA": "0x6007FFFF",
@@ -423,7 +441,7 @@
                 "TM": "data",
                 "TU": "memory"
             },
-            "V16": {
+            "V17": {
                 "VT": "AC",
                 "BA": "0x60000000",
                 "HA": "0x6007FFFF",
@@ -441,7 +459,25 @@
                 "TM": "instruction",
                 "TU": "memory"
             },
-            "V17": {
+            "V18": {
+                "VT": "AC",
+                "BA": "0xC0000000",
+                "HA": "0xC0001FFF",
+                "BP": "C_S_AXI_BASEADDR",
+                "HP": "C_S_AXI_HIGHADDR",
+                "MA": "Data_m_axi_gmem",
+                "MX": "/audio_components/MultiSineMaster_0",
+                "MI": "m_axi_gmem",
+                "MS": "SEG_axi_bram_ctrl_0_Mem0",
+                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
+                "SX": "/audio_components/audio_bram/audio_bram/axi_bram_ctrl_0",
+                "SI": "S_AXI",
+                "SS": "Mem0",
+                "SV": "xilinx.com:ip:axi_bram_ctrl:4.1",
+                "TM": "both",
+                "TU": "memory"
+            },
+            "V19": {
                 "VT": "AC",
                 "BA": "0xC0000000",
                 "HA": "0xC0001FFF",
@@ -459,7 +495,7 @@
                 "TM": "both",
                 "TU": "memory"
             },
-            "V18": {
+            "V20": {
                 "VT": "AC",
                 "BA": "0xC0000000",
                 "HA": "0xC0001FFF",
@@ -477,7 +513,7 @@
                 "TM": "both",
                 "TU": "memory"
             },
-            "V19": {
+            "V21": {
                 "VT": "AC",
                 "BA": "0xC0000000",
                 "HA": "0xC0001FFF",
@@ -495,7 +531,7 @@
                 "TM": "data",
                 "TU": "memory"
             },
-            "V20": {
+            "V22": {
                 "VT": "ACE",
                 "BA": "0x00000000",
                 "HA": "0x0000FFFF",
@@ -513,17 +549,17 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V21": {
+            "V23": {
                 "VT": "ACE",
-                "BA": "0x00000000",
+                "BA": "0x00008000",
                 "HA": "0x0000FFFF",
                 "BP": "C_S_AXI_CONTROL_BASEADDR",
                 "HP": "C_S_AXI_CONTROL_HIGHADDR",
-                "MA": "Data",
-                "MX": "/audio_components/audio_bram/axi_cdma_0",
-                "MI": "M_AXI",
+                "MA": "Data_m_axi_gmem",
+                "MX": "/audio_components/MultiSineMaster_0",
+                "MI": "m_axi_gmem",
                 "MS": "SEG_SimpleSineMaster_0_Reg",
-                "MV": "xilinx.com:ip:axi_cdma:4.1",
+                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
                 "SX": "/audio_components/SimpleSineMaster_0",
                 "SI": "s_axi_control",
                 "SS": "Reg",
@@ -531,7 +567,43 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V22": {
+            "V24": {
+                "VT": "ACE",
+                "BA": "0x00008000",
+                "HA": "0x0000FFFF",
+                "BP": "C_S_AXI_CONTROL_BASEADDR",
+                "HP": "C_S_AXI_CONTROL_HIGHADDR",
+                "MA": "Data_m_axi_gmem",
+                "MX": "/audio_components/SimpleSineMaster_0",
+                "MI": "m_axi_gmem",
+                "MS": "SEG_SimpleSineMaster_0_Reg_1",
+                "MV": "xilinx.com:hls:SimpleSineMaster:1.0",
+                "SX": "/audio_components/SimpleSineMaster_0",
+                "SI": "s_axi_control",
+                "SS": "Reg",
+                "SV": "xilinx.com:hls:SimpleSineMaster:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V25": {
+                "VT": "ACE",
+                "BA": "0x00010000",
+                "HA": "0x0001FFFF",
+                "BP": "C_S_AXI_BUS_A_BASEADDR",
+                "HP": "C_S_AXI_BUS_A_HIGHADDR",
+                "MA": "Data_m_axi_gmem",
+                "MX": "/audio_components/MultiSineMaster_0",
+                "MI": "m_axi_gmem",
+                "MS": "SEG_MultiSine_0_Reg",
+                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
+                "SX": "/audio_components/MultiSine_0",
+                "SI": "s_axi_BUS_A",
+                "SS": "Reg",
+                "SV": "xilinx.com:hls:MultiSine:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V26": {
                 "VT": "ACE",
                 "BA": "0x00010000",
                 "HA": "0x0001FFFF",
@@ -549,7 +621,25 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V23": {
+            "V27": {
+                "VT": "ACE",
+                "BA": "0x00020000",
+                "HA": "0x0002FFFF",
+                "BP": "C_S_AXI_BUS_A_BASEADDR",
+                "HP": "C_S_AXI_BUS_A_HIGHADDR",
+                "MA": "Data_m_axi_gmem",
+                "MX": "/audio_components/MultiSineMaster_0",
+                "MI": "m_axi_gmem",
+                "MS": "SEG_SimpleSine_0_Reg",
+                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
+                "SX": "/audio_components/SimpleSine_0",
+                "SI": "s_axi_BUS_A",
+                "SS": "Reg",
+                "SV": "xilinx.com:hls:SimpleSine:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V28": {
                 "VT": "ACE",
                 "BA": "0x00020000",
                 "HA": "0x0002FFFF",
@@ -567,17 +657,35 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V24": {
+            "V29": {
+                "VT": "ACE",
+                "BA": "0x00030000",
+                "HA": "0x0003FFFF",
+                "BP": "C_S_AXI_CONTROL_BASEADDR",
+                "HP": "C_S_AXI_CONTROL_HIGHADDR",
+                "MA": "Data_m_axi_gmem",
+                "MX": "/audio_components/MultiSineMaster_0",
+                "MI": "m_axi_gmem",
+                "MS": "SEG_MultiSineMaster_0_Reg",
+                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
+                "SX": "/audio_components/MultiSineMaster_0",
+                "SI": "s_axi_control",
+                "SS": "Reg",
+                "SV": "xilinx.com:hls:MultiSineMaster:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V30": {
                 "VT": "ACE",
                 "BA": "0x40000000",
                 "HA": "0x4000FFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "Data_m_axi_gmem",
-                "MX": "/audio_components/SimpleSineMaster_0",
+                "MX": "/audio_components/MultiSineMaster_0",
                 "MI": "m_axi_gmem",
                 "MS": "SEG_axi_gpio_0_Reg",
-                "MV": "xilinx.com:hls:SimpleSineMaster:1.0",
+                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
                 "SX": "/outputs/axi_gpio_0",
                 "SI": "S_AXI",
                 "SS": "Reg",
@@ -585,17 +693,17 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V25": {
+            "V31": {
                 "VT": "ACE",
                 "BA": "0x40600000",
                 "HA": "0x4060FFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "Data_m_axi_gmem",
-                "MX": "/audio_components/SimpleSineMaster_0",
+                "MX": "/audio_components/MultiSineMaster_0",
                 "MI": "m_axi_gmem",
                 "MS": "SEG_axi_uartlite_0_Reg",
-                "MV": "xilinx.com:hls:SimpleSineMaster:1.0",
+                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
                 "SX": "/outputs/axi_uartlite_0",
                 "SI": "S_AXI",
                 "SS": "Reg",
@@ -603,17 +711,17 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V26": {
+            "V32": {
                 "VT": "ACE",
                 "BA": "0x41200000",
                 "HA": "0x4120FFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "Data_m_axi_gmem",
-                "MX": "/audio_components/SimpleSineMaster_0",
+                "MX": "/audio_components/MultiSineMaster_0",
                 "MI": "m_axi_gmem",
                 "MS": "SEG_microblaze_0_axi_intc_Reg",
-                "MV": "xilinx.com:hls:SimpleSineMaster:1.0",
+                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
                 "SX": "/processor/microblaze_0_axi_intc",
                 "SI": "s_axi",
                 "MM": "S_AXI",
@@ -622,17 +730,17 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V27": {
+            "V33": {
                 "VT": "ACE",
                 "BA": "0x41C00000",
                 "HA": "0x41C0FFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "Data_m_axi_gmem",
-                "MX": "/audio_components/SimpleSineMaster_0",
+                "MX": "/audio_components/MultiSineMaster_0",
                 "MI": "m_axi_gmem",
                 "MS": "SEG_axi_timer_0_Reg",
-                "MV": "xilinx.com:hls:SimpleSineMaster:1.0",
+                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
                 "SX": "/processor/axi_timer_0",
                 "SI": "S_AXI",
                 "SS": "Reg",
@@ -640,17 +748,17 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V28": {
+            "V34": {
                 "VT": "ACE",
                 "BA": "0x44A00000",
                 "HA": "0x44A0FFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "Data_m_axi_gmem",
-                "MX": "/audio_components/SimpleSineMaster_0",
+                "MX": "/audio_components/MultiSineMaster_0",
                 "MI": "m_axi_gmem",
                 "MS": "SEG_axi_cdma_0_Reg",
-                "MV": "xilinx.com:hls:SimpleSineMaster:1.0",
+                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
                 "SX": "/audio_components/audio_bram/axi_cdma_0",
                 "SI": "S_AXI_LITE",
                 "SS": "Reg",
@@ -795,6 +903,36 @@
             },
             {
                 "src": "V28",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V29",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V30",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V31",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V32",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V33",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V34",
                 "trg": "V2",
                 "EH": "2"
             }

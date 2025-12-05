@@ -605,17 +605,17 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="MultiSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=MultiSineMaster" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSineMaster.cpp:36:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="MultiSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return bundle=BUS_A" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSineMaster.cpp:37:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="MultiSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=phaseInc depth=cVoices offset=slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="MultiSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSineMaster.cpp:38:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="MultiSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=samples depth=cBlockSize offset=slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="MultiSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=phaseInc depth=cVoices offset=slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSineMaster.cpp:40:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="MultiSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=debug bundle=BUS_A" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSineMaster.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MultiSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=samples depth=cBlockSize*cBlockSamples offset=slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSineMaster.cpp:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MultiSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

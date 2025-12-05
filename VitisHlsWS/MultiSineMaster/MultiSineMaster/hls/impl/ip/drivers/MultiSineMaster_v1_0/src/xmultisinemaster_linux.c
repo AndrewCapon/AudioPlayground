@@ -129,10 +129,6 @@ int XMultisinemaster_Initialize(XMultisinemaster *InstancePtr, const char* Insta
     InstancePtr->Control_BaseAddress = (u32)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
     assert(InstancePtr->Control_BaseAddress);
 
-    // NOTE: slave interface 'Bus_a' should be mapped to uioX/map1
-    InstancePtr->Bus_a_BaseAddress = (u32)mmap(NULL, InfoPtr->maps[1].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 1 * getpagesize());
-    assert(InstancePtr->Bus_a_BaseAddress);
-
     InstancePtr->IsReady = XIL_COMPONENT_IS_READY;
 
     return XST_SUCCESS;
@@ -145,7 +141,6 @@ int XMultisinemaster_Release(XMultisinemaster *InstancePtr) {
     assert(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     munmap((void*)InstancePtr->Control_BaseAddress, InfoPtr->maps[0].size);
-    munmap((void*)InstancePtr->Bus_a_BaseAddress, InfoPtr->maps[1].size);
 
     close(InfoPtr->uio_fd);
 

@@ -3,8 +3,13 @@
 #include "fpm/fixed.hpp"
 
 #define MASTER 0
-#define DEBUG 0
+#define DEBUG_SIMPLESINE 0
+#define DEBUG_SIMPLESINEMASTER 0
+#define DEBUG_MULTISINE 0
+#define DEBUG_MULTISINEMASTER 0
+
 #define SINGLE_OSC 0
+
 const int cVoices = 8;
 const int cBlockSize = 48;
 const int cChannels = 1;

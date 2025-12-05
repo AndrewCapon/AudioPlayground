@@ -191,10 +191,10 @@ SECTIONS
    __bss_end = .;
 } > memory_emc_memory_axi_emc_0_MEM0_BASEADDR_MEM0
 
-.dma : {
-   __dma_start = .;
-   *(.dma)
-   __dma_end = .;
+.audio_ram : {
+   __audio_ram_start = .;
+   *(.audio_ram)
+   __audio_ram_end = .;
 } > audio_components_dma_dma_bram_axi_bram_ctrl_0_Mem0
 
 _SDA_BASE_ = __sdata_start + ((__sbss_end - __sdata_start) / 2 );

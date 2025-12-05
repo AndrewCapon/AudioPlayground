@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "AudioPlatform_axi_cdma_0_0",
-    "cell_name": "audio_components/dma/axi_cdma_0",
+    "cell_name": "audio_components/audio_bram/axi_cdma_0",
     "component_reference": "xilinx.com:ip:axi_cdma:4.1",
     "ip_revision": "33",
     "gen_directory": "../../../../../../VivadoProject.gen/sources_1/bd/AudioPlatform/ip/AudioPlatform_axi_cdma_0_0",

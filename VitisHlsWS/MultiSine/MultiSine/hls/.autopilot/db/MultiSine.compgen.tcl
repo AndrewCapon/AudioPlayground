@@ -31,6 +31,18 @@ phaseInc {
 	core_latency 1
 	byte_write 0
 }
+debug { 
+	dir X
+	width 32
+	depth 48
+	mode ap_memory
+	offset 256
+	offset_end 511
+	core_op ram_1p
+	core_impl auto
+	core_latency 1
+	byte_write 0
+}
 samples { 
 	dir O
 	width 24

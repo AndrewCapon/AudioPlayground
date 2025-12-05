@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSine/MultiSine/hls/.autopilot/db/MultiSine.pp.0.cpp</string>
+  <string>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSine/MultiSine/hls/.autopilot/db/MultiSine.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
@@ -3278,6 +3278,22 @@
       <integer>9</integer>
       <key>message</key>
       <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=samples bundle=BUS_A_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>MultiSine.cpp</string>
+      <key>line</key>
+      <integer>40</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=debug bundle=BUS_A_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>

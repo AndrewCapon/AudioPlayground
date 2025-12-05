@@ -1,9 +1,9 @@
 {
   "0": {
-    "basicblocks": 7,
+    "basicblocks": 5,
     "calls": "",
     "file": "MultiSineMaster.cpp",
-    "fileloc": 31,
+    "fileloc": 34,
     "instructions": 44,
     "loads": {
       "G": 2,
@@ -11,8 +11,8 @@
     },
     "name": "MultiSineMaster",
     "stores": {
-      "G": 2,
-      "T": 2
+      "G": 1,
+      "T": 1
     },
     "total_instructions": 44
   }

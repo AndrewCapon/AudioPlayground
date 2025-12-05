@@ -24,14 +24,11 @@ using namespace std;
 #define AUTOTB_TVOUT_phaseInc "../tv/cdatafile/c.MultiSineMaster.autotvout_phaseInc.dat"
 #define AUTOTB_TVIN_samples "../tv/cdatafile/c.MultiSineMaster.autotvin_samples.dat"
 #define AUTOTB_TVOUT_samples "../tv/cdatafile/c.MultiSineMaster.autotvout_samples.dat"
-#define AUTOTB_TVIN_debug "../tv/cdatafile/c.MultiSineMaster.autotvin_debug.dat"
-#define AUTOTB_TVOUT_debug "../tv/cdatafile/c.MultiSineMaster.autotvout_debug.dat"
 #define AUTOTB_TVIN_gmem "../tv/cdatafile/c.MultiSineMaster.autotvin_gmem.dat"
 #define AUTOTB_TVOUT_gmem "../tv/cdatafile/c.MultiSineMaster.autotvout_gmem.dat"
 
 
 // tvout file define:
-#define AUTOTB_TVOUT_PC_debug "../tv/rtldatafile/rtl.MultiSineMaster.autotvout_debug.dat"
 #define AUTOTB_TVOUT_PC_gmem "../tv/rtldatafile/rtl.MultiSineMaster.autotvout_gmem.dat"
 
 
@@ -1226,10 +1223,10 @@ namespace hls::sim
 
 
 extern "C"
-void MultiSineMaster_hw_stub_wrapper(void*, void*, void*);
+void MultiSineMaster_hw_stub_wrapper(void*, void*);
 
 extern "C"
-void apatb_MultiSineMaster_hw(void* __xlx_apatb_param_phaseInc, void* __xlx_apatb_param_samples, void* __xlx_apatb_param_debug)
+void apatb_MultiSineMaster_hw(void* __xlx_apatb_param_phaseInc, void* __xlx_apatb_param_samples)
 {
   hls::sim::Byte<4> __xlx_offset_byte_param_phaseInc;
   static hls::sim::Register port0 {
@@ -1294,44 +1291,10 @@ void apatb_MultiSineMaster_hw(void* __xlx_apatb_param_phaseInc, void* __xlx_apat
   __xlx_offset_byte_param_phaseInc = port2.offset[0]*4;
   __xlx_offset_byte_param_samples = port2.offset[1]*4;
 
-#ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port3 {
-#else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
-#endif
-    .width = 32,
-    .asize = 4,
-    .hbm = false,
-    .name = { "debug" },
-#ifdef POST_CHECK
-#ifdef USE_BINARY_TV_FILE
-    .reader = new hls::sim::Input(AUTOTB_TVOUT_PC_debug),
-#else
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_debug),
-#endif
-#else
-#ifdef USE_BINARY_TV_FILE
-    .owriter = new hls::sim::Output(AUTOTB_TVOUT_debug),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_debug),
-#endif
-#ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_debug),
-#else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_debug),
-#endif
-#endif
-    .hasWrite = { true },
-  };
-  port3.param = { __xlx_apatb_param_debug };
-  port3.mname = { "debug" };
-  port3.nbytes = { 192 };
-
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
     check(port2);
-    check(port3);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     tcl.containsVLA = 0;
@@ -1339,16 +1302,13 @@ void apatb_MultiSineMaster_hw(void* __xlx_apatb_param_phaseInc, void* __xlx_apat
     dump(port0, port0.iwriter, tcl.AESL_transaction);
     dump(port1, port1.iwriter, tcl.AESL_transaction);
     dump(port2, port2.iwriter, tcl.AESL_transaction);
-    dump(port3, port3.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
     port2.doTCL(tcl);
-    port3.doTCL(tcl);
     CodeState = CALL_C_DUT;
-    MultiSineMaster_hw_stub_wrapper(__xlx_apatb_param_phaseInc, __xlx_apatb_param_samples, __xlx_apatb_param_debug);
+    MultiSineMaster_hw_stub_wrapper(__xlx_apatb_param_phaseInc, __xlx_apatb_param_samples);
     CodeState = DUMP_OUTPUTS;
     dump(port2, port2.owriter, tcl.AESL_transaction);
-    dump(port3, port3.owriter, tcl.AESL_transaction);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

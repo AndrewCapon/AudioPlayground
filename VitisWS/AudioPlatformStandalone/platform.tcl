@@ -15,4 +15,23 @@ platform create -name {AudioPlatformStandalone}\
 platform write
 platform generate -domains 
 platform active {AudioPlatformStandalone}
+platform generate -domains 
+platform generate
+platform generate -domains 
+platform generate
+platform generate
+platform generate -domains 
+platform generate
+platform generate -domains 
+platform generate
+platform generate -domains 
+platform generate
+platform generate -domains 
+platform generate
+platform generate -domains 
+platform generate
+platform generate -domains 
+platform generate
+platform generate -domains standalone_domain 
+platform generate -domains 
 platform generate

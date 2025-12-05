@@ -38,6 +38,10 @@ port (
     phaseInc_address0     :in   STD_LOGIC_VECTOR(2 downto 0);
     phaseInc_ce0          :in   STD_LOGIC;
     phaseInc_q0           :out  STD_LOGIC_VECTOR(31 downto 0);
+    debug_address0        :in   STD_LOGIC_VECTOR(5 downto 0);
+    debug_ce0             :in   STD_LOGIC;
+    debug_we0             :in   STD_LOGIC;
+    debug_d0              :in   STD_LOGIC_VECTOR(31 downto 0);
     samples_address0      :in   STD_LOGIC_VECTOR(8 downto 0);
     samples_ce0           :in   STD_LOGIC;
     samples_we0           :in   STD_LOGIC;
@@ -74,6 +78,9 @@ end entity MultiSine_BUS_A_s_axi;
 -- 0x020 ~
 -- 0x03f : Memory 'phaseInc' (8 * 32b)
 --         Word n : bit [31:0] - phaseInc[n]
+-- 0x100 ~
+-- 0x1ff : Memory 'debug' (48 * 32b)
+--         Word n : bit [31:0] - debug[n]
 -- 0x800 ~
 -- 0xfff : Memory 'samples' (384 * 24b)
 --         Word n : bit [23:0] - samples[n]
@@ -91,6 +98,8 @@ architecture behave of MultiSine_BUS_A_s_axi is
     constant ADDR_ISR           : INTEGER := 16#00c#;
     constant ADDR_PHASEINC_BASE : INTEGER := 16#020#;
     constant ADDR_PHASEINC_HIGH : INTEGER := 16#03f#;
+    constant ADDR_DEBUG_BASE    : INTEGER := 16#100#;
+    constant ADDR_DEBUG_HIGH    : INTEGER := 16#1ff#;
     constant ADDR_SAMPLES_BASE  : INTEGER := 16#800#;
     constant ADDR_SAMPLES_HIGH  : INTEGER := 16#fff#;
     constant ADDR_BITS         : INTEGER := 12;
@@ -133,6 +142,19 @@ architecture behave of MultiSine_BUS_A_s_axi is
     signal int_phaseInc_q1     : UNSIGNED(31 downto 0);
     signal int_phaseInc_read   : STD_LOGIC;
     signal int_phaseInc_write  : STD_LOGIC;
+    signal int_debug_address0  : UNSIGNED(5 downto 0);
+    signal int_debug_ce0       : STD_LOGIC;
+    signal int_debug_be0       : UNSIGNED(3 downto 0);
+    signal int_debug_d0        : UNSIGNED(31 downto 0);
+    signal int_debug_q0        : UNSIGNED(31 downto 0);
+    signal int_debug_address1  : UNSIGNED(5 downto 0);
+    signal int_debug_ce1       : STD_LOGIC;
+    signal int_debug_we1       : STD_LOGIC;
+    signal int_debug_be1       : UNSIGNED(3 downto 0);
+    signal int_debug_d1        : UNSIGNED(31 downto 0);
+    signal int_debug_q1        : UNSIGNED(31 downto 0);
+    signal int_debug_read      : STD_LOGIC;
+    signal int_debug_write     : STD_LOGIC;
     signal int_samples_address0 : UNSIGNED(8 downto 0);
     signal int_samples_ce0     : STD_LOGIC;
     signal int_samples_be0     : UNSIGNED(3 downto 0);
@@ -200,6 +222,27 @@ port map (
      we1       => int_phaseInc_be1,
      d1        => int_phaseInc_d1,
      q1        => int_phaseInc_q1);
+-- int_debug
+int_debug : MultiSine_BUS_A_s_axi_ram
+generic map (
+     MEM_STYLE => "auto",
+     MEM_TYPE  => "T2P",
+     BYTES     => 4,
+     DEPTH     => 48,
+     AWIDTH    => log2(48))
+port map (
+     clk0      => ACLK,
+     address0  => int_debug_address0,
+     ce0       => int_debug_ce0,
+     we0       => int_debug_be0,
+     d0        => int_debug_d0,
+     q0        => int_debug_q0,
+     clk1      => ACLK,
+     address1  => int_debug_address1,
+     ce1       => int_debug_ce1,
+     we1       => int_debug_be1,
+     d1        => int_debug_d1,
+     q1        => int_debug_q1);
 -- int_samples
 int_samples : MultiSine_BUS_A_s_axi_ram
 generic map (
@@ -288,7 +331,7 @@ port map (
     ARREADY <= ARREADY_t;
     RDATA   <= STD_LOGIC_VECTOR(rdata_data);
     RRESP   <= "00";  -- OKAY
-    RVALID_t  <= '1' when (rstate = rddata) and (int_phaseInc_read = '0') and (int_samples_read = '0') else '0';
+    RVALID_t  <= '1' when (rstate = rddata) and (int_phaseInc_read = '0') and (int_debug_read = '0') and (int_samples_read = '0') else '0';
     RVALID    <= RVALID_t;
     ar_hs   <= ARVALID and ARREADY_t;
     raddr   <= UNSIGNED(ARADDR(ADDR_BITS-1 downto 0));
@@ -350,6 +393,8 @@ port map (
                     end case;
                 elsif (int_phaseInc_read = '1') then
                     rdata_data <= int_phaseInc_q1;
+                elsif (int_debug_read = '1') then
+                    rdata_data <= int_debug_q1;
                 elsif (int_samples_read = '1') then
                     rdata_data <= int_samples_q1;
                 end if;
@@ -545,6 +590,14 @@ port map (
     int_phaseInc_we1     <= '1' when int_phaseInc_write = '1' and w_hs = '1' else '0';
     int_phaseInc_be1     <= UNSIGNED(WSTRB) when int_phaseInc_we1 = '1' else (others=>'0');
     int_phaseInc_d1      <= UNSIGNED(WDATA);
+    -- debug
+    int_debug_address0   <= UNSIGNED(debug_address0);
+    int_debug_ce0        <= debug_ce0;
+    int_debug_address1   <= raddr(7 downto 2) when ar_hs = '1' else waddr(7 downto 2);
+    int_debug_ce1        <= '1' when ar_hs = '1' or (int_debug_write = '1' and WVALID  = '1') else '0';
+    int_debug_we1        <= '1' when int_debug_write = '1' and w_hs = '1' else '0';
+    int_debug_be1        <= UNSIGNED(WSTRB) when int_debug_we1 = '1' else (others=>'0');
+    int_debug_d1         <= UNSIGNED(WDATA);
     -- samples
     int_samples_address0 <= UNSIGNED(samples_address0);
     int_samples_ce0      <= samples_ce0;
@@ -578,6 +631,36 @@ port map (
                     int_phaseInc_write <= '1';
                 elsif (w_hs = '1') then
                     int_phaseInc_write <= '0';
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ARESET = '1') then
+                int_debug_read <= '0';
+            elsif (ACLK_EN = '1') then
+                if (ar_hs = '1' and raddr >= ADDR_DEBUG_BASE and raddr <= ADDR_DEBUG_HIGH) then
+                    int_debug_read <= '1';
+                else
+                    int_debug_read <= '0';
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ARESET = '1') then
+                int_debug_write <= '0';
+            elsif (ACLK_EN = '1') then
+                if (aw_hs = '1' and UNSIGNED(AWADDR(ADDR_BITS-1 downto 0)) >= ADDR_DEBUG_BASE and UNSIGNED(AWADDR(ADDR_BITS-1 downto 0)) <= ADDR_DEBUG_HIGH) then
+                    int_debug_write <= '1';
+                elsif (w_hs = '1') then
+                    int_debug_write <= '0';
                 end if;
             end if;
         end if;

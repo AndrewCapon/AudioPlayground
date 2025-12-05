@@ -11,7 +11,7 @@ int main()
     FrequencyType ufBaseFrequency = 100.0;
     for(int s = 0; s < cVoices; s++)
     {
-        FrequencyType ufFrequency = ufBaseFrequency;// * static_cast<FrequencyType>(s+1);
+        FrequencyType ufFrequency = ufBaseFrequency * (s+1);
         frequency[s] = ufFrequency;
         phaseInc[s] = FrequencyToAccumPerSample(ufFrequency);
     }
@@ -33,6 +33,8 @@ int main()
     {
 #if DEBUG        
         MultiSine(phaseInc, sines, debug);
+        for(int nVoice = 0; nVoice < cVoices; nVoice++)
+            printf("Debug[%u] = %x\n", nVoice, debug[nVoice]);
 #else
         MultiSine(phaseInc, sines);
 #endif

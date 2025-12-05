@@ -1,3 +1,3 @@
-relativeroot=/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster
-original_argv=--mode hls --package --config /home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/hls_config.cfg --work_dir MultiSineMaster 
+relativeroot=/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster
+original_argv=--mode hls --package --config /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/hls_config.cfg --work_dir MultiSineMaster 
 

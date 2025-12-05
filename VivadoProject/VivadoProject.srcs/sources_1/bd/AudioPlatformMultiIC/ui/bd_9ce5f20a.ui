@@ -1,0 +1,74 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.46272",
+   "Default View_TopLeft":"-93,-29",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port usb_uart -pg 1 -lvl 6 -x 2260 -y 360 -defaultsOSRD
+preplace port cellular_ram -pg 1 -lvl 6 -x 2260 -y 170 -defaultsOSRD
+preplace port debug -pg 1 -lvl 6 -x 2260 -y 340 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_sysclk -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_mclkOut -pg 1 -lvl 6 -x 2260 -y 380 -defaultsOSRD
+preplace port port-id_bclkOut -pg 1 -lvl 6 -x 2260 -y 400 -defaultsOSRD
+preplace port port-id_lrclkOut -pg 1 -lvl 6 -x 2260 -y 420 -defaultsOSRD
+preplace port port-id_dataOut -pg 1 -lvl 6 -x 2260 -y 440 -defaultsOSRD
+preplace port port-id_intr1 -pg 1 -lvl 6 -x 2260 -y 460 -defaultsOSRD
+preplace port port-id_intr2 -pg 1 -lvl 6 -x 2260 -y 520 -defaultsOSRD
+preplace port port-id_intr3 -pg 1 -lvl 6 -x 2260 -y 540 -defaultsOSRD
+preplace inst memory -pg 1 -lvl 5 -x 2080 -y 170 -defaultsOSRD
+preplace inst audio_components -pg 1 -lvl 2 -x 690 -y 230 -defaultsOSRD
+preplace inst clk_gen -pg 1 -lvl 1 -x 200 -y 110 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 3 -x 1130 -y 780 -defaultsOSRD
+preplace inst outputs -pg 1 -lvl 5 -x 2080 -y 410 -defaultsOSRD
+preplace inst processor -pg 1 -lvl 4 -x 1660 -y 190 -defaultsOSRD
+preplace netloc SimpleSine_0_interrupt 1 2 4 NJ 220 1430 540 NJ 540 2230J
+preplace netloc audio_components_multisine_interrupt 1 2 4 NJ 260 1410 550 NJ 550 2240J
+preplace netloc axi_cdma_0_cdma_introut 1 2 2 950J 210 1430
+preplace netloc axi_uartlite_0_interrupt 1 3 3 1470 560 NJ 560 2210
+preplace netloc clk_gen_clk_100 1 1 4 420 20 940 120 1460 350 1940
+preplace netloc clk_gen_clk_300 1 1 4 380J 360 920 390 1340J 420 1840J
+preplace netloc clk_gen_clk_audio 1 1 4 410J 100 NJ 100 1420J 400 1890
+preplace netloc mdm_1_debug_sys_rst 1 0 5 20 0 NJ 0 NJ 0 NJ 0 1850
+preplace netloc multisinemaster_int_1 1 2 2 NJ 300 N
+preplace netloc outputs_bclkOut_0 1 5 1 NJ 400
+preplace netloc outputs_lrclkOut_0 1 5 1 NJ 420
+preplace netloc outputs_mclkOut_2 1 5 1 NJ 380
+preplace netloc outputs_moreDataNeededInterrupt_0 1 3 3 1480 530 NJ 530 2220
+preplace netloc outputs_sdataOut_0 1 5 1 NJ 440
+preplace netloc reset_1 1 0 1 NJ 80
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 1 4 390J 10 NJ 10 NJ 10 1900
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 1 3 NJ 80 NJ 80 1340
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 1 4 400 350 950 350 1450 360 1950
+preplace netloc simplesinemaster_int_1 1 2 2 NJ 280 N
+preplace netloc sys_clock_1 1 0 1 NJ 100
+preplace netloc S02_AXI_1 1 2 1 960 180n
+preplace netloc audio_components_m_axi_multisinemaster 1 2 1 930 200n
+preplace netloc axi_cdma_0_M_AXI 1 2 1 970 160n
+preplace netloc axi_emc_0_EMC_INTF 1 5 1 NJ 170
+preplace netloc axi_gpio_0_GPIO 1 5 1 NJ 340
+preplace netloc axi_interconnect_0_M00_AXI 1 1 3 440 30 NJ 30 1290
+preplace netloc axi_interconnect_0_M01_AXI 1 3 1 1350 80n
+preplace netloc axi_interconnect_0_M02_AXI 1 1 3 450 40 NJ 40 1300
+preplace netloc axi_interconnect_0_M03_AXI 1 1 3 460 50 NJ 50 1310
+preplace netloc axi_interconnect_0_M04_AXI 1 3 2 1460 390 NJ
+preplace netloc axi_interconnect_0_M05_AXI 1 3 2 1450 370 NJ
+preplace netloc axi_interconnect_0_M08_AXI 1 1 3 480 70 NJ 70 1330
+preplace netloc axi_interconnect_0_M09_AXI 1 1 3 430 90 NJ 90 1280
+preplace netloc axi_uartlite_0_UART 1 5 1 NJ 360
+preplace netloc interconnect_M07_AXI 1 3 1 1440 100n
+preplace netloc microblaze_0_M_AXI_DC 1 4 1 1870 110n
+preplace netloc microblaze_0_M_AXI_DP 1 2 3 980 20 NJ 20 1840
+preplace netloc microblaze_0_M_AXI_IC 1 4 1 1890 130n
+preplace netloc microblaze_0_dlmb_1 1 4 1 1880 130n
+preplace netloc microblaze_0_ilmb_1 1 4 1 1860 150n
+preplace netloc processor_M0_AXIS 1 4 1 1880 190n
+preplace netloc s_axi_multisine_1 1 1 3 470 60 NJ 60 1320
+levelinfo -pg 1 0 200 690 1130 1660 2080 2260
+pagesize -pg 1 -db -bbox -sgen -100 -10 2400 1170
+"
+}
+{
+   "da_clkrst_cnt":"2"
+}

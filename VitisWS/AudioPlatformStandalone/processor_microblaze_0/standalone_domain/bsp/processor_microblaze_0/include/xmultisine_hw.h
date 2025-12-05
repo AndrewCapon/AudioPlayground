@@ -28,6 +28,9 @@
 // 0x020 ~
 // 0x03f : Memory 'phaseInc' (8 * 32b)
 //         Word n : bit [31:0] - phaseInc[n]
+// 0x100 ~
+// 0x1ff : Memory 'debug' (48 * 32b)
+//         Word n : bit [31:0] - debug[n]
 // 0x800 ~
 // 0xfff : Memory 'samples' (384 * 24b)
 //         Word n : bit [23:0] - samples[n]
@@ -42,6 +45,10 @@
 #define XMULTISINE_BUS_A_ADDR_PHASEINC_HIGH 0x03f
 #define XMULTISINE_BUS_A_WIDTH_PHASEINC     32
 #define XMULTISINE_BUS_A_DEPTH_PHASEINC     8
+#define XMULTISINE_BUS_A_ADDR_DEBUG_BASE    0x100
+#define XMULTISINE_BUS_A_ADDR_DEBUG_HIGH    0x1ff
+#define XMULTISINE_BUS_A_WIDTH_DEBUG        32
+#define XMULTISINE_BUS_A_DEPTH_DEBUG        48
 #define XMULTISINE_BUS_A_ADDR_SAMPLES_BASE  0x800
 #define XMULTISINE_BUS_A_ADDR_SAMPLES_HIGH  0xfff
 #define XMULTISINE_BUS_A_WIDTH_SAMPLES      24

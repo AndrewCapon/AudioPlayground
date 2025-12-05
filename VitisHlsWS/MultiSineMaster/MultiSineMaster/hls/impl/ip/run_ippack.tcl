@@ -6,8 +6,8 @@
 # 
 # ==============================================================
 source -notrace "/home/andrewcapon/Xilinx/Vitis/2024.2/common/scripts/ipxhls.tcl"
-set ip_dir "/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/impl/ip"
-set data_file "/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/hls_data.json"
+set ip_dir "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/impl/ip"
+set data_file "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/hls_data.json"
 set ip_types "vitis sysgen"
 if { [catch {::ipx::utils::package_hls_ip $ip_dir $data_file $ip_types } res] } {
   puts "Caught error:\n$::errorInfo"

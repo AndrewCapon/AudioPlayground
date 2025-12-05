@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp</string>
+  <string>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
@@ -3241,27 +3241,11 @@
       <key>filename</key>
       <string>MultiSineMaster.cpp</string>
       <key>line</key>
-      <integer>36</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSineMaster_XLX_SEP_ PragmaOptions=mode=s_axilite port=return bundle=BUS_A_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>MultiSineMaster.cpp</string>
-      <key>line</key>
       <integer>37</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSineMaster_XLX_SEP_ PragmaOptions=m_axi port=phaseInc depth=cVoices offset=slave_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSineMaster_XLX_SEP_ PragmaOptions=mode=s_axilite port=return_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3277,7 +3261,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSineMaster_XLX_SEP_ PragmaOptions=m_axi port=samples depth=cBlockSize offset=slave_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSineMaster_XLX_SEP_ PragmaOptions=m_axi port=phaseInc depth=cVoices offset=slave_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3289,11 +3273,27 @@
       <key>filename</key>
       <string>MultiSineMaster.cpp</string>
       <key>line</key>
-      <integer>40</integer>
+      <integer>39</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSineMaster_XLX_SEP_ PragmaOptions=mode=s_axilite port=debug bundle=BUS_A_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSineMaster_XLX_SEP_ PragmaOptions=m_axi port=samples depth=cBlockSize*cBlockSamples offset=slave_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>MultiSineMaster.cpp</string>
+      <key>line</key>
+      <integer>50</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSineMaster_XLX_SEP_ PragmaOptions=off_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>

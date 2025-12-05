@@ -4,6 +4,7 @@
 #include "SimpleSine.h"
 #include "SimpleSineMaster.h"
 #include "MultiSine.h"
+#include "MultiSineMaster.h"
 #include "Bram.h"
 #include "CodeTimer.h"
 #include "microblaze_sleep.h"
@@ -14,18 +15,27 @@ int  __attribute__((section(".close_coupled_ram"))) nShit;
 
 #define TEST_BUFFER_WORDS 16
 
-volatile uint32_t SrcBufferDma[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".dma")));
-volatile uint32_t DestBufferDma[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".dma")));
+volatile uint32_t SrcBufferDma[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+volatile uint32_t DestBufferDma[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
 
-volatile uint32_t SamplesDMA[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".dma")));
+volatile uint32_t SamplesStorage[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+volatile uint32_t PhaseIncsStorage[cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+
+#if DEBUG_MULTISINEMASTER | DEBUG_MULTISINE | DEBUG_SIMPLESINE | DEBUG_SIMPLESINEMASTER
+volatile uint32_t DebugStorage[cBlockSamples] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+#else
+volatile uint32_t *DebugStorage = nullptr;
+#endif
+
 //volatile uint32_t SamplesDMA[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".local")));
 
 
 SystemHandlerStandalone systemHandler;
 HardwareSystem hardwareSystem(systemHandler);
-SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesDMA);
-SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesDMA);
+SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorage);
+SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorage);
 MultiSine multiSine(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID);
+MultiSineMaster multiSineMaster(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID, SamplesStorage, PhaseIncsStorage, DebugStorage);
 
 
 int main(void)
@@ -47,10 +57,11 @@ int main(void)
 		Debug &debug = hardwareSystem.GetDebug();
 		for(uint8_t uVoice = 0; uVoice < cVoices; uVoice++)
 		{
-			float fFrequency = 1000.0f * (uVoice+1);
+			float fFrequency = 100.0f * (uVoice+1);
 			simpleSine.SetFrequency(uVoice, fFrequency);
 			simpleSineMaster.SetFrequency(uVoice, fFrequency);
 			multiSine.SetFrequency(uVoice, fFrequency);
+			multiSineMaster.SetFrequency(uVoice, fFrequency);
 		}
 
 //		while(1)
@@ -93,8 +104,6 @@ int main(void)
 		uint16_t uCount = 0;
 		uint16_t uVoice = 0;
 
-		volatile uint32_t *pMonoSineSampleBuffer  = simpleSine.GetSampleBuffer(uVoice);
-		volatile uint32_t *pMonoSineSampleBuffer2 = multiSine.GetSampleBuffer(uVoice);
 
 
 		// for some reason we need the following to get the i2s going, why?
@@ -114,16 +123,17 @@ int main(void)
       			uVoice = 0;
 
       		uCount = 0;
-      		pMonoSineSampleBuffer = simpleSine.GetSampleBuffer(uVoice);
-      		pMonoSineSampleBuffer2 = multiSine.GetSampleBuffer(uVoice);
       	}
+
+    		volatile uint32_t *pMonoSineSampleBuffer  = simpleSineMaster.GetSampleBuffer(uVoice);
+    		volatile uint32_t *pMonoSineSampleBuffer2 = multiSineMaster.GetSampleBuffer(uVoice);
 
 				debug.SetDebug(Debug::dpPio29_processing, 1);
 				simpleSineMaster.ProcessBlocking();
 				debug.SetDebug(Debug::dpPio29_processing, 0);
 
 				debug.SetDebug(Debug::dpPio29_processing, 1);
-				multiSine.ProcessBlocking();
+				multiSineMaster.ProcessBlocking();
 				debug.SetDebug(Debug::dpPio29_processing, 0);
 
 				debug.SetDebug(Debug::dpPio31_sampleCopy, 1);

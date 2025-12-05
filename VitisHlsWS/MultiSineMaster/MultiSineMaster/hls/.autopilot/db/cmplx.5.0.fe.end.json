@@ -2,19 +2,18 @@
     "0": {
         "name": "MultiSineMaster",
         "file": "MultiSineMaster.cpp",
-        "fileloc": "31",
-        "instructions": "80",
-        "total_instructions": "80",
+        "fileloc": "34",
+        "instructions": "110",
+        "total_instructions": "110",
         "calls": "",
-        "basicblocks": "5",
+        "basicblocks": "11",
         "loads": {
             "G": "2",
-            "L": "5"
+            "L": "12"
         },
         "stores": {
             "G": "1",
-            "L": "10",
-            "T": "1"
+            "L": "19"
         },
         "loops": {
             "L": "1"

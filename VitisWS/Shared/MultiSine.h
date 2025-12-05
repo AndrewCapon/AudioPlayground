@@ -45,7 +45,7 @@ public:
 
 	uint32_t *GetDebugBuffer(void)
 	{
-#if DEBUG
+#if DEBUG_MULTISINE
 		return reinterpret_cast<uint32_t *>(XMultisine_Get_debug_BaseAddress(&m_instance));
 #else
 		assert (false && "Don't call this");

@@ -24,6 +24,8 @@ using namespace std;
 #define AUTOTB_TVOUT_phaseInc "../tv/cdatafile/c.MultiSine.autotvout_phaseInc.dat"
 #define AUTOTB_TVIN_samples "../tv/cdatafile/c.MultiSine.autotvin_samples.dat"
 #define AUTOTB_TVOUT_samples "../tv/cdatafile/c.MultiSine.autotvout_samples.dat"
+#define AUTOTB_TVIN_debug "../tv/cdatafile/c.MultiSine.autotvin_debug.dat"
+#define AUTOTB_TVOUT_debug "../tv/cdatafile/c.MultiSine.autotvout_debug.dat"
 
 
 // tvout file define:
@@ -1221,10 +1223,10 @@ namespace hls::sim
 
 
 extern "C"
-void MultiSine_hw_stub_wrapper(void*, void*);
+void MultiSine_hw_stub_wrapper(void*, void*, void*);
 
 extern "C"
-void apatb_MultiSine_hw(void* __xlx_apatb_param_phaseInc, void* __xlx_apatb_param_samples)
+void apatb_MultiSine_hw(void* __xlx_apatb_param_phaseInc, void* __xlx_apatb_param_samples, void* __xlx_apatb_param_debug)
 {
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port0 {
@@ -1283,6 +1285,30 @@ void apatb_MultiSine_hw(void* __xlx_apatb_param_phaseInc, void* __xlx_apatb_para
   port1.mname = { "samples" };
   port1.nbytes = { 1536 };
 
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port2 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port2 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "debug" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_debug),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_debug),
+#endif
+#endif
+    .hasWrite = { false },
+  };
+  port2.param = { __xlx_apatb_param_debug };
+  port2.mname = { "debug" };
+  port2.nbytes = { 192 };
+
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
@@ -1293,10 +1319,12 @@ void apatb_MultiSine_hw(void* __xlx_apatb_param_phaseInc, void* __xlx_apatb_para
     CodeState = DUMP_INPUTS;
     dump(port0, port0.iwriter, tcl.AESL_transaction);
     dump(port1, port1.iwriter, tcl.AESL_transaction);
+    dump(port2, port2.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
+    port2.doTCL(tcl);
     CodeState = CALL_C_DUT;
-    MultiSine_hw_stub_wrapper(__xlx_apatb_param_phaseInc, __xlx_apatb_param_samples);
+    MultiSine_hw_stub_wrapper(__xlx_apatb_param_phaseInc, __xlx_apatb_param_samples, __xlx_apatb_param_debug);
     CodeState = DUMP_OUTPUTS;
     dump(port1, port1.owriter, tcl.AESL_transaction);
     tcl.AESL_transaction++;

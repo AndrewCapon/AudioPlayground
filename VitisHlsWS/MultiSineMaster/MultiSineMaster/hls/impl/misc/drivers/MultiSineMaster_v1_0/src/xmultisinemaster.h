@@ -46,13 +46,11 @@ typedef struct {
     u16 DeviceId;
 #endif
     u32 Control_BaseAddress;
-    u32 Bus_a_BaseAddress;
 } XMultisinemaster_Config;
 #endif
 
 typedef struct {
     u32 Control_BaseAddress;
-    u32 Bus_a_BaseAddress;
     u32 IsReady;
 } XMultisinemaster;
 
@@ -105,15 +103,6 @@ void XMultisinemaster_Set_phaseInc(XMultisinemaster *InstancePtr, u32 Data);
 u32 XMultisinemaster_Get_phaseInc(XMultisinemaster *InstancePtr);
 void XMultisinemaster_Set_samples(XMultisinemaster *InstancePtr, u32 Data);
 u32 XMultisinemaster_Get_samples(XMultisinemaster *InstancePtr);
-u32 XMultisinemaster_Get_debug_BaseAddress(XMultisinemaster *InstancePtr);
-u32 XMultisinemaster_Get_debug_HighAddress(XMultisinemaster *InstancePtr);
-u32 XMultisinemaster_Get_debug_TotalBytes(XMultisinemaster *InstancePtr);
-u32 XMultisinemaster_Get_debug_BitWidth(XMultisinemaster *InstancePtr);
-u32 XMultisinemaster_Get_debug_Depth(XMultisinemaster *InstancePtr);
-u32 XMultisinemaster_Write_debug_Words(XMultisinemaster *InstancePtr, int offset, word_type *data, int length);
-u32 XMultisinemaster_Read_debug_Words(XMultisinemaster *InstancePtr, int offset, word_type *data, int length);
-u32 XMultisinemaster_Write_debug_Bytes(XMultisinemaster *InstancePtr, int offset, char *data, int length);
-u32 XMultisinemaster_Read_debug_Bytes(XMultisinemaster *InstancePtr, int offset, char *data, int length);
 
 void XMultisinemaster_InterruptGlobalEnable(XMultisinemaster *InstancePtr);
 void XMultisinemaster_InterruptGlobalDisable(XMultisinemaster *InstancePtr);

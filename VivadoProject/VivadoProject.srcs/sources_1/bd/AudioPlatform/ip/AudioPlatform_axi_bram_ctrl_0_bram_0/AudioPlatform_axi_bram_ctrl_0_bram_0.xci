@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "AudioPlatform_axi_bram_ctrl_0_bram_0",
-    "cell_name": "audio_components/dma/dma_bram/axi_bram_ctrl_0_bram",
+    "cell_name": "audio_components/audio_bram/audio_bram/axi_bram_ctrl_0_bram",
     "component_reference": "xilinx.com:ip:blk_mem_gen:8.4",
     "ip_revision": "9",
     "gen_directory": "../../../../../../VivadoProject.gen/sources_1/bd/AudioPlatform/ip/AudioPlatform_axi_bram_ctrl_0_bram_0",

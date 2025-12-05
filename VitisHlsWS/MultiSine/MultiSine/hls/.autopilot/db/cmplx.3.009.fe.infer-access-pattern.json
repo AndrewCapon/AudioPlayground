@@ -3,8 +3,8 @@
     "basicblocks": 7,
     "calls": "",
     "file": "MultiSine.cpp",
-    "fileloc": 33,
-    "instructions": 40,
+    "fileloc": 31,
+    "instructions": 42,
     "loads": {
       "G": 2,
       "T": 1
@@ -14,6 +14,6 @@
       "G": 2,
       "T": 1
     },
-    "total_instructions": 40
+    "total_instructions": 42
   }
 }
