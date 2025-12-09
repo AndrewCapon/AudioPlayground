@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MultiSineMaster'" level="0">
-<item name = "Date">Fri Dec  5 10:51:16 2025
+<item name = "Date">Mon Dec  8 08:46:28 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">MultiSineMaster</item>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_48_1_VITIS_LOOP_51_2">401, 401, 19, 1, 1, 384, yes</column>
+<column name="- VITIS_LOOP_47_1_VITIS_LOOP_50_2">401, 401, 19, 1, 1, 384, yes</column>
 </table>
 </item>
 </section>
@@ -82,14 +82,14 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln48_1_fu_421_p2">+, 0, 0, 16, 9, 6</column>
-<column name="add_ln48_2_fu_295_p2">+, 0, 0, 16, 9, 1</column>
-<column name="add_ln48_fu_415_p2">+, 0, 0, 13, 4, 1</column>
-<column name="add_ln51_fu_522_p2">+, 0, 0, 32, 32, 32</column>
-<column name="add_ln53_1_fu_488_p2">+, 0, 0, 39, 32, 32</column>
-<column name="add_ln53_fu_427_p2">+, 0, 0, 16, 9, 6</column>
+<column name="add_ln47_1_fu_421_p2">+, 0, 0, 16, 9, 6</column>
+<column name="add_ln47_2_fu_295_p2">+, 0, 0, 16, 9, 1</column>
+<column name="add_ln47_fu_415_p2">+, 0, 0, 13, 4, 1</column>
+<column name="add_ln50_fu_522_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln52_1_fu_488_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln52_fu_427_p2">+, 0, 0, 16, 9, 6</column>
 <column name="sineIdx_2_fu_403_p2">+, 0, 0, 16, 9, 1</column>
-<column name="sub_ln51_fu_516_p2">-, 0, 0, 32, 32, 32</column>
+<column name="sub_ln50_fu_516_p2">-, 0, 0, 32, 32, 32</column>
 <column name="ap_block_state10_pp0_stage0_iter9">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state13_io">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state19_pp0_stage0_iter18">and, 0, 0, 2, 1, 1</column>
@@ -97,27 +97,27 @@
 <column name="ap_condition_598">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_649">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_889">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln48_fu_304_p2">icmp, 0, 0, 16, 9, 9</column>
-<column name="icmp_ln51_fu_409_p2">icmp, 0, 0, 16, 9, 9</column>
+<column name="icmp_ln47_fu_304_p2">icmp, 0, 0, 16, 9, 9</column>
+<column name="icmp_ln50_fu_409_p2">icmp, 0, 0, 16, 9, 9</column>
 <column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln50_fu_356_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln49_fu_356_p2">or, 0, 0, 2, 1, 1</column>
 <column name="i_fu_362_p3">select, 0, 0, 4, 1, 4</column>
-<column name="select_ln48_2_fu_378_p3">select, 0, 0, 9, 1, 9</column>
-<column name="select_ln50_fu_395_p3">select, 0, 0, 9, 1, 9</column>
+<column name="select_ln47_2_fu_378_p3">select, 0, 0, 9, 1, 9</column>
+<column name="select_ln49_fu_395_p3">select, 0, 0, 9, 1, 9</column>
 <column name="sineIdx_fu_370_p3">select, 0, 0, 9, 1, 9</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="add_ln4816_fu_126">9, 2, 4, 8</column>
-<column name="add_ln48_117_fu_130">9, 2, 9, 18</column>
-<column name="add_ln5318_fu_134">9, 2, 9, 18</column>
+<column name="add_ln4716_fu_126">9, 2, 4, 8</column>
+<column name="add_ln47_117_fu_130">9, 2, 9, 18</column>
+<column name="add_ln5218_fu_134">9, 2, 9, 18</column>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_loop_exit_ready_pp0_iter18_reg">9, 2, 1, 2</column>
 <column name="ap_phi_mux_accumulators_load3_phi_fu_246_p4">9, 2, 32, 64</column>
-<column name="ap_phi_mux_icmp_ln5115_phi_fu_236_p4">9, 2, 1, 2</column>
+<column name="ap_phi_mux_icmp_ln5015_phi_fu_236_p4">9, 2, 1, 2</column>
 <column name="ap_phi_reg_pp0_iter10_accumulators_load3_reg_243">9, 2, 32, 64</column>
 <column name="ap_sig_allocacmp_indvar_flatten7_load">9, 2, 9, 18</column>
 <column name="ap_sig_allocacmp_indvar_flatten7_load_1">9, 2, 9, 18</column>
@@ -138,9 +138,9 @@
 <column name="accumulators_addr_reg_661">3, 0, 3, 0</column>
 <column name="accumulators_addr_reg_661_pp0_iter9_reg">3, 0, 3, 0</column>
 <column name="accumulators_load112_fu_142">32, 0, 32, 0</column>
-<column name="add_ln4816_fu_126">4, 0, 4, 0</column>
-<column name="add_ln48_117_fu_130">9, 0, 9, 0</column>
-<column name="add_ln5318_fu_134">9, 0, 9, 0</column>
+<column name="add_ln4716_fu_126">4, 0, 4, 0</column>
+<column name="add_ln47_117_fu_130">9, 0, 9, 0</column>
+<column name="add_ln5218_fu_134">9, 0, 9, 0</column>
 <column name="address_reg_677">12, 0, 12, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_condition_exit_pp0_iter0_stage0_pp0_iter1_reg">1, 0, 1, 0</column>
@@ -210,20 +210,20 @@
 <column name="first_iter_0_reg_220">1, 0, 1, 0</column>
 <column name="gmem_addr_1_read411_fu_138">32, 0, 32, 0</column>
 <column name="i8_fu_110">4, 0, 4, 0</column>
-<column name="icmp_ln48_reg_647">1, 0, 1, 0</column>
-<column name="icmp_ln51_reg_667">1, 0, 1, 0</column>
-<column name="icmp_ln51_reg_667_pp0_iter9_reg">1, 0, 1, 0</column>
+<column name="icmp_ln47_reg_647">1, 0, 1, 0</column>
+<column name="icmp_ln50_reg_667">1, 0, 1, 0</column>
+<column name="icmp_ln50_reg_667_pp0_iter9_reg">1, 0, 1, 0</column>
 <column name="indvar_flatten7_fu_106">9, 0, 9, 0</column>
 <column name="indvars_iv710_fu_118">9, 0, 9, 0</column>
-<column name="or_ln50_reg_657">1, 0, 1, 0</column>
+<column name="or_ln49_reg_657">1, 0, 1, 0</column>
 <column name="phaseInc_read_reg_642">32, 0, 32, 0</column>
 <column name="samples_read_reg_637">32, 0, 32, 0</column>
 <column name="sineIdx9_fu_114">9, 0, 9, 0</column>
 <column name="sineIdx_114_fu_122">9, 0, 9, 0</column>
 <column name="sine_lut_load_reg_693">24, 0, 24, 0</column>
 <column name="first_iter_0_reg_220">64, 32, 1, 0</column>
-<column name="icmp_ln48_reg_647">64, 32, 1, 0</column>
-<column name="or_ln50_reg_657">64, 32, 1, 0</column>
+<column name="icmp_ln47_reg_647">64, 32, 1, 0</column>
+<column name="or_ln49_reg_657">64, 32, 1, 0</column>
 <column name="samples_read_reg_637">64, 32, 32, 0</column>
 </table>
 </item>

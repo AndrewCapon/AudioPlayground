@@ -22,7 +22,7 @@ XMultisine_Config *XMultisine_LookupConfig(UINTPTR BaseAddress) {
 	int Index;
 
 	for (Index = (u32)0x0; XMultisine_ConfigTable[Index].Name != NULL; Index++) {
-		if (!BaseAddress || XMultisine_ConfigTable[Index].Bus_a_BaseAddress == BaseAddress) {
+		if (!BaseAddress || XMultisine_ConfigTable[Index].Control_BaseAddress == BaseAddress) {
 			ConfigPtr = &XMultisine_ConfigTable[Index];
 			break;
 		}

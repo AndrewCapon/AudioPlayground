@@ -1,5 +1,5 @@
 MultiSine_accumulators_RAM_AUTO_1R1W
 MultiSine_sine_lut_ROM_AUTO_1R
-MultiSine_BUS_A_s_axi
+MultiSine_control_s_axi
 MultiSine_flow_control_loop_delay_pipe
 MultiSine

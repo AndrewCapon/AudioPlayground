@@ -1,6 +1,6 @@
 #pragma once
 
-#define USE_FORCE_INLINE 1
+#define USE_FORCE_INLINE 0
 
 #if USE_FORCE_INLINE
 	#define FORCE_INLINE inline __attribute__((always_inline))

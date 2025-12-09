@@ -130,15 +130,15 @@
 						<id>17</id>
 						<name>phaseInc_read</name>
 						<fileName>SimpleSine.cpp</fileName>
-						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>76</lineNumber>
+						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</first>
+								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -147,7 +147,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>76</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -187,15 +187,15 @@
 						<id>18</id>
 						<name>accumulator_read</name>
 						<fileName>SimpleSine.cpp</fileName>
-						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>99</lineNumber>
+						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</first>
+								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -204,7 +204,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>99</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -242,17 +242,17 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>_ln99</name>
+						<name>_ln48</name>
 						<fileName>SimpleSine.cpp</fileName>
-						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>99</lineNumber>
+						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</first>
+								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -261,7 +261,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>99</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -302,17 +302,17 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>shl_ln96</name>
+						<name>shl_ln45</name>
 						<fileName>SimpleSine.cpp</fileName>
-						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</first>
+								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -321,7 +321,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>96</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -359,17 +359,17 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>shl_ln96_1</name>
+						<name>shl_ln45_1</name>
 						<fileName>SimpleSine.cpp</fileName>
-						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</first>
+								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -378,7 +378,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>96</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -416,17 +416,17 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>sub_ln96</name>
+						<name>sub_ln45</name>
 						<fileName>SimpleSine.cpp</fileName>
-						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</first>
+								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -435,7 +435,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>96</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -473,17 +473,17 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>add_ln96</name>
+						<name>add_ln45</name>
 						<fileName>SimpleSine.cpp</fileName>
-						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</first>
+								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -492,7 +492,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>96</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -530,17 +530,17 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>accumulator_write_ln99</name>
+						<name>accumulator_write_ln48</name>
 						<fileName>SimpleSine.cpp</fileName>
-						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>99</lineNumber>
+						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</first>
+								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -549,7 +549,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>99</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -589,17 +589,17 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>_ln112</name>
+						<name>_ln61</name>
 						<fileName>SimpleSine.cpp</fileName>
-						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>112</lineNumber>
+						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine</first>
+								<first>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -608,7 +608,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>112</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -648,7 +648,7 @@
 					<Obj>
 						<type>2</type>
 						<id>33</id>
-						<name>SimpleSine_Pipeline_VITIS_LOOP_96_1</name>
+						<name>SimpleSine_Pipeline_VITIS_LOOP_45_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -672,7 +672,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:SimpleSine_Pipeline_VITIS_LOOP_96_1&gt;</content>
+				<content>&lt;constant:SimpleSine_Pipeline_VITIS_LOOP_45_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_14">
 				<Value>

@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "MultiSineStream.cpp",
+    "fileloc": 33,
+    "instructions": 53,
+    "loads": {
+      "G": 2,
+      "T": 1
+    },
+    "name": "MultiSineStream",
+    "stores": {
+      "G": 1,
+      "L": 1
+    },
+    "total_instructions": 53
+  }
+}

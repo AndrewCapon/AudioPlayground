@@ -27,52 +27,52 @@ set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "accumulator", "interface" : "axi_slave", "bundle":"BUS_A","type":"ap_ovld","bitwidth" : 32, "direction" : "READWRITE", "offset" : {"in":16, "out":24}, "offset_end" : {"in":23, "out":31}} , 
- 	{ "Name" : "phaseInc", "interface" : "axi_slave", "bundle":"BUS_A","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":32}, "offset_end" : {"in":39}} , 
- 	{ "Name" : "samples", "interface" : "axi_slave", "bundle":"BUS_A","type":"ap_memory","bitwidth" : 24, "direction" : "WRITEONLY", "offset" : {"out":256}, "offset_end" : {"out":511}} ]}
+	{ "Name" : "accumulator", "interface" : "axi_slave", "bundle":"control","type":"ap_ovld","bitwidth" : 32, "direction" : "READWRITE", "offset" : {"in":16, "out":24}, "offset_end" : {"in":23, "out":31}} , 
+ 	{ "Name" : "phaseInc", "interface" : "axi_slave", "bundle":"control","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":32}, "offset_end" : {"in":39}} , 
+ 	{ "Name" : "samples", "interface" : "axi_slave", "bundle":"control","type":"ap_memory","bitwidth" : 24, "direction" : "WRITEONLY", "offset" : {"out":256}, "offset_end" : {"out":511}} ]}
 # RTL Port declarations: 
 set portNum 20
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
-	{ s_axi_BUS_A_AWVALID sc_in sc_logic 1 signal -1 } 
-	{ s_axi_BUS_A_AWREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_BUS_A_AWADDR sc_in sc_lv 9 signal -1 } 
-	{ s_axi_BUS_A_WVALID sc_in sc_logic 1 signal -1 } 
-	{ s_axi_BUS_A_WREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_BUS_A_WDATA sc_in sc_lv 32 signal -1 } 
-	{ s_axi_BUS_A_WSTRB sc_in sc_lv 4 signal -1 } 
-	{ s_axi_BUS_A_ARVALID sc_in sc_logic 1 signal -1 } 
-	{ s_axi_BUS_A_ARREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_BUS_A_ARADDR sc_in sc_lv 9 signal -1 } 
-	{ s_axi_BUS_A_RVALID sc_out sc_logic 1 signal -1 } 
-	{ s_axi_BUS_A_RREADY sc_in sc_logic 1 signal -1 } 
-	{ s_axi_BUS_A_RDATA sc_out sc_lv 32 signal -1 } 
-	{ s_axi_BUS_A_RRESP sc_out sc_lv 2 signal -1 } 
-	{ s_axi_BUS_A_BVALID sc_out sc_logic 1 signal -1 } 
-	{ s_axi_BUS_A_BREADY sc_in sc_logic 1 signal -1 } 
-	{ s_axi_BUS_A_BRESP sc_out sc_lv 2 signal -1 } 
+	{ s_axi_control_AWVALID sc_in sc_logic 1 signal -1 } 
+	{ s_axi_control_AWREADY sc_out sc_logic 1 signal -1 } 
+	{ s_axi_control_AWADDR sc_in sc_lv 9 signal -1 } 
+	{ s_axi_control_WVALID sc_in sc_logic 1 signal -1 } 
+	{ s_axi_control_WREADY sc_out sc_logic 1 signal -1 } 
+	{ s_axi_control_WDATA sc_in sc_lv 32 signal -1 } 
+	{ s_axi_control_WSTRB sc_in sc_lv 4 signal -1 } 
+	{ s_axi_control_ARVALID sc_in sc_logic 1 signal -1 } 
+	{ s_axi_control_ARREADY sc_out sc_logic 1 signal -1 } 
+	{ s_axi_control_ARADDR sc_in sc_lv 9 signal -1 } 
+	{ s_axi_control_RVALID sc_out sc_logic 1 signal -1 } 
+	{ s_axi_control_RREADY sc_in sc_logic 1 signal -1 } 
+	{ s_axi_control_RDATA sc_out sc_lv 32 signal -1 } 
+	{ s_axi_control_RRESP sc_out sc_lv 2 signal -1 } 
+	{ s_axi_control_BVALID sc_out sc_logic 1 signal -1 } 
+	{ s_axi_control_BREADY sc_in sc_logic 1 signal -1 } 
+	{ s_axi_control_BRESP sc_out sc_lv 2 signal -1 } 
 	{ interrupt sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
-	{ "name": "s_axi_BUS_A_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "BUS_A", "role": "AWADDR" },"address":[{"name":"SimpleSine","role":"start","value":"0","valid_bit":"0"},{"name":"SimpleSine","role":"continue","value":"0","valid_bit":"4"},{"name":"SimpleSine","role":"auto_start","value":"0","valid_bit":"7"},{"name":"accumulator","role":"data","value":"16"},{"name":"phaseInc","role":"data","value":"32"}] },
-	{ "name": "s_axi_BUS_A_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "AWVALID" } },
-	{ "name": "s_axi_BUS_A_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "AWREADY" } },
-	{ "name": "s_axi_BUS_A_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "WVALID" } },
-	{ "name": "s_axi_BUS_A_WREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "WREADY" } },
-	{ "name": "s_axi_BUS_A_WDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "BUS_A", "role": "WDATA" } },
-	{ "name": "s_axi_BUS_A_WSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "BUS_A", "role": "WSTRB" } },
-	{ "name": "s_axi_BUS_A_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "BUS_A", "role": "ARADDR" },"address":[{"name":"SimpleSine","role":"start","value":"0","valid_bit":"0"},{"name":"SimpleSine","role":"done","value":"0","valid_bit":"1"},{"name":"SimpleSine","role":"idle","value":"0","valid_bit":"2"},{"name":"SimpleSine","role":"ready","value":"0","valid_bit":"3"},{"name":"SimpleSine","role":"auto_start","value":"0","valid_bit":"7"},{"name":"accumulator","role":"data","value":"24"}, {"name":"accumulator","role":"valid","value":"28","valid_bit":"0"},{"name":"samples","role":"data","value":"256"}] },
-	{ "name": "s_axi_BUS_A_ARVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "ARVALID" } },
-	{ "name": "s_axi_BUS_A_ARREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "ARREADY" } },
-	{ "name": "s_axi_BUS_A_RVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "RVALID" } },
-	{ "name": "s_axi_BUS_A_RREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "RREADY" } },
-	{ "name": "s_axi_BUS_A_RDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "BUS_A", "role": "RDATA" } },
-	{ "name": "s_axi_BUS_A_RRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "BUS_A", "role": "RRESP" } },
-	{ "name": "s_axi_BUS_A_BVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "BVALID" } },
-	{ "name": "s_axi_BUS_A_BREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "BREADY" } },
-	{ "name": "s_axi_BUS_A_BRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "BUS_A", "role": "BRESP" } },
-	{ "name": "interrupt", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "BUS_A", "role": "interrupt" } }, 
+	{ "name": "s_axi_control_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "control", "role": "AWADDR" },"address":[{"name":"SimpleSine","role":"start","value":"0","valid_bit":"0"},{"name":"SimpleSine","role":"continue","value":"0","valid_bit":"4"},{"name":"SimpleSine","role":"auto_start","value":"0","valid_bit":"7"},{"name":"accumulator","role":"data","value":"16"},{"name":"phaseInc","role":"data","value":"32"}] },
+	{ "name": "s_axi_control_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "AWVALID" } },
+	{ "name": "s_axi_control_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "AWREADY" } },
+	{ "name": "s_axi_control_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "WVALID" } },
+	{ "name": "s_axi_control_WREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "WREADY" } },
+	{ "name": "s_axi_control_WDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "control", "role": "WDATA" } },
+	{ "name": "s_axi_control_WSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "control", "role": "WSTRB" } },
+	{ "name": "s_axi_control_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "control", "role": "ARADDR" },"address":[{"name":"SimpleSine","role":"start","value":"0","valid_bit":"0"},{"name":"SimpleSine","role":"done","value":"0","valid_bit":"1"},{"name":"SimpleSine","role":"idle","value":"0","valid_bit":"2"},{"name":"SimpleSine","role":"ready","value":"0","valid_bit":"3"},{"name":"SimpleSine","role":"auto_start","value":"0","valid_bit":"7"},{"name":"accumulator","role":"data","value":"24"}, {"name":"accumulator","role":"valid","value":"28","valid_bit":"0"},{"name":"samples","role":"data","value":"256"}] },
+	{ "name": "s_axi_control_ARVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "ARVALID" } },
+	{ "name": "s_axi_control_ARREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "ARREADY" } },
+	{ "name": "s_axi_control_RVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "RVALID" } },
+	{ "name": "s_axi_control_RREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "RREADY" } },
+	{ "name": "s_axi_control_RDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "control", "role": "RDATA" } },
+	{ "name": "s_axi_control_RRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "control", "role": "RRESP" } },
+	{ "name": "s_axi_control_BVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "BVALID" } },
+	{ "name": "s_axi_control_BREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "BREADY" } },
+	{ "name": "s_axi_control_BRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "control", "role": "BRESP" } },
+	{ "name": "interrupt", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "interrupt" } }, 
  	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
  	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }}  ]}
 
@@ -96,12 +96,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "phaseInc", "Type" : "None", "Direction" : "I"},
 			{"Name" : "samples", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79", "Port" : "samples", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
+					{"ID" : "1", "SubInstance" : "grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79", "Port" : "samples", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "sine_lut", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79", "Port" : "sine_lut", "Inst_start_state" : "1", "Inst_end_state" : "2"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79", "Parent" : "0", "Child" : ["2", "3"],
-		"CDFG" : "SimpleSine_Pipeline_VITIS_LOOP_96_1",
+					{"ID" : "1", "SubInstance" : "grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79", "Port" : "sine_lut", "Inst_start_state" : "1", "Inst_end_state" : "2"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79", "Parent" : "0", "Child" : ["2", "3"],
+		"CDFG" : "SimpleSine_Pipeline_VITIS_LOOP_45_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -120,11 +120,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "samples", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "sine_lut", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_96_1", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_45_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79.sine_lut_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.BUS_A_s_axi_U", "Parent" : "0"}]}
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79.sine_lut_U", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -133,7 +133,7 @@ set ArgLastReadFirstWriteLatency {
 		phaseInc {Type I LastRead 0 FirstWrite -1}
 		samples {Type O LastRead -1 FirstWrite 2}
 		sine_lut {Type I LastRead -1 FirstWrite -1}}
-	SimpleSine_Pipeline_VITIS_LOOP_96_1 {
+	SimpleSine_Pipeline_VITIS_LOOP_45_1 {
 		accumulator_load {Type I LastRead 0 FirstWrite -1}
 		phaseInc {Type I LastRead 0 FirstWrite -1}
 		samples {Type O LastRead -1 FirstWrite 2}

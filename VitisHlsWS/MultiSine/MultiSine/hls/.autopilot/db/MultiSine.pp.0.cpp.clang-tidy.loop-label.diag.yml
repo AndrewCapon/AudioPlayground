@@ -1302,21 +1302,21 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_19_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_58_1:  '
-    FileOffset:      58
+    Message:         'Added loop label VITIS_LOOP_46_1:  '
+    FileOffset:      46
     FilePath:        MultiSine.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSine/MultiSine/hls/.autopilot/db/MultiSine.pp.0.cpp
-        Offset:          1745365
+        Offset:          1745314
         Length:          0
-        ReplacementText: 'VITIS_LOOP_58_1: '
+        ReplacementText: 'VITIS_LOOP_46_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_61_2:  '
-    FileOffset:      61
+    Message:         'Added loop label VITIS_LOOP_49_2:  '
+    FileOffset:      49
     FilePath:        MultiSine.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSine/MultiSine/hls/.autopilot/db/MultiSine.pp.0.cpp
-        Offset:          1745443
+        Offset:          1745379
         Length:          0
-        ReplacementText: 'VITIS_LOOP_61_2: '
+        ReplacementText: 'VITIS_LOOP_49_2: '
 ...

@@ -4,16 +4,16 @@
     "calls": "",
     "file": "MultiSine.cpp",
     "fileloc": 31,
-    "instructions": 77,
+    "instructions": 74,
     "loads": {
-      "G": 4,
+      "G": 2,
       "T": 3
     },
     "name": "MultiSine",
     "stores": {
-      "G": 2,
+      "G": 1,
       "T": 1
     },
-    "total_instructions": 77
+    "total_instructions": 74
   }
 }

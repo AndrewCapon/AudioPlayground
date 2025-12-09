@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>/home/andrewcapon/fpga/ArtixA7/AudioPlatform/AudioPlatformHlsWS/SimpleSine/SimpleSine/hls/.autopilot/db/SimpleSine.pp.0.cpp</string>
+  <string>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine/SimpleSine/hls/.autopilot/db/SimpleSine.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
@@ -3241,11 +3241,11 @@
       <key>filename</key>
       <string>SimpleSine.cpp</string>
       <key>line</key>
-      <integer>85</integer>
+      <integer>35</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=SimpleSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=return bundle=BUS_A_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=SimpleSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=return_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3257,11 +3257,11 @@
       <key>filename</key>
       <string>SimpleSine.cpp</string>
       <key>line</key>
-      <integer>86</integer>
+      <integer>36</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=SimpleSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=accumulator bundle=BUS_A storage_impl=uram_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=SimpleSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=accumulator_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3273,11 +3273,11 @@
       <key>filename</key>
       <string>SimpleSine.cpp</string>
       <key>line</key>
-      <integer>87</integer>
+      <integer>37</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=SimpleSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=phaseInc bundle=BUS_A_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=SimpleSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=phaseInc_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3289,11 +3289,11 @@
       <key>filename</key>
       <string>SimpleSine.cpp</string>
       <key>line</key>
-      <integer>88</integer>
+      <integer>38</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=SimpleSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=samples bundle=BUS_A_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=SimpleSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=samples_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>

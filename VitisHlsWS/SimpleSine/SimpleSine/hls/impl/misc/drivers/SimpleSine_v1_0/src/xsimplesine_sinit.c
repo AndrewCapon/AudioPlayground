@@ -22,7 +22,7 @@ XSimplesine_Config *XSimplesine_LookupConfig(UINTPTR BaseAddress) {
 	int Index;
 
 	for (Index = (u32)0x0; XSimplesine_ConfigTable[Index].Name != NULL; Index++) {
-		if (!BaseAddress || XSimplesine_ConfigTable[Index].Bus_a_BaseAddress == BaseAddress) {
+		if (!BaseAddress || XSimplesine_ConfigTable[Index].Control_BaseAddress == BaseAddress) {
 			ConfigPtr = &XSimplesine_ConfigTable[Index];
 			break;
 		}

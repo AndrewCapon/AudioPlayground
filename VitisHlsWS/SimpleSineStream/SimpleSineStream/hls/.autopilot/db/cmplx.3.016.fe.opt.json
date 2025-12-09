@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "SimpleSineStream.cpp",
+    "fileloc": 29,
+    "instructions": 39,
+    "loads": {
+      "G": 1,
+      "T": 1
+    },
+    "name": "SimpleSineStream",
+    "stores": {
+      "L": 1,
+      "T": 1
+    },
+    "total_instructions": 39
+  }
+}

@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/MultiSineStream/MultiSineStream.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Dec  9 10:39:24 2025",
+ "timestampMillis": "1765276764818",
+ "buildStep": {
+  "cmdId": "f4cf0465-4da2-4f12-bc0c-0071fe1e188b",
+  "name": "vitis-run",
+  "logFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/MultiSineStream/logs/MultiSineStream.steps.log",
+  "commandLine": "/home/andrewcapon/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/hls_config.cfg --work_dir MultiSineStream ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/hls_config.cfg",
+   "--work_dir",
+   "MultiSineStream"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Dec  9 10:39:24 2025",
+ "timestampMillis": "1765276764818",
+ "status": {
+  "cmdId": "f4cf0465-4da2-4f12-bc0c-0071fe1e188b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Dec  9 10:39:30 2025",
+ "timestampMillis": "1765276770915",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "MultiSineStream",
+     "file": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/MultiSineStream/MultiSineStream.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/MultiSineStream.h",
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/MultiSineStream.cpp",
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/DataTypes.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Dec  9 10:39:30 2025",
+ "timestampMillis": "1765276770916",
+ "buildStep": {
+  "cmdId": "b39a9747-4fa3-46af-bb84-0bc4bd9df233",
+  "name": "",
+  "logFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/MultiSineStream/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Dec  9 10:39:30 2025",
+ "timestampMillis": "1765276770916",
+ "status": {
+  "cmdId": "b39a9747-4fa3-46af-bb84-0bc4bd9df233",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Dec  9 10:39:44 2025",
+ "timestampMillis": "1765276784923",
+ "status": {
+  "cmdId": "b39a9747-4fa3-46af-bb84-0bc4bd9df233",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Dec  9 10:39:45 2025",
+ "timestampMillis": "1765276785118",
+ "status": {
+  "cmdId": "f4cf0465-4da2-4f12-bc0c-0071fe1e188b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Dec  9 10:39:45 2025",
+ "timestampMillis": "1765276785119",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Dec  9 10:39:45 2025",
+ "timestampMillis": "1765276785119",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

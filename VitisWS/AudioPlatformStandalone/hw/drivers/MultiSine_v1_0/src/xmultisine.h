@@ -45,12 +45,12 @@ typedef struct {
 #else
     u16 DeviceId;
 #endif
-    u64 Bus_a_BaseAddress;
+    u64 Control_BaseAddress;
 } XMultisine_Config;
 #endif
 
 typedef struct {
-    u64 Bus_a_BaseAddress;
+    u64 Control_BaseAddress;
     u32 IsReady;
 } XMultisine;
 

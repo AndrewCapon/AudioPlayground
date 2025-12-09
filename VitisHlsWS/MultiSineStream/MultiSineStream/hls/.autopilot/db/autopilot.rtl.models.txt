@@ -1,0 +1,6 @@
+MultiSineStream_accumulators_RAM_AUTO_1R1W
+MultiSineStream_sine_lut_ROM_AUTO_1R
+MultiSineStream_control_s_axi
+MultiSineStream_regslice_both
+MultiSineStream_flow_control_loop_pipe
+MultiSineStream

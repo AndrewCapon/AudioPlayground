@@ -1,6 +1,6 @@
 {
   "0": {
-    "basicblocks": 9,
+    "basicblocks": 7,
     "calls": "",
     "file": "MultiSine.cpp",
     "fileloc": 31,
@@ -11,7 +11,7 @@
     },
     "name": "MultiSine",
     "stores": {
-      "G": 2,
+      "G": 1,
       "T": 1
     },
     "total_instructions": 56

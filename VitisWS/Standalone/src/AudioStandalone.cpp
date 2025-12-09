@@ -1,10 +1,14 @@
+#include "xuartlite_l.h"
+
 #include "HardwareSystem.h"
 #include "Debug.h"
 #include "SystemHandlerStandalone.h"
 #include "SimpleSine.h"
 #include "SimpleSineMaster.h"
+#include "SimpleSineStream.h"
 #include "MultiSine.h"
 #include "MultiSineMaster.h"
+#include "MultiSineStream.h"
 #include "Bram.h"
 #include "CodeTimer.h"
 #include "microblaze_sleep.h"
@@ -19,6 +23,7 @@ volatile uint32_t SrcBufferDma[TEST_BUFFER_WORDS] __attribute__((aligned (64))) 
 volatile uint32_t DestBufferDma[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
 
 volatile uint32_t SamplesStorage[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+volatile uint32_t SamplesStorageStream[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 volatile uint32_t PhaseIncsStorage[cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
 
 #if DEBUG_MULTISINEMASTER | DEBUG_MULTISINE | DEBUG_SIMPLESINE | DEBUG_SIMPLESINEMASTER
@@ -34,16 +39,29 @@ SystemHandlerStandalone systemHandler;
 HardwareSystem hardwareSystem(systemHandler);
 SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorage);
 SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorage);
+SimpleSineStream simpleSineStream(hardwareSystem, XPAR_XSIMPLESINESTREAM_0_DEVICE_ID, SamplesStorageStream);
 MultiSine multiSine(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID);
 MultiSineMaster multiSineMaster(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID, SamplesStorage, PhaseIncsStorage, DebugStorage);
+MultiSineStream multiSineStream(hardwareSystem, XPAR_XMULTISINESTREAM_0_DEVICE_ID, SamplesStorageStream);
 
+
+typedef enum _TestState
+{
+	tsRunAll,
+	tsSimple,
+	tsSimpleMaster,
+	tsSimpleStream,
+	tsMulti,
+	tsMultiMaster,
+	tsMultiStream
+} TestState;
 
 int main(void)
 {
 #ifdef RTOS
 	#error RTOS should not be defined
 #endif
-
+	xil_printf("Audio Playground Tests\n");
 
 	uint32_t *pStereoOutputSampleBuffer = hardwareSystem.GetI2sAudio().GetSampleBuffer();
 //	uint32_t *pMonoSineSampleBuffer = multiSine.GetSampleBuffer(0);
@@ -60,46 +78,66 @@ int main(void)
 			float fFrequency = 100.0f * (uVoice+1);
 			simpleSine.SetFrequency(uVoice, fFrequency);
 			simpleSineMaster.SetFrequency(uVoice, fFrequency);
+			simpleSineStream.SetFrequency(uVoice, fFrequency);
 			multiSine.SetFrequency(uVoice, fFrequency);
 			multiSineMaster.SetFrequency(uVoice, fFrequency);
+			multiSineStream.SetFrequency(uVoice, fFrequency);
 		}
 
-//		while(1)
-//			simpleSine.ProcessNonBlocking();
-
-//		while(1)
-//		hardwareSystem.GetI2sAudio().TransferSampleBuffer();
-
-		// Test dma
-		xil_printf("Testing DMA Start\n");
-		Dma &dma = hardwareSystem.GetDma();
-
-		uint32_t *pSineSamples = reinterpret_cast<uint32_t *>(0x00020100);
-
-		if(dma.TestSync(SrcBufferDma, DestBufferDma, TEST_BUFFER_WORDS, true))
-			xil_printf("BRAM to BRAM DMA sync test passed\n");
-		else
-			xil_printf("BRAM to BRAM DMA sync test failed\n");
 
 
-		if(dma.TestSync(pSineSamples, DestBufferDma, TEST_BUFFER_WORDS, false))
-			xil_printf("HLS to BRAM DMA sync test passed\n");
-		else
-			xil_printf("HLS to BRAM DMA aync test failed\n");
+//		for(int i = 0; i < 10; i++)
+//		{
+//
+//			multiSineStream.ProcessBlocking();
+//			multiSine.ProcessBlocking();
+//
+//			for(int i=0; i < 48; i++)
+//			{
+//				for(int v = 0; v < 8; v++)
+//				{
+//		  		volatile uint32_t *pBuffer1 = multiSine.GetSampleBuffer(v);
+//		  		volatile uint32_t *pBuffer2 = multiSineStream.GetSampleBuffer(v);
+//
+//					float f1 = static_cast<float>( DataType::from_raw_value(pBuffer1[i]<<8));
+//					float f2 = static_cast<float>( DataType::from_raw_value(pBuffer2[i]<<8));
+//					printf("%f, %f, ", f1, f2);
+//				}
+//				printf("0\n");
+//			}
+//		}
+//
+//		// Test dma
+//		xil_printf("Testing DMA Start\n");
+//		Dma &dma = hardwareSystem.GetDma();
+//
+//		uint32_t *pSineSamples = reinterpret_cast<uint32_t *>(0x00020100);
+//
+//		if(dma.TestSync(SrcBufferDma, DestBufferDma, TEST_BUFFER_WORDS, true))
+//			xil_printf("BRAM to BRAM DMA sync test passed\n");
+//		else
+//			xil_printf("BRAM to BRAM DMA sync test failed\n");
+//
+//
+//		if(dma.TestSync(pSineSamples, DestBufferDma, TEST_BUFFER_WORDS, false))
+//			xil_printf("HLS to BRAM DMA sync test passed\n");
+//		else
+//			xil_printf("HLS to BRAM DMA aync test failed\n");
+//
+//		if(dma.TestAsync(SrcBufferDma, DestBufferDma, TEST_BUFFER_WORDS, true))
+//			xil_printf("BRAM to BRAM DMA async test passed\n");
+//		else
+//			xil_printf("BRAM to BRAM DMA async test failed\n");
+//
+//
+//		if(dma.TestAsync(pSineSamples, DestBufferDma, TEST_BUFFER_WORDS, false))
+//			xil_printf("HLS to BRAM DMA async test passed\n");
+//		else
+//			xil_printf("HLS to BRAM DMA async test failed\n");
+//
+//		xil_printf("Testing DMA End\n");
 
-		if(dma.TestAsync(SrcBufferDma, DestBufferDma, TEST_BUFFER_WORDS, true))
-			xil_printf("BRAM to BRAM DMA async test passed\n");
-		else
-			xil_printf("BRAM to BRAM DMA async test failed\n");
-
-
-		if(dma.TestAsync(pSineSamples, DestBufferDma, TEST_BUFFER_WORDS, false))
-			xil_printf("HLS to BRAM DMA async test passed\n");
-		else
-			xil_printf("HLS to BRAM DMA async test failed\n");
-
-		xil_printf("Testing DMA End\n");
-
+		TestState testState = tsRunAll;
 
 		uint16_t uCount = 0;
 		uint16_t uVoice = 0;
@@ -116,37 +154,113 @@ int main(void)
       {
       	systemHandler.DisableInterrupt(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_OUTPUTS_AXISTOI2SFIFO_0_MOREDATANEEDEDINTERRUPT_INTR);
 
-      	if(uCount++ > 5000)
-      	{
-      		uVoice ++;
-      		if(uVoice > 7)
-      			uVoice = 0;
+//      	if(uCount++ > 5000)
+//      	{
+//      		uVoice ++;
+//      		if(uVoice > 7)
+//      			uVoice = 0;
+//
+//      		uCount = 0;
+//      	}
 
-      		uCount = 0;
+      	uint8_t uChar=0;
+  			if(!XUartLite_IsReceiveEmpty(XPAR_UARTLITE_0_BASEADDR))
+  			{
+  				uChar = XUartLite_ReadReg(XPAR_UARTLITE_0_BASEADDR, XUL_RX_FIFO_OFFSET);
+  			}
+
+      	if(uChar)
+      	{
+      		switch (uChar)
+      		{
+						case '1' :
+						case '2' :
+						case '3' :
+						case '4' :
+						case '5' :
+						case '6' :
+						case '7' :
+						case '8' :
+						{
+							uVoice = uChar - '1';
+							xil_printf("Voice %u\n", uVoice);
+						}
+						break;
+
+						case 'q' : testState = tsRunAll; 				xil_printf("Run All\n");break;
+						case 'w' : testState = tsSimple; 				xil_printf("Simple\n");break;
+						case 'e' : testState = tsSimpleMaster; 	xil_printf("Simple Master\n");break;
+						case 'r' : testState = tsSimpleStream; 	xil_printf("Simple Stream\n");break;
+						case 't' : testState = tsMulti; 				xil_printf("Multi\n");break;
+						case 'y' : testState = tsMultiMaster; 	xil_printf("Multi Master\n");break;
+						case 'u' : testState = tsMultiStream; 	xil_printf("Multi Stream\n");break;
+
+						break;
+      		}
       	}
 
-    		volatile uint32_t *pMonoSineSampleBuffer  = simpleSineMaster.GetSampleBuffer(uVoice);
-    		volatile uint32_t *pMonoSineSampleBuffer2 = multiSineMaster.GetSampleBuffer(uVoice);
+      	// always use simple sine for comparison
+    		volatile uint32_t *pMonoSineSampleBuffer;
 
-				debug.SetDebug(Debug::dpPio29_processing, 1);
-				simpleSineMaster.ProcessBlocking();
-				debug.SetDebug(Debug::dpPio29_processing, 0);
+				if(testState == tsRunAll || testState == tsSimple)
+				{
+					debug.SetDebug(Debug::dpPio29_processing, 1);
+					simpleSine.ProcessBlocking();
+					debug.SetDebug(Debug::dpPio29_processing, 0);
+	    		pMonoSineSampleBuffer = simpleSine.GetSampleBuffer(uVoice);
+				}
 
-				debug.SetDebug(Debug::dpPio29_processing, 1);
-				multiSineMaster.ProcessBlocking();
-				debug.SetDebug(Debug::dpPio29_processing, 0);
+				if(testState == tsRunAll || testState == tsSimpleMaster)
+				{
+					debug.SetDebug(Debug::dpPio29_processing, 1);
+					simpleSineMaster.ProcessBlocking();
+					debug.SetDebug(Debug::dpPio29_processing, 0);
+	    		pMonoSineSampleBuffer = simpleSineMaster.GetSampleBuffer(uVoice);
+				}
+
+				if(testState == tsRunAll || testState == tsSimpleStream)
+				{
+					debug.SetDebug(Debug::dpPio29_processing, 1);
+					simpleSineStream.ProcessBlocking();
+					debug.SetDebug(Debug::dpPio29_processing, 0);
+	    		pMonoSineSampleBuffer = simpleSineStream.GetSampleBuffer(uVoice);
+				}
+
+				if(testState == tsRunAll || testState == tsMulti)
+				{
+					debug.SetDebug(Debug::dpPio29_processing, 1);
+					multiSine.ProcessBlocking();
+					debug.SetDebug(Debug::dpPio29_processing, 0);
+	    		pMonoSineSampleBuffer = multiSine.GetSampleBuffer(uVoice);
+				}
+
+				if(testState == tsRunAll || testState == tsMultiMaster)
+				{
+					debug.SetDebug(Debug::dpPio29_processing, 1);
+					multiSineMaster.ProcessBlocking();
+					debug.SetDebug(Debug::dpPio29_processing, 0);
+	    		pMonoSineSampleBuffer = multiSineMaster.GetSampleBuffer(uVoice);
+				}
+
+				if(testState == tsRunAll || testState == tsMultiStream)
+				{
+					debug.SetDebug(Debug::dpPio29_processing, 1);
+					multiSineStream.ProcessBlocking();
+					debug.SetDebug(Debug::dpPio29_processing, 0);
+	    		pMonoSineSampleBuffer = multiSineStream.GetSampleBuffer(uVoice);
+				}
 
 				debug.SetDebug(Debug::dpPio31_sampleCopy, 1);
 				uint16_t uDestSample = 0;
 				for(uint16_t uSample = 0; uSample < 48; uSample++)
 				{
-//					pStereoOutputSampleBuffer[uDestSample++] = uSample<24 ? 0x00800000 : 0x007fffff;
 					pStereoOutputSampleBuffer[uDestSample++] = pMonoSineSampleBuffer[uSample];
-					pStereoOutputSampleBuffer[uDestSample++] = pMonoSineSampleBuffer2[uSample];
+					pStereoOutputSampleBuffer[uDestSample++] = uSample<24 ? 0x00800000 : 0x007fffff;
 				}
 				debug.SetDebug(Debug::dpPio31_sampleCopy, 0);
 
       	systemHandler.EnableInterrupt(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_OUTPUTS_AXISTOI2SFIFO_0_MOREDATANEEDEDINTERRUPT_INTR);
+
       }
     }
 	}

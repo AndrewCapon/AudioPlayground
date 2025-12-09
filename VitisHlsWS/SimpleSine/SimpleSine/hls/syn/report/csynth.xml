@@ -31,7 +31,7 @@
         <SummaryOfViolations>
             <IssueType>-</IssueType>
             <ViolationType>-</ViolationType>
-            <SourceLocation>SimpleSine.cpp:76</SourceLocation>
+            <SourceLocation>SimpleSine.cpp:32</SourceLocation>
         </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
@@ -52,8 +52,8 @@
     </AreaEstimates>
     <InterfaceSummary>
         <RtlPorts>
-            <name>s_axi_BUS_A_AWVALID</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_AWVALID</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
@@ -63,8 +63,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_AWREADY</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_AWREADY</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>out</Dir>
@@ -74,8 +74,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_AWADDR</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_AWADDR</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
@@ -85,8 +85,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_WVALID</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_WVALID</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
@@ -96,8 +96,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_WREADY</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_WREADY</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>out</Dir>
@@ -107,8 +107,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_WDATA</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_WDATA</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
@@ -118,8 +118,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_WSTRB</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_WSTRB</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
@@ -129,8 +129,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_ARVALID</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_ARVALID</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
@@ -140,8 +140,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_ARREADY</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_ARREADY</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>out</Dir>
@@ -151,8 +151,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_ARADDR</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_ARADDR</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
@@ -162,8 +162,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_RVALID</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_RVALID</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>out</Dir>
@@ -173,8 +173,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_RREADY</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_RREADY</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
@@ -184,8 +184,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_RDATA</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_RDATA</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>out</Dir>
@@ -195,8 +195,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_RRESP</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_RRESP</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>out</Dir>
@@ -206,8 +206,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_BVALID</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_BVALID</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>out</Dir>
@@ -217,8 +217,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_BREADY</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_BREADY</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
@@ -228,8 +228,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_BUS_A_BRESP</name>
-            <Object>BUS_A</Object>
+            <name>s_axi_control_BRESP</name>
+            <Object>control</Object>
             <Type>array</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>out</Dir>
@@ -277,21 +277,21 @@
             <ModuleName>SimpleSine</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79</InstName>
-                    <ModuleName>SimpleSine_Pipeline_VITIS_LOOP_96_1</ModuleName>
+                    <InstName>grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79</InstName>
+                    <ModuleName>SimpleSine_Pipeline_VITIS_LOOP_45_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>79</ID>
-                    <BindInstances>add_ln99_fu_134_p2 block_fu_114_p2 icmp_ln96_fu_120_p2 sine_lut_U</BindInstances>
+                    <BindInstances>add_ln48_fu_134_p2 block_fu_114_p2 icmp_ln45_fu_120_p2 sine_lut_U</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>BUS_A_s_axi_U</BindInstances>
+            <BindInstances>control_s_axi_U</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>SimpleSine_Pipeline_VITIS_LOOP_96_1</Name>
+            <Name>SimpleSine_Pipeline_VITIS_LOOP_45_1</Name>
             <Loops>
-                <VITIS_LOOP_96_1/>
+                <VITIS_LOOP_45_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -310,8 +310,8 @@
                     <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_96_1>
-                        <Name>VITIS_LOOP_96_1</Name>
+                    <VITIS_LOOP_45_1>
+                        <Name>VITIS_LOOP_45_1</Name>
                         <Slack>7.30</Slack>
                         <TripCount>48</TripCount>
                         <Latency>50</Latency>
@@ -320,19 +320,19 @@
                         <PipelineDepth>4</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_96_1>
+                    </VITIS_LOOP_45_1>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>SimpleSine.cpp:96</SourceLocation>
+                    <SourceLocation>SimpleSine.cpp:45</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_96_1>
-                            <Name>VITIS_LOOP_96_1</Name>
+                        <VITIS_LOOP_45_1>
+                            <Name>VITIS_LOOP_45_1</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>SimpleSine.cpp:96</SourceLocation>
-                        </VITIS_LOOP_96_1>
+                            <SourceLocation>SimpleSine.cpp:45</SourceLocation>
+                        </VITIS_LOOP_45_1>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -356,9 +356,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_96_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln99_fu_134_p2" SOURCE="SimpleSine.cpp:99" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln99" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_96_1" OPTYPE="add" PRAGMA="" RTLNAME="block_fu_114_p2" SOURCE="SimpleSine.cpp:96" STORAGESUBTYPE="" URAM="0" VARIABLE="block" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_96_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln96_fu_120_p2" SOURCE="SimpleSine.cpp:96" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln96" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_45_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln48_fu_134_p2" SOURCE="SimpleSine.cpp:48" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln48" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_45_1" OPTYPE="add" PRAGMA="" RTLNAME="block_fu_114_p2" SOURCE="SimpleSine.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="block" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_45_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln45_fu_120_p2" SOURCE="SimpleSine.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln45" VISIBLE="false"/>
                 <BindNode BINDTYPE="storage" BRAM="6" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="sine_lut_U" SOURCE="" STORAGESIZE="24 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="sine_lut" VISIBLE="true"/>
             </BindNodes>
         </Module>
@@ -383,7 +383,7 @@
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>SimpleSine.cpp:76</SourceLocation>
+                    <SourceLocation>SimpleSine.cpp:32</SourceLocation>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -406,7 +406,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="adapter" BRAM="2" BUNDLEDNAME="BUS_A" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="BUS_A_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+                <BindNode BINDTYPE="adapter" BRAM="2" BUNDLEDNAME="control" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -415,42 +415,42 @@
     <Args>
         <Arg ArgName="accumulator" index="0" direction="inout" srcType="ap_ufixed&lt;32, 12, AP_TRN, AP_WRAP, 0&gt;&amp;" srcSize="32">
             <hwRefs>
-                <hwRef type="register" interface="s_axi_BUS_A" name="accumulator_i" usage="data" direction="in"/>
-                <hwRef type="register" interface="s_axi_BUS_A" name="accumulator_o" usage="data" direction="out"/>
-                <hwRef type="register" interface="s_axi_BUS_A" name="accumulator_o_ctrl" usage="control" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="accumulator_i" usage="data" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="accumulator_o" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="accumulator_o_ctrl" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
         <Arg ArgName="phaseInc" index="1" direction="in" srcType="ap_ufixed&lt;32, 12, AP_TRN, AP_WRAP, 0&gt; const " srcSize="32">
             <hwRefs>
-                <hwRef type="register" interface="s_axi_BUS_A" name="phaseInc" usage="data" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="phaseInc" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
         <Arg ArgName="samples" index="2" direction="out" srcType="ap_fixed&lt;24, 1, AP_RND, AP_SAT, 0&gt;*" srcSize="32">
             <hwRefs>
-                <hwRef type="memory" interface="s_axi_BUS_A" name="samples" usage="data" direction="out"/>
+                <hwRef type="memory" interface="s_axi_control" name="samples" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
     </Args>
     <Interfaces>
-        <Interface InterfaceName="s_axi_BUS_A" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="9" portPrefix="s_axi_BUS_A_" paramPrefix="C_S_AXI_BUS_A_">
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="9" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_">
             <ports>
-                <port>s_axi_BUS_A_ARADDR</port>
-                <port>s_axi_BUS_A_ARREADY</port>
-                <port>s_axi_BUS_A_ARVALID</port>
-                <port>s_axi_BUS_A_AWADDR</port>
-                <port>s_axi_BUS_A_AWREADY</port>
-                <port>s_axi_BUS_A_AWVALID</port>
-                <port>s_axi_BUS_A_BREADY</port>
-                <port>s_axi_BUS_A_BRESP</port>
-                <port>s_axi_BUS_A_BVALID</port>
-                <port>s_axi_BUS_A_RDATA</port>
-                <port>s_axi_BUS_A_RREADY</port>
-                <port>s_axi_BUS_A_RRESP</port>
-                <port>s_axi_BUS_A_RVALID</port>
-                <port>s_axi_BUS_A_WDATA</port>
-                <port>s_axi_BUS_A_WREADY</port>
-                <port>s_axi_BUS_A_WSTRB</port>
-                <port>s_axi_BUS_A_WVALID</port>
+                <port>s_axi_control_ARADDR</port>
+                <port>s_axi_control_ARREADY</port>
+                <port>s_axi_control_ARVALID</port>
+                <port>s_axi_control_AWADDR</port>
+                <port>s_axi_control_AWREADY</port>
+                <port>s_axi_control_AWVALID</port>
+                <port>s_axi_control_BREADY</port>
+                <port>s_axi_control_BRESP</port>
+                <port>s_axi_control_BVALID</port>
+                <port>s_axi_control_RDATA</port>
+                <port>s_axi_control_RREADY</port>
+                <port>s_axi_control_RRESP</port>
+                <port>s_axi_control_RVALID</port>
+                <port>s_axi_control_WDATA</port>
+                <port>s_axi_control_WREADY</port>
+                <port>s_axi_control_WSTRB</port>
+                <port>s_axi_control_WVALID</port>
             </ports>
             <memories>
                 <memorie memorieName="samples" offset="256" range="256"/>
@@ -519,7 +519,7 @@
         </Interface>
         <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
             <busParams>
-                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_BUS_A</busParam>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control</busParam>
                 <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
             </busParams>
             <portMaps>
@@ -557,20 +557,20 @@
             <item name="S_AXILITE Interfaces">
                 <table>
                     <keys size="6">Interface, Data Width, Address Width, Offset, Register, Resource Estimate</keys>
-                    <column name="s_axi_BUS_A">32, 9, 16, 0, BRAM=2</column>
+                    <column name="s_axi_control">32, 9, 16, 0, BRAM=2</column>
                 </table>
             </item>
             <item name="S_AXILITE Registers">
                 <table>
                     <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
-                    <column name="s_axi_BUS_A">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
-                    <column name="s_axi_BUS_A">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
-                    <column name="s_axi_BUS_A">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
-                    <column name="s_axi_BUS_A">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
-                    <column name="s_axi_BUS_A">accumulator_i, 0x10, 32, W, Data signal of accumulator_i, </column>
-                    <column name="s_axi_BUS_A">accumulator_o, 0x18, 32, R, Data signal of accumulator_o, </column>
-                    <column name="s_axi_BUS_A">accumulator_o_ctrl, 0x1c, 32, R, Control signal of accumulator_o, 0=accumulator_o_ap_vld</column>
-                    <column name="s_axi_BUS_A">phaseInc, 0x20, 32, W, Data signal of phaseInc, </column>
+                    <column name="s_axi_control">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_control">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_control">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_control">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                    <column name="s_axi_control">accumulator_i, 0x10, 32, W, Data signal of accumulator_i, </column>
+                    <column name="s_axi_control">accumulator_o, 0x18, 32, R, Data signal of accumulator_o, </column>
+                    <column name="s_axi_control">accumulator_o_ctrl, 0x1c, 32, R, Control signal of accumulator_o, 0=accumulator_o_ap_vld</column>
+                    <column name="s_axi_control">phaseInc, 0x20, 32, W, Data signal of phaseInc, </column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -597,21 +597,21 @@
             <item name="SW-to-HW Mapping">
                 <table>
                     <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
-                    <column name="accumulator">s_axi_BUS_A, register, name=accumulator_i offset=0x10 range=32</column>
-                    <column name="accumulator">s_axi_BUS_A, register, name=accumulator_o offset=0x18 range=32</column>
-                    <column name="accumulator">s_axi_BUS_A, register, name=accumulator_o_ctrl offset=0x1c range=32</column>
-                    <column name="phaseInc">s_axi_BUS_A, register, name=phaseInc offset=0x20 range=32</column>
-                    <column name="samples">s_axi_BUS_A, memory, name=samples offset=256 range=256</column>
+                    <column name="accumulator">s_axi_control, register, name=accumulator_i offset=0x10 range=32</column>
+                    <column name="accumulator">s_axi_control, register, name=accumulator_o offset=0x18 range=32</column>
+                    <column name="accumulator">s_axi_control, register, name=accumulator_o_ctrl offset=0x1c range=32</column>
+                    <column name="phaseInc">s_axi_control, register, name=phaseInc offset=0x20 range=32</column>
+                    <column name="samples">s_axi_control, memory, name=samples offset=256 range=256</column>
                 </table>
             </item>
         </section>
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
     <PragmaReport>
-        <Pragma type="interface" location="SimpleSine.cpp:85" status="valid" parentFunction="simplesine" variable="return" isDirective="0" options="mode=s_axilite port=return bundle=BUS_A"/>
-        <Pragma type="interface" location="SimpleSine.cpp:86" status="valid" parentFunction="simplesine" variable="accumulator" isDirective="0" options="mode=s_axilite port=accumulator bundle=BUS_A storage_impl=uram"/>
-        <Pragma type="interface" location="SimpleSine.cpp:87" status="valid" parentFunction="simplesine" variable="phaseInc" isDirective="0" options="mode=s_axilite port=phaseInc bundle=BUS_A"/>
-        <Pragma type="interface" location="SimpleSine.cpp:88" status="valid" parentFunction="simplesine" variable="samples" isDirective="0" options="mode=s_axilite port=samples bundle=BUS_A"/>
+        <Pragma type="interface" location="SimpleSine.cpp:35" status="valid" parentFunction="simplesine" variable="return" isDirective="0" options="mode=s_axilite port=return"/>
+        <Pragma type="interface" location="SimpleSine.cpp:36" status="valid" parentFunction="simplesine" variable="accumulator" isDirective="0" options="mode=s_axilite port=accumulator"/>
+        <Pragma type="interface" location="SimpleSine.cpp:37" status="valid" parentFunction="simplesine" variable="phaseInc" isDirective="0" options="mode=s_axilite port=phaseInc"/>
+        <Pragma type="interface" location="SimpleSine.cpp:38" status="valid" parentFunction="simplesine" variable="samples" isDirective="0" options="mode=s_axilite port=samples"/>
     </PragmaReport>
 </profile>
 

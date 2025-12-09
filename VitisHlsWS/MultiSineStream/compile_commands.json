@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream",
+    "arguments": [
+      "/home/andrewcapon/Xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/andrewcapon/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot",
+      "-fhlstoplevel=MultiSineStream",
+      "-c",
+      "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/MultiSineStream.cpp"
+    ],
+    "file": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/MultiSineStream.cpp"
+  },
+  {
+    "directory": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream",
+    "arguments": [
+      "/home/andrewcapon/Xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/andrewcapon/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/home/andrewcapon/Xilinx/Vitis/2024.2/include",
+      "-c",
+      "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/MultiSineStreamTB.cpp"
+    ],
+    "file": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream/MultiSineStreamTB.cpp"
+  }
+]

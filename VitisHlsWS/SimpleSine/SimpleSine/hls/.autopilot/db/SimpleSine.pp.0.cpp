@@ -5701,18 +5701,16 @@ inline __attribute__((nodebug)) bool operator!=(
 
 
 
-
-
 const int cBlockSize = 48;
 const int cChannels = 1;
 const int cBlockSamples = cBlockSize * cChannels;
 
 const int cSampleRate = 48000;
 const int cSineLutSize = 4096;
-# 41 "./DataTypes.h"
+# 39 "./DataTypes.h"
 typedef ap_fixed<24,1,AP_RND,AP_SAT> DataType;
 typedef ap_fixed<32,9,AP_RND,AP_SAT> MixType;
-# 55 "./DataTypes.h"
+# 53 "./DataTypes.h"
     typedef ap_fixed<25,16> FrequencyType;
     typedef ap_ufixed<32, 0> FrequencyMultiplierType;
 
@@ -29468,8 +29466,11 @@ namespace hls {
 # 5 "./SimpleSine.h" 2
 
 PhaseType FrequencyToAccumPerSample(const FrequencyType &frequency);
-# 18 "./SimpleSine.h"
-        __attribute__((sdx_kernel("SimpleSine", 0))) void SimpleSine(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples]);
+
+
+
+
+    __attribute__((sdx_kernel("SimpleSine", 0))) void SimpleSine(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples]);
 # 2 "SimpleSine.cpp" 2
 
 FrequencyMultiplierType f = 4096.0f/cSampleRate;
@@ -29497,32 +29498,28 @@ void InitSinTable(DataType sine_lut[cSineLutSize])
 }
 
 DataType sine_lut[cSineLutSize];
-# 76 "SimpleSine.cpp"
+
+
+
+
 __attribute__((sdx_kernel("SimpleSine", 0))) void SimpleSine(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples])
 
 {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=SimpleSine
-# 78 "SimpleSine.cpp"
+# 34 "SimpleSine.cpp"
 
-
-
-
-
-
-
-#pragma HLS INTERFACE mode=s_axilite port=return bundle=BUS_A
-#pragma HLS INTERFACE mode=s_axilite port=accumulator bundle=BUS_A storage_impl=uram
-#pragma HLS INTERFACE mode=s_axilite port=phaseInc bundle=BUS_A
-#pragma HLS INTERFACE mode=s_axilite port=samples bundle=BUS_A
-
+#pragma HLS INTERFACE mode=s_axilite port=return
+#pragma HLS INTERFACE mode=s_axilite port=accumulator
+#pragma HLS INTERFACE mode=s_axilite port=phaseInc
+#pragma HLS INTERFACE mode=s_axilite port=samples
 
 
 
 
  InitSinTable(sine_lut);
 
-    VITIS_LOOP_96_1: for(int block = 0; block < cBlockSize; block++)
+    VITIS_LOOP_45_1: for(int block = 0; block < cBlockSize; block++)
     {
 
         accumulator += phaseInc;

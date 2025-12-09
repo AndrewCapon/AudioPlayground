@@ -10,28 +10,28 @@ use IEEE.numeric_std.all;
 
 entity SimpleSine is
 generic (
-    C_S_AXI_BUS_A_ADDR_WIDTH : INTEGER := 9;
-    C_S_AXI_BUS_A_DATA_WIDTH : INTEGER := 32 );
+    C_S_AXI_CONTROL_ADDR_WIDTH : INTEGER := 9;
+    C_S_AXI_CONTROL_DATA_WIDTH : INTEGER := 32 );
 port (
     ap_clk : IN STD_LOGIC;
     ap_rst_n : IN STD_LOGIC;
-    s_axi_BUS_A_AWVALID : IN STD_LOGIC;
-    s_axi_BUS_A_AWREADY : OUT STD_LOGIC;
-    s_axi_BUS_A_AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_BUS_A_ADDR_WIDTH-1 downto 0);
-    s_axi_BUS_A_WVALID : IN STD_LOGIC;
-    s_axi_BUS_A_WREADY : OUT STD_LOGIC;
-    s_axi_BUS_A_WDATA : IN STD_LOGIC_VECTOR (C_S_AXI_BUS_A_DATA_WIDTH-1 downto 0);
-    s_axi_BUS_A_WSTRB : IN STD_LOGIC_VECTOR (C_S_AXI_BUS_A_DATA_WIDTH/8-1 downto 0);
-    s_axi_BUS_A_ARVALID : IN STD_LOGIC;
-    s_axi_BUS_A_ARREADY : OUT STD_LOGIC;
-    s_axi_BUS_A_ARADDR : IN STD_LOGIC_VECTOR (C_S_AXI_BUS_A_ADDR_WIDTH-1 downto 0);
-    s_axi_BUS_A_RVALID : OUT STD_LOGIC;
-    s_axi_BUS_A_RREADY : IN STD_LOGIC;
-    s_axi_BUS_A_RDATA : OUT STD_LOGIC_VECTOR (C_S_AXI_BUS_A_DATA_WIDTH-1 downto 0);
-    s_axi_BUS_A_RRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
-    s_axi_BUS_A_BVALID : OUT STD_LOGIC;
-    s_axi_BUS_A_BREADY : IN STD_LOGIC;
-    s_axi_BUS_A_BRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
+    s_axi_control_AWVALID : IN STD_LOGIC;
+    s_axi_control_AWREADY : OUT STD_LOGIC;
+    s_axi_control_AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_ADDR_WIDTH-1 downto 0);
+    s_axi_control_WVALID : IN STD_LOGIC;
+    s_axi_control_WREADY : OUT STD_LOGIC;
+    s_axi_control_WDATA : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_DATA_WIDTH-1 downto 0);
+    s_axi_control_WSTRB : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_DATA_WIDTH/8-1 downto 0);
+    s_axi_control_ARVALID : IN STD_LOGIC;
+    s_axi_control_ARREADY : OUT STD_LOGIC;
+    s_axi_control_ARADDR : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_ADDR_WIDTH-1 downto 0);
+    s_axi_control_RVALID : OUT STD_LOGIC;
+    s_axi_control_RREADY : IN STD_LOGIC;
+    s_axi_control_RDATA : OUT STD_LOGIC_VECTOR (C_S_AXI_CONTROL_DATA_WIDTH-1 downto 0);
+    s_axi_control_RRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
+    s_axi_control_BVALID : OUT STD_LOGIC;
+    s_axi_control_BREADY : IN STD_LOGIC;
+    s_axi_control_BRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
     interrupt : OUT STD_LOGIC );
 end;
 
@@ -67,26 +67,26 @@ architecture behav of SimpleSine is
     signal phaseInc : STD_LOGIC_VECTOR (31 downto 0);
     signal phaseInc_read_reg_116 : STD_LOGIC_VECTOR (31 downto 0);
     signal accumulator_read_reg_121 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_start : STD_LOGIC;
-    signal grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_done : STD_LOGIC;
-    signal grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_idle : STD_LOGIC;
-    signal grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_ready : STD_LOGIC;
-    signal grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_ce0 : STD_LOGIC;
-    signal grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_we0 : STD_LOGIC;
-    signal grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_d0 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_start_reg : STD_LOGIC := '0';
+    signal grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start : STD_LOGIC;
+    signal grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done : STD_LOGIC;
+    signal grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_idle : STD_LOGIC;
+    signal grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_ready : STD_LOGIC;
+    signal grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_ce0 : STD_LOGIC;
+    signal grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_we0 : STD_LOGIC;
+    signal grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_d0 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal shl_ln96_fu_91_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal shl_ln96_1_fu_97_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal sub_ln96_fu_103_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal shl_ln45_fu_91_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal shl_ln45_1_fu_97_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal sub_ln45_fu_103_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (1 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_96_1 IS
+    component SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -103,7 +103,7 @@ architecture behav of SimpleSine is
     end component;
 
 
-    component SimpleSine_BUS_A_s_axi IS
+    component SimpleSine_control_s_axi IS
     generic (
         C_S_AXI_ADDR_WIDTH : INTEGER;
         C_S_AXI_DATA_WIDTH : INTEGER );
@@ -146,43 +146,43 @@ architecture behav of SimpleSine is
 
 
 begin
-    grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79 : component SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_96_1
+    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79 : component SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_start,
-        ap_done => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_done,
-        ap_idle => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_idle,
-        ap_ready => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_ready,
+        ap_start => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start,
+        ap_done => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done,
+        ap_idle => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_idle,
+        ap_ready => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_ready,
         accumulator_load => accumulator_read_reg_121,
         phaseInc => phaseInc_read_reg_116,
-        samples_address0 => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_address0,
-        samples_ce0 => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_ce0,
-        samples_we0 => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_we0,
-        samples_d0 => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_d0);
+        samples_address0 => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_address0,
+        samples_ce0 => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_ce0,
+        samples_we0 => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_we0,
+        samples_d0 => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_d0);
 
-    BUS_A_s_axi_U : component SimpleSine_BUS_A_s_axi
+    control_s_axi_U : component SimpleSine_control_s_axi
     generic map (
-        C_S_AXI_ADDR_WIDTH => C_S_AXI_BUS_A_ADDR_WIDTH,
-        C_S_AXI_DATA_WIDTH => C_S_AXI_BUS_A_DATA_WIDTH)
+        C_S_AXI_ADDR_WIDTH => C_S_AXI_CONTROL_ADDR_WIDTH,
+        C_S_AXI_DATA_WIDTH => C_S_AXI_CONTROL_DATA_WIDTH)
     port map (
-        AWVALID => s_axi_BUS_A_AWVALID,
-        AWREADY => s_axi_BUS_A_AWREADY,
-        AWADDR => s_axi_BUS_A_AWADDR,
-        WVALID => s_axi_BUS_A_WVALID,
-        WREADY => s_axi_BUS_A_WREADY,
-        WDATA => s_axi_BUS_A_WDATA,
-        WSTRB => s_axi_BUS_A_WSTRB,
-        ARVALID => s_axi_BUS_A_ARVALID,
-        ARREADY => s_axi_BUS_A_ARREADY,
-        ARADDR => s_axi_BUS_A_ARADDR,
-        RVALID => s_axi_BUS_A_RVALID,
-        RREADY => s_axi_BUS_A_RREADY,
-        RDATA => s_axi_BUS_A_RDATA,
-        RRESP => s_axi_BUS_A_RRESP,
-        BVALID => s_axi_BUS_A_BVALID,
-        BREADY => s_axi_BUS_A_BREADY,
-        BRESP => s_axi_BUS_A_BRESP,
+        AWVALID => s_axi_control_AWVALID,
+        AWREADY => s_axi_control_AWREADY,
+        AWADDR => s_axi_control_AWADDR,
+        WVALID => s_axi_control_WVALID,
+        WREADY => s_axi_control_WREADY,
+        WDATA => s_axi_control_WDATA,
+        WSTRB => s_axi_control_WSTRB,
+        ARVALID => s_axi_control_ARVALID,
+        ARREADY => s_axi_control_ARREADY,
+        ARADDR => s_axi_control_ARADDR,
+        RVALID => s_axi_control_RVALID,
+        RREADY => s_axi_control_RREADY,
+        RDATA => s_axi_control_RDATA,
+        RRESP => s_axi_control_RRESP,
+        BVALID => s_axi_control_BVALID,
+        BREADY => s_axi_control_BREADY,
+        BRESP => s_axi_control_BRESP,
         ACLK => ap_clk,
         ARESET => ap_rst_n_inv,
         ACLK_EN => ap_const_logic_1,
@@ -190,10 +190,10 @@ begin
         accumulator_o_ap_vld => accumulator_o_ap_vld,
         accumulator_i => accumulator_i,
         phaseInc => phaseInc,
-        samples_address0 => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_address0,
-        samples_ce0 => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_ce0,
-        samples_we0 => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_we0,
-        samples_d0 => grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_samples_d0,
+        samples_address0 => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_address0,
+        samples_ce0 => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_ce0,
+        samples_we0 => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_we0,
+        samples_d0 => grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_d0,
         ap_start => ap_start,
         interrupt => interrupt,
         ap_ready => ap_ready,
@@ -216,16 +216,16 @@ begin
     end process;
 
 
-    grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_start_reg_assign_proc : process(ap_clk)
+    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_start_reg <= ap_const_logic_0;
+                grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_start = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                    grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_ready = ap_const_logic_1)) then 
-                    grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_start_reg <= ap_const_logic_0;
+                    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_ready = ap_const_logic_1)) then 
+                    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -241,7 +241,7 @@ begin
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_done, ap_CS_fsm_state2)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done, ap_CS_fsm_state2)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -251,7 +251,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                if (((grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state2;
@@ -260,7 +260,7 @@ begin
                 ap_NS_fsm <= "XX";
         end case;
     end process;
-    accumulator_o <= std_logic_vector(unsigned(accumulator_i) + unsigned(sub_ln96_fu_103_p2));
+    accumulator_o <= std_logic_vector(unsigned(accumulator_i) + unsigned(sub_ln45_fu_103_p2));
 
     accumulator_o_ap_vld_assign_proc : process(ap_start, ap_CS_fsm_state1)
     begin
@@ -284,9 +284,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state2_blk_assign_proc : process(grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_done)
+    ap_ST_fsm_state2_blk_assign_proc : process(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done)
     begin
-        if ((grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_done = ap_const_logic_0)) then 
+        if ((grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state2_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state2_blk <= ap_const_logic_0;
@@ -294,9 +294,9 @@ begin
     end process;
 
 
-    ap_done_assign_proc : process(grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_done, ap_CS_fsm_state2)
+    ap_done_assign_proc : process(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -314,9 +314,9 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_done, ap_CS_fsm_state2)
+    ap_ready_assign_proc : process(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -329,8 +329,8 @@ begin
                 ap_rst_n_inv <= not(ap_rst_n);
     end process;
 
-    grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_start <= grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79_ap_start_reg;
-    shl_ln96_1_fu_97_p2 <= std_logic_vector(shift_left(unsigned(phaseInc),to_integer(unsigned('0' & ap_const_lv32_4(31-1 downto 0)))));
-    shl_ln96_fu_91_p2 <= std_logic_vector(shift_left(unsigned(phaseInc),to_integer(unsigned('0' & ap_const_lv32_6(31-1 downto 0)))));
-    sub_ln96_fu_103_p2 <= std_logic_vector(unsigned(shl_ln96_fu_91_p2) - unsigned(shl_ln96_1_fu_97_p2));
+    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start <= grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg;
+    shl_ln45_1_fu_97_p2 <= std_logic_vector(shift_left(unsigned(phaseInc),to_integer(unsigned('0' & ap_const_lv32_4(31-1 downto 0)))));
+    shl_ln45_fu_91_p2 <= std_logic_vector(shift_left(unsigned(phaseInc),to_integer(unsigned('0' & ap_const_lv32_6(31-1 downto 0)))));
+    sub_ln45_fu_103_p2 <= std_logic_vector(unsigned(shl_ln45_fu_91_p2) - unsigned(shl_ln45_1_fu_97_p2));
 end behav;

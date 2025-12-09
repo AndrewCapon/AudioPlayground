@@ -10,8 +10,8 @@
 /*                                                                 */
 /*******************************************************************/
 
-_STACK_SIZE = DEFINED(_STACK_SIZE) ? _STACK_SIZE : 0x800;
-_HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x800;
+_STACK_SIZE = DEFINED(_STACK_SIZE) ? _STACK_SIZE : 0x1000;
+_HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x1000;
 
 /* Define Memories in the system */
 
@@ -196,6 +196,12 @@ SECTIONS
    *(.audio_ram)
    __audio_ram_end = .;
 } > audio_components_dma_dma_bram_axi_bram_ctrl_0_Mem0
+
+.local_ram : {
+   __local_ram_start = .;
+   *(.local_ram)
+   __local_ram_end = .;
+} > memory_microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_memory_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
 
 _SDA_BASE_ = __sdata_start + ((__sbss_end - __sdata_start) / 2 );
 

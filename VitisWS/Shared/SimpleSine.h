@@ -68,7 +68,7 @@ public:
 	void ProcessBlocking(void)
 	{
 		static uint32_t uCount = 0;
-		static uint32_t *pAccumulator = reinterpret_cast<uint32_t *>(m_instance.Bus_a_BaseAddress + XSIMPLESINE_BUS_A_ADDR_ACCUMULATOR_O_DATA);
+		static uint32_t *pAccumulator = reinterpret_cast<uint32_t *>(m_instance.Control_BaseAddress + XSIMPLESINE_CONTROL_ADDR_ACCUMULATOR_O_DATA);
 
 		if(uCount++ == 1000-1)
 		{

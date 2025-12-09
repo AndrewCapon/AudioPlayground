@@ -338,7 +338,7 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>add_ln4816</name>
+						<name>add_ln4716</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -380,7 +380,7 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>add_ln48_117</name>
+						<name>add_ln47_117</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -422,7 +422,7 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>add_ln5318</name>
+						<name>add_ln5218</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -593,7 +593,7 @@
 						<name>samples_read</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -609,7 +609,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>34</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -650,7 +650,7 @@
 						<name>phaseInc_read</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -666,7 +666,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>34</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -704,7 +704,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>add_ln5318_write_ln0</name>
+						<name>add_ln5218_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -747,7 +747,7 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>add_ln48_117_write_ln0</name>
+						<name>add_ln47_117_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -790,7 +790,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>add_ln4816_write_ln0</name>
+						<name>add_ln4716_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1135,10 +1135,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>icmp_ln5115</name>
+						<name>icmp_ln5015</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1154,7 +1154,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -1197,7 +1197,7 @@
 						<name>sineIdx_114_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1213,7 +1213,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>50</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -1251,10 +1251,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>add_ln5318_load</name>
+						<name>add_ln5218_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1270,7 +1270,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>50</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -1353,7 +1353,7 @@
 						<name>trunc_ln</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1369,7 +1369,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1409,10 +1409,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>sext_ln48</name>
+						<name>sext_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1428,7 +1428,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1468,7 +1468,7 @@
 						<name>gmem_addr</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1484,7 +1484,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1522,10 +1522,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>trunc_ln48_1</name>
+						<name>trunc_ln47_1</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1541,7 +1541,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1581,10 +1581,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>sext_ln48_1</name>
+						<name>sext_ln47_1</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1600,7 +1600,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1640,7 +1640,7 @@
 						<name>gmem_addr_1</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1656,7 +1656,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1694,10 +1694,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>br_ln51</name>
+						<name>br_ln50</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1713,7 +1713,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -1755,7 +1755,7 @@
 						<name>empty_16</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1771,7 +1771,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1813,7 +1813,7 @@
 						<name>empty_17</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1829,7 +1829,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1868,10 +1868,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>br_ln51</name>
+						<name>br_ln50</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1887,7 +1887,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -1927,7 +1927,7 @@
 						<name>indvar_flatten7_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -1943,7 +1943,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1984,7 +1984,7 @@
 						<name>i8_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2000,7 +2000,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2041,7 +2041,7 @@
 						<name>sineIdx9_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2057,7 +2057,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2098,7 +2098,7 @@
 						<name>indvars_iv710_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2114,7 +2114,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2152,10 +2152,10 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>add_ln4816_load</name>
+						<name>add_ln4716_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2171,7 +2171,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2209,10 +2209,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>add_ln48_117_load</name>
+						<name>add_ln47_117_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2228,7 +2228,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2266,10 +2266,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>or_ln50</name>
+						<name>or_ln49</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2285,7 +2285,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>50</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -2326,7 +2326,7 @@
 						<name>i</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2342,7 +2342,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2384,7 +2384,7 @@
 						<name>sineIdx</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2400,7 +2400,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2439,10 +2439,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>select_ln48_2</name>
+						<name>select_ln47_2</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2458,7 +2458,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2500,7 +2500,7 @@
 						<name>empty_19</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2516,7 +2516,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2556,7 +2556,7 @@
 						<name>i_cast_cast</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2572,7 +2572,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2612,7 +2612,7 @@
 						<name>accumulators_addr</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2628,7 +2628,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2667,10 +2667,10 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>add_ln48_2</name>
+						<name>add_ln47_2</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2686,7 +2686,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2724,10 +2724,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>br_ln51</name>
+						<name>br_ln50</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2743,7 +2743,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -2785,7 +2785,7 @@
 						<name>gmem_addr_1_read</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2801,7 +2801,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2843,7 +2843,7 @@
 						<name>accumulators_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2859,7 +2859,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>53</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2896,10 +2896,10 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>accumulators_load112_write_ln53</name>
+						<name>accumulators_load112_write_ln52</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2915,7 +2915,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>53</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2953,10 +2953,10 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>gmem_addr_1_read411_write_ln48</name>
+						<name>gmem_addr_1_read411_write_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -2972,7 +2972,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3010,10 +3010,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>br_ln51</name>
+						<name>br_ln50</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3029,7 +3029,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -3069,7 +3069,7 @@
 						<name>accumulators_load3</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3085,7 +3085,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>53</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -3128,7 +3128,7 @@
 						<name>gmem_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3144,7 +3144,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -3185,7 +3185,7 @@
 						<name>accumulators_load_1</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3201,7 +3201,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -3239,10 +3239,10 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>add_ln53_1</name>
+						<name>add_ln52_1</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3258,7 +3258,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>53</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -3299,7 +3299,7 @@
 						<name>address</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3315,7 +3315,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>55</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3355,10 +3355,10 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>zext_ln55</name>
+						<name>zext_ln54</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3374,7 +3374,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>55</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3414,7 +3414,7 @@
 						<name>sine_lut_addr</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>55</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3430,7 +3430,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>56</second>
+										<second>55</second>
 									</item>
 								</second>
 							</item>
@@ -3469,10 +3469,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>select_ln50</name>
+						<name>select_ln49</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3488,7 +3488,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>50</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -3530,7 +3530,7 @@
 						<name>sineIdx_2</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>55</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3546,7 +3546,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>56</second>
+										<second>55</second>
 									</item>
 								</second>
 							</item>
@@ -3587,7 +3587,7 @@
 						<name>sine_lut_load</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>55</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3603,7 +3603,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>56</second>
+										<second>55</second>
 									</item>
 								</second>
 							</item>
@@ -3640,10 +3640,10 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>zext_ln56</name>
+						<name>zext_ln55</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>55</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3659,7 +3659,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>56</second>
+										<second>55</second>
 									</item>
 								</second>
 							</item>
@@ -3696,10 +3696,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>gmem_addr_write_ln56</name>
+						<name>gmem_addr_write_ln55</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>55</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3715,7 +3715,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>56</second>
+										<second>55</second>
 									</item>
 								</second>
 							</item>
@@ -3757,10 +3757,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>icmp_ln51</name>
+						<name>icmp_ln50</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3776,7 +3776,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -3814,10 +3814,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>shl_ln51</name>
+						<name>shl_ln50</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3833,7 +3833,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -3871,10 +3871,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>shl_ln51_1</name>
+						<name>shl_ln50_1</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3890,7 +3890,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -3928,10 +3928,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>sub_ln51</name>
+						<name>sub_ln50</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -3947,7 +3947,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -3985,10 +3985,10 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>add_ln51</name>
+						<name>add_ln50</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4004,7 +4004,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -4042,10 +4042,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>br_ln51</name>
+						<name>br_ln50</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4061,7 +4061,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -4100,10 +4100,10 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>accumulators_addr_write_ln53</name>
+						<name>accumulators_addr_write_ln52</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4119,7 +4119,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>53</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -4158,10 +4158,10 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>br_ln51</name>
+						<name>br_ln50</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4177,7 +4177,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -4217,7 +4217,7 @@
 						<name>indvar_flatten7_load_1</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4233,7 +4233,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -4271,10 +4271,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>add_ln48</name>
+						<name>add_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4290,7 +4290,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -4328,10 +4328,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>add_ln48_1</name>
+						<name>add_ln47_1</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4347,7 +4347,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -4385,10 +4385,10 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>add_ln53</name>
+						<name>add_ln52</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4404,7 +4404,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>53</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -4442,10 +4442,10 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>icmp_ln48</name>
+						<name>icmp_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4461,7 +4461,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -4499,10 +4499,10 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>br_ln48</name>
+						<name>br_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4518,7 +4518,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -4560,7 +4560,7 @@
 						<name>empty_18</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<lineNumber>94</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4576,7 +4576,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>93</second>
+										<second>94</second>
 									</item>
 								</second>
 							</item>
@@ -4657,10 +4657,10 @@
 					<Obj>
 						<type>0</type>
 						<id>114</id>
-						<name>empty_write_ln53</name>
+						<name>empty_write_ln52</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4676,7 +4676,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>53</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -4715,10 +4715,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>add_ln5318_write_ln53</name>
+						<name>add_ln5218_write_ln52</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4734,7 +4734,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>53</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -4774,10 +4774,10 @@
 					<Obj>
 						<type>0</type>
 						<id>116</id>
-						<name>add_ln48_117_write_ln48</name>
+						<name>add_ln47_117_write_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4793,7 +4793,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -4833,10 +4833,10 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>add_ln4816_write_ln48</name>
+						<name>add_ln4716_write_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4852,7 +4852,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -4892,10 +4892,10 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>sineIdx_114_write_ln56</name>
+						<name>sineIdx_114_write_ln55</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>55</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4911,7 +4911,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>56</second>
+										<second>55</second>
 									</item>
 								</second>
 							</item>
@@ -4951,10 +4951,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>indvars_iv710_write_ln48</name>
+						<name>indvars_iv710_write_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -4970,7 +4970,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -5010,10 +5010,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>sineIdx9_write_ln48</name>
+						<name>sineIdx9_write_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -5029,7 +5029,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -5069,10 +5069,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>i8_write_ln48</name>
+						<name>i8_write_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -5088,7 +5088,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -5128,10 +5128,10 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>indvar_flatten7_write_ln48</name>
+						<name>indvar_flatten7_write_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -5147,7 +5147,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -5188,10 +5188,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>br_ln48</name>
+						<name>br_ln47</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -5207,7 +5207,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -5246,10 +5246,10 @@
 					<Obj>
 						<type>0</type>
 						<id>125</id>
-						<name>_ln93</name>
+						<name>_ln94</name>
 						<fileName>MultiSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<lineNumber>94</lineNumber>
 						<contextFuncName>MultiSineMaster</contextFuncName>
 						<contextNormFuncName>MultiSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -5265,7 +5265,7 @@
 											<first>MultiSineMaster.cpp</first>
 											<second>MultiSineMaster</second>
 										</first>
-										<second>93</second>
+										<second>94</second>
 									</item>
 								</second>
 							</item>
@@ -7918,8 +7918,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_352">
 			<mId>3</mId>
-			<mTag>VITIS_LOOP_48_1_VITIS_LOOP_51_2</mTag>
-			<mNormTag>VITIS_LOOP_48_1_VITIS_LOOP_51_2</mNormTag>
+			<mTag>VITIS_LOOP_47_1_VITIS_LOOP_50_2</mTag>
+			<mNormTag>VITIS_LOOP_47_1_VITIS_LOOP_50_2</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -8734,7 +8734,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="33" tracking_level="1" version="0" object_id="_354">
-			<region_name>VITIS_LOOP_48_1_VITIS_LOOP_51_2</region_name>
+			<region_name>VITIS_LOOP_47_1_VITIS_LOOP_50_2</region_name>
 			<basic_blocks>
 				<count>9</count>
 				<item_version>0</item_version>

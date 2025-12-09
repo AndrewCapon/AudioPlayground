@@ -1293,30 +1293,30 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_169_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_20_1:  '
-    FileOffset:      20
+    Message:         'Added loop label VITIS_LOOP_19_1:  '
+    FileOffset:      19
     FilePath:        MultiSineMaster.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
-        Offset:          1758095
+        Offset:          1744603
         Length:          0
-        ReplacementText: 'VITIS_LOOP_20_1: '
+        ReplacementText: 'VITIS_LOOP_19_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_48_1:  '
-    FileOffset:      48
+    Message:         'Added loop label VITIS_LOOP_47_1:  '
+    FileOffset:      47
     FilePath:        MultiSineMaster.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
-        Offset:          1758809
+        Offset:          1745272
         Length:          0
-        ReplacementText: 'VITIS_LOOP_48_1: '
+        ReplacementText: 'VITIS_LOOP_47_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_51_2:  '
-    FileOffset:      51
+    Message:         'Added loop label VITIS_LOOP_50_2:  '
+    FileOffset:      50
     FilePath:        MultiSineMaster.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineMaster/MultiSineMaster/hls/.autopilot/db/MultiSineMaster.pp.0.cpp
-        Offset:          1758874
+        Offset:          1745337
         Length:          0
-        ReplacementText: 'VITIS_LOOP_51_2: '
+        ReplacementText: 'VITIS_LOOP_50_2: '
 ...

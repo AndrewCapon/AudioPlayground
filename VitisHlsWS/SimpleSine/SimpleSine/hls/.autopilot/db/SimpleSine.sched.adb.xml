@@ -55,10 +55,10 @@ entry:13 %accumulator_read = read i32 @_ssdm_op_Read.s_axilite.i32P0A, i32 %accu
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="24" op_4_bw="24">
 <![CDATA[
-entry:14 %call_ln99 = call void @SimpleSine_Pipeline_VITIS_LOOP_96_1, i32 %accumulator_read, i32 %phaseInc_read, i24 %samples, i24 %sine_lut
+entry:14 %call_ln48 = call void @SimpleSine_Pipeline_VITIS_LOOP_45_1, i32 %accumulator_read, i32 %phaseInc_read, i24 %samples, i24 %sine_lut
 
 ]]></Node>
-<StgValue><ssdm name="call_ln99"/></StgValue>
+<StgValue><ssdm name="call_ln48"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -70,10 +70,10 @@ entry:14 %call_ln99 = call void @SimpleSine_Pipeline_VITIS_LOOP_96_1, i32 %accum
 
 <Node id="20" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:15 %shl_ln96 = shl i32 %phaseInc_read, i32 6
+entry:15 %shl_ln45 = shl i32 %phaseInc_read, i32 6
 
 ]]></Node>
-<StgValue><ssdm name="shl_ln96"/></StgValue>
+<StgValue><ssdm name="shl_ln45"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -85,10 +85,10 @@ entry:15 %shl_ln96 = shl i32 %phaseInc_read, i32 6
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:16 %shl_ln96_1 = shl i32 %phaseInc_read, i32 4
+entry:16 %shl_ln45_1 = shl i32 %phaseInc_read, i32 4
 
 ]]></Node>
-<StgValue><ssdm name="shl_ln96_1"/></StgValue>
+<StgValue><ssdm name="shl_ln45_1"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -100,10 +100,10 @@ entry:16 %shl_ln96_1 = shl i32 %phaseInc_read, i32 4
 
 <Node id="22" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:17 %sub_ln96 = sub i32 %shl_ln96, i32 %shl_ln96_1
+entry:17 %sub_ln45 = sub i32 %shl_ln45, i32 %shl_ln45_1
 
 ]]></Node>
-<StgValue><ssdm name="sub_ln96"/></StgValue>
+<StgValue><ssdm name="sub_ln45"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -115,10 +115,10 @@ entry:17 %sub_ln96 = sub i32 %shl_ln96, i32 %shl_ln96_1
 
 <Node id="23" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:18 %add_ln96 = add i32 %accumulator_read, i32 %sub_ln96
+entry:18 %add_ln45 = add i32 %accumulator_read, i32 %sub_ln45
 
 ]]></Node>
-<StgValue><ssdm name="add_ln96"/></StgValue>
+<StgValue><ssdm name="add_ln45"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -130,10 +130,10 @@ entry:18 %add_ln96 = add i32 %accumulator_read, i32 %sub_ln96
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
 <![CDATA[
-entry:19 %write_ln99 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %accumulator, i32 %add_ln96
+entry:19 %write_ln48 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %accumulator, i32 %add_ln45
 
 ]]></Node>
-<StgValue><ssdm name="write_ln99"/></StgValue>
+<StgValue><ssdm name="write_ln48"/></StgValue>
 </operation>
 </state>
 
@@ -148,10 +148,10 @@ entry:19 %write_ln99 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %accumul
 
 <Node id="5" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-entry:0 %spectopmodule_ln76 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_8
+entry:0 %spectopmodule_ln32 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_8
 
 ]]></Node>
-<StgValue><ssdm name="spectopmodule_ln76"/></StgValue>
+<StgValue><ssdm name="spectopmodule_ln32"/></StgValue>
 </operation>
 
 <operation id="12" st_id="2" stage="1" lat="1">
@@ -328,10 +328,10 @@ entry:11 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0,
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="24" op_4_bw="24">
 <![CDATA[
-entry:14 %call_ln99 = call void @SimpleSine_Pipeline_VITIS_LOOP_96_1, i32 %accumulator_read, i32 %phaseInc_read, i24 %samples, i24 %sine_lut
+entry:14 %call_ln48 = call void @SimpleSine_Pipeline_VITIS_LOOP_45_1, i32 %accumulator_read, i32 %phaseInc_read, i24 %samples, i24 %sine_lut
 
 ]]></Node>
-<StgValue><ssdm name="call_ln99"/></StgValue>
+<StgValue><ssdm name="call_ln48"/></StgValue>
 </operation>
 
 <operation id="24" st_id="2" stage="1" lat="1">
@@ -343,10 +343,10 @@ entry:14 %call_ln99 = call void @SimpleSine_Pipeline_VITIS_LOOP_96_1, i32 %accum
 
 <Node id="25" bw="0">
 <![CDATA[
-entry:20 %ret_ln112 = ret
+entry:20 %ret_ln61 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln112"/></StgValue>
+<StgValue><ssdm name="ret_ln61"/></StgValue>
 </operation>
 </state>
 </state_list>

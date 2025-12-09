@@ -605,17 +605,17 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="SimpleSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=SimpleSine" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSine.cpp:85:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="SimpleSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return bundle=BUS_A" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSine.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SimpleSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSine.cpp:86:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="SimpleSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=accumulator bundle=BUS_A storage_impl=uram" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSine.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SimpleSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=accumulator" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSine.cpp:87:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="SimpleSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=phaseInc bundle=BUS_A" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSine.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SimpleSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=phaseInc" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSine.cpp:88:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="SimpleSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=samples bundle=BUS_A" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSine.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SimpleSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=samples" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

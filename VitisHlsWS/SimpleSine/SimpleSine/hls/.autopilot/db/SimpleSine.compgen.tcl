@@ -8,7 +8,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 }
 
 set axilite_register_dict [dict create]
-set port_BUS_A {
+set port_control {
 accumulator_i { 
 	dir I
 	width 32
@@ -52,7 +52,7 @@ ap_idle { }
 interrupt {
 }
 }
-dict set axilite_register_dict BUS_A $port_BUS_A
+dict set axilite_register_dict control $port_control
 
 
 # Native S_AXILite:
@@ -60,9 +60,9 @@ if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
 			id 5 \
-			corename SimpleSine_BUS_A_axilite \
-			name SimpleSine_BUS_A_s_axi \
-			ports {$port_BUS_A} \
+			corename SimpleSine_control_axilite \
+			name SimpleSine_control_s_axi \
+			ports {$port_control} \
 			op interface \
 			interrupt_clear_mode TOW \
 			interrupt_trigger_type default \
@@ -71,12 +71,12 @@ if {${::AESL::PGuard_simmodel_gen}} {
 			is_addrwidth64 1 \
 		} "
 	} else {
-		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'BUS_A'"
+		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'control'"
 	}
 }
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler SimpleSine_BUS_A_s_axi BINDTYPE interface TYPE interface_s_axilite
+	::AP::rtl_comp_handler SimpleSine_control_s_axi BINDTYPE interface TYPE interface_s_axilite
 }
 
 

@@ -497,7 +497,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: MultiSineMaster.cpp, Line: 22, Column: 19 }
+DebugLoc:        { File: MultiSineMaster.cpp, Line: 21, Column: 19 }
 Function:        _Z12InitSinTableP8ap_fixedILi24ELi1EL9ap_q_mode0EL9ap_o_mode0ELi0EE
 Args:            
   - Callee:          sin
@@ -505,7 +505,7 @@ Args:
                        Line: 7, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'InitSinTable(ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 14, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -515,10 +515,10 @@ DebugLoc:        { File: MultiSineMaster.cpp, Line: 44, Column: 2 }
 Function:        _Z15MultiSineMasterPK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EE
 Args:            
   - Callee:          'InitSinTable(ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 14, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'MultiSineMaster(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 35, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -527,7 +527,7 @@ Name:            NeverInline
 Function:        apatb_MultiSineMaster_ir
 Args:            
   - Callee:          'MultiSineMaster(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 35, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_MultiSineMaster_ir
   - String:          ' because it should never be inlined (cost=never)'
@@ -535,7 +535,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: MultiSineMaster.cpp, Line: 48, Column: 22 }
+DebugLoc:        { File: MultiSineMaster.cpp, Line: 47, Column: 22 }
 Function:        _Z15MultiSineMasterPK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EE
 Args:            
   - String:          'Sequential '
@@ -549,23 +549,23 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_48_1
+  - LoopName:        VITIS_LOOP_47_1
   - String:          ' '
-  - LoopLoc:         'MultiSineMaster.cpp:48:22'
+  - LoopLoc:         'MultiSineMaster.cpp:47:22'
   - String:          ' '
   - Function:        'MultiSineMaster(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 35, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 56, Column: 32 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 55, Column: 32 }
   - OrigDirection:   write
   - OrigID:          for.body4.store.17
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: MultiSineMaster.cpp, Line: 48, Column: 22 }
+DebugLoc:        { File: MultiSineMaster.cpp, Line: 47, Column: 22 }
 Function:        _Z15MultiSineMasterPK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EE
 Args:            
   - String:          'Sequential '
@@ -579,29 +579,29 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_48_1
+  - LoopName:        VITIS_LOOP_47_1
   - String:          ' '
-  - LoopLoc:         'MultiSineMaster.cpp:48:22'
+  - LoopLoc:         'MultiSineMaster.cpp:47:22'
   - String:          ' '
   - Function:        'MultiSineMaster(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 35, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
   - OrigDirection:   read
-  - OrigID:          VITIS_LOOP_51_2.load.10
+  - OrigID:          VITIS_LOOP_50_2.load.10
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            TypeAllocSizePaddingMemoryAccess
-DebugLoc:        { File: MultiSineMaster.cpp, Line: 48, Column: 22 }
+DebugLoc:        { File: MultiSineMaster.cpp, Line: 47, Column: 22 }
 Function:        _Z15MultiSineMasterPK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EE
 Args:            
   - Type:            i24
   - String:          ' allocated space contains padding. This is unsupported'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 48, Column: 22 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 47, Column: 22 }
   - OrigDirection:   write
   - OrigID:          samples3seq
   - ArrayName:       samples
@@ -609,13 +609,13 @@ Args:
   - BundleName:      gmem
   - String:          ' '
   - Function:        'MultiSineMaster(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 35, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: MultiSineMaster.cpp, Line: 48, Column: 22 }
+DebugLoc:        { File: MultiSineMaster.cpp, Line: 47, Column: 22 }
 Function:        _Z15MultiSineMasterPK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EE
 Args:            
   - String:          'Could not widen since type '
@@ -624,19 +624,19 @@ Args:
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 48, Column: 22 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 47, Column: 22 }
   - OrigDirection:   read
   - OrigID:          phaseInc4seq
   - ArrayName:       phaseInc
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_48_1
+  - LoopName:        VITIS_LOOP_47_1
   - String:          ' '
-  - LoopLoc:         'MultiSineMaster.cpp:48:22'
+  - LoopLoc:         'MultiSineMaster.cpp:47:22'
   - String:          ' '
   - Function:        'MultiSineMaster(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 35, Column: 0 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -644,15 +644,15 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_51_2
+  - LoopName:        VITIS_LOOP_50_2
   - String:          '> at '
-  - LoopLoc:         'MultiSineMaster.cpp:51:19'
+  - LoopLoc:         'MultiSineMaster.cpp:50:19'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: MultiSineMaster.cpp, Line: 48, Column: 22 }
+DebugLoc:        { File: MultiSineMaster.cpp, Line: 47, Column: 22 }
 Function:        _Z15MultiSineMasterPK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EE
 Args:            
   - String:          'Multiple burst '
@@ -669,18 +669,18 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_48_1
+  - LoopName:        VITIS_LOOP_47_1
   - String:          ' '
-  - LoopLoc:         'MultiSineMaster.cpp:48:22'
+  - LoopLoc:         'MultiSineMaster.cpp:47:22'
   - String:          ' '
   - Function:        'MultiSineMaster(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 35, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: MultiSineMaster.cpp, Line: 48, Column: 22 }
+DebugLoc:        { File: MultiSineMaster.cpp, Line: 47, Column: 22 }
 Function:        _Z15MultiSineMasterPK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EE
 Args:            
   - String:          'Multiple burst '
@@ -690,9 +690,9 @@ Args:
   - String:          ' and bit width '
   - Width:           '32'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_48_1
+  - LoopName:        VITIS_LOOP_47_1
   - String:          '''('
-  - LoopLoc:         'MultiSineMaster.cpp:48:22'
+  - LoopLoc:         'MultiSineMaster.cpp:47:22'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
@@ -702,7 +702,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: MultiSineMaster.cpp, Line: 48, Column: 22 }
+DebugLoc:        { File: MultiSineMaster.cpp, Line: 47, Column: 22 }
 Function:        _Z15MultiSineMasterPK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EE
 Args:            
   - String:          'Multiple burst '
@@ -719,18 +719,18 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_48_1
+  - LoopName:        VITIS_LOOP_47_1
   - String:          ' '
-  - LoopLoc:         'MultiSineMaster.cpp:48:22'
+  - LoopLoc:         'MultiSineMaster.cpp:47:22'
   - String:          ' '
   - Function:        'MultiSineMaster(ap_ufixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<24, 1, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: MultiSineMaster.cpp, Line: 36, Column: 0 }
+    DebugLoc:        { File: MultiSineMaster.cpp, Line: 35, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: MultiSineMaster.cpp, Line: 48, Column: 22 }
+DebugLoc:        { File: MultiSineMaster.cpp, Line: 47, Column: 22 }
 Function:        _Z15MultiSineMasterPK9ap_ufixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedILi24ELi1ELS0_0ELS1_0ELi0EE
 Args:            
   - String:          'Multiple burst '
@@ -740,9 +740,9 @@ Args:
   - String:          ' and bit width '
   - Width:           '32'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_48_1
+  - LoopName:        VITIS_LOOP_47_1
   - String:          '''('
-  - LoopLoc:         'MultiSineMaster.cpp:48:22'
+  - LoopLoc:         'MultiSineMaster.cpp:47:22'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem

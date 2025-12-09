@@ -29510,25 +29510,25 @@ PhaseType accumulators[cVoices];
 #pragma HLSDIRECTIVE TOP name=MultiSine
 # 35 "MultiSine.cpp"
 
-#pragma HLS INTERFACE mode=s_axilite port=return bundle=BUS_A
-#pragma HLS INTERFACE mode=s_axilite port=phaseInc bundle=BUS_A
-#pragma HLS INTERFACE mode=s_axilite port=samples bundle=BUS_A
+#pragma HLS INTERFACE mode=s_axilite port=return
+#pragma HLS INTERFACE mode=s_axilite port=phaseInc
+#pragma HLS INTERFACE mode=s_axilite port=samples
 
-#pragma HLS INTERFACE mode=s_axilite port=debug bundle=BUS_A
+#pragma HLS INTERFACE mode=s_axilite port=debug
 
 
  InitSinTable(sine_lut);
-# 58 "MultiSine.cpp"
-    VITIS_LOOP_58_1: for(int b = 0; b < cBlockSamples; b++)
+
+    int sineIdx = 0;
+    VITIS_LOOP_46_1: for(int i = 0; i < cVoices; i++)
     {
-        int sineIdx = b;
-        VITIS_LOOP_61_2: for(int i = 0; i < cVoices; i++)
+#pragma HLS pipeline off
+ VITIS_LOOP_49_2: for(int b = 0; b < cBlockSamples; b++)
         {
             accumulators[i] += phaseInc[i];
             PhaseIndexType address;
             address = PhaseIndexType(accumulators[i]);
-            samples[sineIdx] = sine_lut[(int)address];
-            sineIdx+=cBlockSamples;
+            samples[sineIdx++] = sine_lut[(int)address];
         }
     }
 # 93 "MultiSine.cpp"

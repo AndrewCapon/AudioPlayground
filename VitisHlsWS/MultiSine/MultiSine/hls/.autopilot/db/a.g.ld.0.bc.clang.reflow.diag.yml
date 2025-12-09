@@ -537,8 +537,8 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_61_2
+  - LoopName:        VITIS_LOOP_49_2
   - String:          '> at '
-  - LoopLoc:         'MultiSine.cpp:61:26'
+  - LoopLoc:         'MultiSine.cpp:49:19'
   - String:          ' '
 ...

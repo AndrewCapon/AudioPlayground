@@ -1,57 +1,65 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"2.0",
-   "Default View_TopLeft":"-285,-197",
+   "Default View_TopLeft":"-270,-137",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port s_axi -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
-preplace port S_AXI1 -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
-preplace port DLMB -pg 1 -lvl 5 -x 1280 -y 280 -defaultsOSRD
-preplace port ILMB -pg 1 -lvl 5 -x 1280 -y 300 -defaultsOSRD
-preplace port M_AXI_DP -pg 1 -lvl 5 -x 1280 -y 320 -defaultsOSRD
-preplace port M0_AXIS -pg 1 -lvl 5 -x 1280 -y 340 -defaultsOSRD
-preplace port M_AXI_DC -pg 1 -lvl 5 -x 1280 -y 360 -defaultsOSRD
-preplace port M_AXI_IC -pg 1 -lvl 5 -x 1280 -y 380 -defaultsOSRD
-preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
-preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
-preplace port port-id_Reset -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
-preplace port port-id_Debug_SYS_Rst -pg 1 -lvl 5 -x 1280 -y 140 -defaultsOSRD
-preplace portBus cdma_int -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
-preplace portBus uart_int -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
-preplace portBus simplesine_int -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
-preplace portBus i2s_int -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
-preplace portBus multisine_int -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
-preplace portBus simplesinemaster_int -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
-preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -x 640 -y 290 -defaultsOSRD
-preplace inst mdm_1 -pg 1 -lvl 3 -x 640 -y 130 -defaultsOSRD
-preplace inst axi_timer_0 -pg 1 -lvl 1 -x 160 -y 110 -defaultsOSRD
-preplace inst interrupts_xlconcat -pg 1 -lvl 2 -x 390 -y 360 -defaultsOSRD
-preplace inst microblaze_0 -pg 1 -lvl 4 -x 1020 -y 330 -defaultsOSRD
-preplace netloc In6_0_1 1 0 2 NJ 420 NJ
-preplace netloc SimpleSine_0_interrupt 1 0 2 NJ 340 NJ
-preplace netloc audio_components_multisine_interrupt 1 0 2 NJ 380 NJ
-preplace netloc axi_cdma_0_cdma_introut 1 0 2 NJ 300 NJ
-preplace netloc axi_timer_0_interrupt 1 1 1 290 140n
-preplace netloc axi_uartlite_0_interrupt 1 0 2 NJ 320 NJ
-preplace netloc clk_gen_clk_100 1 0 4 30 220 NJ 220 510 400 760J
-preplace netloc mdm_1_debug_sys_rst 1 3 2 NJ 140 NJ
-preplace netloc microblaze_0_intr 1 2 1 490 300n
-preplace netloc outputs_moreDataNeededInterrupt_0 1 0 2 NJ 360 NJ
-preplace netloc rst_clk_wiz_1_100M_mb_reset 1 0 4 NJ 480 NJ 480 520 410 770J
-preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 3 20 230 NJ 230 490J
-preplace netloc axi_interconnect_0_M01_AXI 1 0 3 NJ 240 NJ 240 NJ
-preplace netloc interconnect_M07_AXI 1 0 1 NJ 60
-preplace netloc microblaze_0_M_AXI_DC 1 4 1 NJ 360
-preplace netloc microblaze_0_M_AXI_DP 1 4 1 NJ 320
-preplace netloc microblaze_0_M_AXI_IC 1 4 1 NJ 380
-preplace netloc microblaze_0_debug 1 3 1 760 120n
-preplace netloc microblaze_0_dlmb_1 1 4 1 NJ 280
-preplace netloc microblaze_0_ilmb_1 1 4 1 NJ 300
-preplace netloc microblaze_0_interrupt 1 3 1 N 290
-preplace netloc processor_M0_AXIS 1 4 1 NJ 340
-levelinfo -pg 1 0 160 390 640 1020 1280
-pagesize -pg 1 -db -bbox -sgen -230 0 1440 500
+preplace port s_axi -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port DLMB -pg 1 -lvl 5 -x 1350 -y 360 -defaultsOSRD
+preplace port ILMB -pg 1 -lvl 5 -x 1350 -y 380 -defaultsOSRD
+preplace port M_AXI_DP -pg 1 -lvl 5 -x 1350 -y 400 -defaultsOSRD
+preplace port M0_AXIS -pg 1 -lvl 5 -x 1350 -y 420 -defaultsOSRD
+preplace port M_AXI_DC -pg 1 -lvl 5 -x 1350 -y 440 -defaultsOSRD
+preplace port M_AXI_IC -pg 1 -lvl 5 -x 1350 -y 460 -defaultsOSRD
+preplace port S_AXIS_simplesinestream -pg 1 -lvl 0 -x 0 -y 390 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_Reset -pg 1 -lvl 0 -x 0 -y 550 -defaultsOSRD
+preplace port port-id_Debug_SYS_Rst -pg 1 -lvl 5 -x 1350 -y 300 -defaultsOSRD
+preplace portBus cdma_int -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace portBus uart_int -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace portBus simplesine_int -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace portBus i2s_int -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace portBus multisine_int -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace portBus simplesinemaster_int -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace portBus multisinemaster_int -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace portBus simplesinestream_int -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace portBus In9_0 -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -x 700 -y 550 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -x 700 -y 290 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 1 -x 170 -y 190 -defaultsOSRD
+preplace inst interrupts_xlconcat -pg 1 -lvl 2 -x 450 -y 210 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -x 1090 -y 410 -defaultsOSRD
+preplace netloc In6_0_1 1 0 2 NJ 330 340J
+preplace netloc In7_0_1 1 0 2 NJ 80 300J
+preplace netloc SimpleSine_0_interrupt 1 0 2 NJ 310 310J
+preplace netloc audio_components_multisine_interrupt 1 0 2 NJ 60 320J
+preplace netloc axi_cdma_0_cdma_introut 1 0 2 NJ 20 350J
+preplace netloc axi_timer_0_interrupt 1 1 1 N 220
+preplace netloc axi_uartlite_0_interrupt 1 0 2 NJ 370 330J
+preplace netloc clk_gen_clk_100 1 0 4 40 510 NJ 510 560 430 N
+preplace netloc mdm_1_debug_sys_rst 1 3 2 NJ 300 NJ
+preplace netloc microblaze_0_intr 1 2 1 550 210n
+preplace netloc outputs_moreDataNeededInterrupt_0 1 0 2 NJ 40 340J
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 0 4 NJ 550 NJ 550 570 440 830
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 3 20 540 NJ 540 NJ
+preplace netloc In8_0_1 1 0 2 NJ 350 350J
+preplace netloc In9_0_1 1 0 2 30J 300 NJ
+preplace netloc axi_interconnect_0_M01_AXI 1 0 3 NJ 500 NJ 500 NJ
+preplace netloc interconnect_M07_AXI 1 0 1 NJ 140
+preplace netloc microblaze_0_M_AXI_DC 1 4 1 NJ 440
+preplace netloc microblaze_0_M_AXI_DP 1 4 1 NJ 400
+preplace netloc microblaze_0_M_AXI_IC 1 4 1 NJ 460
+preplace netloc microblaze_0_debug 1 3 1 850 280n
+preplace netloc microblaze_0_dlmb_1 1 4 1 NJ 360
+preplace netloc microblaze_0_ilmb_1 1 4 1 NJ 380
+preplace netloc microblaze_0_interrupt 1 3 1 840 370n
+preplace netloc processor_M0_AXIS 1 4 1 NJ 420
+preplace netloc S0_AXIS_1 1 0 4 NJ 390 NJ 390 NJ 390 NJ
+levelinfo -pg 1 0 170 450 700 1090 1350
+pagesize -pg 1 -db -bbox -sgen -240 0 1510 660
 "
 }
 0

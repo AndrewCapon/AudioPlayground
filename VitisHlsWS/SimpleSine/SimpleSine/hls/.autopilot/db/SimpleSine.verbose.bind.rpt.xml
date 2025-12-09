@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'SimpleSine'" level="0">
-<item name = "Date">Fri Nov 14 11:26:36 2025
+<item name = "Date">Sun Dec  7 14:58:51 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">SimpleSine</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_SimpleSine_Pipeline_VITIS_LOOP_96_1_fu_79">SimpleSine_Pipeline_VITIS_LOOP_96_1, 52, 52, 0.520 us, 0.520 us, 48, 48, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79">SimpleSine_Pipeline_VITIS_LOOP_45_1, 52, 52, 0.520 us, 0.520 us, 48, 48, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

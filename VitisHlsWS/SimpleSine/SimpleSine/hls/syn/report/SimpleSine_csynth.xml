@@ -34,7 +34,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>SimpleSine.cpp:76</SourceLocation>
+<SourceLocation>SimpleSine.cpp:32</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
@@ -57,8 +57,8 @@
 
 <InterfaceSummary>
 <RtlPorts>
-<name>s_axi_BUS_A_AWVALID</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_AWVALID</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>in</Dir>
@@ -68,8 +68,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_AWREADY</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_AWREADY</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>out</Dir>
@@ -79,8 +79,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_AWADDR</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_AWADDR</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>in</Dir>
@@ -90,8 +90,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_WVALID</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_WVALID</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>in</Dir>
@@ -101,8 +101,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_WREADY</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_WREADY</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>out</Dir>
@@ -112,8 +112,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_WDATA</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_WDATA</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>in</Dir>
@@ -123,8 +123,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_WSTRB</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_WSTRB</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>in</Dir>
@@ -134,8 +134,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_ARVALID</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_ARVALID</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>in</Dir>
@@ -145,8 +145,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_ARREADY</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_ARREADY</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>out</Dir>
@@ -156,8 +156,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_ARADDR</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_ARADDR</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>in</Dir>
@@ -167,8 +167,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_RVALID</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_RVALID</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>out</Dir>
@@ -178,8 +178,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_RREADY</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_RREADY</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>in</Dir>
@@ -189,8 +189,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_RDATA</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_RDATA</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>out</Dir>
@@ -200,8 +200,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_RRESP</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_RRESP</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>out</Dir>
@@ -211,8 +211,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_BVALID</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_BVALID</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>out</Dir>
@@ -222,8 +222,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_BREADY</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_BREADY</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>in</Dir>
@@ -233,8 +233,8 @@
 <HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
-<name>s_axi_BUS_A_BRESP</name>
-<Object>BUS_A</Object>
+<name>s_axi_control_BRESP</name>
+<Object>control</Object>
 <Type>array</Type>
 <IOProtocol>s_axi</IOProtocol>
 <Dir>out</Dir>

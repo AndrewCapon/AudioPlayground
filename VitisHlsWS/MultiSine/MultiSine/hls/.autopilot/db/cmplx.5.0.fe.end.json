@@ -3,18 +3,18 @@
         "name": "MultiSine",
         "file": "MultiSine.cpp",
         "fileloc": "31",
-        "instructions": "67",
-        "total_instructions": "67",
+        "instructions": "97",
+        "total_instructions": "97",
         "calls": "",
-        "basicblocks": "5",
+        "basicblocks": "7",
         "loads": {
             "G": "2",
-            "L": "5",
+            "L": "10",
             "T": "1"
         },
         "stores": {
             "G": "1",
-            "L": "10",
+            "L": "19",
             "T": "1"
         },
         "loops": {

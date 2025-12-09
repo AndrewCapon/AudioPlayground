@@ -32,12 +32,12 @@ void SimpleSine(PhaseType &accumulator, const PhaseType phaseInc, DataType sampl
 void SimpleSine(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples])
 #endif
 {
-    #pragma HLS INTERFACE mode=s_axilite    port=return         bundle=BUS_A
-    #pragma HLS INTERFACE mode=s_axilite    port=accumulator    bundle=BUS_A        s
-    #pragma HLS INTERFACE mode=s_axilite    port=phaseInc       bundle=BUS_A
-    #pragma HLS INTERFACE mode=s_axilite    port=samples        bundle=BUS_A
+    #pragma HLS INTERFACE mode=s_axilite    port=return         
+    #pragma HLS INTERFACE mode=s_axilite    port=accumulator    
+    #pragma HLS INTERFACE mode=s_axilite    port=phaseInc       
+    #pragma HLS INTERFACE mode=s_axilite    port=samples        
 #if DEBUG    
-    #pragma HLS INTERFACE mode=s_axilite    port=debug          bundle=BUS_A
+    #pragma HLS INTERFACE mode=s_axilite    port=debug          
 #endif
 
     InitSinTable(sine_lut);

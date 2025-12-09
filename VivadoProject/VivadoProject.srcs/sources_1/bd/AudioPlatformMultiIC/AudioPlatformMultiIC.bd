@@ -1020,7 +1020,7 @@
         "components": {
           "SimpleSine_0": {
             "vlnv": "xilinx.com:hls:SimpleSine:1.0",
-            "ip_revision": "2114372527",
+            "ip_revision": "2114381099",
             "xci_name": "AudioPlatformMultiIC_SimpleSine_0_0",
             "xci_path": "ip/AudioPlatformMultiIC_SimpleSine_0_0/AudioPlatformMultiIC_SimpleSine_0_0.xci",
             "inst_hier_path": "audio_components/SimpleSine_0"
@@ -1221,7 +1221,7 @@
           },
           "MultiSine_0": {
             "vlnv": "xilinx.com:hls:MultiSine:1.0",
-            "ip_revision": "2114349309",
+            "ip_revision": "2114381097",
             "xci_name": "AudioPlatformMultiIC_MultiSine_0_0",
             "xci_path": "ip/AudioPlatformMultiIC_MultiSine_0_0/AudioPlatformMultiIC_MultiSine_0_0.xci",
             "inst_hier_path": "audio_components/MultiSine_0"
@@ -1255,30 +1255,10 @@
           },
           "MultiSineMaster_0": {
             "vlnv": "xilinx.com:hls:MultiSineMaster:1.0",
-            "ip_revision": "2114377976",
+            "ip_revision": "2114381097",
             "xci_name": "AudioPlatformMultiIC_MultiSineMaster_0_0",
             "xci_path": "ip/AudioPlatformMultiIC_MultiSineMaster_0_0/AudioPlatformMultiIC_MultiSineMaster_0_0.xci",
-            "inst_hier_path": "audio_components/MultiSineMaster_0",
-            "interface_ports": {
-              "m_axi_gmem": {
-                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-                "mode": "Master",
-                "address_space_ref": "Data_m_axi_gmem",
-                "base_address": {
-                  "minimum": "0x00000000",
-                  "maximum": "0xFFFFFFFF",
-                  "width": "32"
-                }
-              }
-            },
-            "addressing": {
-              "address_spaces": {
-                "Data_m_axi_gmem": {
-                  "range": "4G",
-                  "width": "32"
-                }
-              }
-            }
+            "inst_hier_path": "audio_components/MultiSineMaster_0"
           }
         },
         "interface_nets": {
@@ -1292,12 +1272,6 @@
             "interface_ports": [
               "SimpleSineMaster_0/s_axi_control",
               "s_axi_simplesinemaster"
-            ]
-          },
-          "Conn3": {
-            "interface_ports": [
-              "MultiSineMaster_0/m_axi_gmem",
-              "m_axi_multisinemaster"
             ]
           },
           "Conn4": {
@@ -1322,18 +1296,6 @@
             "interface_ports": [
               "S_AXI_CDDMA",
               "audio_bram/S_AXI_LITE"
-            ]
-          },
-          "axi_interconnect_0_M03_AXI": {
-            "interface_ports": [
-              "s_axi_simplesine",
-              "SimpleSine_0/s_axi_BUS_A"
-            ]
-          },
-          "s_axi_multisine_1": {
-            "interface_ports": [
-              "s_axi_multisine",
-              "MultiSine_0/s_axi_BUS_A"
             ]
           }
         },
@@ -1372,20 +1334,20 @@
             "ports": [
               "s_axi_lite_aclk",
               "audio_bram/s_axi_lite_aclk",
-              "MultiSine_0/ap_clk",
-              "SimpleSine_0/ap_clk",
               "SimpleSineMaster_0/ap_clk",
-              "MultiSineMaster_0/ap_clk"
+              "MultiSineMaster_0/ap_clk",
+              "MultiSine_0/ap_clk",
+              "SimpleSine_0/ap_clk"
             ]
           },
           "rst_clk_wiz_1_100M_peripheral_aresetn": {
             "ports": [
               "s_axi_aresetn",
               "audio_bram/s_axi_aresetn",
-              "MultiSine_0/ap_rst_n",
-              "SimpleSine_0/ap_rst_n",
               "SimpleSineMaster_0/ap_rst_n",
-              "MultiSineMaster_0/ap_rst_n"
+              "MultiSineMaster_0/ap_rst_n",
+              "MultiSine_0/ap_rst_n",
+              "SimpleSine_0/ap_rst_n"
             ]
           }
         }
@@ -4873,13 +4835,6 @@
                 "offset_base_param": "C_S_AXI_CONTROL_BASEADDR",
                 "offset_high_param": "C_S_AXI_CONTROL_HIGHADDR"
               },
-              "SEG_MultiSine_0_Reg": {
-                "address_block": "/audio_components/MultiSine_0/s_axi_BUS_A/Reg",
-                "offset": "0x00010000",
-                "range": "64K",
-                "offset_base_param": "C_S_AXI_BUS_A_BASEADDR",
-                "offset_high_param": "C_S_AXI_BUS_A_HIGHADDR"
-              },
               "SEG_SimpleSineMaster_0_Reg": {
                 "address_block": "/audio_components/SimpleSineMaster_0/s_axi_control/Reg",
                 "offset": "0x00000000",
@@ -4895,13 +4850,6 @@
                 "is_excluded": "TRUE",
                 "offset_base_param": "C_S_AXI_CONTROL_BASEADDR",
                 "offset_high_param": "C_S_AXI_CONTROL_HIGHADDR"
-              },
-              "SEG_SimpleSine_0_Reg": {
-                "address_block": "/audio_components/SimpleSine_0/s_axi_BUS_A/Reg",
-                "offset": "0x00020000",
-                "range": "64K",
-                "offset_base_param": "C_S_AXI_BUS_A_BASEADDR",
-                "offset_high_param": "C_S_AXI_BUS_A_HIGHADDR"
               },
               "SEG_axi_bram_ctrl_0_Mem0": {
                 "address_block": "/audio_components/audio_bram/audio_bram/axi_bram_ctrl_0/S_AXI/Mem0",
@@ -4954,22 +4902,6 @@
                 "offset_base_param": "C_S_AXI_CONTROL_BASEADDR",
                 "offset_high_param": "C_S_AXI_CONTROL_HIGHADDR"
               },
-              "SEG_MultiSine_0_Reg": {
-                "address_block": "/audio_components/MultiSine_0/s_axi_BUS_A/Reg",
-                "offset": "0x00010000",
-                "range": "64K",
-                "is_excluded": "TRUE",
-                "offset_base_param": "C_S_AXI_BUS_A_BASEADDR",
-                "offset_high_param": "C_S_AXI_BUS_A_HIGHADDR"
-              },
-              "SEG_MultiSine_0_Reg_1": {
-                "address_block": "/audio_components/MultiSine_0/s_axi_BUS_A/Reg",
-                "offset": "0x00010000",
-                "range": "64K",
-                "is_excluded": "TRUE",
-                "offset_base_param": "C_S_AXI_BUS_A_BASEADDR",
-                "offset_high_param": "C_S_AXI_BUS_A_HIGHADDR"
-              },
               "SEG_SimpleSineMaster_0_Reg": {
                 "address_block": "/audio_components/SimpleSineMaster_0/s_axi_control/Reg",
                 "offset": "0x00000000",
@@ -4985,97 +4917,6 @@
                 "is_excluded": "TRUE",
                 "offset_base_param": "C_S_AXI_CONTROL_BASEADDR",
                 "offset_high_param": "C_S_AXI_CONTROL_HIGHADDR"
-              },
-              "SEG_SimpleSine_0_Reg": {
-                "address_block": "/audio_components/SimpleSine_0/s_axi_BUS_A/Reg",
-                "offset": "0x00020000",
-                "range": "64K",
-                "is_excluded": "TRUE",
-                "offset_base_param": "C_S_AXI_BUS_A_BASEADDR",
-                "offset_high_param": "C_S_AXI_BUS_A_HIGHADDR"
-              },
-              "SEG_SimpleSine_0_Reg_1": {
-                "address_block": "/audio_components/SimpleSine_0/s_axi_BUS_A/Reg",
-                "offset": "0x00020000",
-                "range": "64K",
-                "is_excluded": "TRUE",
-                "offset_base_param": "C_S_AXI_BUS_A_BASEADDR",
-                "offset_high_param": "C_S_AXI_BUS_A_HIGHADDR"
-              },
-              "SEG_axi_bram_ctrl_0_Mem0": {
-                "address_block": "/audio_components/audio_bram/audio_bram/axi_bram_ctrl_0/S_AXI/Mem0",
-                "offset": "0xC0000000",
-                "range": "8K"
-              },
-              "SEG_axi_cdma_0_Reg": {
-                "address_block": "/audio_components/audio_bram/axi_cdma_0/S_AXI_LITE/Reg",
-                "offset": "0x44A00000",
-                "range": "64K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_axi_gpio_0_Reg": {
-                "address_block": "/outputs/axi_gpio_0/S_AXI/Reg",
-                "offset": "0x40000000",
-                "range": "64K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_axi_timer_0_Reg": {
-                "address_block": "/processor/axi_timer_0/S_AXI/Reg",
-                "offset": "0x41C00000",
-                "range": "64K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_axi_uartlite_0_Reg": {
-                "address_block": "/outputs/axi_uartlite_0/S_AXI/Reg",
-                "offset": "0x40600000",
-                "range": "64K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_microblaze_0_axi_intc_Reg": {
-                "address_block": "/processor/microblaze_0_axi_intc/S_AXI/Reg",
-                "offset": "0x41200000",
-                "range": "64K",
-                "is_excluded": "TRUE"
-              }
-            }
-          }
-        }
-      },
-      "/audio_components/MultiSineMaster_0": {
-        "address_spaces": {
-          "Data_m_axi_gmem": {
-            "segments": {
-              "SEG_MultiSineMaster_0_Reg": {
-                "address_block": "/audio_components/MultiSineMaster_0/s_axi_control/Reg",
-                "offset": "0x00030000",
-                "range": "64K",
-                "is_excluded": "TRUE",
-                "offset_base_param": "C_S_AXI_CONTROL_BASEADDR",
-                "offset_high_param": "C_S_AXI_CONTROL_HIGHADDR"
-              },
-              "SEG_MultiSine_0_Reg": {
-                "address_block": "/audio_components/MultiSine_0/s_axi_BUS_A/Reg",
-                "offset": "0x00010000",
-                "range": "64K",
-                "is_excluded": "TRUE",
-                "offset_base_param": "C_S_AXI_BUS_A_BASEADDR",
-                "offset_high_param": "C_S_AXI_BUS_A_HIGHADDR"
-              },
-              "SEG_SimpleSineMaster_0_Reg": {
-                "address_block": "/audio_components/SimpleSineMaster_0/s_axi_control/Reg",
-                "offset": "0x00008000",
-                "range": "32K",
-                "is_excluded": "TRUE",
-                "offset_base_param": "C_S_AXI_CONTROL_BASEADDR",
-                "offset_high_param": "C_S_AXI_CONTROL_HIGHADDR"
-              },
-              "SEG_SimpleSine_0_Reg": {
-                "address_block": "/audio_components/SimpleSine_0/s_axi_BUS_A/Reg",
-                "offset": "0x00020000",
-                "range": "64K",
-                "is_excluded": "TRUE",
-                "offset_base_param": "C_S_AXI_BUS_A_BASEADDR",
-                "offset_high_param": "C_S_AXI_BUS_A_HIGHADDR"
               },
               "SEG_axi_bram_ctrl_0_Mem0": {
                 "address_block": "/audio_components/audio_bram/audio_bram/axi_bram_ctrl_0/S_AXI/Mem0",
@@ -5127,26 +4968,12 @@
                 "offset_base_param": "C_S_AXI_CONTROL_BASEADDR",
                 "offset_high_param": "C_S_AXI_CONTROL_HIGHADDR"
               },
-              "SEG_MultiSine_0_Reg": {
-                "address_block": "/audio_components/MultiSine_0/s_axi_BUS_A/Reg",
-                "offset": "0x00010000",
-                "range": "64K",
-                "offset_base_param": "C_S_AXI_BUS_A_BASEADDR",
-                "offset_high_param": "C_S_AXI_BUS_A_HIGHADDR"
-              },
               "SEG_SimpleSineMaster_0_Reg": {
                 "address_block": "/audio_components/SimpleSineMaster_0/s_axi_control/Reg",
                 "offset": "0x00008000",
                 "range": "32K",
                 "offset_base_param": "C_S_AXI_CONTROL_BASEADDR",
                 "offset_high_param": "C_S_AXI_CONTROL_HIGHADDR"
-              },
-              "SEG_SimpleSine_0_Reg": {
-                "address_block": "/audio_components/SimpleSine_0/s_axi_BUS_A/Reg",
-                "offset": "0x00020000",
-                "range": "64K",
-                "offset_base_param": "C_S_AXI_BUS_A_BASEADDR",
-                "offset_high_param": "C_S_AXI_BUS_A_HIGHADDR"
               },
               "SEG_axi_bram_ctrl_0_Mem0": {
                 "address_block": "/audio_components/audio_bram/audio_bram/axi_bram_ctrl_0/S_AXI/Mem0",
