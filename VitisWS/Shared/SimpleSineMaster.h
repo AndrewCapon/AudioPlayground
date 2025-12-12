@@ -30,7 +30,7 @@ public:
 			{
 				XSimplesinemaster_InterruptGlobalEnable(&m_instance);
 				XSimplesinemaster_InterruptEnable(&m_instance, 0x0);
-				m_bIsConfigured = m_systemHandler.AddInterruptCallback(XPAR_INTC_0_SIMPLESINEMASTER_0_VEC_ID, InterruptHandlerStatic, this);
+				m_bIsConfigured = m_systemHandler.AddInterruptCallback(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_AUDIO_COMPONENTS_SIMPLESINEMASTER_0_INTERRUPT_INTR, InterruptHandlerStatic, this);
 			}
 		}
 	}

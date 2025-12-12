@@ -1,78 +1,78 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.196",
-   "Default View_TopLeft":"-288,-3",
+   "Default View_TopLeft":"156,-3",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port usb_uart -pg 1 -lvl 6 -x 2280 -y 1210 -defaultsOSRD
-preplace port cellular_ram -pg 1 -lvl 6 -x 2280 -y 1010 -defaultsOSRD
-preplace port debug -pg 1 -lvl 6 -x 2280 -y 1190 -defaultsOSRD
+preplace port usb_uart -pg 1 -lvl 7 -x 2470 -y 1210 -defaultsOSRD
+preplace port cellular_ram -pg 1 -lvl 7 -x 2470 -y 1010 -defaultsOSRD
+preplace port debug -pg 1 -lvl 7 -x 2470 -y 1190 -defaultsOSRD
 preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 1360 -defaultsOSRD
 preplace port port-id_sysclk -pg 1 -lvl 0 -x 0 -y 1380 -defaultsOSRD
-preplace port port-id_mclkOut -pg 1 -lvl 6 -x 2280 -y 1230 -defaultsOSRD
-preplace port port-id_bclkOut -pg 1 -lvl 6 -x 2280 -y 1250 -defaultsOSRD
-preplace port port-id_lrclkOut -pg 1 -lvl 6 -x 2280 -y 1270 -defaultsOSRD
-preplace port port-id_dataOut -pg 1 -lvl 6 -x 2280 -y 1290 -defaultsOSRD
-preplace port port-id_intr1 -pg 1 -lvl 6 -x 2280 -y 1310 -defaultsOSRD
-preplace port port-id_intr2 -pg 1 -lvl 6 -x 2280 -y 1110 -defaultsOSRD
-preplace port port-id_intr3 -pg 1 -lvl 6 -x 2280 -y 1130 -defaultsOSRD
-preplace inst memory -pg 1 -lvl 5 -x 2120 -y 1010 -defaultsOSRD
-preplace inst audio_components -pg 1 -lvl 2 -x 670 -y 1210 -defaultsOSRD
-preplace inst clk_gen -pg 1 -lvl 1 -x 200 -y 1390 -defaultsOSRD
-preplace inst axi_interconnect_0 -pg 1 -lvl 3 -x 1150 -y 450 -defaultsOSRD
-preplace inst outputs -pg 1 -lvl 5 -x 2120 -y 1260 -defaultsOSRD
-preplace inst processor -pg 1 -lvl 4 -x 1700 -y 970 -defaultsOSRD
-preplace netloc SimpleSine_0_interrupt 1 2 4 940 1050 1450 750 NJ 750 2260J
-preplace netloc audio_components_multisine_interrupt 1 2 4 N 1240 1500 1180 1950J 1120 2260J
-preplace netloc axi_cdma_0_cdma_introut 1 2 2 930 960 NJ
-preplace netloc axi_uartlite_0_interrupt 1 3 3 1520 1170 1960J 1130 2250
-preplace netloc clk_gen_clk_100 1 1 4 380 900 960 900 1470 1190 1970
-preplace netloc clk_gen_clk_300 1 1 4 NJ 1440 970 1320 NJ 1320 NJ
-preplace netloc clk_gen_clk_audio 1 1 4 380J 1450 1000J 1310 NJ 1310 1990
-preplace netloc mdm_1_debug_sys_rst 1 0 5 20 1490 NJ 1490 NJ 1490 NJ 1490 1880
-preplace netloc multisinemaster_int_1 1 2 2 990 1080 NJ
-preplace netloc outputs_bclkOut_0 1 5 1 NJ 1250
-preplace netloc outputs_lrclkOut_0 1 5 1 NJ 1270
-preplace netloc outputs_mclkOut_2 1 5 1 NJ 1230
-preplace netloc outputs_moreDataNeededInterrupt_0 1 3 3 1510 1380 NJ 1380 2260
-preplace netloc outputs_sdataOut_0 1 5 1 NJ 1290
-preplace netloc reset_1 1 0 1 NJ 1360
-preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 1 4 390J 1460 NJ 1460 NJ 1460 1980
-preplace netloc rst_clk_wiz_1_100M_mb_reset 1 1 3 390J 950 NJ 950 1480
-preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 1 4 400 1430 950 1130 1490 1200 1890
-preplace netloc simplesinemaster_int_1 1 2 2 980 1060 NJ
-preplace netloc sys_clock_1 1 0 1 NJ 1380
-preplace netloc simplesinestream_int_1 1 2 2 1000 1100 NJ
-preplace netloc multisinestream_int_1 1 2 2 960 1120 NJ
-preplace netloc S02_AXI_1 1 2 1 890 120n
-preplace netloc S03_AXI_1 1 2 1 900 140n
-preplace netloc axi_cdma_0_M_AXI 1 2 1 880 100n
-preplace netloc axi_emc_0_EMC_INTF 1 5 1 NJ 1010
-preplace netloc axi_gpio_0_GPIO 1 5 1 NJ 1190
-preplace netloc axi_interconnect_0_M00_AXI 1 1 3 450 10 NJ 10 1300
-preplace netloc axi_interconnect_0_M01_AXI 1 3 1 1460 360n
-preplace netloc axi_interconnect_0_M02_AXI 1 1 3 430 1400 NJ 1400 1350
-preplace netloc axi_interconnect_0_M03_AXI 1 1 3 420 1410 NJ 1410 1340
-preplace netloc axi_interconnect_0_M04_AXI 1 3 2 1470 730 1940J
-preplace netloc axi_interconnect_0_M05_AXI 1 3 2 1380 740 1930J
-preplace netloc axi_interconnect_0_M08_AXI 1 1 3 410 1420 NJ 1420 1330
-preplace netloc axi_interconnect_0_M09_AXI 1 1 3 460 1370 NJ 1370 1320
-preplace netloc axi_uartlite_0_UART 1 5 1 NJ 1210
-preplace netloc interconnect_M07_AXI 1 3 1 1370 480n
-preplace netloc microblaze_0_M_AXI_DC 1 4 1 1890 950n
-preplace netloc microblaze_0_M_AXI_DP 1 2 3 1000 880 1360J 760 1880
-preplace netloc microblaze_0_M_AXI_IC 1 4 1 1910 970n
-preplace netloc microblaze_0_dlmb_1 1 4 1 1980 910n
-preplace netloc microblaze_0_ilmb_1 1 4 1 1920 930n
-preplace netloc processor_M0_AXIS 1 4 1 1900 970n
-preplace netloc s_axi_multisine_1 1 1 3 460 20 NJ 20 1310
-preplace netloc audio_components_samples 1 2 2 920 910 1460J
-preplace netloc axi_interconnect_0_M10_AXI 1 1 3 450 1380 NJ 1380 1310
-preplace netloc axi_interconnect_0_M11_AXI 1 1 3 440 1390 NJ 1390 1300
-preplace netloc S1_AXIS_multisinestream_1 1 2 2 910 890 1470J
-levelinfo -pg 1 0 200 670 1150 1700 2120 2280
-pagesize -pg 1 -db -bbox -sgen -100 0 2420 1500
+preplace port port-id_mclkOut -pg 1 -lvl 7 -x 2470 -y 1230 -defaultsOSRD
+preplace port port-id_bclkOut -pg 1 -lvl 7 -x 2470 -y 1250 -defaultsOSRD
+preplace port port-id_lrclkOut -pg 1 -lvl 7 -x 2470 -y 1270 -defaultsOSRD
+preplace port port-id_dataOut -pg 1 -lvl 7 -x 2470 -y 1290 -defaultsOSRD
+preplace port port-id_intr1 -pg 1 -lvl 7 -x 2470 -y 1310 -defaultsOSRD
+preplace port port-id_intr2 -pg 1 -lvl 7 -x 2470 -y 1110 -defaultsOSRD
+preplace port port-id_intr3 -pg 1 -lvl 7 -x 2470 -y 1130 -defaultsOSRD
+preplace inst memory -pg 1 -lvl 6 -x 2310 -y 1010 -defaultsOSRD
+preplace inst audio_components -pg 1 -lvl 3 -x 950 -y 1210 -defaultsOSRD
+preplace inst clk_gen -pg 1 -lvl 2 -x 460 -y 1390 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1420 -y 450 -defaultsOSRD
+preplace inst outputs -pg 1 -lvl 6 -x 2310 -y 1260 -defaultsOSRD
+preplace inst processor -pg 1 -lvl 5 -x 1890 -y 970 -defaultsOSRD
+preplace netloc SimpleSine_0_interrupt 1 3 4 1220 980 1660 740 NJ 740 2450J
+preplace netloc audio_components_multisine_interrupt 1 3 4 N 1240 1700 1170 2140J 1130 NJ
+preplace netloc axi_cdma_0_cdma_introut 1 3 2 1200 960 NJ
+preplace netloc axi_uartlite_0_interrupt 1 4 3 1720 1370 2180J 1380 2440
+preplace netloc clk_gen_clk_100 1 2 4 670 950 1260 950 1690 1180 2180
+preplace netloc clk_gen_clk_300 1 2 4 750J 1370 1250 1320 NJ 1320 NJ
+preplace netloc clk_gen_clk_audio 1 2 4 NJ 1420 1280J 1310 NJ 1310 2180
+preplace netloc mdm_1_debug_sys_rst 1 1 5 290 1490 NJ 1490 NJ 1490 NJ 1490 2060
+preplace netloc multisinemaster_int_1 1 3 2 1270 1080 NJ
+preplace netloc multisinestream_int_1 1 3 2 1180 1120 NJ
+preplace netloc outputs_bclkOut_0 1 6 1 NJ 1250
+preplace netloc outputs_lrclkOut_0 1 6 1 NJ 1270
+preplace netloc outputs_mclkOut_2 1 6 1 NJ 1230
+preplace netloc outputs_moreDataNeededInterrupt_0 1 4 3 1710 1390 NJ 1390 2450
+preplace netloc outputs_sdataOut_0 1 6 1 NJ 1290
+preplace netloc reset_1 1 0 2 NJ 1360 N
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 4 NJ 1380 NJ 1380 NJ 1380 2170
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 3 660J 940 NJ 940 N
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 650 930 1270 930 1630 750 2130
+preplace netloc simplesinemaster_int_1 1 3 2 1260 1060 NJ
+preplace netloc simplesinestream_int_1 1 3 2 1280 1100 NJ
+preplace netloc sys_clock_1 1 0 2 NJ 1380 N
+preplace netloc S02_AXI_1 1 3 1 1160 120n
+preplace netloc S03_AXI_1 1 3 1 1170 140n
+preplace netloc S1_AXIS_multisinestream_1 1 3 2 1190 970 1680J
+preplace netloc audio_components_samples 1 3 2 1210 990 1670J
+preplace netloc axi_cdma_0_M_AXI 1 3 1 1150 100n
+preplace netloc axi_emc_0_EMC_INTF 1 6 1 NJ 1010
+preplace netloc axi_gpio_0_GPIO 1 6 1 NJ 1190
+preplace netloc axi_interconnect_0_M00_AXI 1 2 3 700 -10 NJ -10 1560
+preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1680 360n
+preplace netloc axi_interconnect_0_M02_AXI 1 2 3 720 0 NJ 0 1580
+preplace netloc axi_interconnect_0_M03_AXI 1 2 3 740 10 NJ 10 1590
+preplace netloc axi_interconnect_0_M04_AXI 1 4 2 1690 720 2160J
+preplace netloc axi_interconnect_0_M05_AXI 1 4 2 1660 730 2150J
+preplace netloc axi_interconnect_0_M08_AXI 1 2 3 690 880 NJ 880 1570
+preplace netloc axi_interconnect_0_M09_AXI 1 2 3 680 900 NJ 900 1590
+preplace netloc axi_interconnect_0_M10_AXI 1 2 3 710 910 NJ 910 1580
+preplace netloc axi_interconnect_0_M11_AXI 1 2 3 730 920 NJ 920 1560
+preplace netloc axi_uartlite_0_UART 1 6 1 NJ 1210
+preplace netloc interconnect_M07_AXI 1 4 1 1650 480n
+preplace netloc microblaze_0_M_AXI_DC 1 5 1 2080 950n
+preplace netloc microblaze_0_M_AXI_DP 1 3 3 1280 890 1640J 760 2070
+preplace netloc microblaze_0_M_AXI_IC 1 5 1 2090 970n
+preplace netloc microblaze_0_dlmb_1 1 5 1 2180 910n
+preplace netloc microblaze_0_ilmb_1 1 5 1 2140 930n
+preplace netloc processor_M0_AXIS 1 5 1 2070 970n
+preplace netloc s_axi_multisine_1 1 2 3 750 20 NJ 20 1620
+levelinfo -pg 1 0 150 460 950 1420 1890 2310 2470
+pagesize -pg 1 -db -bbox -sgen -100 -20 2610 1500
 "
 }
 {

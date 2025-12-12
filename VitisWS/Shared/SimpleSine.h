@@ -29,7 +29,7 @@ public:
 			{
 				XSimplesine_InterruptGlobalEnable(&m_instance);
 				XSimplesine_InterruptEnable(&m_instance, 0x0);
-				m_bIsConfigured = m_systemHandler.AddInterruptCallback(XPAR_INTC_0_SIMPLESINE_0_VEC_ID, InterruptHandlerStatic, this);
+				m_bIsConfigured = m_systemHandler.AddInterruptCallback(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_AUDIO_COMPONENTS_SIMPLESINE_0_INTERRUPT_INTR, InterruptHandlerStatic, this);
 			}
 		}
 	}

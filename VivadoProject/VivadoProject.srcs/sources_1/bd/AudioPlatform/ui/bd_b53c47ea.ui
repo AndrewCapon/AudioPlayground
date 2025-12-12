@@ -1,2 +1,30 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.0",
+   "Default View_TopLeft":"-590,-299",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port cellular_ram -pg 1 -lvl 2 -x 280 -y 230 -defaultsOSRD
+preplace port S_AXI_DC -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port S_AXI_IC -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port DLMB -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace port ILMB -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port port-id_LMB_Clk -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_ARESETN -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port port-id_SYS_Rst -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace inst emc_memory -pg 1 -lvl 1 -x 140 -y 230 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 1 -x 140 -y 80 -defaultsOSRD
+preplace netloc microblaze_0_Clk 1 0 1 20 90n
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 0 1 NJ 110
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 1 NJ 260
+preplace netloc axi_emc_0_EMC_INTF 1 1 1 N 230
+preplace netloc microblaze_0_M_AXI_DC 1 0 1 NJ 200
+preplace netloc microblaze_0_M_AXI_IC 1 0 1 NJ 220
+preplace netloc microblaze_0_dlmb_1 1 0 1 NJ 50
+preplace netloc microblaze_0_ilmb_1 1 0 1 NJ 70
+levelinfo -pg 1 0 140 280
+pagesize -pg 1 -db -bbox -sgen -110 0 420 310
+"
+}
 0
-

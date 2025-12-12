@@ -19,8 +19,11 @@ int  __attribute__((section(".close_coupled_ram"))) nShit;
 
 #define TEST_BUFFER_WORDS 16
 
-volatile uint32_t SrcBufferDma[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
-volatile uint32_t DestBufferDma[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+volatile uint32_t SrcBufferBram[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+volatile uint32_t DestBufferBram[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+
+volatile uint32_t SrcBufferLocal[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
+volatile uint32_t DestBufferLocal[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 
 volatile uint32_t SamplesStorage[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
 volatile uint32_t SamplesStorageStream[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
@@ -56,6 +59,71 @@ typedef enum _TestState
 	tsMultiStream
 } TestState;
 
+void TestDma(void)
+{
+	// Test dma
+		xil_printf("Testing DMA Start\n");
+		Dma &dma = hardwareSystem.GetDma();
+
+		volatile uint32_t *pSineSamples = simpleSine.GetSampleBuffer(0);
+
+		if(dma.TestSync(SrcBufferBram, DestBufferBram, TEST_BUFFER_WORDS, true))
+			xil_printf("BRAM to BRAM DMA sync test passed\n");
+		else
+			xil_printf("BRAM to BRAM DMA sync test failed\n");
+
+		if(dma.TestSync(SrcBufferLocal, DestBufferLocal, TEST_BUFFER_WORDS, true))
+			xil_printf("LOCAL to LOCAL DMA sync test passed\n");
+		else
+			xil_printf("LOCAL to LOCAL DMA sync test failed\n");
+
+		if(dma.TestSync(SrcBufferBram, DestBufferLocal, TEST_BUFFER_WORDS, true))
+			xil_printf("BRAM to LOCAL DMA sync test passed\n");
+		else
+			xil_printf("BRAM to LOCAL DMA sync test failed\n");
+
+		if(dma.TestSync(SrcBufferLocal, DestBufferBram, TEST_BUFFER_WORDS, true))
+			xil_printf("LOCAL to BRAM DMA sync test passed\n");
+		else
+			xil_printf("LOCAL to BRAM DMA sync test failed\n");
+
+
+		if(dma.TestSync(pSineSamples, DestBufferBram, TEST_BUFFER_WORDS, false))
+			xil_printf("HLS to BRAM DMA sync test passed\n");
+		else
+			xil_printf("HLS to BRAM DMA aync test failed\n");
+
+		if(dma.TestSync(pSineSamples, DestBufferLocal, TEST_BUFFER_WORDS, false))
+			xil_printf("HLS to LOCAL DMA sync test passed\n");
+		else
+			xil_printf("HLS to LOCAL DMA aync test failed\n");
+
+
+
+		if(dma.TestAsync(SrcBufferBram, DestBufferBram, TEST_BUFFER_WORDS, true))
+			xil_printf("BRAM to BRAM DMA async test passed\n");
+		else
+			xil_printf("BRAM to BRAM DMA async test failed\n");
+
+		if(dma.TestAsync(SrcBufferLocal, DestBufferLocal, TEST_BUFFER_WORDS, true))
+			xil_printf("LOCAL to LOCAL DMA async test passed\n");
+		else
+			xil_printf("LOCAL to LOCAL DMA async test failed\n");
+
+
+		if(dma.TestAsync(pSineSamples, DestBufferBram, TEST_BUFFER_WORDS, false))
+			xil_printf("HLS to BRAM DMA async test passed\n");
+		else
+			xil_printf("HLS to BRAM DMA async test failed\n");
+
+		if(dma.TestAsync(pSineSamples, DestBufferLocal, TEST_BUFFER_WORDS, false))
+			xil_printf("HLS to LOCAL DMA async test passed\n");
+		else
+			xil_printf("HLS to LOCAL DMA async test failed\n");
+
+		xil_printf("Testing DMA End\n");
+}
+
 int main(void)
 {
 #ifdef RTOS
@@ -84,7 +152,7 @@ int main(void)
 			multiSineStream.SetFrequency(uVoice, fFrequency);
 		}
 
-
+		TestDma();
 
 //		for(int i = 0; i < 10; i++)
 //		{
@@ -107,35 +175,6 @@ int main(void)
 //			}
 //		}
 //
-//		// Test dma
-//		xil_printf("Testing DMA Start\n");
-//		Dma &dma = hardwareSystem.GetDma();
-//
-//		uint32_t *pSineSamples = reinterpret_cast<uint32_t *>(0x00020100);
-//
-//		if(dma.TestSync(SrcBufferDma, DestBufferDma, TEST_BUFFER_WORDS, true))
-//			xil_printf("BRAM to BRAM DMA sync test passed\n");
-//		else
-//			xil_printf("BRAM to BRAM DMA sync test failed\n");
-//
-//
-//		if(dma.TestSync(pSineSamples, DestBufferDma, TEST_BUFFER_WORDS, false))
-//			xil_printf("HLS to BRAM DMA sync test passed\n");
-//		else
-//			xil_printf("HLS to BRAM DMA aync test failed\n");
-//
-//		if(dma.TestAsync(SrcBufferDma, DestBufferDma, TEST_BUFFER_WORDS, true))
-//			xil_printf("BRAM to BRAM DMA async test passed\n");
-//		else
-//			xil_printf("BRAM to BRAM DMA async test failed\n");
-//
-//
-//		if(dma.TestAsync(pSineSamples, DestBufferDma, TEST_BUFFER_WORDS, false))
-//			xil_printf("HLS to BRAM DMA async test passed\n");
-//		else
-//			xil_printf("HLS to BRAM DMA async test failed\n");
-//
-//		xil_printf("Testing DMA End\n");
 
 		TestState testState = tsRunAll;
 

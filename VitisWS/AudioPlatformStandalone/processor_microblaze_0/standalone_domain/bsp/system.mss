@@ -57,13 +57,13 @@ END
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = bram
  PARAMETER DRIVER_VER = 4.11
- PARAMETER HW_INSTANCE = audio_components_audio_bram_audio_bram_axi_bram_ctrl_0
+ PARAMETER HW_INSTANCE = memory_axi_bram_ctrl_0
 END
 
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = axicdma
  PARAMETER DRIVER_VER = 4.14
- PARAMETER HW_INSTANCE = audio_components_audio_bram_axi_cdma_0
+ PARAMETER HW_INSTANCE = memory_axi_cdma_0
 END
 
 BEGIN DRIVER
@@ -76,12 +76,6 @@ BEGIN DRIVER
  PARAMETER DRIVER_NAME = bram
  PARAMETER DRIVER_VER = 4.11
  PARAMETER HW_INSTANCE = memory_microblaze_0_local_memory_dlmb_bram_if_cntlr
-END
-
-BEGIN DRIVER
- PARAMETER DRIVER_NAME = bram
- PARAMETER DRIVER_VER = 4.11
- PARAMETER HW_INSTANCE = memory_microblaze_0_local_memory_ilmb_bram_if_cntlr
 END
 
 BEGIN DRIVER

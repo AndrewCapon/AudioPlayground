@@ -1,0 +1,25 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.0",
+   "Default View_TopLeft":"-589,-282",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port cellular_ram -pg 1 -lvl 3 -x 580 -y 190 -defaultsOSRD
+preplace port S00_AXI -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port S01_AXI -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_rdclk -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port port-id_ARESETN -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace inst axi_emc_0 -pg 1 -lvl 2 -x 440 -y 190 -defaultsOSRD
+preplace inst axi_interconnect_emc -pg 1 -lvl 1 -x 170 -y 160 -defaultsOSRD
+preplace netloc microblaze_0_Clk 1 0 2 30 10 310
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 2 20 310 320J
+preplace netloc axi_emc_0_EMC_INTF 1 2 1 N 190
+preplace netloc axi_interconnect_1_M00_AXI 1 1 1 N 160
+preplace netloc microblaze_0_M_AXI_DC 1 0 1 NJ 70
+preplace netloc microblaze_0_M_AXI_IC 1 0 1 NJ 90
+levelinfo -pg 1 0 170 440 580
+pagesize -pg 1 -db -bbox -sgen -100 0 720 320
+"
+}
+
