@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "AudioPlatform_axi_bram_ctrl_0_bram_0",
-    "cell_name": "audio_components/audio_bram/audio_bram/axi_bram_ctrl_0_bram",
+    "cell_name": "memory/axi_bram_ctrl_0_bram",
     "component_reference": "xilinx.com:ip:blk_mem_gen:8.4",
     "ip_revision": "9",
     "gen_directory": "../../../../../../VivadoProject.gen/sources_1/bd/AudioPlatform/ip/AudioPlatform_axi_bram_ctrl_0_bram_0",
@@ -15,7 +15,7 @@
         "Use_AXI_ID": [ { "value": "false", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],
         "AXI_ID_Width": [ { "value": "4", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "Memory_Type": [ { "value": "True_Dual_Port_RAM", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
-        "PRIM_type_to_Implement": [ { "value": "BRAM", "resolve_type": "user", "enabled": false, "usage": "all" } ],
+        "PRIM_type_to_Implement": [ { "value": "BRAM", "resolve_type": "user", "usage": "all" } ],
         "Enable_32bit_Address": [ { "value": "true", "value_src": "propagated", "value_permission": "bd_and_user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "ecctype": [ { "value": "No_ECC", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "ECC": [ { "value": "false", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],

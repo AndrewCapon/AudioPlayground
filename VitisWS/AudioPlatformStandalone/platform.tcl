@@ -9,7 +9,7 @@
 # -out option specifies the output directory of the platform project.
 
 platform create -name {AudioPlatformStandalone}\
--hw {/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VivadoProject/AudioPlatformLocalMem_wrapper.xsa}\
+-hw {/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VivadoProject/AudioPlatform_wrapper.xsa}\
 -proc {processor_microblaze_0} -os {standalone} -out {/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS}
 
 platform write

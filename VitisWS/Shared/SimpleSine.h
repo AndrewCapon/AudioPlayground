@@ -56,6 +56,11 @@ public:
 		return &(m_puSamples[uVoice * cBlockSamples]);
 	}
 
+	volatile uint32_t *GetSlaveBuffer(void)
+	{
+		return reinterpret_cast<volatile uint32_t *>(XSimplesine_Get_samples_BaseAddress(&m_instance));
+	}
+
 	uint32_t *GetDebugBuffer(void)
 	{
 #if DEBUG
@@ -107,7 +112,9 @@ public:
 			m_codeTimer.StartTiming(ctCopy);
 			volatile uint32_t *pSrc = reinterpret_cast<volatile uint32_t *>(XSimplesine_Get_samples_BaseAddress(&m_instance));
 			volatile uint32_t *pDst = &(m_puSamples[uVoice * cBlockSamples]);
-			m_dma.TransferAsync(pSrc, pDst, cBlockSamples);
+			m_dma.TransferSync(pSrc, pDst, cBlockSamples);
+//			for(int i = 0; i < cBlockSamples; i++)
+//				*pDst++ = *pSrc++;
 			m_codeTimer.StopTiming(ctCopy);
 
 			// Update acumulator.

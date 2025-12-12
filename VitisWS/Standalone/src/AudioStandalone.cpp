@@ -17,6 +17,11 @@ uint32_t multiSineSamples[cVoices*cBlockSamples];
 
 int  __attribute__((section(".close_coupled_ram"))) nShit;
 
+#define TEST_DMA 1
+#define CSV_TEST 0
+
+#if TEST_DMA
+
 #define TEST_BUFFER_WORDS 16
 
 volatile uint32_t SrcBufferBram[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
@@ -24,10 +29,11 @@ volatile uint32_t DestBufferBram[TEST_BUFFER_WORDS] __attribute__((aligned (64))
 
 volatile uint32_t SrcBufferLocal[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 volatile uint32_t DestBufferLocal[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
+#endif // TEST_DMA
 
-volatile uint32_t SamplesStorage[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
-volatile uint32_t SamplesStorageStream[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
-volatile uint32_t PhaseIncsStorage[cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+volatile uint32_t SamplesStorageAudioRam[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+volatile uint32_t SamplesStorageLocalRam[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
+volatile uint32_t PhaseIncsStorageAudioRam[cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
 
 #if DEBUG_MULTISINEMASTER | DEBUG_MULTISINE | DEBUG_SIMPLESINE | DEBUG_SIMPLESINEMASTER
 volatile uint32_t DebugStorage[cBlockSamples] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
@@ -40,12 +46,12 @@ volatile uint32_t *DebugStorage = nullptr;
 
 SystemHandlerStandalone systemHandler;
 HardwareSystem hardwareSystem(systemHandler);
-SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorage);
-SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorage);
-SimpleSineStream simpleSineStream(hardwareSystem, XPAR_XSIMPLESINESTREAM_0_DEVICE_ID, SamplesStorageStream);
+SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageAudioRam);
+SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageAudioRam);
+SimpleSineStream simpleSineStream(hardwareSystem, XPAR_XSIMPLESINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
 MultiSine multiSine(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID);
-MultiSineMaster multiSineMaster(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID, SamplesStorage, PhaseIncsStorage, DebugStorage);
-MultiSineStream multiSineStream(hardwareSystem, XPAR_XMULTISINESTREAM_0_DEVICE_ID, SamplesStorageStream);
+MultiSineMaster multiSineMaster(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID, SamplesStorageAudioRam, PhaseIncsStorageAudioRam, DebugStorage);
+MultiSineStream multiSineStream(hardwareSystem, XPAR_XMULTISINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
 
 
 typedef enum _TestState
@@ -59,13 +65,14 @@ typedef enum _TestState
 	tsMultiStream
 } TestState;
 
+#if TEST_DMA
 void TestDma(void)
 {
 	// Test dma
 		xil_printf("Testing DMA Start\n");
 		Dma &dma = hardwareSystem.GetDma();
 
-		volatile uint32_t *pSineSamples = simpleSine.GetSampleBuffer(0);
+		volatile uint32_t *pSineSamples = simpleSine.GetSlaveBuffer();
 
 		if(dma.TestSync(SrcBufferBram, DestBufferBram, TEST_BUFFER_WORDS, true))
 			xil_printf("BRAM to BRAM DMA sync test passed\n");
@@ -123,17 +130,28 @@ void TestDma(void)
 
 		xil_printf("Testing DMA End\n");
 }
+#endif // TEST_DMA
 
 int main(void)
 {
 #ifdef RTOS
 	#error RTOS should not be defined
-#endif
+#endif // RTOS
+
+	xil_printf("\033[2J\033[H");
 	xil_printf("Audio Playground Tests\n");
+	xil_printf("  Press 1-8 to choose wave (1=100hz, 2=200hz etc)\n");
+	xil_printf("  Press q to run all tests for timing info\n");
+	xil_printf("  Press w to test simple sine slave\n");
+	xil_printf("  Press e to test simple sine master\n");
+	xil_printf("  Press r to test simple sine stream\n");
+	xil_printf("  Press t to test multi sine slave\n");
+	xil_printf("  Press y to test multi sine master\n");
+	xil_printf("  Press u to test multi sine stream\n");
+
+
 
 	uint32_t *pStereoOutputSampleBuffer = hardwareSystem.GetI2sAudio().GetSampleBuffer();
-//	uint32_t *pMonoSineSampleBuffer = multiSine.GetSampleBuffer(0);
-//	uint32_t *pMonoSineSampleBuffer2 = multiSine.GetSampleBuffer(1);
 
 #if DEBUG
 	uint32_t *pDebugBuffer = simpleSine.GetDebugBuffer();
@@ -152,36 +170,36 @@ int main(void)
 			multiSineStream.SetFrequency(uVoice, fFrequency);
 		}
 
+#if TEST_DMA
 		TestDma();
+#endif // TEST_DMA
 
-//		for(int i = 0; i < 10; i++)
-//		{
-//
-//			multiSineStream.ProcessBlocking();
-//			multiSine.ProcessBlocking();
-//
-//			for(int i=0; i < 48; i++)
-//			{
-//				for(int v = 0; v < 8; v++)
-//				{
-//		  		volatile uint32_t *pBuffer1 = multiSine.GetSampleBuffer(v);
-//		  		volatile uint32_t *pBuffer2 = multiSineStream.GetSampleBuffer(v);
-//
-//					float f1 = static_cast<float>( DataType::from_raw_value(pBuffer1[i]<<8));
-//					float f2 = static_cast<float>( DataType::from_raw_value(pBuffer2[i]<<8));
-//					printf("%f, %f, ", f1, f2);
-//				}
-//				printf("0\n");
-//			}
-//		}
-//
+#if CSV_TEST
+		for(int i = 0; i < 10; i++)
+		{
+
+			multiSineStream.ProcessBlocking();
+			multiSine.ProcessBlocking();
+
+			for(int i=0; i < 48; i++)
+			{
+				for(int v = 0; v < 8; v++)
+				{
+		  		volatile uint32_t *pBuffer1 = multiSine.GetSampleBuffer(v);
+		  		volatile uint32_t *pBuffer2 = multiSineStream.GetSampleBuffer(v);
+
+					float f1 = static_cast<float>( DataType::from_raw_value(pBuffer1[i]<<8));
+					float f2 = static_cast<float>( DataType::from_raw_value(pBuffer2[i]<<8));
+					printf("%f, %f, ", f1, f2);
+				}
+				printf("0\n");
+			}
+		}
+#endif //CSV_TEST
 
 		TestState testState = tsRunAll;
 
-		uint16_t uCount = 0;
 		uint16_t uVoice = 0;
-
-
 
 		// for some reason we need the following to get the i2s going, why?
 		// something to do with not getting the first interrupt
@@ -192,15 +210,6 @@ int main(void)
       if (systemHandler.WaitForAudioProcessing())
       {
       	systemHandler.DisableInterrupt(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_OUTPUTS_AXISTOI2SFIFO_0_MOREDATANEEDEDINTERRUPT_INTR);
-
-//      	if(uCount++ > 5000)
-//      	{
-//      		uVoice ++;
-//      		if(uVoice > 7)
-//      			uVoice = 0;
-//
-//      		uCount = 0;
-//      	}
 
       	uint8_t uChar=0;
   			if(!XUartLite_IsReceiveEmpty(XPAR_UARTLITE_0_BASEADDR))
