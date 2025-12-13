@@ -1,0 +1,30 @@
+{
+    "0": {
+        "name": "SimpleSineStreamBidirectional",
+        "file": "SimpleSineStreamBidirectional.cpp",
+        "fileloc": "29",
+        "instructions": "15",
+        "total_instructions": "41",
+        "calls": "1",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1",
+        "file": "SimpleSineStreamBidirectional.cpp",
+        "fileloc": "37",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

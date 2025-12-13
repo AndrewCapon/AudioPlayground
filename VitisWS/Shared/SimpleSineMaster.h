@@ -20,7 +20,7 @@ public:
 		m_dma(hardwareSystem.GetDma()),
 		m_systemHandler(hardwareSystem.GetSystemHandler()),
 		m_uDeviceId(uDeviceId),
-		m_puSamples(pSampleStorage)
+		m_pSampleStorage(pSampleStorage)
 	{
 		m_pConfig = XSimplesinemaster_LookupConfig(uDeviceId);
 
@@ -33,6 +33,11 @@ public:
 				m_bIsConfigured = m_systemHandler.AddInterruptCallback(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_AUDIO_COMPONENTS_SIMPLESINEMASTER_0_INTERRUPT_INTR, InterruptHandlerStatic, this);
 			}
 		}
+	}
+
+	void SetSampleStorage(volatile uint32_t *pSampleStorage)
+	{
+		m_pSampleStorage = pSampleStorage;
 	}
 
 	bool IsConfigured(void)
@@ -54,7 +59,7 @@ public:
 
 	volatile uint32_t *GetSampleBuffer(uint8_t uVoice)
 	{
-		return &(m_puSamples[uVoice * cBlockSamples]);
+		return &(m_pSampleStorage[uVoice * cBlockSamples]);
 	}
 
 	uint32_t *GetDebugBuffer(void)
@@ -85,7 +90,7 @@ public:
 			m_codeTimer.StartTiming(ctUpdateData);
 			XSimplesinemaster_Set_accumulator_i(&m_instance, m_uAccumulators[uVoice]);
 			XSimplesinemaster_Set_phaseInc(&m_instance, m_uPhaseIncs[uVoice]);
-			uint32_t uDst = reinterpret_cast<uint32_t>(&(m_puSamples[uVoice * cBlockSamples]));
+			uint32_t uDst = reinterpret_cast<uint32_t>(&(m_pSampleStorage[uVoice * cBlockSamples]));
 			XSimplesinemaster_Set_samples(&m_instance, uDst);
 			m_codeTimer.StopTiming(ctUpdateData);
 
@@ -157,7 +162,7 @@ public:
 		m_codeTimer.StartTiming(ctContinueProcessing);
 		XSimplesinemaster_Set_accumulator_i(&m_instance, m_uAccumulators[m_uCurrentVoice]);
 		XSimplesinemaster_Set_phaseInc(&m_instance, m_uPhaseIncs[m_uCurrentVoice]);
-		uint32_t uDst = reinterpret_cast<uint32_t>(&(m_puSamples[m_uCurrentVoice * cBlockSamples]));
+		uint32_t uDst = reinterpret_cast<uint32_t>(&(m_pSampleStorage[m_uCurrentVoice * cBlockSamples]));
 		XSimplesinemaster_Set_samples(&m_instance, uDst);
 		m_codeTimer.StartTiming(ctContinueStart);
 		XSimplesinemaster_Start(&m_instance);
@@ -180,7 +185,7 @@ public:
 		m_codeTimer.StartTiming(ctUpdateData);
 		XSimplesinemaster_Set_accumulator_i(&m_instance, m_uAccumulators[m_uCurrentVoice]);
 		XSimplesinemaster_Set_phaseInc(&m_instance, m_uPhaseIncs[m_uCurrentVoice]);
-		uint32_t uDst = reinterpret_cast<uint32_t>(&(m_puSamples[m_uCurrentVoice * cBlockSamples]));
+		uint32_t uDst = reinterpret_cast<uint32_t>(&(m_pSampleStorage[m_uCurrentVoice * cBlockSamples]));
 		XSimplesinemaster_Set_samples(&m_instance, uDst);
 		m_codeTimer.StopTiming(ctUpdateData);
 
@@ -337,7 +342,7 @@ private:
 	uint32_t						m_uPhaseIncs[cVoices];
 	uint32_t 						m_uAccumulators[cVoices] = {0};
 	//uint32_t						m_uSamples[cVoices][cBlockSamples];
-	volatile uint32_t		*m_puSamples;
+	volatile uint32_t		*m_pSampleStorage;
 	uint16_t						m_uCurrentVoice = 0;
 
 };

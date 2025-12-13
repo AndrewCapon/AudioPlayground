@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/SimpleSineStreamBidirectional/SimpleSineStreamBidirectional.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Dec 13 08:43:12 2025",
+ "timestampMillis": "1765615392015",
+ "buildStep": {
+  "cmdId": "951bdea4-3592-4d5a-93d2-76e60d473818",
+  "name": "vitis-run",
+  "logFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/SimpleSineStreamBidirectional/logs/SimpleSineStreamBidirectional.steps.log",
+  "commandLine": "/home/andrewcapon/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/hls_config.cfg --work_dir SimpleSineStreamBidirectional ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/hls_config.cfg",
+   "--work_dir",
+   "SimpleSineStreamBidirectional"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Dec 13 08:43:12 2025",
+ "timestampMillis": "1765615392015",
+ "status": {
+  "cmdId": "951bdea4-3592-4d5a-93d2-76e60d473818",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Dec 13 08:43:18 2025",
+ "timestampMillis": "1765615398205",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "SimpleSineStreamBidirectional",
+     "file": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/SimpleSineStreamBidirectional/SimpleSineStreamBidirectional.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/SimpleSineStreamBidirectional.h",
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/SimpleSineStreamBidirectional.cpp",
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/DataTypes.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Dec 13 08:43:18 2025",
+ "timestampMillis": "1765615398206",
+ "buildStep": {
+  "cmdId": "7d53fa93-d1e5-4bb0-bea6-d2eb0c870438",
+  "name": "",
+  "logFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/SimpleSineStreamBidirectional/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Dec 13 08:43:18 2025",
+ "timestampMillis": "1765615398207",
+ "status": {
+  "cmdId": "7d53fa93-d1e5-4bb0-bea6-d2eb0c870438",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Dec 13 08:43:32 2025",
+ "timestampMillis": "1765615412988",
+ "status": {
+  "cmdId": "7d53fa93-d1e5-4bb0-bea6-d2eb0c870438",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Dec 13 08:43:33 2025",
+ "timestampMillis": "1765615413188",
+ "status": {
+  "cmdId": "951bdea4-3592-4d5a-93d2-76e60d473818",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Dec 13 08:43:33 2025",
+ "timestampMillis": "1765615413189",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Dec 13 08:43:33 2025",
+ "timestampMillis": "1765615413190",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

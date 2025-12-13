@@ -6,6 +6,7 @@
 #include "SimpleSine.h"
 #include "SimpleSineMaster.h"
 #include "SimpleSineStream.h"
+#include "SimpleSineStreamBi.h"
 #include "MultiSine.h"
 #include "MultiSineMaster.h"
 #include "MultiSineStream.h"
@@ -17,7 +18,7 @@ uint32_t multiSineSamples[cVoices*cBlockSamples];
 
 int  __attribute__((section(".close_coupled_ram"))) nShit;
 
-#define TEST_DMA 1
+#define TEST_DMA 0
 #define CSV_TEST 0
 
 #if TEST_DMA
@@ -33,7 +34,9 @@ volatile uint32_t DestBufferLocal[TEST_BUFFER_WORDS] __attribute__((aligned (64)
 
 volatile uint32_t SamplesStorageAudioRam[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
 volatile uint32_t SamplesStorageLocalRam[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
+
 volatile uint32_t PhaseIncsStorageAudioRam[cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+volatile uint32_t PhaseIncsStorageLocalRam[cVoices] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 
 #if DEBUG_MULTISINEMASTER | DEBUG_MULTISINE | DEBUG_SIMPLESINE | DEBUG_SIMPLESINEMASTER
 volatile uint32_t DebugStorage[cBlockSamples] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
@@ -46,12 +49,20 @@ volatile uint32_t *DebugStorage = nullptr;
 
 SystemHandlerStandalone systemHandler;
 HardwareSystem hardwareSystem(systemHandler);
-SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageAudioRam);
-SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageAudioRam);
+SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageLocalRam);
+SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageLocalRam);
 SimpleSineStream simpleSineStream(hardwareSystem, XPAR_XSIMPLESINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
+SimpleSineStreamBi simpleSineStreamBi(hardwareSystem, XPAR_XSIMPLESINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
 MultiSine multiSine(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID);
-MultiSineMaster multiSineMaster(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID, SamplesStorageAudioRam, PhaseIncsStorageAudioRam, DebugStorage);
+MultiSineMaster multiSineMaster(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID, SamplesStorageLocalRam, PhaseIncsStorageLocalRam, DebugStorage);
 MultiSineStream multiSineStream(hardwareSystem, XPAR_XMULTISINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
+
+//SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageAudioRam);
+//SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageAudioRam);
+//SimpleSineStream simpleSineStream(hardwareSystem, XPAR_XSIMPLESINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
+//MultiSine multiSine(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID);
+//MultiSineMaster multiSineMaster(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID, SamplesStorageAudioRam, PhaseIncsStorageAudioRam, DebugStorage);
+//MultiSineStream multiSineStream(hardwareSystem, XPAR_XMULTISINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
 
 
 typedef enum _TestState
@@ -60,6 +71,7 @@ typedef enum _TestState
 	tsSimple,
 	tsSimpleMaster,
 	tsSimpleStream,
+	tsSimpleStreamBi,
 	tsMulti,
 	tsMultiMaster,
 	tsMultiStream
@@ -141,13 +153,15 @@ int main(void)
 	xil_printf("\033[2J\033[H");
 	xil_printf("Audio Playground Tests\n");
 	xil_printf("  Press 1-8 to choose wave (1=100hz, 2=200hz etc)\n");
+	xil_printf("  Press 9 to use audio BRAM, 0 to use local microblaze BRAM\n");
 	xil_printf("  Press q to run all tests for timing info\n");
 	xil_printf("  Press w to test simple sine slave\n");
 	xil_printf("  Press e to test simple sine master\n");
 	xil_printf("  Press r to test simple sine stream\n");
-	xil_printf("  Press t to test multi sine slave\n");
-	xil_printf("  Press y to test multi sine master\n");
-	xil_printf("  Press u to test multi sine stream\n");
+	xil_printf("  Press t to test simple sine stream bidirectional\n");
+	xil_printf("  Press y to test multi sine slave\n");
+	xil_printf("  Press u to test multi sine master\n");
+	xil_printf("  Press i to test multi sine stream\n");
 
 
 
@@ -165,6 +179,7 @@ int main(void)
 			simpleSine.SetFrequency(uVoice, fFrequency);
 			simpleSineMaster.SetFrequency(uVoice, fFrequency);
 			simpleSineStream.SetFrequency(uVoice, fFrequency);
+			simpleSineStreamBi.SetFrequency(uVoice, fFrequency);
 			multiSine.SetFrequency(uVoice, fFrequency);
 			multiSineMaster.SetFrequency(uVoice, fFrequency);
 			multiSineStream.SetFrequency(uVoice, fFrequency);
@@ -235,20 +250,51 @@ int main(void)
 						}
 						break;
 
+						case '9' :
+						{
+							xil_printf("Using audio BRAM\n");
+
+							simpleSine.SetSampleStorage(SamplesStorageAudioRam);
+							simpleSineMaster.SetSampleStorage(SamplesStorageAudioRam);
+							simpleSineStream.SetSampleStorage(SamplesStorageAudioRam);
+							simpleSineStreamBi.SetSampleStorage(SamplesStorageAudioRam);
+							multiSineMaster.SetSampleStorage(SamplesStorageAudioRam);
+							multiSineStream.SetSampleStorage(SamplesStorageAudioRam);
+
+							multiSineMaster.SetPhaseIncsStorage(PhaseIncsStorageAudioRam);
+						}
+						break;
+
+						case '0' :
+						{
+							xil_printf("Using local microblaze BRAM\n");
+
+							simpleSine.SetSampleStorage(SamplesStorageLocalRam);
+							simpleSineMaster.SetSampleStorage(SamplesStorageLocalRam);
+							simpleSineStream.SetSampleStorage(SamplesStorageLocalRam);
+							simpleSineStreamBi.SetSampleStorage(SamplesStorageLocalRam);
+							multiSineMaster.SetSampleStorage(SamplesStorageLocalRam);
+							multiSineStream.SetSampleStorage(SamplesStorageLocalRam);
+
+							multiSineMaster.SetPhaseIncsStorage(PhaseIncsStorageLocalRam);
+						}
+						break;
+
 						case 'q' : testState = tsRunAll; 				xil_printf("Run All\n");break;
 						case 'w' : testState = tsSimple; 				xil_printf("Simple\n");break;
 						case 'e' : testState = tsSimpleMaster; 	xil_printf("Simple Master\n");break;
 						case 'r' : testState = tsSimpleStream; 	xil_printf("Simple Stream\n");break;
-						case 't' : testState = tsMulti; 				xil_printf("Multi\n");break;
-						case 'y' : testState = tsMultiMaster; 	xil_printf("Multi Master\n");break;
-						case 'u' : testState = tsMultiStream; 	xil_printf("Multi Stream\n");break;
+						case 't' : testState = tsSimpleStreamBi; 	xil_printf("Simple Stream Bidirectional\n");break;
+						case 'y' : testState = tsMulti; 				xil_printf("Multi\n");break;
+						case 'u' : testState = tsMultiMaster; 	xil_printf("Multi Master\n");break;
+						case 'i' : testState = tsMultiStream; 	xil_printf("Multi Stream\n");break;
 
 						break;
       		}
       	}
 
-      	// always use simple sine for comparison
-    		volatile uint32_t *pMonoSineSampleBuffer;
+      	// always use simple sine as default
+    		volatile uint32_t *pMonoSineSampleBuffer = simpleSine.GetSampleBuffer(uVoice);;
 
 				if(testState == tsRunAll || testState == tsSimple)
 				{
@@ -272,6 +318,14 @@ int main(void)
 					simpleSineStream.ProcessBlocking();
 					debug.SetDebug(Debug::dpPio29_processing, 0);
 	    		pMonoSineSampleBuffer = simpleSineStream.GetSampleBuffer(uVoice);
+				}
+
+				if(testState == tsRunAll || testState == tsSimpleStreamBi)
+				{
+					debug.SetDebug(Debug::dpPio29_processing, 1);
+					simpleSineStreamBi.ProcessBlocking();
+					debug.SetDebug(Debug::dpPio29_processing, 0);
+	    		pMonoSineSampleBuffer = simpleSineStreamBi.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsMulti)

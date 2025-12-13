@@ -36,6 +36,16 @@ public:
 		}
 	}
 
+	void SetSampleStorage(volatile uint32_t *pSampleStorage)
+	{
+		m_pSampleStorage = pSampleStorage;
+	}
+
+	void SetPhaseIncsStorage(volatile uint32_t *pPhaseIncStorage)
+	{
+		m_pPhaseIncStorage = pPhaseIncStorage;
+	}
+
 	bool IsConfigured(void)
 	{
 		return m_bIsConfigured;

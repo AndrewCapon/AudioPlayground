@@ -424,6 +424,24 @@
             },
             "V16": {
                 "VT": "AC",
+                "BA": "0x00080000",
+                "HA": "0x0008FFFF",
+                "BP": "C_S_AXI_CONTROL_BASEADDR",
+                "HP": "C_S_AXI_CONTROL_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processor/microblaze_0",
+                "MI": "M_AXI_DP",
+                "MS": "SEG_SimpleSineStreamBi_0_Reg",
+                "MV": "xilinx.com:ip:microblaze:11.0",
+                "SX": "/audio_components/SimpleSineStreamBi_0",
+                "SI": "s_axi_control",
+                "SS": "Reg",
+                "SV": "xilinx.com:hls:SimpleSineStreamBidirectional:1.0",
+                "TM": "data",
+                "TU": "register"
+            },
+            "V17": {
+                "VT": "AC",
                 "BA": "0x04060000",
                 "HA": "0x0406FFFF",
                 "BP": "C_BASEADDR",
@@ -440,7 +458,7 @@
                 "TM": "data",
                 "TU": "register"
             },
-            "V17": {
+            "V18": {
                 "VT": "AC",
                 "BA": "0x41200000",
                 "HA": "0x4120FFFF",
@@ -459,7 +477,7 @@
                 "TM": "data",
                 "TU": "register"
             },
-            "V18": {
+            "V19": {
                 "VT": "AC",
                 "BA": "0x41C00000",
                 "HA": "0x41C0FFFF",
@@ -477,7 +495,7 @@
                 "TM": "data",
                 "TU": "register"
             },
-            "V19": {
+            "V20": {
                 "VT": "AC",
                 "BA": "0x44A00000",
                 "HA": "0x44A0FFFF",
@@ -495,7 +513,7 @@
                 "TM": "data",
                 "TU": "register"
             },
-            "V20": {
+            "V21": {
                 "VT": "AC",
                 "BA": "0x60000000",
                 "HA": "0x6007FFFF",
@@ -513,7 +531,7 @@
                 "TM": "data",
                 "TU": "memory"
             },
-            "V21": {
+            "V22": {
                 "VT": "AC",
                 "BA": "0x60000000",
                 "HA": "0x6007FFFF",
@@ -531,7 +549,7 @@
                 "TM": "instruction",
                 "TU": "memory"
             },
-            "V22": {
+            "V23": {
                 "VT": "AC",
                 "BA": "0xC0000000",
                 "HA": "0xC0001FFF",
@@ -549,7 +567,7 @@
                 "TM": "both",
                 "TU": "memory"
             },
-            "V23": {
+            "V24": {
                 "VT": "AC",
                 "BA": "0xC0000000",
                 "HA": "0xC0001FFF",
@@ -567,7 +585,7 @@
                 "TM": "both",
                 "TU": "memory"
             },
-            "V24": {
+            "V25": {
                 "VT": "AC",
                 "BA": "0xC0000000",
                 "HA": "0xC0001FFF",
@@ -585,7 +603,7 @@
                 "TM": "both",
                 "TU": "memory"
             },
-            "V25": {
+            "V26": {
                 "VT": "AC",
                 "BA": "0xC0000000",
                 "HA": "0xC0001FFF",
@@ -602,60 +620,6 @@
                 "SV": "xilinx.com:ip:axi_bram_ctrl:4.1",
                 "TM": "data",
                 "TU": "memory"
-            },
-            "V26": {
-                "VT": "ACE",
-                "BA": "0x00001000",
-                "HA": "0x00001FFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processor/microblaze_0",
-                "MI": "M_AXI_DP",
-                "MS": "SEG_ilmb_bram_if_cntlr_Mem",
-                "MV": "xilinx.com:ip:microblaze:11.0",
-                "SX": "/memory/microblaze_0_local_memory/ilmb_bram_if_cntlr",
-                "SI": "SLMB",
-                "SS": "Mem",
-                "SV": "xilinx.com:ip:lmb_bram_if_cntlr:4.0",
-                "TM": "data",
-                "TU": "memory"
-            },
-            "V27": {
-                "VT": "ACE",
-                "BA": "0x00060000",
-                "HA": "0x0006FFFF",
-                "BP": "C_S_AXI_CONTROL_BASEADDR",
-                "HP": "C_S_AXI_CONTROL_HIGHADDR",
-                "MA": "Data_m_axi_gmem",
-                "MX": "/audio_components/MultiSineMaster_0",
-                "MI": "m_axi_gmem",
-                "MS": "SEG_SimpleSine_0_Reg",
-                "MV": "xilinx.com:hls:MultiSineMaster:1.0",
-                "SX": "/audio_components/SimpleSine_0",
-                "SI": "s_axi_control",
-                "SS": "Reg",
-                "SV": "xilinx.com:hls:SimpleSine:1.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V28": {
-                "VT": "ACE",
-                "BA": "0x00060000",
-                "HA": "0x0006FFFF",
-                "BP": "C_S_AXI_CONTROL_BASEADDR",
-                "HP": "C_S_AXI_CONTROL_HIGHADDR",
-                "MA": "Data_m_axi_gmem",
-                "MX": "/audio_components/SimpleSineMaster_0",
-                "MI": "m_axi_gmem",
-                "MS": "SEG_SimpleSine_0_Reg",
-                "MV": "xilinx.com:hls:SimpleSineMaster:1.0",
-                "SX": "/audio_components/SimpleSine_0",
-                "SI": "s_axi_control",
-                "SS": "Reg",
-                "SV": "xilinx.com:hls:SimpleSine:1.0",
-                "TM": "both",
-                "TU": "register"
             }
         },
         "edges": [
@@ -784,16 +748,6 @@
             },
             {
                 "src": "V26",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V27",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V28",
                 "trg": "V2",
                 "EH": "2"
             }

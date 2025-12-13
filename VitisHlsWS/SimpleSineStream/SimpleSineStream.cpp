@@ -26,6 +26,7 @@ void InitSinTable(DataType sine_lut[cSineLutSize])
 
 DataType  sine_lut[cSineLutSize];
 
+
 void SimpleSineStream(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples])
 {
     #pragma HLS INTERFACE mode=s_axilite    port=return  

@@ -1,0 +1,18 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "SimpleSineStreamBidirectional.cpp",
+    "fileloc": 29,
+    "instructions": 34,
+    "loads": {
+      "G": 1,
+      "T": 2
+    },
+    "name": "SimpleSineStreamBidirectional",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 34
+  }
+}

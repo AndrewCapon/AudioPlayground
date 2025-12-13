@@ -75,6 +75,10 @@ XIntc_Config XIntc_ConfigTable[] =
 			{
 				XNullHandler,
 				(void *) XNULL
+			},
+			{
+				XNullHandler,
+				(void *) XNULL
 			}
 		},
 		XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_NUM_SW_INTR

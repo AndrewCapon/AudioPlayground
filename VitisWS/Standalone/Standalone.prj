@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
-<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Standalone" location="/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS/Standalone" platform="/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS/AudioPlatformStandalone/export/AudioPlatformStandalone/AudioPlatformStandalone.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" systemProject="Standalone_system" sysConfig="AudioPlatformStandalone" runtime="C/C++" cpu="standalone_domain" cpuInstance="processor_microblaze_0" os="standalone" language="CPP" mssSignature="6092ae791769ad61800daddda15fbb50">
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Standalone" location="/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS/Standalone" platform="/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisWS/AudioPlatformStandalone/export/AudioPlatformStandalone/AudioPlatformStandalone.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" systemProject="Standalone_system" sysConfig="AudioPlatformStandalone" runtime="C/C++" cpu="standalone_domain" cpuInstance="processor_microblaze_0" os="standalone" language="CPP" mssSignature="b5cc95d7211b0b75910973e70707bfd2">
   <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1202007976">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
     <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1841822153" dirty="true">
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1841822153">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
     <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>

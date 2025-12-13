@@ -53,7 +53,8 @@
         "SimpleSineMaster_0": "",
         "MultiSineMaster_0": "",
         "SimpleSineStream_0": "",
-        "MultiSineStream_0": ""
+        "MultiSineStream_0": "",
+        "SimpleSineStreamBi_0": ""
       },
       "clk_gen": {
         "clk_wiz_100": "",
@@ -76,7 +77,8 @@
         "m07_couplers": {},
         "m08_couplers": {},
         "m09_couplers": {},
-        "m10_couplers": {}
+        "m10_couplers": {},
+        "m11_couplers": {}
       },
       "outputs": {
         "AxisToI2sFifo_0": "",
@@ -1178,7 +1180,6 @@
                     "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
                     "mode": "Slave",
                     "bridges": [
-                      "M00_AXI",
                       "M01_AXI",
                       "M02_AXI"
                     ]
@@ -1188,8 +1189,7 @@
                     "mode": "Slave",
                     "bridges": [
                       "M00_AXI",
-                      "M01_AXI",
-                      "M02_AXI"
+                      "M01_AXI"
                     ]
                   },
                   "S03_AXI": {
@@ -1197,8 +1197,7 @@
                     "mode": "Slave",
                     "bridges": [
                       "M00_AXI",
-                      "M01_AXI",
-                      "M02_AXI"
+                      "M01_AXI"
                     ]
                   }
                 }
@@ -2079,6 +2078,21 @@
             "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
             "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "simplesine_bi_input_stream": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "simplesine_bi_output_stream": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "s_axi_simplesine_bi": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           }
         },
         "ports": {
@@ -2111,6 +2125,10 @@
             "direction": "O"
           },
           "multisinestream_int": {
+            "type": "intr",
+            "direction": "O"
+          },
+          "simplesine_bi_int": {
             "type": "intr",
             "direction": "O"
           }
@@ -2197,6 +2215,13 @@
             "xci_name": "AudioPlatform_MultiSineStream_0_0",
             "xci_path": "ip/AudioPlatform_MultiSineStream_0_0/AudioPlatform_MultiSineStream_0_0.xci",
             "inst_hier_path": "audio_components/MultiSineStream_0"
+          },
+          "SimpleSineStreamBi_0": {
+            "vlnv": "xilinx.com:hls:SimpleSineStreamBidirectional:1.0",
+            "ip_revision": "2114389363",
+            "xci_name": "AudioPlatform_SimpleSineStreamBidi_0_0",
+            "xci_path": "ip/AudioPlatform_SimpleSineStreamBidi_0_0/AudioPlatform_SimpleSineStreamBidi_0_0.xci",
+            "inst_hier_path": "audio_components/SimpleSineStreamBi_0"
           }
         },
         "interface_nets": {
@@ -2240,6 +2265,24 @@
             "interface_ports": [
               "MultiSineStream_0/samples",
               "multisine_stream"
+            ]
+          },
+          "Conn8": {
+            "interface_ports": [
+              "SimpleSineStreamBi_0/inputs",
+              "simplesine_bi_input_stream"
+            ]
+          },
+          "Conn9": {
+            "interface_ports": [
+              "SimpleSineStreamBi_0/outputs",
+              "simplesine_bi_output_stream"
+            ]
+          },
+          "Conn10": {
+            "interface_ports": [
+              "SimpleSineStreamBi_0/s_axi_control",
+              "s_axi_simplesine_bi"
             ]
           },
           "SimpleSineStream_0_samples": {
@@ -2286,6 +2329,12 @@
               "simplesinemaster_interrupt"
             ]
           },
+          "SimpleSineStreamBidi_0_interrupt": {
+            "ports": [
+              "SimpleSineStreamBi_0/interrupt",
+              "simplesine_bi_int"
+            ]
+          },
           "SimpleSineStream_0_interrupt": {
             "ports": [
               "SimpleSineStream_0/interrupt",
@@ -2306,7 +2355,8 @@
               "SimpleSine_0/ap_clk",
               "SimpleSineStream_0/ap_clk",
               "MultiSineMaster_0/ap_clk",
-              "MultiSineStream_0/ap_clk"
+              "MultiSineStream_0/ap_clk",
+              "SimpleSineStreamBi_0/ap_clk"
             ]
           },
           "rst_clk_wiz_1_100M_peripheral_aresetn": {
@@ -2317,7 +2367,8 @@
               "SimpleSine_0/ap_rst_n",
               "SimpleSineStream_0/ap_rst_n",
               "MultiSineMaster_0/ap_rst_n",
-              "MultiSineStream_0/ap_rst_n"
+              "MultiSineStream_0/ap_rst_n",
+              "SimpleSineStreamBi_0/ap_rst_n"
             ]
           }
         }
@@ -2613,7 +2664,7 @@
             "value": "1"
           },
           "NUM_MI": {
-            "value": "11"
+            "value": "12"
           },
           "NUM_SI": {
             "value": "1"
@@ -2676,6 +2727,11 @@
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           },
           "M10_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "M11_AXI": {
             "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
@@ -2886,6 +2942,22 @@
           "M10_ARESETN": {
             "type": "rst",
             "direction": "I"
+          },
+          "M11_ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "M11_AXI"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "M11_ARESETN"
+              }
+            }
+          },
+          "M11_ARESETN": {
+            "type": "rst",
+            "direction": "I"
           }
         },
         "components": {
@@ -2897,7 +2969,7 @@
             "inst_hier_path": "axi_interconnect_0/xbar",
             "parameters": {
               "NUM_MI": {
-                "value": "11"
+                "value": "12"
               },
               "NUM_SI": {
                 "value": "1"
@@ -2921,7 +2993,8 @@
                   "M07_AXI",
                   "M08_AXI",
                   "M09_AXI",
-                  "M10_AXI"
+                  "M10_AXI",
+                  "M11_AXI"
                 ]
               }
             }
@@ -3647,6 +3720,62 @@
                 ]
               }
             }
+          },
+          "m11_couplers": {
+            "interface_ports": {
+              "M_AXI": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "S_AXI": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              }
+            },
+            "ports": {
+              "M_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "M_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "M_ARESETN"
+                  }
+                }
+              },
+              "M_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "S_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "S_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "S_ARESETN"
+                  }
+                }
+              },
+              "S_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              }
+            },
+            "interface_nets": {
+              "m11_couplers_to_m11_couplers": {
+                "interface_ports": [
+                  "S_AXI",
+                  "M_AXI"
+                ]
+              }
+            }
           }
         },
         "interface_nets": {
@@ -3722,6 +3851,12 @@
               "M10_AXI"
             ]
           },
+          "m11_couplers_to_axi_interconnect_0": {
+            "interface_ports": [
+              "m11_couplers/M_AXI",
+              "M11_AXI"
+            ]
+          },
           "s00_couplers_to_xbar": {
             "interface_ports": [
               "s00_couplers/M_AXI",
@@ -3792,6 +3927,12 @@
             "interface_ports": [
               "xbar/M10_AXI",
               "m10_couplers/S_AXI"
+            ]
+          },
+          "xbar_to_m11_couplers": {
+            "interface_ports": [
+              "xbar/M11_AXI",
+              "m11_couplers/S_AXI"
             ]
           }
         },
@@ -3928,6 +4069,18 @@
               "m10_couplers/M_ARESETN"
             ]
           },
+          "M11_ACLK_1": {
+            "ports": [
+              "M11_ACLK",
+              "m11_couplers/M_ACLK"
+            ]
+          },
+          "M11_ARESETN_1": {
+            "ports": [
+              "M11_ARESETN",
+              "m11_couplers/M_ARESETN"
+            ]
+          },
           "S00_ACLK_1": {
             "ports": [
               "S00_ACLK",
@@ -3955,7 +4108,8 @@
               "m07_couplers/S_ACLK",
               "m08_couplers/S_ACLK",
               "m09_couplers/S_ACLK",
-              "m10_couplers/S_ACLK"
+              "m10_couplers/S_ACLK",
+              "m11_couplers/S_ACLK"
             ]
           },
           "axi_interconnect_0_ARESETN_net": {
@@ -3973,7 +4127,8 @@
               "m07_couplers/S_ARESETN",
               "m08_couplers/S_ARESETN",
               "m09_couplers/S_ARESETN",
-              "m10_couplers/S_ARESETN"
+              "m10_couplers/S_ARESETN",
+              "m11_couplers/S_ARESETN"
             ]
           }
         }
@@ -4391,6 +4546,16 @@
             "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
             "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "M2_AXIS_simplesine_bi": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "S2_AXIS_simplesine_bi": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
           }
         },
         "ports": {
@@ -4454,6 +4619,11 @@
             "direction": "I",
             "left": "0",
             "right": "0"
+          },
+          "simplesine_bi_int": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
           }
         },
         "components": {
@@ -4491,7 +4661,7 @@
             "inst_hier_path": "processor/interrupts_xlconcat",
             "parameters": {
               "NUM_PORTS": {
-                "value": "10"
+                "value": "11"
               }
             }
           },
@@ -4530,7 +4700,7 @@
                 "value": "0"
               },
               "C_FSL_LINKS": {
-                "value": "2"
+                "value": "3"
               },
               "C_ICACHE_STREAMS": {
                 "value": "1"
@@ -4676,6 +4846,18 @@
               "S1_AXIS_multisinestream"
             ]
           },
+          "Conn2": {
+            "interface_ports": [
+              "microblaze_0/M2_AXIS",
+              "M2_AXIS_simplesine_bi"
+            ]
+          },
+          "Conn3": {
+            "interface_ports": [
+              "microblaze_0/S2_AXIS",
+              "S2_AXIS_simplesine_bi"
+            ]
+          },
           "S0_AXIS_1": {
             "interface_ports": [
               "S_AXIS_simplesinestream",
@@ -4744,6 +4926,12 @@
           }
         },
         "nets": {
+          "In10_0_1": {
+            "ports": [
+              "simplesine_bi_int",
+              "interrupts_xlconcat/In10"
+            ]
+          },
           "In6_0_1": {
             "ports": [
               "simplesinemaster_int",
@@ -4867,6 +5055,12 @@
           "processor/S_AXIS_simplesinestream"
         ]
       },
+      "audio_components_simplesine_bi_output_stream": {
+        "interface_ports": [
+          "audio_components/simplesine_bi_output_stream",
+          "processor/S2_AXIS_simplesine_bi"
+        ]
+      },
       "axi_emc_0_EMC_INTF": {
         "interface_ports": [
           "cellular_ram",
@@ -4933,6 +5127,12 @@
           "audio_components/s_axi_simplesinestream"
         ]
       },
+      "axi_interconnect_0_M11_AXI": {
+        "interface_ports": [
+          "axi_interconnect_0/M11_AXI",
+          "audio_components/s_axi_simplesine_bi"
+        ]
+      },
       "axi_uartlite_0_UART": {
         "interface_ports": [
           "usb_uart",
@@ -4992,6 +5192,12 @@
           "audio_components/s_axi_simplesine",
           "memory/M_SIMPLE_SINE"
         ]
+      },
+      "simplesine_bi_input_stream_1": {
+        "interface_ports": [
+          "audio_components/simplesine_bi_input_stream",
+          "processor/M2_AXIS_simplesine_bi"
+        ]
       }
     },
     "nets": {
@@ -5007,6 +5213,12 @@
           "audio_components/multisine_interrupt",
           "intr3",
           "processor/multisine_int"
+        ]
+      },
+      "audio_components_simplesine_bi_int": {
+        "ports": [
+          "audio_components/simplesine_bi_int",
+          "processor/simplesine_bi_int"
         ]
       },
       "axi_uartlite_0_interrupt": {
@@ -5033,7 +5245,8 @@
           "processor/s_axi_aclk",
           "axi_interconnect_0/M08_ACLK",
           "axi_interconnect_0/M09_ACLK",
-          "axi_interconnect_0/M10_ACLK"
+          "axi_interconnect_0/M10_ACLK",
+          "axi_interconnect_0/M11_ACLK"
         ]
       },
       "clk_gen_clk_300": {
@@ -5141,7 +5354,8 @@
           "processor/s_axi_aresetn",
           "axi_interconnect_0/M08_ARESETN",
           "axi_interconnect_0/M09_ARESETN",
-          "axi_interconnect_0/M10_ARESETN"
+          "axi_interconnect_0/M10_ARESETN",
+          "axi_interconnect_0/M11_ARESETN"
         ]
       },
       "simplesinemaster_int_1": {
@@ -5272,6 +5486,13 @@
               "SEG_SimpleSineMaster_0_Reg": {
                 "address_block": "/audio_components/SimpleSineMaster_0/s_axi_control/Reg",
                 "offset": "0x00040000",
+                "range": "64K",
+                "offset_base_param": "C_S_AXI_CONTROL_BASEADDR",
+                "offset_high_param": "C_S_AXI_CONTROL_HIGHADDR"
+              },
+              "SEG_SimpleSineStreamBi_0_Reg": {
+                "address_block": "/audio_components/SimpleSineStreamBi_0/s_axi_control/Reg",
+                "offset": "0x00080000",
                 "range": "64K",
                 "offset_base_param": "C_S_AXI_CONTROL_BASEADDR",
                 "offset_high_param": "C_S_AXI_CONTROL_HIGHADDR"

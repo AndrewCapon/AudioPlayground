@@ -19,7 +19,7 @@ public:
 		m_dma(hardwareSystem.GetDma()),
 		m_systemHandler(hardwareSystem.GetSystemHandler()),
 		m_uDeviceId(uDeviceId),
-		m_puSamples(pSampleStorage)
+		m_pSampleStorage(pSampleStorage)
 	{
 		m_pConfig = XSimplesine_LookupConfig(uDeviceId);
 
@@ -32,6 +32,11 @@ public:
 				m_bIsConfigured = m_systemHandler.AddInterruptCallback(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_AUDIO_COMPONENTS_SIMPLESINE_0_INTERRUPT_INTR, InterruptHandlerStatic, this);
 			}
 		}
+	}
+
+	void SetSampleStorage(volatile uint32_t *pSampleStorage)
+	{
+		m_pSampleStorage = pSampleStorage;
 	}
 
 	bool IsConfigured(void)
@@ -53,7 +58,7 @@ public:
 
 	volatile uint32_t *GetSampleBuffer(uint8_t uVoice)
 	{
-		return &(m_puSamples[uVoice * cBlockSamples]);
+		return &(m_pSampleStorage[uVoice * cBlockSamples]);
 	}
 
 	volatile uint32_t *GetSlaveBuffer(void)
@@ -111,10 +116,8 @@ public:
 			// Copy samples
 			m_codeTimer.StartTiming(ctCopy);
 			volatile uint32_t *pSrc = reinterpret_cast<volatile uint32_t *>(XSimplesine_Get_samples_BaseAddress(&m_instance));
-			volatile uint32_t *pDst = &(m_puSamples[uVoice * cBlockSamples]);
-			m_dma.TransferSync(pSrc, pDst, cBlockSamples);
-//			for(int i = 0; i < cBlockSamples; i++)
-//				*pDst++ = *pSrc++;
+			volatile uint32_t *pDst = &(m_pSampleStorage[uVoice * cBlockSamples]);
+			m_dma.TransferAsync(pSrc, pDst, cBlockSamples);
 			m_codeTimer.StopTiming(ctCopy);
 
 			// Update acumulator.
@@ -213,7 +216,7 @@ public:
 			m_codeTimer.StartTiming(ctCopy);
 			// Copy samples
 			volatile uint32_t *pSrc = reinterpret_cast<volatile uint32_t *>(XSimplesine_Get_samples_BaseAddress(&m_instance));
-			volatile uint32_t *pDst = &(m_puSamples[m_uCurrentVoice * cBlockSamples]);
+			volatile uint32_t *pDst = &(m_pSampleStorage[m_uCurrentVoice * cBlockSamples]);
 
 			m_dma.TransferAsync(pSrc, pDst, cBlockSamples);
 			m_codeTimer.StopTiming(ctCopy);
@@ -352,7 +355,7 @@ private:
 	uint32_t						m_uPhaseIncs[cVoices];
 	uint32_t 						m_uAccumulators[cVoices] = {0};
 	//uint32_t						m_uSamples[cVoices][cBlockSamples];
-	volatile uint32_t		*m_puSamples;
+	volatile uint32_t		*m_pSampleStorage;
 	uint16_t						m_uCurrentVoice = 0;
 
 };

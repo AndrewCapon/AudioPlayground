@@ -16,15 +16,20 @@ class SimpleSineStream
 public:
 	SimpleSineStream(HardwareSystem &hardwareSystem, uint16_t uDeviceId, volatile uint32_t *pSampleStorage)
 	: m_debug(hardwareSystem.GetDebug()),
-		m_codeTimer("SimpleSine", const_cast<const char **>(m_sTimerLabels), hardwareSystem.GetTimer()),
+		m_codeTimer("SimpleSineStream", const_cast<const char **>(m_sTimerLabels), hardwareSystem.GetTimer()),
 		m_systemHandler(hardwareSystem.GetSystemHandler()),
 		m_uDeviceId(uDeviceId),
-		m_puSamples(pSampleStorage)
+		m_pSampleStorage(pSampleStorage)
 	{
 		m_pConfig = XSimplesinestream_LookupConfig(uDeviceId);
 
 		if (m_pConfig)
 			m_bIsConfigured = (XSimplesinestream_CfgInitialize(&m_instance, m_pConfig) == XST_SUCCESS);
+	}
+
+	void SetSampleStorage(volatile uint32_t *pSampleStorage)
+	{
+		m_pSampleStorage = pSampleStorage;
 	}
 
 	bool IsConfigured(void)
@@ -46,7 +51,7 @@ public:
 
 	volatile uint32_t *GetSampleBuffer(uint8_t uVoice)
 	{
-		return &(m_puSamples[uVoice * cBlockSamples]);
+		return &(m_pSampleStorage[uVoice * cBlockSamples]);
 	}
 
 	uint32_t *GetDebugBuffer(void)
@@ -92,7 +97,7 @@ public:
 
 			// Copy samples
 			m_codeTimer.StartTiming(ctCopy);
-			volatile uint32_t *pDst = &(m_puSamples[uVoice * cBlockSamples]);
+			volatile uint32_t *pDst = &(m_pSampleStorage[uVoice * cBlockSamples]);
 			//#pragma GCC unroll 12
 			for(int i = 0 ; i < 12; i++)
 			{
@@ -219,8 +224,6 @@ private:
 	float					 			m_fFrequencies[cVoices];
 	uint32_t						m_uPhaseIncs[cVoices];
 	uint32_t 						m_uAccumulators[cVoices] = {0};
-	//uint32_t						m_uSamples[cVoices][cBlockSamples];
-	volatile uint32_t		*m_puSamples;
-	uint16_t						m_uCurrentVoice = 0;
+	volatile uint32_t		*m_pSampleStorage;
 
 };

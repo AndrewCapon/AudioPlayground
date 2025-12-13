@@ -16,15 +16,20 @@ class MultiSineStream
 public:
 	MultiSineStream(HardwareSystem &hardwareSystem, uint16_t uDeviceId, volatile uint32_t *pSampleStorage)
 	: m_debug(hardwareSystem.GetDebug()),
-		m_codeTimer("SimpleSine", const_cast<const char **>(m_sTimerLabels), hardwareSystem.GetTimer()),
+		m_codeTimer("MultiSineStream", const_cast<const char **>(m_sTimerLabels), hardwareSystem.GetTimer()),
 		m_systemHandler(hardwareSystem.GetSystemHandler()),
 		m_uDeviceId(uDeviceId),
-		m_puSamples(pSampleStorage)
+		m_pSampleStorage(pSampleStorage)
 	{
 		m_pConfig = XMultisinestream_LookupConfig(uDeviceId);
 
 		if (m_pConfig)
 			m_bIsConfigured = (XMultisinestream_CfgInitialize(&m_instance, m_pConfig) == XST_SUCCESS);
+	}
+
+	void SetSampleStorage(volatile uint32_t *pSampleStorage)
+	{
+		m_pSampleStorage = pSampleStorage;
 	}
 
 	bool IsConfigured(void)
@@ -42,7 +47,7 @@ public:
 
 	volatile uint32_t *GetSampleBuffer(uint8_t uVoice)
 	{
-		return &(m_puSamples[uVoice * cBlockSamples]);
+		return &(m_pSampleStorage[uVoice * cBlockSamples]);
 	}
 
 
@@ -71,7 +76,7 @@ public:
 
 		// Copy samples
 		m_codeTimer.StartTiming(ctCopy);
-		volatile uint32_t *pDst = m_puSamples;
+		volatile uint32_t *pDst = m_pSampleStorage;
 		//#pragma GCC unroll 12 * cVoices
 		for(int i = 0 ; i < 12 * cVoices; i++)
 		{
@@ -183,7 +188,7 @@ private:
 	uint32_t						m_uPhaseIncs[cVoices];
 	uint32_t 						m_uAccumulators[cVoices] = {0};
 	//uint32_t						m_uSamples[cVoices][cBlockSamples];
-	volatile uint32_t		*m_puSamples;
+	volatile uint32_t		*m_pSampleStorage;
 	uint16_t						m_uCurrentVoice = 0;
 
 };

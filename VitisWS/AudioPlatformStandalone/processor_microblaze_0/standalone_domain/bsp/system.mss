@@ -43,6 +43,12 @@ BEGIN DRIVER
 END
 
 BEGIN DRIVER
+ PARAMETER DRIVER_NAME = SimpleSineStreamBidirectional
+ PARAMETER DRIVER_VER = 1.0
+ PARAMETER HW_INSTANCE = audio_components_SimpleSineStreamBi_0
+END
+
+BEGIN DRIVER
  PARAMETER DRIVER_NAME = SimpleSineStream
  PARAMETER DRIVER_VER = 1.0
  PARAMETER HW_INSTANCE = audio_components_SimpleSineStream_0
