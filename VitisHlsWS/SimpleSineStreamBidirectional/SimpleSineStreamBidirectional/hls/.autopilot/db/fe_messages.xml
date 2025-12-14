@@ -606,7 +606,7 @@
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="SimpleSineStreamBidirectional" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=SimpleSineStreamBidirectional" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineStreamBidirectional.cpp:31:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="SimpleSineStreamBidirectional" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="SimpleSineStreamBidirectional" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineStreamBidirectional.cpp:32:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="SimpleSineStreamBidirectional" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=inputs" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>

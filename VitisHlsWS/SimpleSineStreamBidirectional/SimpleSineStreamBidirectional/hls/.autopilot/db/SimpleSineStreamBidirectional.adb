@@ -191,7 +191,7 @@
             <item_version>0</item_version>
             <item>23</item>
             <item>24</item>
-            <item>124</item>
+            <item>123</item>
           </oprand_edges>
           <opcode>read</opcode>
           <m_Display>0</m_Display>
@@ -232,7 +232,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53</rtlName>
+              <rtlName>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -292,7 +292,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>shl_ln44_fu_64_p2</rtlName>
+              <rtlName>shl_ln44_fu_62_p2</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -349,7 +349,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>shl_ln44_1_fu_70_p2</rtlName>
+              <rtlName>shl_ln44_1_fu_68_p2</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -406,7 +406,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sub_ln44_fu_76_p2</rtlName>
+              <rtlName>sub_ln44_fu_74_p2</rtlName>
               <control>auto</control>
               <opType>all</opType>
               <implIndex>tadder</implIndex>
@@ -463,7 +463,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln44_fu_82_p2</rtlName>
+              <rtlName>add_ln44_fu_80_p2</rtlName>
               <control>auto</control>
               <opType>all</opType>
               <implIndex>tadder</implIndex>
@@ -538,7 +538,7 @@
             <item>41</item>
             <item>42</item>
             <item>43</item>
-            <item>123</item>
+            <item>122</item>
           </oprand_edges>
           <opcode>write</opcode>
           <m_Display>0</m_Display>
@@ -868,14 +868,14 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_33">
-          <id>123</id>
+          <id>122</id>
           <edge_type>4</edge_type>
           <source_obj>12</source_obj>
           <sink_obj>17</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_34">
-          <id>124</id>
+          <id>123</id>
           <edge_type>4</edge_type>
           <source_obj>10</source_obj>
           <sink_obj>11</sink_obj>
@@ -1102,33 +1102,14 @@
     </fsm>
     <res class_id="34" tracking_level="1" version="0" object_id="_63">
       <dp_component_resource class_id="35" tracking_level="0" version="0">
-        <count>4</count>
+        <count>3</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>control_s_axi_U (control_s_axi)</first>
+          <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51 (SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
-              <first>BRAM</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>36</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>40</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53 (SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
               <first>BRAM</first>
               <second>6</second>
             </item>
@@ -1158,10 +1139,10 @@
         </item>
       </dp_component_resource>
       <dp_expression_resource>
-        <count>5</count>
+        <count>4</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln44_fu_82_p2 ( + ) </first>
+          <first>add_ln44_fu_80_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1180,29 +1161,6 @@
             <item>
               <first>LUT</first>
               <second>32</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>ap_block_state1 ( or ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>2</second>
             </item>
           </second>
         </item>
@@ -1230,7 +1188,7 @@
           </second>
         </item>
         <item>
-          <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TREADY ( and ) </first>
+          <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TREADY ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1253,7 +1211,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln44_fu_76_p2 ( - ) </first>
+          <first>sub_ln44_fu_74_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1427,7 +1385,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>accumulator_reg_87</first>
+          <first>accumulator_reg_85</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1446,7 +1404,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln44_reg_98</first>
+          <first>add_ln44_reg_96</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1484,7 +1442,7 @@
           </second>
         </item>
         <item>
-          <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_start_reg</first>
+          <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1522,7 +1480,7 @@
           </second>
         </item>
         <item>
-          <first>phaseInc_reg_93</first>
+          <first>phaseInc_reg_91</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1542,17 +1500,10 @@
         </item>
       </dp_register_resource>
       <dp_dsp_resource>
-        <count>4</count>
+        <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>control_s_axi_U</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53</first>
+          <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -1577,7 +1528,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53 (SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1)</first>
+          <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51 (SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1589,7 +1540,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln44_fu_82_p2 ( + ) </first>
+          <first>add_ln44_fu_80_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1597,7 +1548,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln44_fu_76_p2 ( - ) </first>
+          <first>sub_ln44_fu_74_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1700,7 +1651,7 @@
       <count>7</count>
       <item_version>0</item_version>
       <item class_id="49" tracking_level="0" version="0">
-        <first>40</first>
+        <first>38</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1709,7 +1660,7 @@
         </second>
       </item>
       <item>
-        <first>46</first>
+        <first>44</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1718,7 +1669,7 @@
         </second>
       </item>
       <item>
-        <first>53</first>
+        <first>51</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1727,7 +1678,7 @@
         </second>
       </item>
       <item>
-        <first>64</first>
+        <first>62</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1735,7 +1686,7 @@
         </second>
       </item>
       <item>
-        <first>70</first>
+        <first>68</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1743,7 +1694,7 @@
         </second>
       </item>
       <item>
-        <first>76</first>
+        <first>74</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1751,7 +1702,7 @@
         </second>
       </item>
       <item>
-        <first>82</first>
+        <first>80</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1763,7 +1714,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>add_ln44_fu_82</first>
+        <first>add_ln44_fu_80</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1771,7 +1722,7 @@
         </second>
       </item>
       <item>
-        <first>shl_ln44_1_fu_70</first>
+        <first>shl_ln44_1_fu_68</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1779,7 +1730,7 @@
         </second>
       </item>
       <item>
-        <first>shl_ln44_fu_64</first>
+        <first>shl_ln44_fu_62</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1787,7 +1738,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln44_fu_76</first>
+        <first>sub_ln44_fu_74</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1799,7 +1750,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53</first>
+        <first>grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1812,7 +1763,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_read_fu_40</first>
+        <first>grp_read_fu_38</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1821,7 +1772,7 @@
         </second>
       </item>
       <item>
-        <first>grp_write_fu_46</first>
+        <first>grp_write_fu_44</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1853,7 +1804,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>87</first>
+        <first>85</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1861,7 +1812,7 @@
         </second>
       </item>
       <item>
-        <first>93</first>
+        <first>91</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1869,7 +1820,7 @@
         </second>
       </item>
       <item>
-        <first>98</first>
+        <first>96</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1881,7 +1832,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>accumulator_reg_87</first>
+        <first>accumulator_reg_85</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1889,7 +1840,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln44_reg_98</first>
+        <first>add_ln44_reg_96</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1897,7 +1848,7 @@
         </second>
       </item>
       <item>
-        <first>phaseInc_reg_93</first>
+        <first>phaseInc_reg_91</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

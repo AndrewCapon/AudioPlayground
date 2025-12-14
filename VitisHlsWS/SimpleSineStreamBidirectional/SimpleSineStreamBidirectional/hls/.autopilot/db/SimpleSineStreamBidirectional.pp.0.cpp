@@ -55587,7 +55587,7 @@ struct Outputs
 };
 
 
-__attribute__((sdx_kernel("SimpleSineStreamBidirectional", 0))) void SimpleSineStreamBidirectional(const uint32_t inputs[2], uint32_t outputs[cBlockSamples+1]);
+__attribute__((sdx_kernel("SimpleSineStreamBidirectional", 0))) void SimpleSineStreamBidirectional(const uint32_t inputs[cChannels], uint32_t outputs[cBlockSamples+1]);
 # 2 "SimpleSineStreamBidirectional.cpp" 2
 
 FrequencyMultiplierType f = 4096.0f/cSampleRate;
@@ -55622,7 +55622,7 @@ __attribute__((sdx_kernel("SimpleSineStreamBidirectional", 0))) void SimpleSineS
 #pragma HLSDIRECTIVE TOP name=SimpleSineStreamBidirectional
 # 30 "SimpleSineStreamBidirectional.cpp"
 
-#pragma HLS INTERFACE mode=s_axilite port=return
+#pragma HLS INTERFACE ap_ctrl_none port=return
 #pragma HLS INTERFACE axis port=inputs
 #pragma HLS INTERFACE axis port=outputs
 

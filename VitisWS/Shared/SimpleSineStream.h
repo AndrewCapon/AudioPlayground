@@ -9,14 +9,12 @@
 #include "DataTypes.h"
 #include "Debug.h"
 #include "fpm/fixed.hpp"
-#include "CodeTimer.h"
 
 class SimpleSineStream
 {
 public:
 	SimpleSineStream(HardwareSystem &hardwareSystem, uint16_t uDeviceId, volatile uint32_t *pSampleStorage)
 	: m_debug(hardwareSystem.GetDebug()),
-		m_codeTimer("SimpleSineStream", const_cast<const char **>(m_sTimerLabels), hardwareSystem.GetTimer()),
 		m_systemHandler(hardwareSystem.GetSystemHandler()),
 		m_uDeviceId(uDeviceId),
 		m_pSampleStorage(pSampleStorage)
@@ -65,68 +63,44 @@ public:
 
 	void ProcessBlocking(void)
 	{
-		static uint32_t uCount = 0;
 		static uint32_t *pAccumulator = reinterpret_cast<uint32_t *>(m_instance.Control_BaseAddress + XSIMPLESINESTREAM_CONTROL_ADDR_ACCUMULATOR_O_DATA);
-
-		if(uCount++ == 1000-1)
-		{
-			m_codeTimer.LogTimes(1000);
-			uCount = 0;
-		}
-
-		m_codeTimer.StartTiming(ctProcessBlocking);
 
 		for(uint8_t uVoice=0; uVoice < cVoices; uVoice++)
 		{
 			// Set accumulator and phaseinc
-			m_codeTimer.StartTiming(ctUpdateData);
 			XSimplesinestream_Set_accumulator_i(&m_instance, m_uAccumulators[uVoice]);
 			XSimplesinestream_Set_phaseInc(&m_instance, m_uPhaseIncs[uVoice]);
-			m_codeTimer.StopTiming(ctUpdateData);
 
 			// Wait for Ready
-			m_codeTimer.StartTiming(ctWaitReady);
 			while (!XSimplesinestream_IsReady(&m_instance))
 				/* WAIT */;
-			m_codeTimer.StopTiming(ctWaitReady);
 
 			// Start HLS
-			m_codeTimer.StartTiming(ctStart);
 			XSimplesinestream_Start(&m_instance);
-			m_codeTimer.StopTiming(ctStart);
 
 			// Copy samples
-			m_codeTimer.StartTiming(ctCopy);
 			volatile uint32_t *pDst = &(m_pSampleStorage[uVoice * cBlockSamples]);
-			//#pragma GCC unroll 12
-			for(int i = 0 ; i < 12; i++)
+			for(int i = 0 ; i < 3; i++)
 			{
-				read_axis_4(pDst);
-				pDst+=4;
+				read_axis_16(pDst);
+				pDst+=16;
 			}
-			m_codeTimer.StopTiming(ctCopy);
 
 			// Update acumulator.
-			m_codeTimer.StartTiming(ctGetAcumulator);
 			while(!XSimplesinestream_Get_accumulator_o_vld(&m_instance))
 				xil_printf(".");/* WAIT */;
 
 			// Update acumulator.
-			//m_uAccumulators[uVoice] = XSimplesine_Get_accumulator_o(&m_instance);
 			m_uAccumulators[uVoice] = *pAccumulator;
-			m_codeTimer.StopTiming(ctGetAcumulator);
 		}
-		m_codeTimer.StopTiming(ctProcessBlocking);
 	}
 
 	FORCE_INLINE PhaseType FrequencyToAccumPerSample(const float frequency)
 	{
-		m_codeTimer.StartTiming(ctFrequencyToAccumPerSample);
 		constexpr float f =  4096.0f/cSampleRate;
 		float     fAcumPerSample = f * frequency;
 
 		PhaseType result = static_cast<PhaseType>(fAcumPerSample);
-		m_codeTimer.StopTiming(ctFrequencyToAccumPerSample);
 
 		return result;
 	}
@@ -142,78 +116,25 @@ private:
 	  a[3] = a3; a[1] = a1; a[2] = a2; a[0] = a0;
 	}
 
-	typedef enum
+	void FORCE_INLINE read_axis_16(volatile uint32_t *a)
 	{
-		ctProcessBlocking,
-		ctWaitReady,
-		ctStart,
-		ctWaitDone,
-		ctProcessNonBlocking,
-		ctInterruptHandler,
-		ctInterruptStart,
-		ctCopy,
-		ctGetAcumulator,
-		ctInterruptEnd,
-		ctStartProcessing,
-		ctInterruptEnable,
-		ctUpdateData,
-		ctStartStart,
-		ctContinueProcessing,
-		ctContinueStart,
-		ctFrequencyToAccumPerSample,
-		ctTop
-	} CodeTimers;
+		int a0,  a1,  a2,  a3;
+		int a4,  a5,  a6,  a7;
+		int a8,  a9,  a10, a11;
+		int a12, a13, a14, a15;
 
-	static const constexpr char *m_sTimerLabels[ctTop] =
-	{
-		"ctProcessBlocking          ",
-		"ctWaitReady                ",
-		"ctStart                    ",
-		"ctWaitDone                 ",
-		"ctProcessNonBlocking       ",
-		"ctInterruptHandler         ",
-		"ctInterruptStart           ",
-		"ctCopy                     ",
-		"ctGetAcumulator            ",
-		"ctInterruptEnd             ",
-		"ctStartProcessing          ",
-		"ctInterruptEnable          ",
-		"ctUpdateData               ",
-		"ctStartStart               ",
-		"ctContinueProcessing       ",
-		"ctContinueStart            ",
-		"ctFrequencyToAccumPerSample"
-	};
+		getfsl(a0,  0); getfsl(a1,  0); getfsl(a2,  0); getfsl(a3,  0);
+		getfsl(a4,  0); getfsl(a5,  0); getfsl(a6,  0); getfsl(a7,  0);
+		getfsl(a8,  0); getfsl(a9,  0); getfsl(a10, 0); getfsl(a11, 0);
+		getfsl(a12, 0); getfsl(a13, 0); getfsl(a14, 0); getfsl(a15, 0);
 
-//	typedef enum
-//	{
-//		ctProcessNonBlocking,
-//		ctInterruptHandler,
-//		ctStartProcessing,
-//		ctInterruptEnable,
-//		ctUpdateData,
-//		ctStartStart,
-//		ctContinueProcessing,
-//		ctContinueStart,
-//		ctFrequencyToAccumPerSample,
-//		ctTop
-//	} CodeTimers;
-//
-//	static const constexpr char *m_sTimerLabels[ctTop] =
-//	{
-//		"ctProcessNonBlocking       ",
-//		"ctInterruptHandler         ",
-//		"ctStartProcessing          ",
-//		"ctInterruptEnable          ",
-//		"ctUpdateData               ",
-//		"ctStartStart               ",
-//		"ctContinueProcessing       ",
-//		"ctContinueStart            ",
-//		"ctFrequencyToAccumPerSample"
-//	};
+		a[3]  = a3;  a[1]  = a1;  a[2]  = a2;  a[0]  = a0;
+		a[7]  = a7;  a[5]  = a5;  a[6]  = a6;  a[4]  = a4;
+		a[11] = a11; a[9]  = a9;  a[10] = a10; a[8]  = a8;
+		a[15] = a15; a[13] = a13; a[14] = a14; a[12] = a12;
+	}
 
 	Debug								&m_debug;
-	CodeTimer<ctTop>		m_codeTimer;
 	ISystemHandler 			&m_systemHandler;
 	uint16_t 						m_uDeviceId;
 	bool 								m_bIsConfigured = false;

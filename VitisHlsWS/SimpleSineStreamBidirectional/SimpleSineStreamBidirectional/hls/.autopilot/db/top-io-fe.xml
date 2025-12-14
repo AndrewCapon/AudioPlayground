@@ -1,5 +1,5 @@
 <root versionMajor = "1" versionMinor = "5">
-  <kernel src_name="SimpleSineStreamBidirectional" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+  <kernel src_name="SimpleSineStreamBidirectional" language="c" hwCtrl="ap_ctrl_none" mem_layout="fpga64-xilinx-none">
     <args>
       <arg id="0" access_type="r" src_name="inputs" src_type="unsigned int const *" src_isptr="1" src_bitwidth="32" src_size_or_depth="2">
         <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="inputs" hw_bitwidth="32" hw_size_or_depth="2" hw_kernel_support="true">

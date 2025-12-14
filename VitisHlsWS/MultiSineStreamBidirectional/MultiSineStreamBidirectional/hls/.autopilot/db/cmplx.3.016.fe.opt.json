@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "MultiSineStreamBidirectional.cpp",
+    "fileloc": 31,
+    "instructions": 66,
+    "loads": {
+      "G": 3,
+      "L": 1
+    },
+    "name": "MultiSineStreamBidirectional",
+    "stores": {
+      "G": 2,
+      "L": 1
+    },
+    "total_instructions": 66
+  }
+}

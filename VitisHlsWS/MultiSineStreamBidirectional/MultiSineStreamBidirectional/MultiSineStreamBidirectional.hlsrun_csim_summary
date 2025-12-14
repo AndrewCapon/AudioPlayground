@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/MultiSineStreamBidirectional.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Dec 14 08:55:21 2025",
+ "timestampMillis": "1765702521778",
+ "buildStep": {
+  "cmdId": "6555e7c3-25e1-4776-9685-bdc5aaac160c",
+  "name": "vitis-run",
+  "logFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/logs/MultiSineStreamBidirectional.steps.log",
+  "commandLine": "/home/andrewcapon/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/hls_config.cfg --work_dir MultiSineStreamBidirectional ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/hls_config.cfg",
+   "--work_dir",
+   "MultiSineStreamBidirectional"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec 14 08:55:21 2025",
+ "timestampMillis": "1765702521778",
+ "status": {
+  "cmdId": "6555e7c3-25e1-4776-9685-bdc5aaac160c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Dec 14 08:55:27 2025",
+ "timestampMillis": "1765702527644",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "MultiSineStreamBidirectional",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional.h",
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional.cpp",
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/DataTypes.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Dec 14 08:55:27 2025",
+ "timestampMillis": "1765702527645",
+ "buildStep": {
+  "cmdId": "de82b2c5-b676-434b-91da-3cb6433731a6",
+  "name": "",
+  "logFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec 14 08:55:27 2025",
+ "timestampMillis": "1765702527645",
+ "status": {
+  "cmdId": "de82b2c5-b676-434b-91da-3cb6433731a6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec 14 08:55:28 2025",
+ "timestampMillis": "1765702528193",
+ "status": {
+  "cmdId": "de82b2c5-b676-434b-91da-3cb6433731a6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec 14 08:55:28 2025",
+ "timestampMillis": "1765702528393",
+ "status": {
+  "cmdId": "6555e7c3-25e1-4776-9685-bdc5aaac160c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Dec 14 08:55:28 2025",
+ "timestampMillis": "1765702528394",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Dec 14 08:55:28 2025",
+ "timestampMillis": "1765702528394",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

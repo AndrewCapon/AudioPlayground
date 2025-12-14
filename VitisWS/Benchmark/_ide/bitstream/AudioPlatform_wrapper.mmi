@@ -14,13 +14,13 @@
     <AddressSpace Name="AudioPlatform_i_processor_microblaze_0.AudioPlatform_i_memory_microblaze_0_local_memory_dlmb_bram_if_cntlr" Begin="0" End="8191">
       <AddressSpaceRange Name="AudioPlatform_i_processor_microblaze_0.AudioPlatform_i_memory_microblaze_0_local_memory_dlmb_bram_if_cntlr" Begin="0" End="8191" CoreMemory_Width="0" MemoryType="RAM_SP" MemoryConfiguration="">
         <BusBlock>
-          <BitLane MemType="RAMB36" Placement="X1Y2" Read_Width="0" SLR_INDEX="-1">
+          <BitLane MemType="RAMB36" Placement="X1Y12" Read_Width="0" SLR_INDEX="-1">
             <DataWidth MSB="15" LSB="0"/>
             <AddressRange Begin="0" End="2047"/>
             <BitLayout pattern=""/>
             <Parity ON="false" NumBits="0"/>
           </BitLane>
-          <BitLane MemType="RAMB36" Placement="X1Y3" Read_Width="0" SLR_INDEX="-1">
+          <BitLane MemType="RAMB36" Placement="X1Y11" Read_Width="0" SLR_INDEX="-1">
             <DataWidth MSB="31" LSB="16"/>
             <AddressRange Begin="0" End="2047"/>
             <BitLayout pattern=""/>
@@ -32,13 +32,13 @@
     <AddressSpace Name="AudioPlatform_i_processor_microblaze_0.AudioPlatform_i_memory_axi_bram_ctrl_0" Begin="3221225472" End="3221233663">
       <AddressSpaceRange Name="AudioPlatform_i_processor_microblaze_0.AudioPlatform_i_memory_axi_bram_ctrl_0" Begin="3221225472" End="3221233663" CoreMemory_Width="0" MemoryType="RAM_SP" MemoryConfiguration="">
         <BusBlock>
-          <BitLane MemType="RAMB36" Placement="X0Y15" Read_Width="0" SLR_INDEX="-1">
+          <BitLane MemType="RAMB36" Placement="X2Y18" Read_Width="0" SLR_INDEX="-1">
             <DataWidth MSB="15" LSB="0"/>
             <AddressRange Begin="0" End="2047"/>
             <BitLayout pattern=""/>
             <Parity ON="false" NumBits="0"/>
           </BitLane>
-          <BitLane MemType="RAMB36" Placement="X0Y16" Read_Width="0" SLR_INDEX="-1">
+          <BitLane MemType="RAMB36" Placement="X1Y18" Read_Width="0" SLR_INDEX="-1">
             <DataWidth MSB="31" LSB="16"/>
             <AddressRange Begin="0" End="2047"/>
             <BitLayout pattern=""/>

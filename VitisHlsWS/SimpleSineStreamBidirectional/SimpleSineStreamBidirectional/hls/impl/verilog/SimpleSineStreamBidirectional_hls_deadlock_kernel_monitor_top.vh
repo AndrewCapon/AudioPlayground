@@ -12,12 +12,12 @@ wire kernel_block;
 
 assign axis_block_sigs[0] = ~inputs_TDATA_blk_n;
 assign axis_block_sigs[1] = ~outputs_TDATA_blk_n;
-assign axis_block_sigs[2] = ~grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53.outputs_TDATA_blk_n;
+assign axis_block_sigs[2] = ~grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51.outputs_TDATA_blk_n;
 
 assign inst_block_sigs[0] = 1'b0;
 
 assign inst_idle_sigs[0] = 1'b0;
-assign inst_idle_sigs[1] = grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53.ap_idle;
+assign inst_idle_sigs[1] = grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51.ap_idle;
 
 SimpleSineStreamBidirectional_hls_deadlock_idx0_monitor SimpleSineStreamBidirectional_hls_deadlock_idx0_monitor_U (
     .clock(kernel_monitor_clock),

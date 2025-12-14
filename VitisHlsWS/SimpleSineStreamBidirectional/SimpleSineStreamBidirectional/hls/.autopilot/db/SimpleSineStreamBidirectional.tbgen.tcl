@@ -4,7 +4,7 @@ set isCombinational 0
 set isDatapathOnly 0
 set isPipelined 0
 set pipeline_type none
-set FunctionProtocol ap_ctrl_hs
+set FunctionProtocol ap_ctrl_none
 set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
@@ -28,7 +28,7 @@ set C_modelArgMapList {[
 	{ "Name" : "inputs", "interface" : "axis", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "outputs", "interface" : "axis", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 26
+set portNum 8
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
@@ -38,45 +38,9 @@ set portList {
 	{ outputs_TDATA sc_out sc_lv 32 signal 1 } 
 	{ outputs_TVALID sc_out sc_logic 1 outvld 1 } 
 	{ outputs_TREADY sc_in sc_logic 1 outacc 1 } 
-	{ s_axi_control_AWVALID sc_in sc_logic 1 signal -1 } 
-	{ s_axi_control_AWREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_control_AWADDR sc_in sc_lv 4 signal -1 } 
-	{ s_axi_control_WVALID sc_in sc_logic 1 signal -1 } 
-	{ s_axi_control_WREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_control_WDATA sc_in sc_lv 32 signal -1 } 
-	{ s_axi_control_WSTRB sc_in sc_lv 4 signal -1 } 
-	{ s_axi_control_ARVALID sc_in sc_logic 1 signal -1 } 
-	{ s_axi_control_ARREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_control_ARADDR sc_in sc_lv 4 signal -1 } 
-	{ s_axi_control_RVALID sc_out sc_logic 1 signal -1 } 
-	{ s_axi_control_RREADY sc_in sc_logic 1 signal -1 } 
-	{ s_axi_control_RDATA sc_out sc_lv 32 signal -1 } 
-	{ s_axi_control_RRESP sc_out sc_lv 2 signal -1 } 
-	{ s_axi_control_BVALID sc_out sc_logic 1 signal -1 } 
-	{ s_axi_control_BREADY sc_in sc_logic 1 signal -1 } 
-	{ s_axi_control_BRESP sc_out sc_lv 2 signal -1 } 
-	{ interrupt sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
-	{ "name": "s_axi_control_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "control", "role": "AWADDR" },"address":[{"name":"SimpleSineStreamBidirectional","role":"start","value":"0","valid_bit":"0"},{"name":"SimpleSineStreamBidirectional","role":"continue","value":"0","valid_bit":"4"},{"name":"SimpleSineStreamBidirectional","role":"auto_start","value":"0","valid_bit":"7"}] },
-	{ "name": "s_axi_control_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "AWVALID" } },
-	{ "name": "s_axi_control_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "AWREADY" } },
-	{ "name": "s_axi_control_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "WVALID" } },
-	{ "name": "s_axi_control_WREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "WREADY" } },
-	{ "name": "s_axi_control_WDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "control", "role": "WDATA" } },
-	{ "name": "s_axi_control_WSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "control", "role": "WSTRB" } },
-	{ "name": "s_axi_control_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "control", "role": "ARADDR" },"address":[{"name":"SimpleSineStreamBidirectional","role":"start","value":"0","valid_bit":"0"},{"name":"SimpleSineStreamBidirectional","role":"done","value":"0","valid_bit":"1"},{"name":"SimpleSineStreamBidirectional","role":"idle","value":"0","valid_bit":"2"},{"name":"SimpleSineStreamBidirectional","role":"ready","value":"0","valid_bit":"3"},{"name":"SimpleSineStreamBidirectional","role":"auto_start","value":"0","valid_bit":"7"}] },
-	{ "name": "s_axi_control_ARVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "ARVALID" } },
-	{ "name": "s_axi_control_ARREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "ARREADY" } },
-	{ "name": "s_axi_control_RVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "RVALID" } },
-	{ "name": "s_axi_control_RREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "RREADY" } },
-	{ "name": "s_axi_control_RDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "control", "role": "RDATA" } },
-	{ "name": "s_axi_control_RRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "control", "role": "RRESP" } },
-	{ "name": "s_axi_control_BVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "BVALID" } },
-	{ "name": "s_axi_control_BREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "BREADY" } },
-	{ "name": "s_axi_control_BRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "control", "role": "BRESP" } },
-	{ "name": "interrupt", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "interrupt" } }, 
- 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
+	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
  	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }} , 
  	{ "name": "inputs_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "inputs", "role": "TDATA" }} , 
  	{ "name": "inputs_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "inputs", "role": "TVALID" }} , 
@@ -86,10 +50,10 @@ set NewPortList {[
  	{ "name": "outputs_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "outputs", "role": "TREADY" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "4", "5", "6"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "4", "5"],
 		"CDFG" : "SimpleSineStreamBidirectional",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Protocol" : "ap_ctrl_none",
+		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
 		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "55", "EstimateLatencyMax" : "55",
@@ -108,11 +72,11 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "outputs_TDATA_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53", "Port" : "outputs", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "1", "SubInstance" : "grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51", "Port" : "outputs", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "sine_lut", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53", "Port" : "sine_lut", "Inst_start_state" : "2", "Inst_end_state" : "3"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53", "Parent" : "0", "Child" : ["2", "3"],
+					{"ID" : "1", "SubInstance" : "grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51", "Port" : "sine_lut", "Inst_start_state" : "2", "Inst_end_state" : "3"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51", "Parent" : "0", "Child" : ["2", "3"],
 		"CDFG" : "SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -136,11 +100,10 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_44_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53.sine_lut_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_inputs_U", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_outputs_U", "Parent" : "0"}]}
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51.sine_lut_U", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_inputs_U", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_outputs_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

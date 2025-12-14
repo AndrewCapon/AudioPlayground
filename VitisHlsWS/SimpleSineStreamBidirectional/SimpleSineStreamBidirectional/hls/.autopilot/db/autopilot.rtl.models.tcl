@@ -7,7 +7,6 @@ set SynModuleInfo {
   }
   {SRCNAME SimpleSineStreamBidirectional MODELNAME SimpleSineStreamBidirectional RTLNAME SimpleSineStreamBidirectional IS_TOP 1
     SUBMODULES {
-      {MODELNAME SimpleSineStreamBidirectional_control_s_axi RTLNAME SimpleSineStreamBidirectional_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
       {MODELNAME SimpleSineStreamBidirectional_regslice_both RTLNAME SimpleSineStreamBidirectional_regslice_both BINDTYPE interface TYPE adapter IMPL reg_slice}
     }
   }

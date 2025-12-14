@@ -1298,7 +1298,7 @@ Diagnostics:
     FilePath:        SimpleSineStreamBidirectional.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/SimpleSineStreamBidirectional/hls/.autopilot/db/SimpleSineStreamBidirectional.pp.0.cpp
-        Offset:          2462307
+        Offset:          2462315
         Length:          0
         ReplacementText: 'VITIS_LOOP_19_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1307,7 +1307,7 @@ Diagnostics:
     FilePath:        SimpleSineStreamBidirectional.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStreamBidirectional/SimpleSineStreamBidirectional/hls/.autopilot/db/SimpleSineStreamBidirectional.pp.0.cpp
-        Offset:          2463068
+        Offset:          2463074
         Length:          0
         ReplacementText: 'VITIS_LOOP_44_1: '
 ...

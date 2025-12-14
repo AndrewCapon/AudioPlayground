@@ -1,0 +1,41 @@
+{
+    "1": {
+        "name": "MultiSineStreamBidirectional_Pipeline_VITIS_LOOP_39_1",
+        "file": "MultiSineStreamBidirectional.cpp",
+        "fileloc": "39",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "MultiSineStreamBidirectional",
+        "file": "MultiSineStreamBidirectional.cpp",
+        "fileloc": "31",
+        "instructions": "81",
+        "total_instructions": "99",
+        "calls": "1",
+        "basicblocks": "8",
+        "loads": {
+            "G": "3",
+            "L": "8"
+        },
+        "stores": {
+            "G": "1",
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

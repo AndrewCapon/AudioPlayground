@@ -9,9 +9,6 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity SimpleSineStreamBidirectional is
-generic (
-    C_S_AXI_CONTROL_ADDR_WIDTH : INTEGER := 4;
-    C_S_AXI_CONTROL_DATA_WIDTH : INTEGER := 32 );
 port (
     ap_clk : IN STD_LOGIC;
     ap_rst_n : IN STD_LOGIC;
@@ -20,32 +17,14 @@ port (
     inputs_TREADY : OUT STD_LOGIC;
     outputs_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
     outputs_TVALID : OUT STD_LOGIC;
-    outputs_TREADY : IN STD_LOGIC;
-    s_axi_control_AWVALID : IN STD_LOGIC;
-    s_axi_control_AWREADY : OUT STD_LOGIC;
-    s_axi_control_AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_ADDR_WIDTH-1 downto 0);
-    s_axi_control_WVALID : IN STD_LOGIC;
-    s_axi_control_WREADY : OUT STD_LOGIC;
-    s_axi_control_WDATA : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_DATA_WIDTH-1 downto 0);
-    s_axi_control_WSTRB : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_DATA_WIDTH/8-1 downto 0);
-    s_axi_control_ARVALID : IN STD_LOGIC;
-    s_axi_control_ARREADY : OUT STD_LOGIC;
-    s_axi_control_ARADDR : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_ADDR_WIDTH-1 downto 0);
-    s_axi_control_RVALID : OUT STD_LOGIC;
-    s_axi_control_RREADY : IN STD_LOGIC;
-    s_axi_control_RDATA : OUT STD_LOGIC_VECTOR (C_S_AXI_CONTROL_DATA_WIDTH-1 downto 0);
-    s_axi_control_RRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
-    s_axi_control_BVALID : OUT STD_LOGIC;
-    s_axi_control_BREADY : IN STD_LOGIC;
-    s_axi_control_BRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
-    interrupt : OUT STD_LOGIC );
+    outputs_TREADY : IN STD_LOGIC );
 end;
 
 
 architecture behav of SimpleSineStreamBidirectional is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "SimpleSineStreamBidirectional_SimpleSineStreamBidirectional,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a35t-cpg236-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=5.959000,HLS_SYN_LAT=55,HLS_SYN_TPT=none,HLS_SYN_MEM=6,HLS_SYN_DSP=0,HLS_SYN_FF=214,HLS_SYN_LUT=304,HLS_VERSION=2024_2}";
+    "SimpleSineStreamBidirectional_SimpleSineStreamBidirectional,hls_ip_2024_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a35t-cpg236-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=5.959000,HLS_SYN_LAT=55,HLS_SYN_TPT=none,HLS_SYN_MEM=6,HLS_SYN_DSP=0,HLS_SYN_FF=178,HLS_SYN_LUT=262,HLS_VERSION=2024_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (4 downto 0) := "00001";
@@ -53,27 +32,22 @@ architecture behav of SimpleSineStreamBidirectional is
     constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (4 downto 0) := "00100";
     constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (4 downto 0) := "01000";
     constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (4 downto 0) := "10000";
-    constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
+    constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
     constant ap_const_lv32_4 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000100";
-    constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
-    constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv32_6 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000110";
+    constant ap_const_boolean_0 : BOOLEAN := false;
 
     signal ap_rst_n_inv : STD_LOGIC;
-    signal ap_start : STD_LOGIC;
-    signal ap_done : STD_LOGIC;
-    signal ap_idle : STD_LOGIC;
+    signal inputs_TDATA_blk_n : STD_LOGIC;
     signal ap_CS_fsm : STD_LOGIC_VECTOR (4 downto 0) := "00001";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal ap_ready : STD_LOGIC;
-    signal inputs_TDATA_blk_n : STD_LOGIC;
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal outputs_TDATA_blk_n : STD_LOGIC;
@@ -81,33 +55,32 @@ architecture behav of SimpleSineStreamBidirectional is
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
-    signal accumulator_reg_87 : STD_LOGIC_VECTOR (31 downto 0);
-    signal phaseInc_reg_93 : STD_LOGIC_VECTOR (31 downto 0);
-    signal add_ln44_fu_82_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal add_ln44_reg_98 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_start : STD_LOGIC;
-    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_done : STD_LOGIC;
-    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_idle : STD_LOGIC;
-    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_ready : STD_LOGIC;
-    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TREADY : STD_LOGIC;
-    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TVALID : STD_LOGIC;
-    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_start_reg : STD_LOGIC := '0';
+    signal accumulator_reg_85 : STD_LOGIC_VECTOR (31 downto 0);
+    signal phaseInc_reg_91 : STD_LOGIC_VECTOR (31 downto 0);
+    signal add_ln44_fu_80_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal add_ln44_reg_96 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_start : STD_LOGIC;
+    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_done : STD_LOGIC;
+    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_idle : STD_LOGIC;
+    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_ready : STD_LOGIC;
+    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TREADY : STD_LOGIC;
+    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TVALID : STD_LOGIC;
+    signal grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal outputs_TDATA_reg : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_block_state1 : BOOLEAN;
-    signal shl_ln44_fu_64_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal shl_ln44_1_fu_70_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal sub_ln44_fu_76_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal regslice_both_outputs_U_apdone_blk : STD_LOGIC;
-    signal ap_block_state5 : BOOLEAN;
+    signal shl_ln44_fu_62_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal shl_ln44_1_fu_68_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal sub_ln44_fu_74_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (4 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
     signal ap_ST_fsm_state3_blk : STD_LOGIC;
     signal ap_ST_fsm_state4_blk : STD_LOGIC;
     signal ap_ST_fsm_state5_blk : STD_LOGIC;
+    signal regslice_both_outputs_U_apdone_blk : STD_LOGIC;
+    signal ap_block_state5 : BOOLEAN;
     signal regslice_both_inputs_U_apdone_blk : STD_LOGIC;
     signal inputs_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
     signal inputs_TVALID_int_regslice : STD_LOGIC;
@@ -135,39 +108,6 @@ architecture behav of SimpleSineStreamBidirectional is
     end component;
 
 
-    component SimpleSineStreamBidirectional_control_s_axi IS
-    generic (
-        C_S_AXI_ADDR_WIDTH : INTEGER;
-        C_S_AXI_DATA_WIDTH : INTEGER );
-    port (
-        AWVALID : IN STD_LOGIC;
-        AWREADY : OUT STD_LOGIC;
-        AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_ADDR_WIDTH-1 downto 0);
-        WVALID : IN STD_LOGIC;
-        WREADY : OUT STD_LOGIC;
-        WDATA : IN STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH-1 downto 0);
-        WSTRB : IN STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH/8-1 downto 0);
-        ARVALID : IN STD_LOGIC;
-        ARREADY : OUT STD_LOGIC;
-        ARADDR : IN STD_LOGIC_VECTOR (C_S_AXI_ADDR_WIDTH-1 downto 0);
-        RVALID : OUT STD_LOGIC;
-        RREADY : IN STD_LOGIC;
-        RDATA : OUT STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH-1 downto 0);
-        RRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
-        BVALID : OUT STD_LOGIC;
-        BREADY : IN STD_LOGIC;
-        BRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
-        ACLK : IN STD_LOGIC;
-        ARESET : IN STD_LOGIC;
-        ACLK_EN : IN STD_LOGIC;
-        ap_start : OUT STD_LOGIC;
-        interrupt : OUT STD_LOGIC;
-        ap_ready : IN STD_LOGIC;
-        ap_done : IN STD_LOGIC;
-        ap_idle : IN STD_LOGIC );
-    end component;
-
-
     component SimpleSineStreamBidirectional_regslice_both IS
     generic (
         DataWidth : INTEGER );
@@ -186,50 +126,19 @@ architecture behav of SimpleSineStreamBidirectional is
 
 
 begin
-    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53 : component SimpleSineStreamBidirectional_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1
+    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51 : component SimpleSineStreamBidirectional_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_start,
-        ap_done => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_done,
-        ap_idle => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_idle,
-        ap_ready => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_ready,
-        outputs_TREADY => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TREADY,
-        accumulator => accumulator_reg_87,
-        phaseInc => phaseInc_reg_93,
-        outputs_TDATA => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TDATA,
-        outputs_TVALID => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TVALID);
-
-    control_s_axi_U : component SimpleSineStreamBidirectional_control_s_axi
-    generic map (
-        C_S_AXI_ADDR_WIDTH => C_S_AXI_CONTROL_ADDR_WIDTH,
-        C_S_AXI_DATA_WIDTH => C_S_AXI_CONTROL_DATA_WIDTH)
-    port map (
-        AWVALID => s_axi_control_AWVALID,
-        AWREADY => s_axi_control_AWREADY,
-        AWADDR => s_axi_control_AWADDR,
-        WVALID => s_axi_control_WVALID,
-        WREADY => s_axi_control_WREADY,
-        WDATA => s_axi_control_WDATA,
-        WSTRB => s_axi_control_WSTRB,
-        ARVALID => s_axi_control_ARVALID,
-        ARREADY => s_axi_control_ARREADY,
-        ARADDR => s_axi_control_ARADDR,
-        RVALID => s_axi_control_RVALID,
-        RREADY => s_axi_control_RREADY,
-        RDATA => s_axi_control_RDATA,
-        RRESP => s_axi_control_RRESP,
-        BVALID => s_axi_control_BVALID,
-        BREADY => s_axi_control_BREADY,
-        BRESP => s_axi_control_BRESP,
-        ACLK => ap_clk,
-        ARESET => ap_rst_n_inv,
-        ACLK_EN => ap_const_logic_1,
-        ap_start => ap_start,
-        interrupt => interrupt,
-        ap_ready => ap_ready,
-        ap_done => ap_done,
-        ap_idle => ap_idle);
+        ap_start => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_start,
+        ap_done => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_done,
+        ap_idle => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_idle,
+        ap_ready => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_ready,
+        outputs_TREADY => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TREADY,
+        accumulator => accumulator_reg_85,
+        phaseInc => phaseInc_reg_91,
+        outputs_TDATA => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TDATA,
+        outputs_TVALID => grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TVALID);
 
     regslice_both_inputs_U : component SimpleSineStreamBidirectional_regslice_both
     generic map (
@@ -275,16 +184,16 @@ begin
     end process;
 
 
-    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_start_reg_assign_proc : process(ap_clk)
+    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_start_reg <= ap_const_logic_0;
+                grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_const_logic_1 = ap_CS_fsm_state2) and (inputs_TVALID_int_regslice = ap_const_logic_1))) then 
-                    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_ready = ap_const_logic_1)) then 
-                    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_start_reg <= ap_const_logic_0;
+                    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_ready = ap_const_logic_1)) then 
+                    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -294,7 +203,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state1)) then
-                accumulator_reg_87 <= inputs_TDATA_int_regslice;
+                accumulator_reg_85 <= inputs_TDATA_int_regslice;
             end if;
         end if;
     end process;
@@ -302,25 +211,25 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                add_ln44_reg_98 <= add_ln44_fu_82_p2;
-                phaseInc_reg_93 <= inputs_TDATA_int_regslice;
+                add_ln44_reg_96 <= add_ln44_fu_80_p2;
+                phaseInc_reg_91 <= inputs_TDATA_int_regslice;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
-                outputs_TDATA_reg <= grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TDATA;
+            if (((grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                outputs_TDATA_reg <= grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TDATA;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state5, grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_done, ap_CS_fsm_state3, ap_block_state1, ap_block_state5, inputs_TVALID_int_regslice, outputs_TREADY_int_regslice)
+    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state5, grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_done, ap_CS_fsm_state3, ap_block_state5, inputs_TVALID_int_regslice, outputs_TREADY_int_regslice)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_boolean_0 = ap_block_state1))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state1) and (inputs_TVALID_int_regslice = ap_const_logic_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state1;
@@ -332,7 +241,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 end if;
             when ap_ST_fsm_state3 => 
-                if (((grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                if (((grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
                     ap_NS_fsm <= ap_ST_fsm_state4;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state3;
@@ -353,16 +262,16 @@ begin
                 ap_NS_fsm <= "XXXXX";
         end case;
     end process;
-    add_ln44_fu_82_p2 <= std_logic_vector(unsigned(accumulator_reg_87) + unsigned(sub_ln44_fu_76_p2));
+    add_ln44_fu_80_p2 <= std_logic_vector(unsigned(accumulator_reg_85) + unsigned(sub_ln44_fu_74_p2));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
     ap_CS_fsm_state4 <= ap_CS_fsm(3);
     ap_CS_fsm_state5 <= ap_CS_fsm(4);
 
-    ap_ST_fsm_state1_blk_assign_proc : process(ap_block_state1)
+    ap_ST_fsm_state1_blk_assign_proc : process(inputs_TVALID_int_regslice)
     begin
-        if ((ap_const_boolean_1 = ap_block_state1)) then 
+        if ((inputs_TVALID_int_regslice = ap_const_logic_0)) then 
             ap_ST_fsm_state1_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state1_blk <= ap_const_logic_0;
@@ -380,9 +289,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state3_blk_assign_proc : process(grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_done)
+    ap_ST_fsm_state3_blk_assign_proc : process(grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_done)
     begin
-        if ((grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_done = ap_const_logic_0)) then 
+        if ((grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state3_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state3_blk <= ap_const_logic_0;
@@ -410,45 +319,9 @@ begin
     end process;
 
 
-    ap_block_state1_assign_proc : process(ap_start, inputs_TVALID_int_regslice)
-    begin
-                ap_block_state1 <= ((inputs_TVALID_int_regslice = ap_const_logic_0) or (ap_start = ap_const_logic_0));
-    end process;
-
-
     ap_block_state5_assign_proc : process(regslice_both_outputs_U_apdone_blk, outputs_TREADY_int_regslice)
     begin
                 ap_block_state5 <= ((outputs_TREADY_int_regslice = ap_const_logic_0) or (regslice_both_outputs_U_apdone_blk = ap_const_logic_1));
-    end process;
-
-
-    ap_done_assign_proc : process(ap_CS_fsm_state5, ap_block_state5)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (ap_const_boolean_0 = ap_block_state5))) then 
-            ap_done <= ap_const_logic_1;
-        else 
-            ap_done <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_idle_assign_proc : process(ap_start, ap_CS_fsm_state1)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_0))) then 
-            ap_idle <= ap_const_logic_1;
-        else 
-            ap_idle <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_ready_assign_proc : process(ap_CS_fsm_state5, ap_block_state5)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (ap_const_boolean_0 = ap_block_state5))) then 
-            ap_ready <= ap_const_logic_1;
-        else 
-            ap_ready <= ap_const_logic_0;
-        end if; 
     end process;
 
 
@@ -457,12 +330,12 @@ begin
                 ap_rst_n_inv <= not(ap_rst_n);
     end process;
 
-    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_start <= grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_ap_start_reg;
-    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TREADY <= (outputs_TREADY_int_regslice and ap_CS_fsm_state3);
+    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_start <= grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_ap_start_reg;
+    grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TREADY <= (outputs_TREADY_int_regslice and ap_CS_fsm_state3);
 
-    inputs_TDATA_blk_n_assign_proc : process(ap_start, ap_CS_fsm_state1, ap_CS_fsm_state2, inputs_TVALID_int_regslice)
+    inputs_TDATA_blk_n_assign_proc : process(ap_CS_fsm_state1, ap_CS_fsm_state2, inputs_TVALID_int_regslice)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state2) or ((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state2) or (ap_const_logic_1 = ap_CS_fsm_state1))) then 
             inputs_TDATA_blk_n <= inputs_TVALID_int_regslice;
         else 
             inputs_TDATA_blk_n <= ap_const_logic_1;
@@ -471,9 +344,9 @@ begin
 
     inputs_TREADY <= regslice_both_inputs_U_ack_in;
 
-    inputs_TREADY_int_regslice_assign_proc : process(ap_CS_fsm_state1, ap_CS_fsm_state2, ap_block_state1, inputs_TVALID_int_regslice)
+    inputs_TREADY_int_regslice_assign_proc : process(ap_CS_fsm_state1, ap_CS_fsm_state2, inputs_TVALID_int_regslice)
     begin
-        if ((((ap_const_logic_1 = ap_CS_fsm_state2) and (inputs_TVALID_int_regslice = ap_const_logic_1)) or ((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_boolean_0 = ap_block_state1)))) then 
+        if ((((ap_const_logic_1 = ap_CS_fsm_state2) and (inputs_TVALID_int_regslice = ap_const_logic_1)) or ((ap_const_logic_1 = ap_CS_fsm_state1) and (inputs_TVALID_int_regslice = ap_const_logic_1)))) then 
             inputs_TREADY_int_regslice <= ap_const_logic_1;
         else 
             inputs_TREADY_int_regslice <= ap_const_logic_0;
@@ -491,12 +364,12 @@ begin
     end process;
 
 
-    outputs_TDATA_int_regslice_assign_proc : process(ap_CS_fsm_state4, add_ln44_reg_98, grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TDATA, grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TVALID, ap_CS_fsm_state3, outputs_TDATA_reg, outputs_TREADY_int_regslice)
+    outputs_TDATA_int_regslice_assign_proc : process(ap_CS_fsm_state4, add_ln44_reg_96, grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TDATA, grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TVALID, ap_CS_fsm_state3, outputs_TDATA_reg, outputs_TREADY_int_regslice)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state4) and (outputs_TREADY_int_regslice = ap_const_logic_1))) then 
-            outputs_TDATA_int_regslice <= add_ln44_reg_98;
-        elsif (((grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            outputs_TDATA_int_regslice <= grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TDATA;
+            outputs_TDATA_int_regslice <= add_ln44_reg_96;
+        elsif (((grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            outputs_TDATA_int_regslice <= grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TDATA;
         else 
             outputs_TDATA_int_regslice <= outputs_TDATA_reg;
         end if; 
@@ -504,18 +377,18 @@ begin
 
     outputs_TVALID <= regslice_both_outputs_U_vld_out;
 
-    outputs_TVALID_int_regslice_assign_proc : process(ap_CS_fsm_state4, grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TVALID, ap_CS_fsm_state3, outputs_TREADY_int_regslice)
+    outputs_TVALID_int_regslice_assign_proc : process(ap_CS_fsm_state4, grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TVALID, ap_CS_fsm_state3, outputs_TREADY_int_regslice)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state4) and (outputs_TREADY_int_regslice = ap_const_logic_1))) then 
             outputs_TVALID_int_regslice <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            outputs_TVALID_int_regslice <= grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_53_outputs_TVALID;
+            outputs_TVALID_int_regslice <= grp_SimpleSineStreamBidirectional_Pipeline_VITIS_LOOP_44_1_fu_51_outputs_TVALID;
         else 
             outputs_TVALID_int_regslice <= ap_const_logic_0;
         end if; 
     end process;
 
-    shl_ln44_1_fu_70_p2 <= std_logic_vector(shift_left(unsigned(inputs_TDATA_int_regslice),to_integer(unsigned('0' & ap_const_lv32_4(31-1 downto 0)))));
-    shl_ln44_fu_64_p2 <= std_logic_vector(shift_left(unsigned(inputs_TDATA_int_regslice),to_integer(unsigned('0' & ap_const_lv32_6(31-1 downto 0)))));
-    sub_ln44_fu_76_p2 <= std_logic_vector(unsigned(shl_ln44_fu_64_p2) - unsigned(shl_ln44_1_fu_70_p2));
+    shl_ln44_1_fu_68_p2 <= std_logic_vector(shift_left(unsigned(inputs_TDATA_int_regslice),to_integer(unsigned('0' & ap_const_lv32_4(31-1 downto 0)))));
+    shl_ln44_fu_62_p2 <= std_logic_vector(shift_left(unsigned(inputs_TDATA_int_regslice),to_integer(unsigned('0' & ap_const_lv32_6(31-1 downto 0)))));
+    sub_ln44_fu_74_p2 <= std_logic_vector(unsigned(shl_ln44_fu_62_p2) - unsigned(shl_ln44_1_fu_68_p2));
 end behav;

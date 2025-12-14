@@ -20,4 +20,4 @@ struct Outputs
 };
 
 
-void SimpleSineStreamBidirectional(const uint32_t inputs[2], uint32_t outputs[cBlockSamples+1]);
+void SimpleSineStreamBidirectional(const uint32_t inputs[cChannels], uint32_t outputs[cBlockSamples+1]);

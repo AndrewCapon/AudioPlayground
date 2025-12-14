@@ -367,7 +367,7 @@ for.body.split:3 %speclooptripcount_ln37 = speclooptripcount void @_ssdm_op_Spec
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body.split:4 %specloopname_ln44 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5
+for.body.split:4 %specloopname_ln44 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln44"/></StgValue>
@@ -581,7 +581,7 @@ for.end.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="128" from="_ssdm_op_SpecLoopName" to="specloopname_ln44" fromId="127" toId="28">
 </dataflow>
-<dataflow id="130" from="empty_5" to="specloopname_ln44" fromId="129" toId="28">
+<dataflow id="130" from="empty_4" to="specloopname_ln44" fromId="129" toId="28">
 </dataflow>
 <dataflow id="131" from="sine_lut_addr" to="sine_lut_load" fromId="23" toId="29">
 </dataflow>

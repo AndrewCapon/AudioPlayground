@@ -191,7 +191,7 @@
 					<item_version>0</item_version>
 					<item>23</item>
 					<item>24</item>
-					<item>124</item>
+					<item>123</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -538,7 +538,7 @@
 					<item>41</item>
 					<item>42</item>
 					<item>43</item>
-					<item>123</item>
+					<item>122</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 				<m_Display>0</m_Display>
@@ -868,14 +868,14 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_33">
-				<id>123</id>
+				<id>122</id>
 				<edge_type>4</edge_type>
 				<source_obj>12</source_obj>
 				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_34">
-				<id>124</id>
+				<id>123</id>
 				<edge_type>4</edge_type>
 				<source_obj>10</source_obj>
 				<sink_obj>11</sink_obj>
