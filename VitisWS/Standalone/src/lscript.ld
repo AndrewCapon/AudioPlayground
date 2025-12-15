@@ -17,9 +17,8 @@ _HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x1000;
 
 MEMORY
 {
-   memory_microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_memory_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem : ORIGIN = 0x50, LENGTH = 0x1FB0
+   memory_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem : ORIGIN = 0x50, LENGTH = 0x1FB0
    memory_emc_memory_axi_emc_0_MEM0_BASEADDR_MEM0 : ORIGIN = 0x60000000, LENGTH = 0x80000
-   audio_components_dma_dma_bram_axi_bram_ctrl_0_Mem0 : ORIGIN = 0xC0000000, LENGTH = 0x2000
 }
 
 /* Specify the default entry point to the program */
@@ -191,17 +190,11 @@ SECTIONS
    __bss_end = .;
 } > memory_emc_memory_axi_emc_0_MEM0_BASEADDR_MEM0
 
-.audio_ram : {
-   __audio_ram_start = .;
-   *(.audio_ram)
-   __audio_ram_end = .;
-} > audio_components_dma_dma_bram_axi_bram_ctrl_0_Mem0
-
 .local_ram : {
    __local_ram_start = .;
    *(.local_ram)
    __local_ram_end = .;
-} > memory_microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_memory_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
+} > memory_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem
 
 _SDA_BASE_ = __sdata_start + ((__sbss_end - __sdata_start) / 2 );
 

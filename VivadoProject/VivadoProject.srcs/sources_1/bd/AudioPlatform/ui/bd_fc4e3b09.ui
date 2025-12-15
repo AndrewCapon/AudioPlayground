@@ -1,0 +1,45 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.0",
+   "Default View_TopLeft":"-710,-219",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port audio_axis -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port debug -pg 1 -lvl 2 -x 430 -y 250 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace port usb_uart -pg 1 -lvl 2 -x 430 -y 380 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
+preplace port port-id_audioClkIn -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_mclkOut -pg 1 -lvl 2 -x 430 -y 50 -defaultsOSRD
+preplace port port-id_bclkOut -pg 1 -lvl 2 -x 430 -y 70 -defaultsOSRD
+preplace port port-id_lrclkOut -pg 1 -lvl 2 -x 430 -y 90 -defaultsOSRD
+preplace port port-id_dataOut -pg 1 -lvl 2 -x 430 -y 110 -defaultsOSRD
+preplace port port-id_is2_int -pg 1 -lvl 2 -x 430 -y 130 -defaultsOSRD
+preplace port port-id_s_axi_aclk1 -pg 1 -lvl 0 -x 0 -y 390 -defaultsOSRD
+preplace port port-id_uart_int -pg 1 -lvl 2 -x 430 -y 400 -defaultsOSRD
+preplace inst AxisToI2sFifo_0 -pg 1 -lvl 1 -x 220 -y 90 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 1 -x 220 -y 250 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 1 -x 220 -y 390 -defaultsOSRD
+preplace netloc axi_uartlite_0_interrupt 1 1 1 NJ 400
+preplace netloc clk_gen_clk_100 1 0 1 30 80n
+preplace netloc clk_gen_clk_300 1 0 1 NJ 390
+preplace netloc clk_gen_clk_audio 1 0 1 NJ 120
+preplace netloc outputs_bclkOut_0 1 1 1 NJ 70
+preplace netloc outputs_lrclkOut_0 1 1 1 NJ 90
+preplace netloc outputs_mclkOut_2 1 1 1 NJ 50
+preplace netloc outputs_moreDataNeededInterrupt_0 1 1 1 NJ 130
+preplace netloc outputs_sdataOut_0 1 1 1 NJ 110
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 1 20 100n
+preplace netloc axi_gpio_0_GPIO 1 1 1 NJ 250
+preplace netloc axi_interconnect_0_M04_AXI 1 0 1 NJ 370
+preplace netloc axi_interconnect_0_M05_AXI 1 0 1 NJ 230
+preplace netloc axi_uartlite_0_UART 1 1 1 NJ 380
+preplace netloc processor_M0_AXIS 1 0 1 NJ 60
+levelinfo -pg 1 0 220 430
+pagesize -pg 1 -db -bbox -sgen -150 0 540 460
+"
+}
+

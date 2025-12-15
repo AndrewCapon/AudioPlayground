@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "AudioPlatform_axi_interconnect_0_imp_auto_pc_0",
-    "cell_name": "memory/axi_interconnect_0/m02_couplers/auto_pc",
+    "cell_name": "memory/axi_interconnect_0/m01_couplers/auto_pc",
     "component_reference": "xilinx.com:ip:axi_protocol_converter:2.1",
     "ip_revision": "33",
     "gen_directory": "../../../../../../VivadoProject.gen/sources_1/bd/AudioPlatform/ip/AudioPlatform_axi_interconnect_0_imp_auto_pc_0",

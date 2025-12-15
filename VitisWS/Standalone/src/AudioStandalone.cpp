@@ -25,22 +25,15 @@ int  __attribute__((section(".close_coupled_ram"))) nShit;
 #if TEST_DMA
 
 #define TEST_BUFFER_WORDS 16
-
-volatile uint32_t SrcBufferBram[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
-volatile uint32_t DestBufferBram[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
-
 volatile uint32_t SrcBufferLocal[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 volatile uint32_t DestBufferLocal[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 #endif // TEST_DMA
 
-volatile uint32_t SamplesStorageAudioRam[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
 volatile uint32_t SamplesStorageLocalRam[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
-
-volatile uint32_t PhaseIncsStorageAudioRam[cVoices] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
 volatile uint32_t PhaseIncsStorageLocalRam[cVoices] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 
 #if DEBUG_MULTISINEMASTER | DEBUG_MULTISINE | DEBUG_SIMPLESINE | DEBUG_SIMPLESINEMASTER
-volatile uint32_t DebugStorage[cBlockSamples] __attribute__((aligned (64))) __attribute__((section(".audio_ram")));
+volatile uint32_t DebugStorage[cBlockSamples] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 #else
 volatile uint32_t *DebugStorage = nullptr;
 #endif
@@ -89,54 +82,25 @@ void TestDma(void)
 
 		volatile uint32_t *pSineSamples = simpleSine.GetSlaveBuffer();
 
-		if(dma.TestSync(SrcBufferBram, DestBufferBram, TEST_BUFFER_WORDS, true))
-			xil_printf("BRAM to BRAM DMA sync test passed\n");
-		else
-			xil_printf("BRAM to BRAM DMA sync test failed\n");
-
 		if(dma.TestSync(SrcBufferLocal, DestBufferLocal, TEST_BUFFER_WORDS, true))
 			xil_printf("LOCAL to LOCAL DMA sync test passed\n");
 		else
 			xil_printf("LOCAL to LOCAL DMA sync test failed\n");
-
-		if(dma.TestSync(SrcBufferBram, DestBufferLocal, TEST_BUFFER_WORDS, true))
-			xil_printf("BRAM to LOCAL DMA sync test passed\n");
-		else
-			xil_printf("BRAM to LOCAL DMA sync test failed\n");
 
 		if(dma.TestSync(SrcBufferLocal, DestBufferBram, TEST_BUFFER_WORDS, true))
 			xil_printf("LOCAL to BRAM DMA sync test passed\n");
 		else
 			xil_printf("LOCAL to BRAM DMA sync test failed\n");
 
-
-		if(dma.TestSync(pSineSamples, DestBufferBram, TEST_BUFFER_WORDS, false))
-			xil_printf("HLS to BRAM DMA sync test passed\n");
-		else
-			xil_printf("HLS to BRAM DMA aync test failed\n");
-
 		if(dma.TestSync(pSineSamples, DestBufferLocal, TEST_BUFFER_WORDS, false))
 			xil_printf("HLS to LOCAL DMA sync test passed\n");
 		else
 			xil_printf("HLS to LOCAL DMA aync test failed\n");
 
-
-
-		if(dma.TestAsync(SrcBufferBram, DestBufferBram, TEST_BUFFER_WORDS, true))
-			xil_printf("BRAM to BRAM DMA async test passed\n");
-		else
-			xil_printf("BRAM to BRAM DMA async test failed\n");
-
 		if(dma.TestAsync(SrcBufferLocal, DestBufferLocal, TEST_BUFFER_WORDS, true))
 			xil_printf("LOCAL to LOCAL DMA async test passed\n");
 		else
 			xil_printf("LOCAL to LOCAL DMA async test failed\n");
-
-
-		if(dma.TestAsync(pSineSamples, DestBufferBram, TEST_BUFFER_WORDS, false))
-			xil_printf("HLS to BRAM DMA async test passed\n");
-		else
-			xil_printf("HLS to BRAM DMA async test failed\n");
 
 		if(dma.TestAsync(pSineSamples, DestBufferLocal, TEST_BUFFER_WORDS, false))
 			xil_printf("HLS to LOCAL DMA async test passed\n");
@@ -156,7 +120,6 @@ int main(void)
 	xil_printf("\033[2J\033[H");
 	xil_printf("Audio Playground Tests\n");
 	xil_printf("  Press 1-8 to choose wave (1=100hz, 2=200hz etc)\n");
-	xil_printf("  Press 9 to use audio BRAM, 0 to use local microblaze BRAM\n");
 	xil_printf("  Press q to run all tests for timing info\n");
 	xil_printf("  Press w to test simple sine slave\n");
 	xil_printf("  Press e to test simple sine master\n");
@@ -252,38 +215,6 @@ int main(void)
 						{
 							uVoice = uChar - '1';
 							xil_printf("Voice %u\n", uVoice);
-						}
-						break;
-
-						case '9' :
-						{
-							xil_printf("Using audio BRAM\n");
-
-							simpleSine.SetSampleStorage(SamplesStorageAudioRam);
-							simpleSineMaster.SetSampleStorage(SamplesStorageAudioRam);
-							simpleSineStream.SetSampleStorage(SamplesStorageAudioRam);
-							simpleSineStreamBi.SetSampleStorage(SamplesStorageAudioRam);
-							multiSineMaster.SetSampleStorage(SamplesStorageAudioRam);
-							multiSineStream.SetSampleStorage(SamplesStorageAudioRam);
-							multiSineStreamBi.SetSampleStorage(SamplesStorageAudioRam);
-
-							multiSineMaster.SetPhaseIncsStorage(PhaseIncsStorageAudioRam);
-						}
-						break;
-
-						case '0' :
-						{
-							xil_printf("Using local microblaze BRAM\n");
-
-							simpleSine.SetSampleStorage(SamplesStorageLocalRam);
-							simpleSineMaster.SetSampleStorage(SamplesStorageLocalRam);
-							simpleSineStream.SetSampleStorage(SamplesStorageLocalRam);
-							simpleSineStreamBi.SetSampleStorage(SamplesStorageLocalRam);
-							multiSineMaster.SetSampleStorage(SamplesStorageLocalRam);
-							multiSineStream.SetSampleStorage(SamplesStorageLocalRam);
-							multiSineStreamBi.SetSampleStorage(SamplesStorageLocalRam);
-
-							multiSineMaster.SetPhaseIncsStorage(PhaseIncsStorageLocalRam);
 						}
 						break;
 

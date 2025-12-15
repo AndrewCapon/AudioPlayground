@@ -18,11 +18,11 @@ preplace port S1_AXIS_multisinestream -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
 preplace port M2_AXIS_simplesine_bi -pg 1 -lvl 5 -x 1330 -y 160 -defaultsOSRD
 preplace port S2_AXIS_simplesine_bi -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
 preplace port M3_AXIS_multisine_bi -pg 1 -lvl 5 -x 1330 -y 180 -defaultsOSRD
+preplace port S3_AXIS_multisine_bi -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
 preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
 preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
 preplace port port-id_Reset -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
 preplace port port-id_Debug_SYS_Rst -pg 1 -lvl 5 -x 1330 -y 290 -defaultsOSRD
-preplace port S3_AXIS_multisine_bi -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
 preplace portBus cdma_int -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
 preplace portBus uart_int -pg 1 -lvl 0 -x 0 -y 430 -defaultsOSRD
 preplace portBus simplesine_int -pg 1 -lvl 0 -x 0 -y 450 -defaultsOSRD

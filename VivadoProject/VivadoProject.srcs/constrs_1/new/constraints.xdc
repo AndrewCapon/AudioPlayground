@@ -34,7 +34,6 @@ create_clock -period 83.330 -name sys_clk_pin -waveform {0.000 41.660} -add [get
 
 
 set_clock_groups -asynchronous -group [get_clocks clk_out1_AudioPlatform_clk_wiz_100_0] -group [get_clocks clk_out1_AudioPlatform_clk_wiz_audio_0]
-set_clock_groups -asynchronous -group [get_clocks clk_out2_AudioPlatform_clk_wiz_100_0] -group [get_clocks clk_out1_AudioPlatform_clk_wiz_audio_0]
 
 ## LEDs
 #set_property -dict { PACKAGE_PIN A17   IOSTANDARD LVCMOS33 } [get_ports { led[0] }]; #IO_L12N_T1_MRCC_16 Sch=led[1]
@@ -160,5 +159,3 @@ set_clock_groups -asynchronous -group [get_clocks clk_out2_AudioPlatform_clk_wiz
 #set_property -dict { PACKAGE_PIN N19   IOSTANDARD LVCMOS33 } [get_ports { RamCEn     }]; #IO_L9N_T1_DQS_D13_14 Sch=sram-ce
 
 
-set_clock_groups -asynchronous -group [get_clocks clk_out1_AudioPlatform_clk_wiz_100_0] -group [get_clocks clk_out1_AudioPlatform_clk_wiz_audio_0]
-set_clock_groups -asynchronous -group [get_clocks clk_out2_AudioPlatform_clk_wiz_100_0] -group [get_clocks clk_out1_AudioPlatform_clk_wiz_audio_0]
