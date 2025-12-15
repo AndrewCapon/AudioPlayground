@@ -188,15 +188,15 @@ set RtlHierarchyInfo {[
 					{"Name" : "gmem_blk_n_AW", "Type" : "RtlSignal"},
 					{"Name" : "gmem_blk_n_B", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105", "Port" : "gmem", "Inst_start_state" : "3", "Inst_end_state" : "4"}]},
+					{"ID" : "1", "SubInstance" : "grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105", "Port" : "gmem", "Inst_start_state" : "3", "Inst_end_state" : "4"}]},
 			{"Name" : "accumulator", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "phaseInc", "Type" : "None", "Direction" : "I"},
 			{"Name" : "samples", "Type" : "None", "Direction" : "I"},
 			{"Name" : "sine_lut", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105", "Port" : "sine_lut", "Inst_start_state" : "3", "Inst_end_state" : "4"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105", "Parent" : "0", "Child" : ["2", "3"],
-		"CDFG" : "SimpleSineMaster_Pipeline_VITIS_LOOP_46_1",
+					{"ID" : "1", "SubInstance" : "grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105", "Port" : "sine_lut", "Inst_start_state" : "3", "Inst_end_state" : "4"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105", "Parent" : "0", "Child" : ["2", "3"],
+		"CDFG" : "SimpleSineMaster_Pipeline_VITIS_LOOP_39_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -214,14 +214,14 @@ set RtlHierarchyInfo {[
 			{"Name" : "gmem", "Type" : "MAXI", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "gmem_blk_n_W", "Type" : "RtlSignal"}]},
-			{"Name" : "sext_ln46", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln39", "Type" : "None", "Direction" : "I"},
 			{"Name" : "phaseInc", "Type" : "None", "Direction" : "I"},
 			{"Name" : "sine_lut", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_46_1", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_39_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105.sine_lut_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105.sine_lut_U", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"},
 	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem_m_axi_U", "Parent" : "0"}]}
 
@@ -233,10 +233,10 @@ set ArgLastReadFirstWriteLatency {
 		phaseInc {Type I LastRead 0 FirstWrite -1}
 		samples {Type I LastRead 0 FirstWrite -1}
 		sine_lut {Type I LastRead -1 FirstWrite -1}}
-	SimpleSineMaster_Pipeline_VITIS_LOOP_46_1 {
+	SimpleSineMaster_Pipeline_VITIS_LOOP_39_1 {
 		accumulator_load {Type I LastRead 0 FirstWrite -1}
 		gmem {Type O LastRead -1 FirstWrite 3}
-		sext_ln46 {Type I LastRead 0 FirstWrite -1}
+		sext_ln39 {Type I LastRead 0 FirstWrite -1}
 		phaseInc {Type I LastRead 0 FirstWrite -1}
 		sine_lut {Type I LastRead -1 FirstWrite -1}}}
 

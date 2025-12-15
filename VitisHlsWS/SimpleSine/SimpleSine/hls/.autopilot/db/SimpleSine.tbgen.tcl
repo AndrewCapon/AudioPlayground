@@ -96,12 +96,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "phaseInc", "Type" : "None", "Direction" : "I"},
 			{"Name" : "samples", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79", "Port" : "samples", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
+					{"ID" : "1", "SubInstance" : "grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79", "Port" : "samples", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "sine_lut", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79", "Port" : "sine_lut", "Inst_start_state" : "1", "Inst_end_state" : "2"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79", "Parent" : "0", "Child" : ["2", "3"],
-		"CDFG" : "SimpleSine_Pipeline_VITIS_LOOP_45_1",
+					{"ID" : "1", "SubInstance" : "grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79", "Port" : "sine_lut", "Inst_start_state" : "1", "Inst_end_state" : "2"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79", "Parent" : "0", "Child" : ["2", "3"],
+		"CDFG" : "SimpleSine_Pipeline_VITIS_LOOP_38_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -120,10 +120,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "samples", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "sine_lut", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_45_1", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_38_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79.sine_lut_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79.sine_lut_U", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"}]}
 
 
@@ -133,7 +133,7 @@ set ArgLastReadFirstWriteLatency {
 		phaseInc {Type I LastRead 0 FirstWrite -1}
 		samples {Type O LastRead -1 FirstWrite 2}
 		sine_lut {Type I LastRead -1 FirstWrite -1}}
-	SimpleSine_Pipeline_VITIS_LOOP_45_1 {
+	SimpleSine_Pipeline_VITIS_LOOP_38_1 {
 		accumulator_load {Type I LastRead 0 FirstWrite -1}
 		phaseInc {Type I LastRead 0 FirstWrite -1}
 		samples {Type O LastRead -1 FirstWrite 2}

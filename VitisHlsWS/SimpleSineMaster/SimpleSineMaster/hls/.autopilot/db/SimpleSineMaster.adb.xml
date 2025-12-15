@@ -127,10 +127,10 @@ entry:15 %trunc_ln = partselect i30 @_ssdm_op_PartSelect.i30.i32.i32.i32, i32 %s
 
 <Node id="27" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:21 %shl_ln46 = shl i32 %phaseInc_read, i32 6
+entry:21 %shl_ln39 = shl i32 %phaseInc_read, i32 6
 
 ]]></Node>
-<StgValue><ssdm name="shl_ln46"/></StgValue>
+<StgValue><ssdm name="shl_ln39"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -142,10 +142,10 @@ entry:21 %shl_ln46 = shl i32 %phaseInc_read, i32 6
 
 <Node id="28" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:22 %shl_ln46_1 = shl i32 %phaseInc_read, i32 4
+entry:22 %shl_ln39_1 = shl i32 %phaseInc_read, i32 4
 
 ]]></Node>
-<StgValue><ssdm name="shl_ln46_1"/></StgValue>
+<StgValue><ssdm name="shl_ln39_1"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -157,10 +157,10 @@ entry:22 %shl_ln46_1 = shl i32 %phaseInc_read, i32 4
 
 <Node id="29" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:23 %sub_ln46 = sub i32 %shl_ln46, i32 %shl_ln46_1
+entry:23 %sub_ln39 = sub i32 %shl_ln39, i32 %shl_ln39_1
 
 ]]></Node>
-<StgValue><ssdm name="sub_ln46"/></StgValue>
+<StgValue><ssdm name="sub_ln39"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -172,10 +172,10 @@ entry:23 %sub_ln46 = sub i32 %shl_ln46, i32 %shl_ln46_1
 
 <Node id="30" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:24 %add_ln46 = add i32 %accumulator_read, i32 %sub_ln46
+entry:24 %add_ln39 = add i32 %accumulator_read, i32 %sub_ln39
 
 ]]></Node>
-<StgValue><ssdm name="add_ln46"/></StgValue>
+<StgValue><ssdm name="add_ln39"/></StgValue>
 </operation>
 
 <operation id="18" st_id="1" stage="1" lat="1">
@@ -187,10 +187,10 @@ entry:24 %add_ln46 = add i32 %accumulator_read, i32 %sub_ln46
 
 <Node id="31" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
 <![CDATA[
-entry:25 %write_ln49 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %accumulator, i32 %add_ln46
+entry:25 %write_ln42 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %accumulator, i32 %add_ln39
 
 ]]></Node>
-<StgValue><ssdm name="write_ln49"/></StgValue>
+<StgValue><ssdm name="write_ln42"/></StgValue>
 </operation>
 </state>
 
@@ -205,10 +205,10 @@ entry:25 %write_ln49 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %accumul
 
 <Node id="22" bw="32" op_0_bw="30">
 <![CDATA[
-entry:16 %sext_ln46 = sext i30 %trunc_ln
+entry:16 %sext_ln39 = sext i30 %trunc_ln
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln46"/></StgValue>
+<StgValue><ssdm name="sext_ln39"/></StgValue>
 </operation>
 
 <operation id="20" st_id="2" stage="1" lat="1">
@@ -220,7 +220,7 @@ entry:16 %sext_ln46 = sext i30 %trunc_ln
 
 <Node id="23" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:17 %gmem_addr = getelementptr i32 %gmem, i32 %sext_ln46
+entry:17 %gmem_addr = getelementptr i32 %gmem, i32 %sext_ln39
 
 ]]></Node>
 <StgValue><ssdm name="gmem_addr"/></StgValue>
@@ -253,10 +253,10 @@ entry:18 %empty = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i32 %gmem_addr, i3
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="30" op_4_bw="32" op_5_bw="24" op_6_bw="0">
 <![CDATA[
-entry:19 %call_ln49 = call void @SimpleSineMaster_Pipeline_VITIS_LOOP_46_1, i32 %accumulator_read, i32 %gmem, i30 %trunc_ln, i32 %phaseInc_read, i24 %sine_lut
+entry:19 %call_ln42 = call void @SimpleSineMaster_Pipeline_VITIS_LOOP_39_1, i32 %accumulator_read, i32 %gmem, i30 %trunc_ln, i32 %phaseInc_read, i24 %sine_lut
 
 ]]></Node>
-<StgValue><ssdm name="call_ln49"/></StgValue>
+<StgValue><ssdm name="call_ln42"/></StgValue>
 </operation>
 </state>
 
@@ -271,10 +271,10 @@ entry:19 %call_ln49 = call void @SimpleSineMaster_Pipeline_VITIS_LOOP_46_1, i32 
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="30" op_4_bw="32" op_5_bw="24" op_6_bw="0">
 <![CDATA[
-entry:19 %call_ln49 = call void @SimpleSineMaster_Pipeline_VITIS_LOOP_46_1, i32 %accumulator_read, i32 %gmem, i30 %trunc_ln, i32 %phaseInc_read, i24 %sine_lut
+entry:19 %call_ln42 = call void @SimpleSineMaster_Pipeline_VITIS_LOOP_39_1, i32 %accumulator_read, i32 %gmem, i30 %trunc_ln, i32 %phaseInc_read, i24 %sine_lut
 
 ]]></Node>
-<StgValue><ssdm name="call_ln49"/></StgValue>
+<StgValue><ssdm name="call_ln42"/></StgValue>
 </operation>
 </state>
 
@@ -361,10 +361,10 @@ entry:20 %empty_19 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_add
 
 <Node id="6" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-entry:0 %spectopmodule_ln32 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_9
+entry:0 %spectopmodule_ln29 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_9
 
 ]]></Node>
-<StgValue><ssdm name="spectopmodule_ln32"/></StgValue>
+<StgValue><ssdm name="spectopmodule_ln29"/></StgValue>
 </operation>
 
 <operation id="29" st_id="9" stage="1" lat="1">
@@ -556,10 +556,10 @@ entry:20 %empty_19 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_add
 
 <Node id="32" bw="0">
 <![CDATA[
-entry:26 %ret_ln62 = ret
+entry:26 %ret_ln47 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln62"/></StgValue>
+<StgValue><ssdm name="ret_ln47"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -607,33 +607,33 @@ entry:26 %ret_ln62 = ret
 </dataflow>
 <dataflow id="69" from="StgValue_68" to="trunc_ln" fromId="68" toId="13">
 </dataflow>
-<dataflow id="70" from="phaseInc_read" to="shl_ln46" fromId="11" toId="14">
+<dataflow id="70" from="phaseInc_read" to="shl_ln39" fromId="11" toId="14">
 </dataflow>
-<dataflow id="72" from="StgValue_71" to="shl_ln46" fromId="71" toId="14">
+<dataflow id="72" from="StgValue_71" to="shl_ln39" fromId="71" toId="14">
 </dataflow>
-<dataflow id="73" from="phaseInc_read" to="shl_ln46_1" fromId="11" toId="15">
+<dataflow id="73" from="phaseInc_read" to="shl_ln39_1" fromId="11" toId="15">
 </dataflow>
-<dataflow id="75" from="StgValue_74" to="shl_ln46_1" fromId="74" toId="15">
+<dataflow id="75" from="StgValue_74" to="shl_ln39_1" fromId="74" toId="15">
 </dataflow>
-<dataflow id="76" from="shl_ln46" to="sub_ln46" fromId="14" toId="16">
+<dataflow id="76" from="shl_ln39" to="sub_ln39" fromId="14" toId="16">
 </dataflow>
-<dataflow id="77" from="shl_ln46_1" to="sub_ln46" fromId="15" toId="16">
+<dataflow id="77" from="shl_ln39_1" to="sub_ln39" fromId="15" toId="16">
 </dataflow>
-<dataflow id="78" from="accumulator_read" to="add_ln46" fromId="12" toId="17">
+<dataflow id="78" from="accumulator_read" to="add_ln39" fromId="12" toId="17">
 </dataflow>
-<dataflow id="79" from="sub_ln46" to="add_ln46" fromId="16" toId="17">
+<dataflow id="79" from="sub_ln39" to="add_ln39" fromId="16" toId="17">
 </dataflow>
-<dataflow id="81" from="_ssdm_op_Write.s_axilite.i32P0A" to="write_ln49" fromId="80" toId="18">
+<dataflow id="81" from="_ssdm_op_Write.s_axilite.i32P0A" to="write_ln42" fromId="80" toId="18">
 </dataflow>
-<dataflow id="82" from="accumulator" to="write_ln49" fromId="51" toId="18">
+<dataflow id="82" from="accumulator" to="write_ln42" fromId="51" toId="18">
 </dataflow>
-<dataflow id="83" from="add_ln46" to="write_ln49" fromId="17" toId="18">
+<dataflow id="83" from="add_ln39" to="write_ln42" fromId="17" toId="18">
 </dataflow>
-<dataflow id="84" from="trunc_ln" to="sext_ln46" fromId="13" toId="19">
+<dataflow id="84" from="trunc_ln" to="sext_ln39" fromId="13" toId="19">
 </dataflow>
 <dataflow id="85" from="gmem" to="gmem_addr" fromId="50" toId="20">
 </dataflow>
-<dataflow id="86" from="sext_ln46" to="gmem_addr" fromId="19" toId="20">
+<dataflow id="86" from="sext_ln39" to="gmem_addr" fromId="19" toId="20">
 </dataflow>
 <dataflow id="88" from="_ssdm_op_WriteReq.m_axi.p1i32" to="empty" fromId="87" toId="21">
 </dataflow>
@@ -641,29 +641,29 @@ entry:26 %ret_ln62 = ret
 </dataflow>
 <dataflow id="91" from="StgValue_90" to="empty" fromId="90" toId="21">
 </dataflow>
-<dataflow id="93" from="SimpleSineMaster_Pipeline_VITIS_LOOP_46_1" to="call_ln49" fromId="92" toId="22">
+<dataflow id="93" from="SimpleSineMaster_Pipeline_VITIS_LOOP_39_1" to="call_ln42" fromId="92" toId="22">
 </dataflow>
-<dataflow id="94" from="accumulator_read" to="call_ln49" fromId="12" toId="22">
+<dataflow id="94" from="accumulator_read" to="call_ln42" fromId="12" toId="22">
 </dataflow>
-<dataflow id="95" from="gmem" to="call_ln49" fromId="50" toId="22">
+<dataflow id="95" from="gmem" to="call_ln42" fromId="50" toId="22">
 </dataflow>
-<dataflow id="96" from="trunc_ln" to="call_ln49" fromId="13" toId="22">
+<dataflow id="96" from="trunc_ln" to="call_ln42" fromId="13" toId="22">
 </dataflow>
-<dataflow id="97" from="phaseInc_read" to="call_ln49" fromId="11" toId="22">
+<dataflow id="97" from="phaseInc_read" to="call_ln42" fromId="11" toId="22">
 </dataflow>
-<dataflow id="98" from="sine_lut" to="call_ln49" fromId="54" toId="22">
+<dataflow id="98" from="sine_lut" to="call_ln42" fromId="54" toId="22">
 </dataflow>
-<dataflow id="99" from="SimpleSineMaster_Pipeline_VITIS_LOOP_46_1" to="call_ln49" fromId="92" toId="23">
+<dataflow id="99" from="SimpleSineMaster_Pipeline_VITIS_LOOP_39_1" to="call_ln42" fromId="92" toId="23">
 </dataflow>
-<dataflow id="100" from="accumulator_read" to="call_ln49" fromId="12" toId="23">
+<dataflow id="100" from="accumulator_read" to="call_ln42" fromId="12" toId="23">
 </dataflow>
-<dataflow id="101" from="gmem" to="call_ln49" fromId="50" toId="23">
+<dataflow id="101" from="gmem" to="call_ln42" fromId="50" toId="23">
 </dataflow>
-<dataflow id="102" from="trunc_ln" to="call_ln49" fromId="13" toId="23">
+<dataflow id="102" from="trunc_ln" to="call_ln42" fromId="13" toId="23">
 </dataflow>
-<dataflow id="103" from="phaseInc_read" to="call_ln49" fromId="11" toId="23">
+<dataflow id="103" from="phaseInc_read" to="call_ln42" fromId="11" toId="23">
 </dataflow>
-<dataflow id="104" from="sine_lut" to="call_ln49" fromId="54" toId="23">
+<dataflow id="104" from="sine_lut" to="call_ln42" fromId="54" toId="23">
 </dataflow>
 <dataflow id="106" from="_ssdm_op_WriteResp.m_axi.p1i32" to="empty_19" fromId="105" toId="24">
 </dataflow>
@@ -681,9 +681,9 @@ entry:26 %ret_ln62 = ret
 </dataflow>
 <dataflow id="113" from="gmem_addr" to="empty_19" fromId="20" toId="27">
 </dataflow>
-<dataflow id="115" from="_ssdm_op_SpecTopModule" to="spectopmodule_ln32" fromId="114" toId="28">
+<dataflow id="115" from="_ssdm_op_SpecTopModule" to="spectopmodule_ln29" fromId="114" toId="28">
 </dataflow>
-<dataflow id="117" from="empty_9" to="spectopmodule_ln32" fromId="116" toId="28">
+<dataflow id="117" from="empty_9" to="spectopmodule_ln29" fromId="116" toId="28">
 </dataflow>
 <dataflow id="119" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="118" toId="29">
 </dataflow>

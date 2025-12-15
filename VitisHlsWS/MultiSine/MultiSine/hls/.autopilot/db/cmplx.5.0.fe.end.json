@@ -2,9 +2,9 @@
     "0": {
         "name": "MultiSine",
         "file": "MultiSine.cpp",
-        "fileloc": "31",
-        "instructions": "97",
-        "total_instructions": "97",
+        "fileloc": "30",
+        "instructions": "93",
+        "total_instructions": "93",
         "calls": "",
         "basicblocks": "7",
         "loads": {

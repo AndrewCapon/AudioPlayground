@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "AudioPlatform_SimpleSineStreamBidi_0_0",
-    "cell_name": "SimpleSineStreamBi_0",
+    "cell_name": "audio_components/SimpleSineStreamBi_0",
     "component_reference": "xilinx.com:hls:SimpleSineStreamBidirectional:1.0",
     "ip_revision": "2114390897",
     "gen_directory": "../../../../../../VivadoProject.gen/sources_1/bd/AudioPlatform/ip/AudioPlatform_SimpleSineStreamBidi_0_0",

@@ -45,9 +45,11 @@ preplace netloc simplesinemaster_int_1 1 3 1 1410 480n
 preplace netloc simplesinestream_int_1 1 3 1 1450 520n
 preplace netloc sys_clock_1 1 0 1 NJ 720
 preplace netloc S1_AXIS_multisinestream_1 1 3 1 1350 260n
+preplace netloc S3_AXIS_multisine_bi_1 1 3 1 1400 300n
 preplace netloc S_MEM_SIMPLESINE_1 1 3 2 1320J 130 1990
 preplace netloc audio_components_m_axi_multisinemaster 1 3 2 1330J 140 1950
 preplace netloc audio_components_samples 1 3 1 1340 240n
+preplace netloc audio_components_simplesine_bi_output_stream 1 3 1 1360 280n
 preplace netloc axi_emc_0_EMC_INTF 1 5 1 NJ 330
 preplace netloc axi_gpio_0_GPIO 1 5 1 NJ 630
 preplace netloc axi_interconnect_0_M00_AXI 1 2 3 740 110 NJ 110 2000J
@@ -67,12 +69,10 @@ preplace netloc microblaze_0_M_AXI_IC 1 4 1 1940 270n
 preplace netloc microblaze_0_dlmb_1 1 4 1 N 290
 preplace netloc microblaze_0_ilmb_1 1 4 1 N 310
 preplace netloc processor_M0_AXIS 1 4 1 1930 350n
+preplace netloc processor_M3_AXIS_multisine_bi 1 2 3 830 610 NJ 610 1910
 preplace netloc s_axi_multisine_1 1 2 1 N 380
 preplace netloc s_axi_simplesine_1 1 2 4 830 100 NJ 100 NJ 100 2390
-preplace netloc audio_components_simplesine_bi_output_stream 1 3 1 1360 280n
 preplace netloc simplesine_bi_input_stream_1 1 2 3 840 120 NJ 120 1900
-preplace netloc S3_AXIS_multisine_bi_1 1 3 1 1400 300n
-preplace netloc processor_M3_AXIS_multisine_bi 1 2 3 830 610 NJ 610 1910
 levelinfo -pg 1 0 200 570 1080 1690 2210 2440
 pagesize -pg 1 -db -bbox -sgen -100 0 2580 840
 "

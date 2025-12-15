@@ -55603,11 +55603,12 @@ void InitSinTable(DataType sine_lut[cSineLutSize])
 
 DataType sine_lut[cSineLutSize];
 
+
 __attribute__((sdx_kernel("SimpleSineStream", 0))) void SimpleSineStream(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples])
 {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=SimpleSineStream
-# 30 "SimpleSineStream.cpp"
+# 31 "SimpleSineStream.cpp"
 
 #pragma HLS INTERFACE mode=s_axilite port=return
 #pragma HLS INTERFACE mode=s_axilite port=accumulator
@@ -55616,7 +55617,7 @@ __attribute__((sdx_kernel("SimpleSineStream", 0))) void SimpleSineStream(PhaseTy
 
  InitSinTable(sine_lut);
 
-    VITIS_LOOP_38_1: for(int block = 0; block < cBlockSize; block++)
+    VITIS_LOOP_39_1: for(int block = 0; block < cBlockSize; block++)
     {
 
         accumulator += phaseInc;

@@ -5,8 +5,4 @@
 
 PhaseType FrequencyToAccumPerSample(const FrequencyType &frequency);
 
-#if DEBUG
-    void SimpleSine(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples], uint32_t debug[cBlockSamples]);
-#else
-    void SimpleSine(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples]);
-#endif
+void SimpleSine(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples]);

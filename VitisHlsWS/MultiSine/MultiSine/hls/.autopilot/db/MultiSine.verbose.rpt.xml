@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MultiSine'" level="0">
-<item name = "Date">Sun Dec  7 14:56:52 2025
+<item name = "Date">Mon Dec 15 08:00:20 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">MultiSine</item>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_46_1_VITIS_LOOP_49_2">387, 387, 5, 1, 1, 384, yes</column>
+<column name="- VITIS_LOOP_39_1_VITIS_LOOP_42_2">387, 387, 5, 1, 1, 384, yes</column>
 </table>
 </item>
 </section>
@@ -50,7 +50,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 267, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">2, -, 338, 255, -</column>
+<column name="Instance">2, -, 260, 184, -</column>
 <column name="Memory">6, -, 64, 4, 0</column>
 <column name="Multiplexer">-, -, 0, 180, -</column>
 <column name="Register">-, -, 252, 32, -</column>
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="control_s_axi_U">control_s_axi, 2, 0, 338, 255, 0</column>
+<column name="control_s_axi_U">control_s_axi, 2, 0, 260, 184, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -81,59 +81,59 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln46_1_fu_323_p2">+, 0, 0, 16, 9, 6</column>
-<column name="add_ln46_2_fu_299_p2">+, 0, 0, 16, 9, 1</column>
-<column name="add_ln46_fu_317_p2">+, 0, 0, 13, 4, 1</column>
-<column name="add_ln49_fu_433_p2">+, 0, 0, 32, 32, 32</column>
-<column name="add_ln51_1_fu_397_p2">+, 0, 0, 39, 32, 32</column>
-<column name="add_ln51_fu_329_p2">+, 0, 0, 16, 9, 6</column>
-<column name="sineIdx_1_fu_305_p2">+, 0, 0, 16, 9, 1</column>
-<column name="sub_ln49_fu_427_p2">-, 0, 0, 32, 32, 32</column>
-<column name="ap_condition_118">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_402">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_405">and, 0, 0, 2, 1, 1</column>
-<column name="first_iter_0_fu_287_p2">icmp, 0, 0, 16, 9, 9</column>
-<column name="icmp_ln46_fu_335_p2">icmp, 0, 0, 16, 9, 9</column>
-<column name="icmp_ln49_fu_311_p2">icmp, 0, 0, 16, 9, 9</column>
-<column name="i_fu_271_p3">select, 0, 0, 4, 1, 4</column>
-<column name="select_ln46_2_fu_279_p3">select, 0, 0, 9, 1, 9</column>
-<column name="select_ln48_fu_255_p3">select, 0, 0, 9, 1, 9</column>
-<column name="sineIdx_fu_263_p3">select, 0, 0, 9, 1, 9</column>
+<column name="add_ln39_1_fu_319_p2">+, 0, 0, 16, 9, 6</column>
+<column name="add_ln39_2_fu_295_p2">+, 0, 0, 16, 9, 1</column>
+<column name="add_ln39_fu_313_p2">+, 0, 0, 13, 4, 1</column>
+<column name="add_ln42_fu_429_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln44_1_fu_393_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln44_fu_325_p2">+, 0, 0, 16, 9, 6</column>
+<column name="sineIdx_1_fu_301_p2">+, 0, 0, 16, 9, 1</column>
+<column name="sub_ln42_fu_423_p2">-, 0, 0, 32, 32, 32</column>
+<column name="ap_condition_117">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_401">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_404">and, 0, 0, 2, 1, 1</column>
+<column name="first_iter_0_fu_283_p2">icmp, 0, 0, 16, 9, 9</column>
+<column name="icmp_ln39_fu_331_p2">icmp, 0, 0, 16, 9, 9</column>
+<column name="icmp_ln42_fu_307_p2">icmp, 0, 0, 16, 9, 9</column>
+<column name="i_fu_259_p3">select, 0, 0, 4, 1, 4</column>
+<column name="select_ln39_2_fu_275_p3">select, 0, 0, 9, 1, 9</column>
+<column name="select_ln41_fu_251_p3">select, 0, 0, 9, 1, 9</column>
+<column name="sineIdx_fu_267_p3">select, 0, 0, 9, 1, 9</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="add_ln4612_fu_104">9, 2, 4, 8</column>
-<column name="add_ln46_113_fu_108">9, 2, 9, 18</column>
-<column name="add_ln5114_fu_112">9, 2, 9, 18</column>
+<column name="add_ln3912_fu_100">9, 2, 4, 8</column>
+<column name="add_ln39_113_fu_104">9, 2, 9, 18</column>
+<column name="add_ln4414_fu_108">9, 2, 9, 18</column>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_loop_exit_ready_pp0_iter4_reg">9, 2, 1, 2</column>
-<column name="ap_phi_mux_icmp_ln4911_phi_fu_184_p4">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_add_ln4612_load">9, 2, 4, 8</column>
-<column name="ap_sig_allocacmp_add_ln46_113_load">9, 2, 9, 18</column>
-<column name="ap_sig_allocacmp_add_ln5114_load">9, 2, 9, 18</column>
-<column name="ap_sig_allocacmp_i7_load">9, 2, 4, 8</column>
+<column name="ap_phi_mux_icmp_ln4211_phi_fu_180_p4">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_add_ln3912_load">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_add_ln39_113_load">9, 2, 9, 18</column>
+<column name="ap_sig_allocacmp_add_ln4414_load">9, 2, 9, 18</column>
+<column name="ap_sig_allocacmp_i6_load">9, 2, 4, 8</column>
 <column name="ap_sig_allocacmp_indvar_flatten5_load">9, 2, 9, 18</column>
 <column name="ap_sig_allocacmp_indvars_iv78_load">9, 2, 9, 18</column>
-<column name="ap_sig_allocacmp_sineIdx6_load">9, 2, 9, 18</column>
+<column name="ap_sig_allocacmp_sineIdx7_load">9, 2, 9, 18</column>
 <column name="ap_sig_allocacmp_sineIdx_110_load">9, 2, 9, 18</column>
-<column name="empty_fu_120">9, 2, 32, 64</column>
-<column name="i7_fu_92">9, 2, 4, 8</column>
-<column name="indvar_flatten5_fu_84">9, 2, 9, 18</column>
-<column name="indvars_iv78_fu_96">9, 2, 9, 18</column>
-<column name="sineIdx6_fu_88">9, 2, 9, 18</column>
-<column name="sineIdx_110_fu_100">9, 2, 9, 18</column>
+<column name="empty_fu_116">9, 2, 32, 64</column>
+<column name="i6_fu_84">9, 2, 4, 8</column>
+<column name="indvar_flatten5_fu_80">9, 2, 9, 18</column>
+<column name="indvars_iv78_fu_92">9, 2, 9, 18</column>
+<column name="sineIdx7_fu_88">9, 2, 9, 18</column>
+<column name="sineIdx_110_fu_96">9, 2, 9, 18</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="accumulators_addr_reg_527">3, 0, 3, 0</column>
-<column name="accumulators_addr_reg_527_pp0_iter1_reg">3, 0, 3, 0</column>
-<column name="accumulators_load19_fu_116">32, 0, 32, 0</column>
-<column name="add_ln4612_fu_104">4, 0, 4, 0</column>
-<column name="add_ln46_113_fu_108">9, 0, 9, 0</column>
-<column name="add_ln5114_fu_112">9, 0, 9, 0</column>
+<column name="accumulators_addr_reg_523">3, 0, 3, 0</column>
+<column name="accumulators_addr_reg_523_pp0_iter1_reg">3, 0, 3, 0</column>
+<column name="accumulators_load19_fu_112">32, 0, 32, 0</column>
+<column name="add_ln3912_fu_100">4, 0, 4, 0</column>
+<column name="add_ln39_113_fu_104">9, 0, 9, 0</column>
+<column name="add_ln4414_fu_108">9, 0, 9, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_condition_exit_pp0_iter0_stage0_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
@@ -145,19 +145,19 @@
 <column name="ap_loop_exit_ready_pp0_iter2_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter3_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter4_reg">1, 0, 1, 0</column>
-<column name="empty_fu_120">32, 0, 32, 0</column>
-<column name="first_iter_0_reg_523">1, 0, 1, 0</column>
-<column name="i7_fu_92">4, 0, 4, 0</column>
-<column name="icmp_ln46_reg_543">1, 0, 1, 0</column>
-<column name="icmp_ln49_reg_538">1, 0, 1, 0</column>
-<column name="icmp_ln49_reg_538_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="indvar_flatten5_fu_84">9, 0, 9, 0</column>
-<column name="indvars_iv78_fu_96">9, 0, 9, 0</column>
-<column name="phaseInc_load_reg_547">32, 0, 32, 0</column>
-<column name="select_ln48_reg_518">9, 0, 9, 0</column>
-<column name="sineIdx6_fu_88">9, 0, 9, 0</column>
-<column name="sineIdx_110_fu_100">9, 0, 9, 0</column>
-<column name="select_ln48_reg_518">64, 32, 9, 0</column>
+<column name="empty_fu_116">32, 0, 32, 0</column>
+<column name="first_iter_0_reg_519">1, 0, 1, 0</column>
+<column name="i6_fu_84">4, 0, 4, 0</column>
+<column name="icmp_ln39_reg_539">1, 0, 1, 0</column>
+<column name="icmp_ln42_reg_534">1, 0, 1, 0</column>
+<column name="icmp_ln42_reg_534_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="indvar_flatten5_fu_80">9, 0, 9, 0</column>
+<column name="indvars_iv78_fu_92">9, 0, 9, 0</column>
+<column name="phaseInc_load_reg_543">32, 0, 32, 0</column>
+<column name="select_ln41_reg_514">9, 0, 9, 0</column>
+<column name="sineIdx7_fu_88">9, 0, 9, 0</column>
+<column name="sineIdx_110_fu_96">9, 0, 9, 0</column>
+<column name="select_ln41_reg_514">64, 32, 9, 0</column>
 </table>
 </item>
 </section>

@@ -1986,21 +1986,21 @@
         "components": {
           "SimpleSine_0": {
             "vlnv": "xilinx.com:hls:SimpleSine:1.0",
-            "ip_revision": "2114381099",
+            "ip_revision": "2114392209",
             "xci_name": "AudioPlatform_SimpleSine_0_0",
             "xci_path": "ip/AudioPlatform_SimpleSine_0_0/AudioPlatform_SimpleSine_0_0.xci",
             "inst_hier_path": "audio_components/SimpleSine_0"
           },
           "MultiSine_0": {
             "vlnv": "xilinx.com:hls:MultiSine:1.0",
-            "ip_revision": "2114381097",
+            "ip_revision": "2114392200",
             "xci_name": "AudioPlatform_MultiSine_0_0",
             "xci_path": "ip/AudioPlatform_MultiSine_0_0/AudioPlatform_MultiSine_0_0.xci",
             "inst_hier_path": "audio_components/MultiSine_0"
           },
           "SimpleSineMaster_0": {
             "vlnv": "xilinx.com:hls:SimpleSineMaster:1.0",
-            "ip_revision": "2114373463",
+            "ip_revision": "2114392209",
             "xci_name": "AudioPlatform_SimpleSineMaster_0_0",
             "xci_path": "ip/AudioPlatform_SimpleSineMaster_0_0/AudioPlatform_SimpleSineMaster_0_0.xci",
             "inst_hier_path": "audio_components/SimpleSineMaster_0",
@@ -2027,7 +2027,7 @@
           },
           "MultiSineMaster_0": {
             "vlnv": "xilinx.com:hls:MultiSineMaster:1.0",
-            "ip_revision": "2114382166",
+            "ip_revision": "2114392202",
             "xci_name": "AudioPlatform_MultiSineMaster_0_0",
             "xci_path": "ip/AudioPlatform_MultiSineMaster_0_0/AudioPlatform_MultiSineMaster_0_0.xci",
             "inst_hier_path": "audio_components/MultiSineMaster_0",
@@ -2054,14 +2054,14 @@
           },
           "SimpleSineStream_0": {
             "vlnv": "xilinx.com:hls:SimpleSineStream:1.0",
-            "ip_revision": "2114381111",
+            "ip_revision": "2114392215",
             "xci_name": "AudioPlatform_SimpleSineStream_0_0",
             "xci_path": "ip/AudioPlatform_SimpleSineStream_0_0/AudioPlatform_SimpleSineStream_0_0.xci",
             "inst_hier_path": "audio_components/SimpleSineStream_0"
           },
           "MultiSineStream_0": {
             "vlnv": "xilinx.com:hls:MultiSineStream:1.0",
-            "ip_revision": "2114383719",
+            "ip_revision": "2114392207",
             "xci_name": "AudioPlatform_MultiSineStream_0_0",
             "xci_path": "ip/AudioPlatform_MultiSineStream_0_0/AudioPlatform_MultiSineStream_0_0.xci",
             "inst_hier_path": "audio_components/MultiSineStream_0"
@@ -2075,7 +2075,7 @@
           },
           "MultiSineStreamBi": {
             "vlnv": "xilinx.com:hls:MultiSineStreamBidirectional:1.0",
-            "ip_revision": "2114390951",
+            "ip_revision": "2114392208",
             "xci_name": "AudioPlatform_MultiSineStreamBidir_0_0",
             "xci_path": "ip/AudioPlatform_MultiSineStreamBidir_0_0/AudioPlatform_MultiSineStreamBidir_0_0.xci",
             "inst_hier_path": "audio_components/MultiSineStreamBi"
@@ -2207,27 +2207,27 @@
           "microblaze_0_Clk": {
             "ports": [
               "s_axi_lite_aclk",
-              "SimpleSineMaster_0/ap_clk",
-              "MultiSine_0/ap_clk",
-              "SimpleSine_0/ap_clk",
-              "SimpleSineStream_0/ap_clk",
-              "MultiSineMaster_0/ap_clk",
-              "MultiSineStream_0/ap_clk",
               "SimpleSineStreamBi_0/ap_clk",
-              "MultiSineStreamBi/ap_clk"
+              "MultiSineMaster_0/ap_clk",
+              "MultiSineStreamBi/ap_clk",
+              "MultiSineStream_0/ap_clk",
+              "MultiSine_0/ap_clk",
+              "SimpleSineMaster_0/ap_clk",
+              "SimpleSineStream_0/ap_clk",
+              "SimpleSine_0/ap_clk"
             ]
           },
           "rst_clk_wiz_1_100M_peripheral_aresetn": {
             "ports": [
               "s_axi_aresetn",
-              "SimpleSineMaster_0/ap_rst_n",
-              "MultiSine_0/ap_rst_n",
-              "SimpleSine_0/ap_rst_n",
-              "SimpleSineStream_0/ap_rst_n",
-              "MultiSineMaster_0/ap_rst_n",
-              "MultiSineStream_0/ap_rst_n",
               "SimpleSineStreamBi_0/ap_rst_n",
-              "MultiSineStreamBi/ap_rst_n"
+              "MultiSineMaster_0/ap_rst_n",
+              "MultiSineStreamBi/ap_rst_n",
+              "MultiSineStream_0/ap_rst_n",
+              "MultiSine_0/ap_rst_n",
+              "SimpleSineMaster_0/ap_rst_n",
+              "SimpleSineStream_0/ap_rst_n",
+              "SimpleSine_0/ap_rst_n"
             ]
           }
         }

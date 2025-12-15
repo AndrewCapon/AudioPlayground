@@ -131,7 +131,7 @@
 						<name>phaseInc_read</name>
 						<fileName>SimpleSine.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>32</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
@@ -147,7 +147,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>32</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -188,7 +188,7 @@
 						<name>accumulator_read</name>
 						<fileName>SimpleSine.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
@@ -204,7 +204,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>48</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -242,10 +242,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>_ln48</name>
+						<name>_ln41</name>
 						<fileName>SimpleSine.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
@@ -261,7 +261,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>48</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -302,10 +302,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>shl_ln45</name>
+						<name>shl_ln38</name>
 						<fileName>SimpleSine.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
@@ -321,7 +321,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>45</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -359,10 +359,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>shl_ln45_1</name>
+						<name>shl_ln38_1</name>
 						<fileName>SimpleSine.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
@@ -378,7 +378,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>45</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -416,10 +416,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>sub_ln45</name>
+						<name>sub_ln38</name>
 						<fileName>SimpleSine.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
@@ -435,7 +435,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>45</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -473,10 +473,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>add_ln45</name>
+						<name>add_ln38</name>
 						<fileName>SimpleSine.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
@@ -492,7 +492,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>45</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -530,10 +530,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>accumulator_write_ln48</name>
+						<name>accumulator_write_ln41</name>
 						<fileName>SimpleSine.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
@@ -549,7 +549,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>48</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -589,10 +589,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>_ln61</name>
+						<name>_ln46</name>
 						<fileName>SimpleSine.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSine</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>SimpleSine</contextFuncName>
 						<contextNormFuncName>SimpleSine</contextNormFuncName>
 						<inlineStackInfo>
@@ -608,7 +608,7 @@
 											<first>SimpleSine.cpp</first>
 											<second>SimpleSine</second>
 										</first>
-										<second>61</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -648,7 +648,7 @@
 					<Obj>
 						<type>2</type>
 						<id>33</id>
-						<name>SimpleSine_Pipeline_VITIS_LOOP_45_1</name>
+						<name>SimpleSine_Pipeline_VITIS_LOOP_38_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -672,7 +672,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:SimpleSine_Pipeline_VITIS_LOOP_45_1&gt;</content>
+				<content>&lt;constant:SimpleSine_Pipeline_VITIS_LOOP_38_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_14">
 				<Value>

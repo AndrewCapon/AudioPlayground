@@ -605,16 +605,16 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="SimpleSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=SimpleSineMaster" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineMaster.cpp:35:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineMaster.cpp:31:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="SimpleSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineMaster.cpp:36:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineMaster.cpp:32:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="SimpleSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=accumulator" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineMaster.cpp:37:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineMaster.cpp:33:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="SimpleSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=phaseInc" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineMaster.cpp:38:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineMaster.cpp:34:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="SimpleSineMaster" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=samples depth=cBlockSamples offset=slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
 </xilinx:hls_fe_msgs>

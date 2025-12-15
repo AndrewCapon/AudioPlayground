@@ -131,7 +131,7 @@
 						<name>phaseInc_read</name>
 						<fileName>SimpleSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStream</fileDirectory>
-						<lineNumber>29</lineNumber>
+						<lineNumber>30</lineNumber>
 						<contextFuncName>SimpleSineStream</contextFuncName>
 						<contextNormFuncName>SimpleSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -147,7 +147,7 @@
 											<first>SimpleSineStream.cpp</first>
 											<second>SimpleSineStream</second>
 										</first>
-										<second>29</second>
+										<second>30</second>
 									</item>
 								</second>
 							</item>
@@ -188,7 +188,7 @@
 						<name>accumulator_read</name>
 						<fileName>SimpleSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStream</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>SimpleSineStream</contextFuncName>
 						<contextNormFuncName>SimpleSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -204,7 +204,7 @@
 											<first>SimpleSineStream.cpp</first>
 											<second>SimpleSineStream</second>
 										</first>
-										<second>41</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -242,10 +242,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>shl_ln38</name>
+						<name>shl_ln39</name>
 						<fileName>SimpleSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStream</fileDirectory>
-						<lineNumber>38</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineStream</contextFuncName>
 						<contextNormFuncName>SimpleSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -261,7 +261,7 @@
 											<first>SimpleSineStream.cpp</first>
 											<second>SimpleSineStream</second>
 										</first>
-										<second>38</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -299,10 +299,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>shl_ln38_1</name>
+						<name>shl_ln39_1</name>
 						<fileName>SimpleSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStream</fileDirectory>
-						<lineNumber>38</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineStream</contextFuncName>
 						<contextNormFuncName>SimpleSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -318,7 +318,7 @@
 											<first>SimpleSineStream.cpp</first>
 											<second>SimpleSineStream</second>
 										</first>
-										<second>38</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -356,10 +356,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>sub_ln38</name>
+						<name>sub_ln39</name>
 						<fileName>SimpleSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStream</fileDirectory>
-						<lineNumber>38</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineStream</contextFuncName>
 						<contextNormFuncName>SimpleSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -375,7 +375,7 @@
 											<first>SimpleSineStream.cpp</first>
 											<second>SimpleSineStream</second>
 										</first>
-										<second>38</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -413,10 +413,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>_ln41</name>
+						<name>_ln42</name>
 						<fileName>SimpleSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStream</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>SimpleSineStream</contextFuncName>
 						<contextNormFuncName>SimpleSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -432,7 +432,7 @@
 											<first>SimpleSineStream.cpp</first>
 											<second>SimpleSineStream</second>
 										</first>
-										<second>41</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -473,10 +473,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>add_ln38</name>
+						<name>add_ln39</name>
 						<fileName>SimpleSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStream</fileDirectory>
-						<lineNumber>38</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineStream</contextFuncName>
 						<contextNormFuncName>SimpleSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -492,7 +492,7 @@
 											<first>SimpleSineStream.cpp</first>
 											<second>SimpleSineStream</second>
 										</first>
-										<second>38</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -530,10 +530,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>accumulator_write_ln41</name>
+						<name>accumulator_write_ln42</name>
 						<fileName>SimpleSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStream</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>SimpleSineStream</contextFuncName>
 						<contextNormFuncName>SimpleSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -549,7 +549,7 @@
 											<first>SimpleSineStream.cpp</first>
 											<second>SimpleSineStream</second>
 										</first>
-										<second>41</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -589,10 +589,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>_ln46</name>
+						<name>_ln47</name>
 						<fileName>SimpleSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>SimpleSineStream</contextFuncName>
 						<contextNormFuncName>SimpleSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -608,7 +608,7 @@
 											<first>SimpleSineStream.cpp</first>
 											<second>SimpleSineStream</second>
 										</first>
-										<second>46</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -710,7 +710,7 @@
 					<Obj>
 						<type>2</type>
 						<id>39</id>
-						<name>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</name>
+						<name>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -734,7 +734,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:SimpleSineStream_Pipeline_VITIS_LOOP_38_1&gt;</content>
+				<content>&lt;constant:SimpleSineStream_Pipeline_VITIS_LOOP_39_1&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -1255,7 +1255,7 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item class_id="46" tracking_level="0" version="0">
-			<first>add_ln38_fu_99</first>
+			<first>add_ln39_fu_99</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1263,7 +1263,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln38_1_fu_87</first>
+			<first>shl_ln39_1_fu_87</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1271,7 +1271,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln38_fu_81</first>
+			<first>shl_ln39_fu_81</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1279,7 +1279,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sub_ln38_fu_93</first>
+			<first>sub_ln39_fu_93</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1291,7 +1291,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69</first>
+			<first>grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -1320,7 +1320,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln41_write_fu_62</first>
+			<first>write_ln42_write_fu_62</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -17,26 +17,10 @@ int main(void)
 
     for (int iter = 0; iter < 100; iter++)
     {
-#if SIMPLE_OSC        
-    #if DEBUG
-        SimpleSine(frequency, samples, debug);
-    #else
-        SimpleSine(frequency, samples, debug);
-    #endif
-#else
-    #if DEBUG
-        SimpleSine(accumulator, phaseInc, samples, debug);
-    #else
         SimpleSine(accumulator, phaseInc, samples);
-    #endif
-#endif
         for(int sample = 0; sample < cBlockSize; sample++)
         {
-#if DEBUG            
-                fprintf(fp,"%f, %x, 0\n", samples[sample].to_float(), debug[sample]);
-#else
-                fprintf(fp,"%f, 0\n", samples[sample].to_float());
-#endif
+            fprintf(fp,"%f, 0\n", samples[sample].to_float());
         }
         
     }

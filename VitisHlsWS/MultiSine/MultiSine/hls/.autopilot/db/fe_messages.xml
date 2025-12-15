@@ -605,19 +605,16 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="MultiSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=MultiSine" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:36:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:32:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="MultiSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:37:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:33:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="MultiSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=phaseInc" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:38:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:34:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="MultiSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=samples" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:40:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="MultiSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=debug" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:48:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MultiSine.cpp:41:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="MultiSine" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
 </xilinx:hls_fe_msgs>

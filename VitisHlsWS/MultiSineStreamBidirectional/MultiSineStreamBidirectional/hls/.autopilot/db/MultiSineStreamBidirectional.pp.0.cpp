@@ -5701,7 +5701,6 @@ inline __attribute__((nodebug)) bool operator!=(
 
 
 
-
 const int cVoices = 8;
 const int cBlockSize = 48;
 const int cChannels = 1;
@@ -5716,12 +5715,13 @@ const int cSineLutSize = 4096;
 
 typedef ap_fixed<24,1,AP_RND,AP_SAT> DataType;
 typedef ap_fixed<32,9,AP_RND,AP_SAT> MixType;
-# 32 "./DataTypes.h"
-    typedef ap_fixed<25,16> FrequencyType;
-    typedef ap_ufixed<32, 0> FrequencyMultiplierType;
 
-    typedef ap_ufixed<32, 12> PhaseType;
-    typedef ap_ufixed<12, 12> PhaseIndexType;
+
+typedef ap_fixed<25,16> FrequencyType;
+typedef ap_ufixed<32, 0> FrequencyMultiplierType;
+
+typedef ap_ufixed<32, 12> PhaseType;
+typedef ap_ufixed<12, 12> PhaseIndexType;
 # 4 "./MultiSineStreamBidirectional.h" 2
 # 1 "/home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h" 1
 # 26 "/home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h"

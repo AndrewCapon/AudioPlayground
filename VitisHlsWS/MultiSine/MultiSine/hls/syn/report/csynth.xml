@@ -29,7 +29,7 @@
             <Interval-max>385</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfLoopLatency>
-            <VITIS_LOOP_46_1_VITIS_LOOP_49_2>
+            <VITIS_LOOP_39_1_VITIS_LOOP_42_2>
                 <Slack>7.30</Slack>
                 <TripCount>384</TripCount>
                 <Latency>387</Latency>
@@ -37,27 +37,27 @@
                 <PipelineII>1</PipelineII>
                 <PipelineDepth>5</PipelineDepth>
                 <InstanceList/>
-            </VITIS_LOOP_46_1_VITIS_LOOP_49_2>
+            </VITIS_LOOP_39_1_VITIS_LOOP_42_2>
         </SummaryOfLoopLatency>
         <SummaryOfViolations>
             <IssueType>-</IssueType>
             <ViolationType>-</ViolationType>
-            <SourceLocation>MultiSine.cpp:31</SourceLocation>
+            <SourceLocation>MultiSine.cpp:30</SourceLocation>
             <SummaryOfLoopViolations>
-                <VITIS_LOOP_46_1_VITIS_LOOP_49_2>
-                    <Name>VITIS_LOOP_46_1_VITIS_LOOP_49_2</Name>
+                <VITIS_LOOP_39_1_VITIS_LOOP_42_2>
+                    <Name>VITIS_LOOP_39_1_VITIS_LOOP_42_2</Name>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>MultiSine.cpp:49</SourceLocation>
-                </VITIS_LOOP_46_1_VITIS_LOOP_49_2>
+                    <SourceLocation>MultiSine.cpp:42</SourceLocation>
+                </VITIS_LOOP_39_1_VITIS_LOOP_42_2>
             </SummaryOfLoopViolations>
         </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
             <BRAM_18K>8</BRAM_18K>
-            <FF>654</FF>
-            <LUT>738</LUT>
+            <FF>576</FF>
+            <LUT>667</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
         </Resources>
@@ -294,14 +294,14 @@
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="2">
             <ModuleName>MultiSine</ModuleName>
-            <BindInstances>select_ln48_fu_255_p3 sineIdx_fu_263_p3 i_fu_271_p3 select_ln46_2_fu_279_p3 first_iter_0_fu_287_p2 add_ln46_2_fu_299_p2 add_ln51_1_fu_397_p2 sineIdx_1_fu_305_p2 icmp_ln49_fu_311_p2 add_ln46_fu_317_p2 add_ln46_1_fu_323_p2 add_ln51_fu_329_p2 icmp_ln46_fu_335_p2 accumulators_U sine_lut_U control_s_axi_U</BindInstances>
+            <BindInstances>select_ln41_fu_251_p3 i_fu_259_p3 sineIdx_fu_267_p3 select_ln39_2_fu_275_p3 first_iter_0_fu_283_p2 add_ln39_2_fu_295_p2 add_ln44_1_fu_393_p2 sineIdx_1_fu_301_p2 icmp_ln42_fu_307_p2 add_ln39_fu_313_p2 add_ln39_1_fu_319_p2 add_ln44_fu_325_p2 icmp_ln39_fu_331_p2 accumulators_U sine_lut_U control_s_axi_U</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
             <Name>MultiSine</Name>
             <Loops>
-                <VITIS_LOOP_46_1_VITIS_LOOP_49_2/>
+                <VITIS_LOOP_39_1_VITIS_LOOP_42_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -320,8 +320,8 @@
                     <PipelineType>loop auto-rewind stp (delay=1 clock cycles(s))</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_46_1_VITIS_LOOP_49_2>
-                        <Name>VITIS_LOOP_46_1_VITIS_LOOP_49_2</Name>
+                    <VITIS_LOOP_39_1_VITIS_LOOP_42_2>
+                        <Name>VITIS_LOOP_39_1_VITIS_LOOP_42_2</Name>
                         <Slack>7.30</Slack>
                         <TripCount>384</TripCount>
                         <Latency>387</Latency>
@@ -330,19 +330,19 @@
                         <PipelineDepth>5</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_46_1_VITIS_LOOP_49_2>
+                    </VITIS_LOOP_39_1_VITIS_LOOP_42_2>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>MultiSine.cpp:31</SourceLocation>
+                    <SourceLocation>MultiSine.cpp:30</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_46_1_VITIS_LOOP_49_2>
-                            <Name>VITIS_LOOP_46_1_VITIS_LOOP_49_2</Name>
+                        <VITIS_LOOP_39_1_VITIS_LOOP_42_2>
+                            <Name>VITIS_LOOP_39_1_VITIS_LOOP_42_2</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>MultiSine.cpp:49</SourceLocation>
-                        </VITIS_LOOP_46_1_VITIS_LOOP_49_2>
+                            <SourceLocation>MultiSine.cpp:42</SourceLocation>
+                        </VITIS_LOOP_39_1_VITIS_LOOP_42_2>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -351,10 +351,10 @@
                     <BRAM_18K>8</BRAM_18K>
                     <AVAIL_BRAM>100</AVAIL_BRAM>
                     <UTIL_BRAM>8</UTIL_BRAM>
-                    <FF>654</FF>
+                    <FF>576</FF>
                     <AVAIL_FF>41600</AVAIL_FF>
                     <UTIL_FF>1</UTIL_FF>
-                    <LUT>738</LUT>
+                    <LUT>667</LUT>
                     <AVAIL_LUT>20800</AVAIL_LUT>
                     <UTIL_LUT>3</UTIL_LUT>
                     <URAM>0</URAM>
@@ -366,19 +366,19 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln48_fu_255_p3" SOURCE="MultiSine.cpp:48" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln48" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="select" PRAGMA="" RTLNAME="sineIdx_fu_263_p3" SOURCE="MultiSine.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="sineIdx" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="select" PRAGMA="" RTLNAME="i_fu_271_p3" SOURCE="MultiSine.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="i" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln46_2_fu_279_p3" SOURCE="MultiSine.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln46_2" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="seteq" PRAGMA="" RTLNAME="first_iter_0_fu_287_p2" SOURCE="MultiSine.cpp:48" STORAGESUBTYPE="" URAM="0" VARIABLE="first_iter_0" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln46_2_fu_299_p2" SOURCE="MultiSine.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46_2" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln51_1_fu_397_p2" SOURCE="MultiSine.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln51_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="add" PRAGMA="" RTLNAME="sineIdx_1_fu_305_p2" SOURCE="MultiSine.cpp:54" STORAGESUBTYPE="" URAM="0" VARIABLE="sineIdx_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln49_fu_311_p2" SOURCE="MultiSine.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln49" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln46_fu_317_p2" SOURCE="MultiSine.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln46_1_fu_323_p2" SOURCE="MultiSine.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln51_fu_329_p2" SOURCE="MultiSine.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln51" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_46_1_VITIS_LOOP_49_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln46_fu_335_p2" SOURCE="MultiSine.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln46" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln41_fu_251_p3" SOURCE="MultiSine.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln41" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="select" PRAGMA="" RTLNAME="i_fu_259_p3" SOURCE="MultiSine.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="i" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="select" PRAGMA="" RTLNAME="sineIdx_fu_267_p3" SOURCE="MultiSine.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="sineIdx" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln39_2_fu_275_p3" SOURCE="MultiSine.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln39_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="seteq" PRAGMA="" RTLNAME="first_iter_0_fu_283_p2" SOURCE="MultiSine.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="first_iter_0" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_2_fu_295_p2" SOURCE="MultiSine.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln39_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln44_1_fu_393_p2" SOURCE="MultiSine.cpp:44" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln44_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="add" PRAGMA="" RTLNAME="sineIdx_1_fu_301_p2" SOURCE="MultiSine.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="sineIdx_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln42_fu_307_p2" SOURCE="MultiSine.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln42" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_fu_313_p2" SOURCE="MultiSine.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln39" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_1_fu_319_p2" SOURCE="MultiSine.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln39_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln44_fu_325_p2" SOURCE="MultiSine.cpp:44" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln44" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_39_1_VITIS_LOOP_42_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln39_fu_331_p2" SOURCE="MultiSine.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39" VISIBLE="false"/>
                 <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="accumulators_U" SOURCE="" STORAGESIZE="32 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="accumulators" VISIBLE="true"/>
                 <BindNode BINDTYPE="storage" BRAM="6" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="sine_lut_U" SOURCE="" STORAGESIZE="24 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="sine_lut" VISIBLE="true"/>
                 <BindNode BINDTYPE="adapter" BRAM="2" BUNDLEDNAME="control" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
@@ -396,11 +396,6 @@
         <Arg ArgName="samples" index="1" direction="out" srcType="ap_fixed&lt;24, 1, AP_RND, AP_SAT, 0&gt;*" srcSize="32">
             <hwRefs>
                 <hwRef type="memory" interface="s_axi_control" name="samples" usage="data" direction="out"/>
-            </hwRefs>
-        </Arg>
-        <Arg ArgName="debug" index="2" direction="unused" srcType="unsigned int*" srcSize="32">
-            <hwRefs>
-                <hwRef type="memory" interface="s_axi_control" name="debug" usage="data" direction="unused"/>
             </hwRefs>
         </Arg>
     </Args>
@@ -427,7 +422,6 @@
             </ports>
             <memories>
                 <memorie memorieName="phaseInc" offset="32" range="32"/>
-                <memorie memorieName="debug" offset="256" range="256"/>
                 <memorie memorieName="samples" offset="2048" range="2048"/>
             </memories>
             <registers>
@@ -468,7 +462,6 @@
             <constraints>
                 <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32" argName="phaseInc"/>
                 <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="2048" argName="samples"/>
-                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="256" argName="debug"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
@@ -541,7 +534,6 @@
                     <keys size="3">Argument, Direction, Datatype</keys>
                     <column name="phaseInc">in, ap_ufixed&lt;32 12 AP_TRN AP_WRAP 0&gt; const *</column>
                     <column name="samples">out, ap_fixed&lt;24 1 AP_RND AP_SAT 0&gt;*</column>
-                    <column name="debug">unused, unsigned int*</column>
                 </table>
             </item>
             <item name="SW-to-HW Mapping">
@@ -549,18 +541,16 @@
                     <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
                     <column name="phaseInc">s_axi_control, memory, name=phaseInc offset=32 range=32</column>
                     <column name="samples">s_axi_control, memory, name=samples offset=2048 range=2048</column>
-                    <column name="debug">s_axi_control, memory, name=debug offset=256 range=256</column>
                 </table>
             </item>
         </section>
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
     <PragmaReport>
-        <Pragma type="interface" location="MultiSine.cpp:36" status="valid" parentFunction="multisine" variable="return" isDirective="0" options="mode=s_axilite port=return"/>
-        <Pragma type="interface" location="MultiSine.cpp:37" status="valid" parentFunction="multisine" variable="phaseInc" isDirective="0" options="mode=s_axilite port=phaseInc"/>
-        <Pragma type="interface" location="MultiSine.cpp:38" status="valid" parentFunction="multisine" variable="samples" isDirective="0" options="mode=s_axilite port=samples"/>
-        <Pragma type="interface" location="MultiSine.cpp:40" status="valid" parentFunction="multisine" variable="debug" isDirective="0" options="mode=s_axilite port=debug"/>
-        <Pragma type="pipeline" location="MultiSine.cpp:48" status="valid" parentFunction="multisine" variable="" isDirective="0" options="off"/>
+        <Pragma type="interface" location="MultiSine.cpp:32" status="valid" parentFunction="multisine" variable="return" isDirective="0" options="mode=s_axilite port=return"/>
+        <Pragma type="interface" location="MultiSine.cpp:33" status="valid" parentFunction="multisine" variable="phaseInc" isDirective="0" options="mode=s_axilite port=phaseInc"/>
+        <Pragma type="interface" location="MultiSine.cpp:34" status="valid" parentFunction="multisine" variable="samples" isDirective="0" options="mode=s_axilite port=samples"/>
+        <Pragma type="pipeline" location="MultiSine.cpp:41" status="valid" parentFunction="multisine" variable="" isDirective="0" options="off"/>
     </PragmaReport>
 </profile>
 

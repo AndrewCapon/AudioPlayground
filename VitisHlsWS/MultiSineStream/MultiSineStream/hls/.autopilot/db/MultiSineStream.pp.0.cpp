@@ -5701,7 +5701,6 @@ inline __attribute__((nodebug)) bool operator!=(
 
 
 
-
 const int cVoices = 8;
 const int cBlockSize = 48;
 const int cChannels = 1;
@@ -5716,12 +5715,13 @@ const int cSineLutSize = 4096;
 
 typedef ap_fixed<24,1,AP_RND,AP_SAT> DataType;
 typedef ap_fixed<32,9,AP_RND,AP_SAT> MixType;
-# 32 "./DataTypes.h"
-    typedef ap_fixed<25,16> FrequencyType;
-    typedef ap_ufixed<32, 0> FrequencyMultiplierType;
 
-    typedef ap_ufixed<32, 12> PhaseType;
-    typedef ap_ufixed<12, 12> PhaseIndexType;
+
+typedef ap_fixed<25,16> FrequencyType;
+typedef ap_ufixed<32, 0> FrequencyMultiplierType;
+
+typedef ap_ufixed<32, 12> PhaseType;
+typedef ap_ufixed<12, 12> PhaseIndexType;
 # 4 "./MultiSineStream.h" 2
 # 1 "/home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h" 1
 # 26 "/home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h"
@@ -29473,10 +29473,7 @@ namespace hls {
 
 PhaseType FrequencyToAccumPerSample(const FrequencyType &frequency);
 
-
-
-
-    __attribute__((sdx_kernel("MultiSineStream", 0))) void MultiSineStream(const PhaseType phaseInc[cVoices], DataType samples[cBlockSamples]);
+__attribute__((sdx_kernel("MultiSineStream", 0))) void MultiSineStream(const PhaseType phaseInc[cVoices], DataType samples[cBlockSamples]);
 # 2 "MultiSineStream.cpp" 2
 
 FrequencyMultiplierType f = 4096.0f/cSampleRate;
@@ -29506,30 +29503,23 @@ void InitSinTable(DataType sine_lut[cSineLutSize])
 DataType sine_lut[cSineLutSize];
 PhaseType accumulators[cVoices];
 
-
-
-
-    __attribute__((sdx_kernel("MultiSineStream", 0))) void MultiSineStream(const PhaseType phaseInc[cVoices], DataType samples[cVoices * cBlockSamples])
-
+__attribute__((sdx_kernel("MultiSineStream", 0))) void MultiSineStream(const PhaseType phaseInc[cVoices], DataType samples[cVoices * cBlockSamples])
 {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=MultiSineStream
-# 35 "MultiSineStream.cpp"
+# 31 "MultiSineStream.cpp"
 
 #pragma HLS INTERFACE mode=s_axilite port=return
 #pragma HLS INTERFACE mode=s_axilite port=phaseInc
 #pragma HLS INTERFACE mode=axis port=samples
 
-
-
-
  InitSinTable(sine_lut);
 
     int sineIdx = 0;
-    VITIS_LOOP_46_1: for(int i = 0; i < cVoices; i++)
+    VITIS_LOOP_39_1: for(int i = 0; i < cVoices; i++)
     {
 #pragma HLS pipeline off
- VITIS_LOOP_49_2: for(int b = 0; b < cBlockSamples; b++)
+ VITIS_LOOP_42_2: for(int b = 0; b < cBlockSamples; b++)
         {
             accumulators[i] += phaseInc[i];
             PhaseIndexType address;
@@ -29537,5 +29527,4 @@ PhaseType accumulators[cVoices];
             samples[sineIdx++] = sine_lut[(int)address];
         }
     }
-# 93 "MultiSineStream.cpp"
 }

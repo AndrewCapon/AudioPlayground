@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Tue Dec  2 07:43:25 2025",
- "timestampMillis": "1764661405752",
+ "dateTimestamp": "Mon Dec 15 08:09:11 2025",
+ "timestampMillis": "1765786151974",
  "buildStep": {
-  "cmdId": "2169cd79-7b1f-43f3-9d08-bc4db1123e50",
+  "cmdId": "897f06e0-18ba-4e10-af3d-4b7cdd4bb2c2",
   "name": "vitis-run",
   "logFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/logs/SimpleSineMaster.steps.log",
   "commandLine": "/home/andrewcapon/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/hls_config.cfg --work_dir SimpleSineMaster ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Dec  2 07:43:25 2025",
- "timestampMillis": "1764661405752",
+ "dateTimestamp": "Mon Dec 15 08:09:11 2025",
+ "timestampMillis": "1765786151974",
  "status": {
-  "cmdId": "2169cd79-7b1f-43f3-9d08-bc4db1123e50",
+  "cmdId": "897f06e0-18ba-4e10-af3d-4b7cdd4bb2c2",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Tue Dec  2 07:43:31 2025",
- "timestampMillis": "1764661411826",
+ "dateTimestamp": "Mon Dec 15 08:09:17 2025",
+ "timestampMillis": "1765786157964",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -82,10 +82,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Dec  2 07:43:31 2025",
- "timestampMillis": "1764661411827",
+ "dateTimestamp": "Mon Dec 15 08:09:17 2025",
+ "timestampMillis": "1765786157965",
  "buildStep": {
-  "cmdId": "6556c7fd-fb47-4a4f-a8dc-17496b0cc12b",
+  "cmdId": "03b5df80-3021-4132-9779-27a69fce2139",
   "name": "",
   "logFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/hls.log",
   "commandLine": "",
@@ -98,10 +98,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Dec  2 07:43:31 2025",
- "timestampMillis": "1764661411827",
+ "dateTimestamp": "Mon Dec 15 08:09:17 2025",
+ "timestampMillis": "1765786157965",
  "status": {
-  "cmdId": "6556c7fd-fb47-4a4f-a8dc-17496b0cc12b",
+  "cmdId": "03b5df80-3021-4132-9779-27a69fce2139",
   "state": "CS_RUNNING"
  }
 }
@@ -109,10 +109,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Dec  2 07:43:46 2025",
- "timestampMillis": "1764661426863",
+ "dateTimestamp": "Mon Dec 15 08:09:32 2025",
+ "timestampMillis": "1765786172550",
  "status": {
-  "cmdId": "6556c7fd-fb47-4a4f-a8dc-17496b0cc12b",
+  "cmdId": "03b5df80-3021-4132-9779-27a69fce2139",
   "state": "CS_PASSED"
  }
 }
@@ -120,10 +120,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Dec  2 07:43:47 2025",
- "timestampMillis": "1764661427056",
+ "dateTimestamp": "Mon Dec 15 08:09:32 2025",
+ "timestampMillis": "1765786172764",
  "status": {
-  "cmdId": "2169cd79-7b1f-43f3-9d08-bc4db1123e50",
+  "cmdId": "897f06e0-18ba-4e10-af3d-4b7cdd4bb2c2",
   "state": "CS_PASSED"
  }
 }
@@ -131,8 +131,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Dec  2 07:43:47 2025",
- "timestampMillis": "1764661427057",
+ "dateTimestamp": "Mon Dec 15 08:09:32 2025",
+ "timestampMillis": "1765786172764",
  "report": {
   "path": "",
   "name": "",
@@ -145,8 +145,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Dec  2 07:43:47 2025",
- "timestampMillis": "1764661427058",
+ "dateTimestamp": "Mon Dec 15 08:09:32 2025",
+ "timestampMillis": "1765786172765",
  "report": {
   "path": "",
   "name": "",

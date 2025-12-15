@@ -662,7 +662,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6ba4c809</spirit:value>
+            <spirit:value>ba8c27ba</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -678,7 +678,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>bfcb6a80</spirit:value>
+            <spirit:value>6ee38533</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -694,7 +694,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>cedece1d</spirit:value>
+            <spirit:value>1a9f518e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -710,7 +710,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ee1f05fb</spirit:value>
+            <spirit:value>3a5e9a68</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1097,15 +1097,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1.v</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1_sine_lut_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1_sine_lut_ROM_AUTO_1R.v</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1126,16 +1126,16 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1.v</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1_sine_lut_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1_sine_lut_ROM_AUTO_1R.v</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1161,17 +1161,17 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1_sine_lut_ROM_AUTO_1R.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/SimpleSine.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_d0edf137</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_61070776</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1187,12 +1187,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1_sine_lut_ROM_AUTO_1R.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1314,8 +1314,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Simplesine</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114381099</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-12-07T14:59:21Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114392209</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-12-15T08:09:17Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1325,7 +1325,7 @@
       <xilinx:xilinxVersion>2024.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8285e670"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="e0deb79f"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fcac5f3b"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b638a005"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6bfa44f0"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="98ce5d1e"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="97000bb5"/>

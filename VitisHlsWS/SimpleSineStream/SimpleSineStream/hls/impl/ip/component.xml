@@ -693,7 +693,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9be3169d</spirit:value>
+            <spirit:value>b4fb34d6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -709,7 +709,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5cc8cb42</spirit:value>
+            <spirit:value>73d0e909</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -725,7 +725,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ef74dbfd</spirit:value>
+            <spirit:value>965a176e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -741,7 +741,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b5b5da85</spirit:value>
+            <spirit:value>cc9b1616</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1183,15 +1183,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1.v</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_sine_lut_ROM_AUTO_1R.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.v</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_sine_lut_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1227,16 +1227,16 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1.v</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_sine_lut_ROM_AUTO_1R.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.v</spirit:name>
+        <spirit:name>hdl/verilog/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_sine_lut_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1266,17 +1266,17 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_sine_lut_ROM_AUTO_1R.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/SimpleSineStream.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_58365c1a</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_b5ccd565</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1297,12 +1297,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_sine_lut_ROM_AUTO_1R.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_sine_lut_ROM_AUTO_1R.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1424,8 +1424,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Simplesinestream</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114381111</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-12-07T15:11:54Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114392215</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-12-15T08:15:58Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1435,7 +1435,7 @@
       <xilinx:xilinxVersion>2024.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="3826c9b4"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="cabe0413"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4d947062"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d568a039"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6fc8cc9e"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="383b71cc"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="541e90f6"/>

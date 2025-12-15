@@ -31,7 +31,7 @@
         <SummaryOfViolations>
             <IssueType>-</IssueType>
             <ViolationType>-</ViolationType>
-            <SourceLocation>SimpleSineMaster.cpp:32</SourceLocation>
+            <SourceLocation>SimpleSineMaster.cpp:29</SourceLocation>
         </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
@@ -817,11 +817,11 @@
             <ModuleName>SimpleSineMaster</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105</InstName>
-                    <ModuleName>SimpleSineMaster_Pipeline_VITIS_LOOP_46_1</ModuleName>
+                    <InstName>grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105</InstName>
+                    <ModuleName>SimpleSineMaster_Pipeline_VITIS_LOOP_39_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>105</ID>
-                    <BindInstances>add_ln49_fu_146_p2 block_fu_126_p2 icmp_ln46_fu_132_p2 sine_lut_U</BindInstances>
+                    <BindInstances>add_ln42_fu_146_p2 block_fu_126_p2 icmp_ln39_fu_132_p2 sine_lut_U</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>control_s_axi_U gmem_m_axi_U</BindInstances>
@@ -829,9 +829,9 @@
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>SimpleSineMaster_Pipeline_VITIS_LOOP_46_1</Name>
+            <Name>SimpleSineMaster_Pipeline_VITIS_LOOP_39_1</Name>
             <Loops>
-                <VITIS_LOOP_46_1/>
+                <VITIS_LOOP_39_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -850,8 +850,8 @@
                     <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_46_1>
-                        <Name>VITIS_LOOP_46_1</Name>
+                    <VITIS_LOOP_39_1>
+                        <Name>VITIS_LOOP_39_1</Name>
                         <Slack>7.30</Slack>
                         <TripCount>48</TripCount>
                         <Latency>50</Latency>
@@ -860,19 +860,19 @@
                         <PipelineDepth>4</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_46_1>
+                    </VITIS_LOOP_39_1>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>SimpleSineMaster.cpp:46</SourceLocation>
+                    <SourceLocation>SimpleSineMaster.cpp:39</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_46_1>
-                            <Name>VITIS_LOOP_46_1</Name>
+                        <VITIS_LOOP_39_1>
+                            <Name>VITIS_LOOP_39_1</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>SimpleSineMaster.cpp:46</SourceLocation>
-                        </VITIS_LOOP_46_1>
+                            <SourceLocation>SimpleSineMaster.cpp:39</SourceLocation>
+                        </VITIS_LOOP_39_1>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -896,9 +896,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_46_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_146_p2" SOURCE="SimpleSineMaster.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln49" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_46_1" OPTYPE="add" PRAGMA="" RTLNAME="block_fu_126_p2" SOURCE="SimpleSineMaster.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="block" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_46_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln46_fu_132_p2" SOURCE="SimpleSineMaster.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln46" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_39_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln42_fu_146_p2" SOURCE="SimpleSineMaster.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln42" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_39_1" OPTYPE="add" PRAGMA="" RTLNAME="block_fu_126_p2" SOURCE="SimpleSineMaster.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="block" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_39_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln39_fu_132_p2" SOURCE="SimpleSineMaster.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39" VISIBLE="false"/>
                 <BindNode BINDTYPE="storage" BRAM="6" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="sine_lut_U" SOURCE="" STORAGESIZE="24 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="sine_lut" VISIBLE="true"/>
             </BindNodes>
         </Module>
@@ -923,7 +923,7 @@
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>SimpleSineMaster.cpp:32</SourceLocation>
+                    <SourceLocation>SimpleSineMaster.cpp:29</SourceLocation>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -1230,23 +1230,23 @@
             <item name="Inferred Burst Summary">
                 <table>
                     <keys size="6">HW Interface, Direction, Length, Width, Loop, Loop Location</keys>
-                    <column name="m_axi_gmem">write, 48, 32, VITIS_LOOP_46_1, SimpleSineMaster.cpp:46:22</column>
+                    <column name="m_axi_gmem">write, 48, 32, VITIS_LOOP_39_1, SimpleSineMaster.cpp:39:22</column>
                 </table>
             </item>
             <item name="All M_AXI Variable Accesses">
                 <table>
                     <keys size="9">HW Interface, Variable, Access Location, Direction, Burst Status, Length, Loop, Loop Location, Problem</keys>
-                    <column name="m_axi_gmem">samples, SimpleSineMaster.cpp:57:24, write, Widen Fail, , , , i24 allocated space contains padding. This is unsupported</column>
-                    <column name="m_axi_gmem">samples, SimpleSineMaster.cpp:57:24, write, Inferred, 48, VITIS_LOOP_46_1, SimpleSineMaster.cpp:46:22, </column>
+                    <column name="m_axi_gmem">samples, SimpleSineMaster.cpp:45:24, write, Widen Fail, , , , i24 allocated space contains padding. This is unsupported</column>
+                    <column name="m_axi_gmem">samples, SimpleSineMaster.cpp:45:24, write, Inferred, 48, VITIS_LOOP_39_1, SimpleSineMaster.cpp:39:22, </column>
                 </table>
             </item>
         </section>
     </ReportBurst>
     <PragmaReport>
-        <Pragma type="interface" location="SimpleSineMaster.cpp:35" status="valid" parentFunction="simplesinemaster" variable="return" isDirective="0" options="mode=s_axilite port=return"/>
-        <Pragma type="interface" location="SimpleSineMaster.cpp:36" status="valid" parentFunction="simplesinemaster" variable="accumulator" isDirective="0" options="mode=s_axilite port=accumulator"/>
-        <Pragma type="interface" location="SimpleSineMaster.cpp:37" status="valid" parentFunction="simplesinemaster" variable="phaseInc" isDirective="0" options="mode=s_axilite port=phaseInc"/>
-        <Pragma type="interface" location="SimpleSineMaster.cpp:38" status="valid" parentFunction="simplesinemaster" variable="samples" isDirective="0" options="m_axi port=samples depth=cBlockSamples offset=slave"/>
+        <Pragma type="interface" location="SimpleSineMaster.cpp:31" status="valid" parentFunction="simplesinemaster" variable="return" isDirective="0" options="mode=s_axilite port=return"/>
+        <Pragma type="interface" location="SimpleSineMaster.cpp:32" status="valid" parentFunction="simplesinemaster" variable="accumulator" isDirective="0" options="mode=s_axilite port=accumulator"/>
+        <Pragma type="interface" location="SimpleSineMaster.cpp:33" status="valid" parentFunction="simplesinemaster" variable="phaseInc" isDirective="0" options="mode=s_axilite port=phaseInc"/>
+        <Pragma type="interface" location="SimpleSineMaster.cpp:34" status="valid" parentFunction="simplesinemaster" variable="samples" isDirective="0" options="m_axi port=samples depth=cBlockSamples offset=slave"/>
     </PragmaReport>
 </profile>
 

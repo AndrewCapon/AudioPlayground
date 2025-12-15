@@ -302,7 +302,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>add_ln4617</name>
+						<name>add_ln3917</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -344,7 +344,7 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>add_ln46_118</name>
+						<name>add_ln39_118</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -386,7 +386,7 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>add_ln46_219</name>
+						<name>add_ln39_219</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -554,7 +554,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>add_ln46_219_write_ln0</name>
+						<name>add_ln39_219_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -597,7 +597,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>add_ln46_118_write_ln0</name>
+						<name>add_ln39_118_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -640,7 +640,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>add_ln4617_write_ln0</name>
+						<name>add_ln3917_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -940,10 +940,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>icmp_ln4916</name>
+						<name>icmp_ln4216</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -959,7 +959,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -1047,7 +1047,7 @@
 						<name>indvar_flatten7_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1063,7 +1063,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1104,7 +1104,7 @@
 						<name>i8_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1120,7 +1120,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1161,7 +1161,7 @@
 						<name>sineIdx9_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1177,7 +1177,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1218,7 +1218,7 @@
 						<name>indvars_iv710_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1234,7 +1234,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1272,10 +1272,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>add_ln4617_load</name>
+						<name>add_ln3917_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1291,7 +1291,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1329,10 +1329,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>add_ln46_118_load</name>
+						<name>add_ln39_118_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1348,7 +1348,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1386,10 +1386,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>add_ln46_219_load</name>
+						<name>add_ln39_219_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1405,7 +1405,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>48</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1485,10 +1485,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>or_ln48</name>
+						<name>or_ln41</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1504,7 +1504,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>48</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1545,7 +1545,7 @@
 						<name>i</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1561,7 +1561,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1603,7 +1603,7 @@
 						<name>sineIdx</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1619,7 +1619,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1658,10 +1658,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>select_ln46_2</name>
+						<name>select_ln39_2</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1677,7 +1677,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1716,10 +1716,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>zext_ln46</name>
+						<name>zext_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1735,7 +1735,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1775,7 +1775,7 @@
 						<name>accumulators_addr</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1791,7 +1791,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1833,7 +1833,7 @@
 						<name>phaseInc_addr</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1849,7 +1849,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1888,10 +1888,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>add_ln46_3</name>
+						<name>add_ln39_3</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1907,7 +1907,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1945,10 +1945,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>br_ln49</name>
+						<name>br_ln42</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1964,7 +1964,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -2006,7 +2006,7 @@
 						<name>phaseInc_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2022,7 +2022,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -2062,7 +2062,7 @@
 						<name>accumulators_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2078,7 +2078,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>51</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2115,10 +2115,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>accumulators_load112_write_ln51</name>
+						<name>accumulators_load112_write_ln44</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2134,7 +2134,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>51</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2172,10 +2172,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>phaseInc_load411_write_ln46</name>
+						<name>phaseInc_load411_write_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2191,7 +2191,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -2229,10 +2229,10 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>br_ln49</name>
+						<name>br_ln42</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2248,7 +2248,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -2288,7 +2288,7 @@
 						<name>accumulators_load3</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2304,7 +2304,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>51</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2347,7 +2347,7 @@
 						<name>sineIdx_115_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2363,7 +2363,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>48</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -2404,7 +2404,7 @@
 						<name>phaseInc_load_1</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2420,7 +2420,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -2461,7 +2461,7 @@
 						<name>accumulators_load_1</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2477,7 +2477,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -2515,10 +2515,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>shl_ln49</name>
+						<name>shl_ln42</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2534,7 +2534,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -2572,10 +2572,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>shl_ln49_1</name>
+						<name>shl_ln42_1</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2591,7 +2591,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -2629,10 +2629,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>sub_ln49</name>
+						<name>sub_ln42</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2648,7 +2648,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -2686,10 +2686,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>add_ln51</name>
+						<name>add_ln44</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2705,7 +2705,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>51</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2746,7 +2746,7 @@
 						<name>address</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2762,7 +2762,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>53</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2802,10 +2802,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>zext_ln54</name>
+						<name>zext_ln47</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2821,7 +2821,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>54</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2861,7 +2861,7 @@
 						<name>sine_lut_addr</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2877,7 +2877,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>54</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2916,10 +2916,10 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>select_ln48</name>
+						<name>select_ln41</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2935,7 +2935,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>48</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -2977,7 +2977,7 @@
 						<name>sineIdx_1</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -2993,7 +2993,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>54</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3034,7 +3034,7 @@
 						<name>sine_lut_load</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3050,7 +3050,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>54</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3087,10 +3087,10 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>samples_write_ln54</name>
+						<name>samples_write_ln47</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3106,7 +3106,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>54</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3145,10 +3145,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>icmp_ln49</name>
+						<name>icmp_ln42</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3164,7 +3164,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -3202,10 +3202,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>add_ln49</name>
+						<name>add_ln42</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3221,7 +3221,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -3259,10 +3259,10 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>br_ln49</name>
+						<name>br_ln42</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3278,7 +3278,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -3317,10 +3317,10 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>accumulators_addr_write_ln51</name>
+						<name>accumulators_addr_write_ln44</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3336,7 +3336,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>51</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -3375,10 +3375,10 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>br_ln49</name>
+						<name>br_ln42</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3394,7 +3394,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -3431,10 +3431,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>add_ln46</name>
+						<name>add_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3450,7 +3450,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -3488,10 +3488,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>add_ln46_1</name>
+						<name>add_ln39_1</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3507,7 +3507,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -3545,10 +3545,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>add_ln46_2</name>
+						<name>add_ln39_2</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3564,7 +3564,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -3602,10 +3602,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>icmp_ln46</name>
+						<name>icmp_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3621,7 +3621,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -3659,10 +3659,10 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>conv_i_i114_write_ln51</name>
+						<name>conv_i_i114_write_ln44</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3678,7 +3678,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>51</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -3717,10 +3717,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>add_ln46_219_write_ln46</name>
+						<name>add_ln39_219_write_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3736,7 +3736,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -3776,10 +3776,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>add_ln46_118_write_ln46</name>
+						<name>add_ln39_118_write_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3795,7 +3795,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -3835,10 +3835,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>add_ln4617_write_ln46</name>
+						<name>add_ln3917_write_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3854,7 +3854,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -3894,10 +3894,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>sineIdx_115_write_ln54</name>
+						<name>sineIdx_115_write_ln47</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3913,7 +3913,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>54</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3953,10 +3953,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>indvars_iv710_write_ln46</name>
+						<name>indvars_iv710_write_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -3972,7 +3972,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -4012,10 +4012,10 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>sineIdx9_write_ln46</name>
+						<name>sineIdx9_write_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -4031,7 +4031,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -4071,10 +4071,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>i8_write_ln46</name>
+						<name>i8_write_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -4090,7 +4090,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -4130,10 +4130,10 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>indvar_flatten7_write_ln46</name>
+						<name>indvar_flatten7_write_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -4149,7 +4149,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -4189,10 +4189,10 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>br_ln46</name>
+						<name>br_ln39</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -4208,7 +4208,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -4247,10 +4247,10 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>_ln93</name>
+						<name>_ln50</name>
 						<fileName>MultiSineStream.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStream</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>MultiSineStream</contextFuncName>
 						<contextNormFuncName>MultiSineStream</contextNormFuncName>
 						<inlineStackInfo>
@@ -4266,7 +4266,7 @@
 											<first>MultiSineStream.cpp</first>
 											<second>MultiSineStream</second>
 										</first>
-										<second>93</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -6378,8 +6378,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_286">
 			<mId>3</mId>
-			<mTag>VITIS_LOOP_46_1_VITIS_LOOP_49_2</mTag>
-			<mNormTag>VITIS_LOOP_46_1_VITIS_LOOP_49_2</mNormTag>
+			<mTag>VITIS_LOOP_39_1_VITIS_LOOP_42_2</mTag>
+			<mNormTag>VITIS_LOOP_39_1_VITIS_LOOP_42_2</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -7043,7 +7043,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="33" tracking_level="1" version="0" object_id="_288">
-			<region_name>VITIS_LOOP_46_1_VITIS_LOOP_49_2</region_name>
+			<region_name>VITIS_LOOP_39_1_VITIS_LOOP_42_2</region_name>
 			<basic_blocks>
 				<count>5</count>
 				<item_version>0</item_version>

@@ -167,7 +167,7 @@
 						<name>samples_read</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>32</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -183,7 +183,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>32</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -224,7 +224,7 @@
 						<name>phaseInc_read</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>32</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -240,7 +240,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>32</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -281,7 +281,7 @@
 						<name>accumulator_read</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -297,7 +297,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -338,7 +338,7 @@
 						<name>trunc_ln</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -354,7 +354,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -394,10 +394,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>sext_ln46</name>
+						<name>sext_ln39</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -413,7 +413,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -453,7 +453,7 @@
 						<name>gmem_addr</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -469,7 +469,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -510,7 +510,7 @@
 						<name>empty</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -526,7 +526,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -565,10 +565,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>_ln49</name>
+						<name>_ln42</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -584,7 +584,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -630,7 +630,7 @@
 						<name>empty_19</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -646,7 +646,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -685,10 +685,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>shl_ln46</name>
+						<name>shl_ln39</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -704,7 +704,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -742,10 +742,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>shl_ln46_1</name>
+						<name>shl_ln39_1</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -761,7 +761,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -799,10 +799,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>sub_ln46</name>
+						<name>sub_ln39</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -818,7 +818,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -856,10 +856,10 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>add_ln46</name>
+						<name>add_ln39</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -875,7 +875,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>46</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -913,10 +913,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>accumulator_write_ln49</name>
+						<name>accumulator_write_ln42</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -932,7 +932,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>49</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -972,10 +972,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>_ln62</name>
+						<name>_ln47</name>
 						<fileName>SimpleSineMaster.cpp</fileName>
 						<fileDirectory>/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>SimpleSineMaster</contextFuncName>
 						<contextNormFuncName>SimpleSineMaster</contextNormFuncName>
 						<inlineStackInfo>
@@ -991,7 +991,7 @@
 											<first>SimpleSineMaster.cpp</first>
 											<second>SimpleSineMaster</second>
 										</first>
-										<second>62</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1124,7 +1124,7 @@
 					<Obj>
 						<type>2</type>
 						<id>57</id>
-						<name>SimpleSineMaster_Pipeline_VITIS_LOOP_46_1</name>
+						<name>SimpleSineMaster_Pipeline_VITIS_LOOP_39_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1148,7 +1148,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:SimpleSineMaster_Pipeline_VITIS_LOOP_46_1&gt;</content>
+				<content>&lt;constant:SimpleSineMaster_Pipeline_VITIS_LOOP_39_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_24">
 				<Value>

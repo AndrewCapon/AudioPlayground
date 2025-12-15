@@ -1,17 +1,8 @@
 {
-    "0": {
-        "name": "SimpleSineMaster",
-        "file": "SimpleSineMaster.cpp",
-        "fileloc": "32",
-        "instructions": "27",
-        "total_instructions": "57",
-        "calls": "1",
-        "basicblocks": "1"
-    },
     "1": {
-        "name": "SimpleSineMaster_Pipeline_VITIS_LOOP_46_1",
+        "name": "SimpleSineMaster_Pipeline_VITIS_LOOP_39_1",
         "file": "SimpleSineMaster.cpp",
-        "fileloc": "46",
+        "fileloc": "39",
         "instructions": "30",
         "total_instructions": "30",
         "calls": "",
@@ -26,5 +17,14 @@
         "loops": {
             "L": "1"
         }
+    },
+    "0": {
+        "name": "SimpleSineMaster",
+        "file": "SimpleSineMaster.cpp",
+        "fileloc": "29",
+        "instructions": "27",
+        "total_instructions": "57",
+        "calls": "1",
+        "basicblocks": "1"
     }
 }

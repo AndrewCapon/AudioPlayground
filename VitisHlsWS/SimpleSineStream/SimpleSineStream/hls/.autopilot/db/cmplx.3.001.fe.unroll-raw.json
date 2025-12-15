@@ -3,7 +3,7 @@
     "basicblocks": 23,
     "calls": "",
     "file": "SimpleSineStream.cpp",
-    "fileloc": 29,
+    "fileloc": 30,
     "instructions": 58,
     "loads": {
       "G": 1,

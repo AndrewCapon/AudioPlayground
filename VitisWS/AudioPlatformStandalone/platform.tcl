@@ -16,3 +16,5 @@ platform write
 platform generate -domains 
 platform generate
 bsp reload
+platform generate -domains 
+platform generate

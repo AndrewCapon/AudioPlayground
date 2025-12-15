@@ -31,7 +31,7 @@
         <SummaryOfViolations>
             <IssueType>-</IssueType>
             <ViolationType>-</ViolationType>
-            <SourceLocation>SimpleSineStream.cpp:29</SourceLocation>
+            <SourceLocation>SimpleSineStream.cpp:30</SourceLocation>
         </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
@@ -313,11 +313,11 @@
             <ModuleName>SimpleSineStream</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69</InstName>
-                    <ModuleName>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</ModuleName>
+                    <InstName>grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69</InstName>
+                    <ModuleName>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>69</ID>
-                    <BindInstances>add_ln41_fu_124_p2 block_fu_104_p2 icmp_ln38_fu_110_p2 sine_lut_U</BindInstances>
+                    <BindInstances>add_ln42_fu_124_p2 block_fu_104_p2 icmp_ln39_fu_110_p2 sine_lut_U</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>control_s_axi_U</BindInstances>
@@ -325,9 +325,9 @@
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</Name>
+            <Name>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</Name>
             <Loops>
-                <VITIS_LOOP_38_1/>
+                <VITIS_LOOP_39_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -346,8 +346,8 @@
                     <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_38_1>
-                        <Name>VITIS_LOOP_38_1</Name>
+                    <VITIS_LOOP_39_1>
+                        <Name>VITIS_LOOP_39_1</Name>
                         <Slack>7.30</Slack>
                         <TripCount>48</TripCount>
                         <Latency>49</Latency>
@@ -356,19 +356,19 @@
                         <PipelineDepth>3</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_38_1>
+                    </VITIS_LOOP_39_1>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>SimpleSineStream.cpp:41</SourceLocation>
+                    <SourceLocation>SimpleSineStream.cpp:42</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_38_1>
-                            <Name>VITIS_LOOP_38_1</Name>
+                        <VITIS_LOOP_39_1>
+                            <Name>VITIS_LOOP_39_1</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>SimpleSineStream.cpp:41</SourceLocation>
-                        </VITIS_LOOP_38_1>
+                            <SourceLocation>SimpleSineStream.cpp:42</SourceLocation>
+                        </VITIS_LOOP_39_1>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -392,9 +392,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_fu_124_p2" SOURCE="SimpleSineStream.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="add" PRAGMA="" RTLNAME="block_fu_104_p2" SOURCE="SimpleSineStream.cpp:38" STORAGESUBTYPE="" URAM="0" VARIABLE="block" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln38_fu_110_p2" SOURCE="SimpleSineStream.cpp:38" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln38" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_39_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln42_fu_124_p2" SOURCE="SimpleSineStream.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln42" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_39_1" OPTYPE="add" PRAGMA="" RTLNAME="block_fu_104_p2" SOURCE="SimpleSineStream.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="block" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_39_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln39_fu_110_p2" SOURCE="SimpleSineStream.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39" VISIBLE="false"/>
                 <BindNode BINDTYPE="storage" BRAM="6" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="sine_lut_U" SOURCE="" STORAGESIZE="24 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="sine_lut" VISIBLE="true"/>
             </BindNodes>
         </Module>
@@ -419,7 +419,7 @@
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>SimpleSineStream.cpp:29</SourceLocation>
+                    <SourceLocation>SimpleSineStream.cpp:30</SourceLocation>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -656,10 +656,10 @@
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
     <PragmaReport>
-        <Pragma type="interface" location="SimpleSineStream.cpp:31" status="valid" parentFunction="simplesinestream" variable="return" isDirective="0" options="mode=s_axilite port=return"/>
-        <Pragma type="interface" location="SimpleSineStream.cpp:32" status="valid" parentFunction="simplesinestream" variable="accumulator" isDirective="0" options="mode=s_axilite port=accumulator"/>
-        <Pragma type="interface" location="SimpleSineStream.cpp:33" status="valid" parentFunction="simplesinestream" variable="phaseInc" isDirective="0" options="mode=s_axilite port=phaseInc"/>
-        <Pragma type="interface" location="SimpleSineStream.cpp:34" status="valid" parentFunction="simplesinestream" variable="samples" isDirective="0" options="axis port=samples"/>
+        <Pragma type="interface" location="SimpleSineStream.cpp:32" status="valid" parentFunction="simplesinestream" variable="return" isDirective="0" options="mode=s_axilite port=return"/>
+        <Pragma type="interface" location="SimpleSineStream.cpp:33" status="valid" parentFunction="simplesinestream" variable="accumulator" isDirective="0" options="mode=s_axilite port=accumulator"/>
+        <Pragma type="interface" location="SimpleSineStream.cpp:34" status="valid" parentFunction="simplesinestream" variable="phaseInc" isDirective="0" options="mode=s_axilite port=phaseInc"/>
+        <Pragma type="interface" location="SimpleSineStream.cpp:35" status="valid" parentFunction="simplesinestream" variable="samples" isDirective="0" options="axis port=samples"/>
     </PragmaReport>
 </profile>
 

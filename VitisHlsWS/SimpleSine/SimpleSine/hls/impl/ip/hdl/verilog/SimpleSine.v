@@ -74,19 +74,19 @@ reg    accumulator_o_ap_vld;
 wire   [31:0] phaseInc;
 reg   [31:0] phaseInc_read_reg_116;
 reg   [31:0] accumulator_read_reg_121;
-wire    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start;
-wire    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done;
-wire    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_idle;
-wire    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_ready;
-wire   [5:0] grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_address0;
-wire    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_ce0;
-wire    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_we0;
-wire   [23:0] grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_d0;
-reg    grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg;
+wire    grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_start;
+wire    grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_done;
+wire    grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_idle;
+wire    grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_ready;
+wire   [5:0] grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_address0;
+wire    grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_ce0;
+wire    grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_we0;
+wire   [23:0] grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_d0;
+reg    grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_start_reg;
 wire    ap_CS_fsm_state2;
-wire   [31:0] shl_ln45_fu_91_p2;
-wire   [31:0] shl_ln45_1_fu_97_p2;
-wire   [31:0] sub_ln45_fu_103_p2;
+wire   [31:0] shl_ln38_fu_91_p2;
+wire   [31:0] shl_ln38_1_fu_97_p2;
+wire   [31:0] sub_ln38_fu_103_p2;
 reg   [1:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 reg    ap_ST_fsm_state2_blk;
@@ -95,22 +95,22 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 2'd1;
-#0 grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg = 1'b0;
+#0 grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_start_reg = 1'b0;
 end
 
-SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_45_1 grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79(
+SimpleSine_SimpleSine_Pipeline_VITIS_LOOP_38_1 grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start),
-    .ap_done(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done),
-    .ap_idle(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_idle),
-    .ap_ready(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_ready),
+    .ap_start(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_start),
+    .ap_done(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_done),
+    .ap_idle(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_idle),
+    .ap_ready(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_ready),
     .accumulator_load(accumulator_read_reg_121),
     .phaseInc(phaseInc_read_reg_116),
-    .samples_address0(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_address0),
-    .samples_ce0(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_ce0),
-    .samples_we0(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_we0),
-    .samples_d0(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_d0)
+    .samples_address0(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_address0),
+    .samples_ce0(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_ce0),
+    .samples_we0(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_we0),
+    .samples_d0(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_d0)
 );
 
 SimpleSine_control_s_axi #(
@@ -141,10 +141,10 @@ control_s_axi_U(
     .accumulator_o_ap_vld(accumulator_o_ap_vld),
     .accumulator_i(accumulator_i),
     .phaseInc(phaseInc),
-    .samples_address0(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_address0),
-    .samples_ce0(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_ce0),
-    .samples_we0(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_we0),
-    .samples_d0(grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_samples_d0),
+    .samples_address0(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_address0),
+    .samples_ce0(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_ce0),
+    .samples_we0(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_we0),
+    .samples_d0(grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_samples_d0),
     .ap_start(ap_start),
     .interrupt(interrupt),
     .ap_ready(ap_ready),
@@ -162,12 +162,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg <= 1'b0;
+        grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_start_reg <= 1'b0;
     end else begin
         if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg <= 1'b1;
-        end else if ((grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_ready == 1'b1)) begin
-            grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg <= 1'b0;
+            grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_start_reg <= 1'b1;
+        end else if ((grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_ready == 1'b1)) begin
+            grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -196,7 +196,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done == 1'b0)) begin
+    if ((grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_done == 1'b0)) begin
         ap_ST_fsm_state2_blk = 1'b1;
     end else begin
         ap_ST_fsm_state2_blk = 1'b0;
@@ -204,7 +204,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -220,7 +220,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -237,7 +237,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
@@ -249,7 +249,7 @@ always @ (*) begin
     endcase
 end
 
-assign accumulator_o = (accumulator_i + sub_ln45_fu_103_p2);
+assign accumulator_o = (accumulator_i + sub_ln38_fu_103_p2);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -259,12 +259,12 @@ always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start = grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg;
+assign grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_start = grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_start_reg;
 
-assign shl_ln45_1_fu_97_p2 = phaseInc << 32'd4;
+assign shl_ln38_1_fu_97_p2 = phaseInc << 32'd4;
 
-assign shl_ln45_fu_91_p2 = phaseInc << 32'd6;
+assign shl_ln38_fu_91_p2 = phaseInc << 32'd6;
 
-assign sub_ln45_fu_103_p2 = (shl_ln45_fu_91_p2 - shl_ln45_1_fu_97_p2);
+assign sub_ln38_fu_103_p2 = (shl_ln38_fu_91_p2 - shl_ln38_1_fu_97_p2);
 
 endmodule //SimpleSine

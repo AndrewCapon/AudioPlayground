@@ -173,7 +173,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1232380
+        Offset:          1232344
         Length:          0
         ReplacementText: 'VITIS_LOOP_61_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -182,7 +182,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1233205
+        Offset:          1233169
         Length:          0
         ReplacementText: 'VITIS_LOOP_117_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -191,7 +191,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1235863
+        Offset:          1235827
         Length:          0
         ReplacementText: 'VITIS_LOOP_289_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -200,7 +200,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1238597
+        Offset:          1238561
         Length:          0
         ReplacementText: 'VITIS_LOOP_449_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -209,7 +209,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1241758
+        Offset:          1241722
         Length:          0
         ReplacementText: 'VITIS_LOOP_629_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -218,7 +218,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1241839
+        Offset:          1241803
         Length:          0
         ReplacementText: 'VITIS_LOOP_633_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -227,7 +227,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1244148
+        Offset:          1244112
         Length:          0
         ReplacementText: 'VITIS_LOOP_743_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -236,7 +236,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1245653
+        Offset:          1245617
         Length:          0
         ReplacementText: 'VITIS_LOOP_840_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -245,7 +245,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1245883
+        Offset:          1245847
         Length:          0
         ReplacementText: 'VITIS_LOOP_859_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -254,7 +254,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1252087
+        Offset:          1252051
         Length:          0
         ReplacementText: 'VITIS_LOOP_1173_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -263,7 +263,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1253690
+        Offset:          1253654
         Length:          0
         ReplacementText: 'VITIS_LOOP_1256_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -272,7 +272,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1261570
+        Offset:          1261534
         Length:          0
         ReplacementText: 'VITIS_LOOP_68_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -281,7 +281,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1261720
+        Offset:          1261684
         Length:          0
         ReplacementText: 'VITIS_LOOP_74_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -290,7 +290,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1261817
+        Offset:          1261781
         Length:          0
         ReplacementText: 'VITIS_LOOP_78_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -299,7 +299,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1263688
+        Offset:          1263652
         Length:          0
         ReplacementText: 'VITIS_LOOP_145_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -308,7 +308,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1263838
+        Offset:          1263802
         Length:          0
         ReplacementText: 'VITIS_LOOP_151_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -317,7 +317,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1263935
+        Offset:          1263899
         Length:          0
         ReplacementText: 'VITIS_LOOP_155_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -326,7 +326,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1264316
+        Offset:          1264280
         Length:          0
         ReplacementText: 'VITIS_LOOP_170_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -335,7 +335,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1264547
+        Offset:          1264511
         Length:          0
         ReplacementText: 'VITIS_LOOP_178_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -344,7 +344,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1267994
+        Offset:          1267958
         Length:          0
         ReplacementText: 'VITIS_LOOP_243_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -353,7 +353,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1268146
+        Offset:          1268110
         Length:          0
         ReplacementText: 'VITIS_LOOP_249_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -362,7 +362,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1268246
+        Offset:          1268210
         Length:          0
         ReplacementText: 'VITIS_LOOP_253_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -371,7 +371,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1268628
+        Offset:          1268592
         Length:          0
         ReplacementText: 'VITIS_LOOP_268_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -380,7 +380,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1268866
+        Offset:          1268830
         Length:          0
         ReplacementText: 'VITIS_LOOP_276_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -389,7 +389,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1284421
+        Offset:          1284385
         Length:          0
         ReplacementText: 'VITIS_LOOP_505_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -398,7 +398,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1284573
+        Offset:          1284537
         Length:          0
         ReplacementText: 'VITIS_LOOP_511_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -407,7 +407,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1284672
+        Offset:          1284636
         Length:          0
         ReplacementText: 'VITIS_LOOP_515_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -416,7 +416,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1284849
+        Offset:          1284813
         Length:          0
         ReplacementText: 'VITIS_LOOP_525_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -425,7 +425,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1284947
+        Offset:          1284911
         Length:          0
         ReplacementText: 'VITIS_LOOP_529_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -434,7 +434,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1285232
+        Offset:          1285196
         Length:          0
         ReplacementText: 'VITIS_LOOP_539_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -443,7 +443,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1285487
+        Offset:          1285451
         Length:          0
         ReplacementText: 'VITIS_LOOP_547_20: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -452,7 +452,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1317726
+        Offset:          1317690
         Length:          0
         ReplacementText: 'VITIS_LOOP_908_21: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -461,7 +461,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1317878
+        Offset:          1317842
         Length:          0
         ReplacementText: 'VITIS_LOOP_914_22: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -470,7 +470,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1317978
+        Offset:          1317942
         Length:          0
         ReplacementText: 'VITIS_LOOP_918_23: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -479,7 +479,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1320654
+        Offset:          1320618
         Length:          0
         ReplacementText: 'VITIS_LOOP_1034_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -488,7 +488,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1320804
+        Offset:          1320768
         Length:          0
         ReplacementText: 'VITIS_LOOP_1040_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -497,7 +497,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1320902
+        Offset:          1320866
         Length:          0
         ReplacementText: 'VITIS_LOOP_1044_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -506,7 +506,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1324372
+        Offset:          1324336
         Length:          0
         ReplacementText: 'VITIS_LOOP_1131_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -515,7 +515,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1324523
+        Offset:          1324487
         Length:          0
         ReplacementText: 'VITIS_LOOP_1137_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -524,7 +524,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1324622
+        Offset:          1324586
         Length:          0
         ReplacementText: 'VITIS_LOOP_1141_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -533,7 +533,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1325102
+        Offset:          1325066
         Length:          0
         ReplacementText: 'VITIS_LOOP_1160_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -542,7 +542,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1325344
+        Offset:          1325308
         Length:          0
         ReplacementText: 'VITIS_LOOP_1167_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -551,7 +551,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1330916
+        Offset:          1330880
         Length:          0
         ReplacementText: 'VITIS_LOOP_1283_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -560,7 +560,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1331068
+        Offset:          1331032
         Length:          0
         ReplacementText: 'VITIS_LOOP_1289_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -569,7 +569,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1331167
+        Offset:          1331131
         Length:          0
         ReplacementText: 'VITIS_LOOP_1293_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -578,7 +578,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1331676
+        Offset:          1331640
         Length:          0
         ReplacementText: 'VITIS_LOOP_1313_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -587,7 +587,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1331925
+        Offset:          1331889
         Length:          0
         ReplacementText: 'VITIS_LOOP_1320_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -596,7 +596,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1349282
+        Offset:          1349246
         Length:          0
         ReplacementText: 'VITIS_LOOP_1582_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -605,7 +605,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1349434
+        Offset:          1349398
         Length:          0
         ReplacementText: 'VITIS_LOOP_1588_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -614,7 +614,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1349534
+        Offset:          1349498
         Length:          0
         ReplacementText: 'VITIS_LOOP_1592_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -623,7 +623,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1350008
+        Offset:          1349972
         Length:          0
         ReplacementText: 'VITIS_LOOP_1616_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -632,7 +632,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1350275
+        Offset:          1350239
         Length:          0
         ReplacementText: 'VITIS_LOOP_1623_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -641,7 +641,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1388846
+        Offset:          1388810
         Length:          0
         ReplacementText: 'VITIS_LOOP_2053_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -650,7 +650,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1388998
+        Offset:          1388962
         Length:          0
         ReplacementText: 'VITIS_LOOP_2059_20: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -659,7 +659,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1389098
+        Offset:          1389062
         Length:          0
         ReplacementText: 'VITIS_LOOP_2063_21: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -668,7 +668,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1391718
+        Offset:          1391682
         Length:          0
         ReplacementText: 'VITIS_LOOP_2193_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -677,7 +677,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1391881
+        Offset:          1391845
         Length:          0
         ReplacementText: 'VITIS_LOOP_2200_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -686,7 +686,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1391973
+        Offset:          1391937
         Length:          0
         ReplacementText: 'VITIS_LOOP_2204_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -695,7 +695,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1393582
+        Offset:          1393546
         Length:          0
         ReplacementText: 'VITIS_LOOP_2251_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -704,7 +704,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1393744
+        Offset:          1393708
         Length:          0
         ReplacementText: 'VITIS_LOOP_2258_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -713,7 +713,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1393836
+        Offset:          1393800
         Length:          0
         ReplacementText: 'VITIS_LOOP_2262_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -722,7 +722,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1394209
+        Offset:          1394173
         Length:          0
         ReplacementText: 'VITIS_LOOP_2280_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -731,7 +731,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1396675
+        Offset:          1396639
         Length:          0
         ReplacementText: 'VITIS_LOOP_2335_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -740,7 +740,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1396842
+        Offset:          1396806
         Length:          0
         ReplacementText: 'VITIS_LOOP_2342_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -749,7 +749,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1396935
+        Offset:          1396899
         Length:          0
         ReplacementText: 'VITIS_LOOP_2346_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -758,7 +758,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1397316
+        Offset:          1397280
         Length:          0
         ReplacementText: 'VITIS_LOOP_2364_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -767,7 +767,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1402757
+        Offset:          1402721
         Length:          0
         ReplacementText: 'VITIS_LOOP_2453_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -776,7 +776,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1402925
+        Offset:          1402889
         Length:          0
         ReplacementText: 'VITIS_LOOP_2460_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -785,7 +785,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1403019
+        Offset:          1402983
         Length:          0
         ReplacementText: 'VITIS_LOOP_2464_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -794,7 +794,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1403190
+        Offset:          1403154
         Length:          0
         ReplacementText: 'VITIS_LOOP_2474_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -803,7 +803,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1403281
+        Offset:          1403245
         Length:          0
         ReplacementText: 'VITIS_LOOP_2478_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -812,7 +812,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1403563
+        Offset:          1403527
         Length:          0
         ReplacementText: 'VITIS_LOOP_2489_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -821,7 +821,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1403750
+        Offset:          1403714
         Length:          0
         ReplacementText: 'VITIS_LOOP_2497_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -830,7 +830,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1438220
+        Offset:          1438184
         Length:          0
         ReplacementText: 'VITIS_LOOP_2822_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -839,7 +839,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1438388
+        Offset:          1438352
         Length:          0
         ReplacementText: 'VITIS_LOOP_2829_20: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -848,7 +848,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1438482
+        Offset:          1438446
         Length:          0
         ReplacementText: 'VITIS_LOOP_2833_21: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -857,7 +857,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1440284
+        Offset:          1440248
         Length:          0
         ReplacementText: 'VITIS_LOOP_2921_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -866,7 +866,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1440392
+        Offset:          1440356
         Length:          0
         ReplacementText: 'VITIS_LOOP_2928_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -875,7 +875,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1440463
+        Offset:          1440427
         Length:          0
         ReplacementText: 'VITIS_LOOP_2932_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -884,7 +884,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1440751
+        Offset:          1440715
         Length:          0
         ReplacementText: 'VITIS_LOOP_2947_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -893,7 +893,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1441965
+        Offset:          1441929
         Length:          0
         ReplacementText: 'VITIS_LOOP_2979_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -902,7 +902,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1442076
+        Offset:          1442040
         Length:          0
         ReplacementText: 'VITIS_LOOP_2986_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -911,7 +911,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1442149
+        Offset:          1442113
         Length:          0
         ReplacementText: 'VITIS_LOOP_2990_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -920,7 +920,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1442444
+        Offset:          1442408
         Length:          0
         ReplacementText: 'VITIS_LOOP_3005_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -929,7 +929,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1445777
+        Offset:          1445741
         Length:          0
         ReplacementText: 'VITIS_LOOP_3055_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -938,7 +938,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1445888
+        Offset:          1445852
         Length:          0
         ReplacementText: 'VITIS_LOOP_3062_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -947,7 +947,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1445961
+        Offset:          1445925
         Length:          0
         ReplacementText: 'VITIS_LOOP_3066_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -956,7 +956,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1446257
+        Offset:          1446221
         Length:          0
         ReplacementText: 'VITIS_LOOP_3081_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -965,7 +965,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1465569
+        Offset:          1465533
         Length:          0
         ReplacementText: 'VITIS_LOOP_3218_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -974,7 +974,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1465683
+        Offset:          1465647
         Length:          0
         ReplacementText: 'VITIS_LOOP_3225_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -983,7 +983,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1465758
+        Offset:          1465722
         Length:          0
         ReplacementText: 'VITIS_LOOP_3229_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -992,7 +992,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1466045
+        Offset:          1466009
         Length:          0
         ReplacementText: 'VITIS_LOOP_3244_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1001,7 +1001,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1491655
+        Offset:          1491619
         Length:          0
         ReplacementText: 'VITIS_LOOP_3404_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1010,7 +1010,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1491769
+        Offset:          1491733
         Length:          0
         ReplacementText: 'VITIS_LOOP_3411_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1019,7 +1019,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1491846
+        Offset:          1491810
         Length:          0
         ReplacementText: 'VITIS_LOOP_3415_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1028,7 +1028,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1525957
+        Offset:          1525921
         Length:          0
         ReplacementText: 'VITIS_LOOP_703_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1037,7 +1037,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1534346
+        Offset:          1534310
         Length:          0
         ReplacementText: 'VITIS_LOOP_921_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1046,7 +1046,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1553330
+        Offset:          1553294
         Length:          0
         ReplacementText: 'VITIS_LOOP_1345_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1055,7 +1055,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1568239
+        Offset:          1568203
         Length:          0
         ReplacementText: 'VITIS_LOOP_240_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1064,7 +1064,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1568760
+        Offset:          1568724
         Length:          0
         ReplacementText: 'VITIS_LOOP_268_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1073,7 +1073,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1584770
+        Offset:          1584734
         Length:          0
         ReplacementText: 'VITIS_LOOP_48_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1082,7 +1082,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1585931
+        Offset:          1585895
         Length:          0
         ReplacementText: 'VITIS_LOOP_109_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1091,7 +1091,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1586240
+        Offset:          1586204
         Length:          0
         ReplacementText: 'VITIS_LOOP_123_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1100,7 +1100,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1586750
+        Offset:          1586714
         Length:          0
         ReplacementText: 'VITIS_LOOP_153_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1109,7 +1109,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1588686
+        Offset:          1588650
         Length:          0
         ReplacementText: 'VITIS_LOOP_281_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1118,7 +1118,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1589051
+        Offset:          1589015
         Length:          0
         ReplacementText: 'VITIS_LOOP_301_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1127,7 +1127,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1589359
+        Offset:          1589323
         Length:          0
         ReplacementText: 'VITIS_LOOP_315_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1136,7 +1136,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1591198
+        Offset:          1591162
         Length:          0
         ReplacementText: 'VITIS_LOOP_433_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1145,7 +1145,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1591523
+        Offset:          1591487
         Length:          0
         ReplacementText: 'VITIS_LOOP_447_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1154,7 +1154,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1594229
+        Offset:          1594193
         Length:          0
         ReplacementText: 'VITIS_LOOP_33_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1163,7 +1163,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1597154
+        Offset:          1597118
         Length:          0
         ReplacementText: 'VITIS_LOOP_183_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1172,7 +1172,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1598452
+        Offset:          1598416
         Length:          0
         ReplacementText: 'VITIS_LOOP_248_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1181,7 +1181,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1609531
+        Offset:          1609495
         Length:          0
         ReplacementText: 'VITIS_LOOP_16_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1190,7 +1190,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1609706
+        Offset:          1609670
         Length:          0
         ReplacementText: 'VITIS_LOOP_27_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1199,7 +1199,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1609867
+        Offset:          1609831
         Length:          0
         ReplacementText: 'VITIS_LOOP_38_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1208,7 +1208,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1610029
+        Offset:          1609993
         Length:          0
         ReplacementText: 'VITIS_LOOP_49_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1217,7 +1217,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1610203
+        Offset:          1610167
         Length:          0
         ReplacementText: 'VITIS_LOOP_60_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1226,7 +1226,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1610378
+        Offset:          1610342
         Length:          0
         ReplacementText: 'VITIS_LOOP_71_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1235,7 +1235,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1610539
+        Offset:          1610503
         Length:          0
         ReplacementText: 'VITIS_LOOP_82_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1244,7 +1244,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1610701
+        Offset:          1610665
         Length:          0
         ReplacementText: 'VITIS_LOOP_93_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1253,7 +1253,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_mad_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1682704
+        Offset:          1682668
         Length:          0
         ReplacementText: 'VITIS_LOOP_26_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1262,7 +1262,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cbrt_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1684480
+        Offset:          1684444
         Length:          0
         ReplacementText: 'VITIS_LOOP_40_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1271,7 +1271,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1689073
+        Offset:          1689037
         Length:          0
         ReplacementText: 'VITIS_LOOP_49_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1280,7 +1280,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1689815
+        Offset:          1689779
         Length:          0
         ReplacementText: 'VITIS_LOOP_81_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1289,7 +1289,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1691511
+        Offset:          1691475
         Length:          0
         ReplacementText: 'VITIS_LOOP_169_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1298,7 +1298,7 @@ Diagnostics:
     FilePath:        MultiSineStreamBidirectional.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1744700
+        Offset:          1744664
         Length:          0
         ReplacementText: 'VITIS_LOOP_19_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1307,7 +1307,7 @@ Diagnostics:
     FilePath:        MultiSineStreamBidirectional.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1745393
+        Offset:          1745357
         Length:          0
         ReplacementText: 'VITIS_LOOP_39_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1316,7 +1316,7 @@ Diagnostics:
     FilePath:        MultiSineStreamBidirectional.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1745504
+        Offset:          1745468
         Length:          0
         ReplacementText: 'VITIS_LOOP_45_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1325,7 +1325,7 @@ Diagnostics:
     FilePath:        MultiSineStreamBidirectional.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/MultiSineStreamBidirectional/MultiSineStreamBidirectional/hls/.autopilot/db/MultiSineStreamBidirectional.pp.0.cpp
-        Offset:          1745569
+        Offset:          1745533
         Length:          0
         ReplacementText: 'VITIS_LOOP_48_3: '
 ...

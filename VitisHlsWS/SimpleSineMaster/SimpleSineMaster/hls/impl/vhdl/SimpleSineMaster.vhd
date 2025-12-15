@@ -147,42 +147,42 @@ architecture behav of SimpleSineMaster is
     signal phaseInc_read_reg_161 : STD_LOGIC_VECTOR (31 downto 0);
     signal accumulator_read_reg_166 : STD_LOGIC_VECTOR (31 downto 0);
     signal trunc_ln_reg_171 : STD_LOGIC_VECTOR (29 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_start : STD_LOGIC;
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_done : STD_LOGIC;
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_idle : STD_LOGIC;
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_ready : STD_LOGIC;
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWVALID : STD_LOGIC;
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WVALID : STD_LOGIC;
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WLAST : STD_LOGIC;
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARVALID : STD_LOGIC;
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_RREADY : STD_LOGIC;
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_BREADY : STD_LOGIC;
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_start : STD_LOGIC;
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_done : STD_LOGIC;
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_idle : STD_LOGIC;
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_ready : STD_LOGIC;
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWVALID : STD_LOGIC;
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WVALID : STD_LOGIC;
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WLAST : STD_LOGIC;
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARVALID : STD_LOGIC;
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_RREADY : STD_LOGIC;
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_BREADY : STD_LOGIC;
     signal gmem_0_AWVALID : STD_LOGIC;
     signal gmem_0_AWREADY : STD_LOGIC;
     signal gmem_0_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
@@ -195,15 +195,15 @@ architecture behav of SimpleSineMaster is
     signal gmem_0_RFIFONUM : STD_LOGIC_VECTOR (8 downto 0);
     signal gmem_0_BVALID : STD_LOGIC;
     signal gmem_0_BREADY : STD_LOGIC;
-    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_start_reg : STD_LOGIC := '0';
+    signal grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal sext_ln46_fu_151_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal shl_ln46_fu_126_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal shl_ln46_1_fu_132_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal sub_ln46_fu_138_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal sext_ln39_fu_151_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal shl_ln39_fu_126_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal shl_ln39_1_fu_132_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal sub_ln39_fu_138_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
@@ -216,7 +216,7 @@ architecture behav of SimpleSineMaster is
     signal ap_ST_fsm_state9_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component SimpleSineMaster_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1 IS
+    component SimpleSineMaster_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -271,7 +271,7 @@ architecture behav of SimpleSineMaster is
         m_axi_gmem_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
         accumulator_load : IN STD_LOGIC_VECTOR (31 downto 0);
-        sext_ln46 : IN STD_LOGIC_VECTOR (29 downto 0);
+        sext_ln39 : IN STD_LOGIC_VECTOR (29 downto 0);
         phaseInc : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
@@ -408,49 +408,49 @@ architecture behav of SimpleSineMaster is
 
 
 begin
-    grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105 : component SimpleSineMaster_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1
+    grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105 : component SimpleSineMaster_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_start,
-        ap_done => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_done,
-        ap_idle => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_idle,
-        ap_ready => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_ready,
-        m_axi_gmem_0_AWVALID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWVALID,
+        ap_start => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_start,
+        ap_done => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_done,
+        ap_idle => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_idle,
+        ap_ready => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_ready,
+        m_axi_gmem_0_AWVALID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWVALID,
         m_axi_gmem_0_AWREADY => gmem_0_AWREADY,
-        m_axi_gmem_0_AWADDR => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWADDR,
-        m_axi_gmem_0_AWID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWID,
-        m_axi_gmem_0_AWLEN => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWLEN,
-        m_axi_gmem_0_AWSIZE => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWSIZE,
-        m_axi_gmem_0_AWBURST => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWBURST,
-        m_axi_gmem_0_AWLOCK => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWLOCK,
-        m_axi_gmem_0_AWCACHE => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWCACHE,
-        m_axi_gmem_0_AWPROT => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWPROT,
-        m_axi_gmem_0_AWQOS => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWQOS,
-        m_axi_gmem_0_AWREGION => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWREGION,
-        m_axi_gmem_0_AWUSER => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWUSER,
-        m_axi_gmem_0_WVALID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_AWADDR => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WVALID,
         m_axi_gmem_0_WREADY => gmem_0_WREADY,
-        m_axi_gmem_0_WDATA => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WDATA,
-        m_axi_gmem_0_WSTRB => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WSTRB,
-        m_axi_gmem_0_WLAST => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WLAST,
-        m_axi_gmem_0_WID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WID,
-        m_axi_gmem_0_WUSER => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WUSER,
-        m_axi_gmem_0_ARVALID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_WDATA => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARVALID,
         m_axi_gmem_0_ARREADY => ap_const_logic_0,
-        m_axi_gmem_0_ARADDR => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARADDR,
-        m_axi_gmem_0_ARID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARID,
-        m_axi_gmem_0_ARLEN => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARLEN,
-        m_axi_gmem_0_ARSIZE => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARSIZE,
-        m_axi_gmem_0_ARBURST => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARBURST,
-        m_axi_gmem_0_ARLOCK => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARLOCK,
-        m_axi_gmem_0_ARCACHE => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARCACHE,
-        m_axi_gmem_0_ARPROT => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARPROT,
-        m_axi_gmem_0_ARQOS => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARQOS,
-        m_axi_gmem_0_ARREGION => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARREGION,
-        m_axi_gmem_0_ARUSER => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_ARADDR => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_ARUSER,
         m_axi_gmem_0_RVALID => ap_const_logic_0,
-        m_axi_gmem_0_RREADY => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RREADY => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_RREADY,
         m_axi_gmem_0_RDATA => ap_const_lv32_0,
         m_axi_gmem_0_RLAST => ap_const_logic_0,
         m_axi_gmem_0_RID => ap_const_lv1_0,
@@ -458,12 +458,12 @@ begin
         m_axi_gmem_0_RUSER => ap_const_lv1_0,
         m_axi_gmem_0_RRESP => ap_const_lv2_0,
         m_axi_gmem_0_BVALID => gmem_0_BVALID,
-        m_axi_gmem_0_BREADY => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BREADY => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_BREADY,
         m_axi_gmem_0_BRESP => ap_const_lv2_0,
         m_axi_gmem_0_BID => ap_const_lv1_0,
         m_axi_gmem_0_BUSER => ap_const_lv1_0,
         accumulator_load => accumulator_read_reg_166,
-        sext_ln46 => trunc_ln_reg_171,
+        sext_ln39 => trunc_ln_reg_171,
         phaseInc => phaseInc_read_reg_161);
 
     control_s_axi_U : component SimpleSineMaster_control_s_axi
@@ -587,8 +587,8 @@ begin
         I_CH0_AWLEN => gmem_0_AWLEN,
         I_CH0_WVALID => gmem_0_WVALID,
         I_CH0_WREADY => gmem_0_WREADY,
-        I_CH0_WDATA => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WDATA,
-        I_CH0_WSTRB => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WSTRB,
+        I_CH0_WDATA => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WDATA,
+        I_CH0_WSTRB => grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WSTRB,
         I_CH0_BVALID => gmem_0_BVALID,
         I_CH0_BREADY => gmem_0_BREADY);
 
@@ -608,16 +608,16 @@ begin
     end process;
 
 
-    grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_start_reg_assign_proc : process(ap_clk)
+    grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_start_reg <= ap_const_logic_0;
+                grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-                    grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_ready = ap_const_logic_1)) then 
-                    grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_start_reg <= ap_const_logic_0;
+                    grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_ready = ap_const_logic_1)) then 
+                    grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -634,7 +634,7 @@ begin
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, ap_CS_fsm_state9, grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_done, gmem_0_AWREADY, gmem_0_BVALID, ap_CS_fsm_state4)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, ap_CS_fsm_state9, grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_done, gmem_0_AWREADY, gmem_0_BVALID, ap_CS_fsm_state4)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -652,7 +652,7 @@ begin
             when ap_ST_fsm_state3 => 
                 ap_NS_fsm <= ap_ST_fsm_state4;
             when ap_ST_fsm_state4 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_done = ap_const_logic_1))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state4) and (grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_done = ap_const_logic_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state5;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state4;
@@ -675,7 +675,7 @@ begin
                 ap_NS_fsm <= "XXXXXXXXX";
         end case;
     end process;
-    accumulator_o <= std_logic_vector(unsigned(accumulator_i) + unsigned(sub_ln46_fu_138_p2));
+    accumulator_o <= std_logic_vector(unsigned(accumulator_i) + unsigned(sub_ln39_fu_138_p2));
 
     accumulator_o_ap_vld_assign_proc : process(ap_start, ap_CS_fsm_state1)
     begin
@@ -713,9 +713,9 @@ begin
 
     ap_ST_fsm_state3_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state4_blk_assign_proc : process(grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_done)
+    ap_ST_fsm_state4_blk_assign_proc : process(grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_done)
     begin
-        if ((grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_done = ap_const_logic_0)) then 
+        if ((grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state4_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state4_blk <= ap_const_logic_0;
@@ -773,58 +773,58 @@ begin
     end process;
 
 
-    gmem_0_AWADDR_assign_proc : process(ap_CS_fsm_state2, grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWADDR, gmem_0_AWREADY, ap_CS_fsm_state3, ap_CS_fsm_state4, sext_ln46_fu_151_p1)
+    gmem_0_AWADDR_assign_proc : process(ap_CS_fsm_state2, grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWADDR, gmem_0_AWREADY, ap_CS_fsm_state3, ap_CS_fsm_state4, sext_ln39_fu_151_p1)
     begin
         if (((gmem_0_AWREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
-            gmem_0_AWADDR <= sext_ln46_fu_151_p1;
+            gmem_0_AWADDR <= sext_ln39_fu_151_p1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state4) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            gmem_0_AWADDR <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWADDR;
+            gmem_0_AWADDR <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWADDR;
         else 
             gmem_0_AWADDR <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    gmem_0_AWLEN_assign_proc : process(ap_CS_fsm_state2, grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWLEN, gmem_0_AWREADY, ap_CS_fsm_state3, ap_CS_fsm_state4)
+    gmem_0_AWLEN_assign_proc : process(ap_CS_fsm_state2, grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWLEN, gmem_0_AWREADY, ap_CS_fsm_state3, ap_CS_fsm_state4)
     begin
         if (((gmem_0_AWREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             gmem_0_AWLEN <= ap_const_lv32_30;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state4) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            gmem_0_AWLEN <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWLEN;
+            gmem_0_AWLEN <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWLEN;
         else 
             gmem_0_AWLEN <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    gmem_0_AWVALID_assign_proc : process(ap_CS_fsm_state2, grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWVALID, gmem_0_AWREADY, ap_CS_fsm_state3, ap_CS_fsm_state4)
+    gmem_0_AWVALID_assign_proc : process(ap_CS_fsm_state2, grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWVALID, gmem_0_AWREADY, ap_CS_fsm_state3, ap_CS_fsm_state4)
     begin
         if (((gmem_0_AWREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             gmem_0_AWVALID <= ap_const_logic_1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state4) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            gmem_0_AWVALID <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_AWVALID;
+            gmem_0_AWVALID <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_AWVALID;
         else 
             gmem_0_AWVALID <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    gmem_0_BREADY_assign_proc : process(ap_CS_fsm_state9, grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_BREADY, gmem_0_BVALID, ap_CS_fsm_state3, ap_CS_fsm_state4)
+    gmem_0_BREADY_assign_proc : process(ap_CS_fsm_state9, grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_BREADY, gmem_0_BVALID, ap_CS_fsm_state3, ap_CS_fsm_state4)
     begin
         if (((gmem_0_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state9))) then 
             gmem_0_BREADY <= ap_const_logic_1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state4) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            gmem_0_BREADY <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_BREADY;
+            gmem_0_BREADY <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_BREADY;
         else 
             gmem_0_BREADY <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    gmem_0_WVALID_assign_proc : process(grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WVALID, ap_CS_fsm_state3, ap_CS_fsm_state4)
+    gmem_0_WVALID_assign_proc : process(grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WVALID, ap_CS_fsm_state3, ap_CS_fsm_state4)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state4) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            gmem_0_WVALID <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_m_axi_gmem_0_WVALID;
+            gmem_0_WVALID <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_m_axi_gmem_0_WVALID;
         else 
             gmem_0_WVALID <= ap_const_logic_0;
         end if; 
@@ -850,10 +850,10 @@ begin
         end if; 
     end process;
 
-    grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_start <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_start_reg;
-        sext_ln46_fu_151_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln_reg_171),32));
+    grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_start <= grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_start_reg;
+        sext_ln39_fu_151_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln_reg_171),32));
 
-    shl_ln46_1_fu_132_p2 <= std_logic_vector(shift_left(unsigned(phaseInc),to_integer(unsigned('0' & ap_const_lv32_4(31-1 downto 0)))));
-    shl_ln46_fu_126_p2 <= std_logic_vector(shift_left(unsigned(phaseInc),to_integer(unsigned('0' & ap_const_lv32_6(31-1 downto 0)))));
-    sub_ln46_fu_138_p2 <= std_logic_vector(unsigned(shl_ln46_fu_126_p2) - unsigned(shl_ln46_1_fu_132_p2));
+    shl_ln39_1_fu_132_p2 <= std_logic_vector(shift_left(unsigned(phaseInc),to_integer(unsigned('0' & ap_const_lv32_4(31-1 downto 0)))));
+    shl_ln39_fu_126_p2 <= std_logic_vector(shift_left(unsigned(phaseInc),to_integer(unsigned('0' & ap_const_lv32_6(31-1 downto 0)))));
+    sub_ln39_fu_138_p2 <= std_logic_vector(unsigned(shl_ln39_fu_126_p2) - unsigned(shl_ln39_1_fu_132_p2));
 end behav;

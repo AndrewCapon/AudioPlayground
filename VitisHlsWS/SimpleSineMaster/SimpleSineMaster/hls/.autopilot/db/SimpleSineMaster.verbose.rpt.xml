@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'SimpleSineMaster'" level="0">
-<item name = "Date">Tue Dec  2 07:41:54 2025
+<item name = "Date">Mon Dec 15 07:53:50 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">SimpleSineMaster</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105">SimpleSineMaster_Pipeline_VITIS_LOOP_46_1, 52, 52, 0.520 us, 0.520 us, 48, 48, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105">SimpleSineMaster_Pipeline_VITIS_LOOP_39_1, 52, 52, 0.520 us, 0.520 us, 48, 48, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105">SimpleSineMaster_Pipeline_VITIS_LOOP_46_1, 6, 0, 70, 125, 0</column>
+<column name="grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105">SimpleSineMaster_Pipeline_VITIS_LOOP_39_1, 6, 0, 70, 125, 0</column>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 188, 296, 0</column>
 <column name="gmem_m_axi_U">gmem_m_axi, 2, 0, 665, 646, 0</column>
 </table>
@@ -82,7 +82,7 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="accumulator_o">+, 0, 0, 32, 32, 32</column>
-<column name="sub_ln46_fu_138_p2">-, 0, 0, 32, 32, 32</column>
+<column name="sub_ln39_fu_138_p2">-, 0, 0, 32, 32, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -101,7 +101,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="accumulator_read_reg_166">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">9, 0, 9, 0</column>
-<column name="grp_SimpleSineMaster_Pipeline_VITIS_LOOP_46_1_fu_105_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_SimpleSineMaster_Pipeline_VITIS_LOOP_39_1_fu_105_ap_start_reg">1, 0, 1, 0</column>
 <column name="phaseInc_read_reg_161">32, 0, 32, 0</column>
 <column name="trunc_ln_reg_171">30, 0, 30, 0</column>
 </table>

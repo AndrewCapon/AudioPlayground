@@ -34,7 +34,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>SimpleSine.cpp:32</SourceLocation>
+<SourceLocation>SimpleSine.cpp:29</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 

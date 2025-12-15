@@ -5700,22 +5700,22 @@ inline __attribute__((nodebug)) bool operator!=(
 # 4 "./DataTypes.h" 2
 
 
-
 const int cBlockSize = 48;
 const int cChannels = 1;
 const int cBlockSamples = cBlockSize * cChannels;
 
 const int cSampleRate = 48000;
 const int cSineLutSize = 4096;
-# 39 "./DataTypes.h"
+# 38 "./DataTypes.h"
 typedef ap_fixed<24,1,AP_RND,AP_SAT> DataType;
 typedef ap_fixed<32,9,AP_RND,AP_SAT> MixType;
-# 53 "./DataTypes.h"
-    typedef ap_fixed<25,16> FrequencyType;
-    typedef ap_ufixed<32, 0> FrequencyMultiplierType;
 
-    typedef ap_ufixed<32, 12> PhaseType;
-    typedef ap_ufixed<12, 12> PhaseIndexType;
+
+typedef ap_fixed<25,16> FrequencyType;
+typedef ap_ufixed<32, 0> FrequencyMultiplierType;
+
+typedef ap_ufixed<32, 12> PhaseType;
+typedef ap_ufixed<12, 12> PhaseIndexType;
 # 4 "./SimpleSineMaster.h" 2
 # 1 "/home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h" 1
 # 26 "/home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h"
@@ -29467,10 +29467,7 @@ namespace hls {
 
 PhaseType FrequencyToAccumPerSample(const FrequencyType &frequency);
 
-
-
-
-    __attribute__((sdx_kernel("SimpleSineMaster", 0))) void SimpleSineMaster(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples]);
+__attribute__((sdx_kernel("SimpleSineMaster", 0))) void SimpleSineMaster(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples]);
 # 2 "SimpleSineMaster.cpp" 2
 
 FrequencyMultiplierType f = 4096.0f/cSampleRate;
@@ -29499,15 +29496,11 @@ void InitSinTable(DataType sine_lut[cSineLutSize])
 
 DataType sine_lut[cSineLutSize];
 
-
-
-
 __attribute__((sdx_kernel("SimpleSineMaster", 0))) void SimpleSineMaster(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples])
-
 {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=SimpleSineMaster
-# 34 "SimpleSineMaster.cpp"
+# 30 "SimpleSineMaster.cpp"
 
 #pragma HLS INTERFACE mode=s_axilite port=return
 #pragma HLS INTERFACE mode=s_axilite port=accumulator
@@ -29515,25 +29508,14 @@ __attribute__((sdx_kernel("SimpleSineMaster", 0))) void SimpleSineMaster(PhaseTy
 #pragma HLS INTERFACE m_axi port=samples depth=cBlockSamples offset=slave
 
 
-
-
-
  InitSinTable(sine_lut);
 
-    VITIS_LOOP_46_1: for(int block = 0; block < cBlockSize; block++)
+    VITIS_LOOP_39_1: for(int block = 0; block < cBlockSize; block++)
     {
 
         accumulator += phaseInc;
-
-
-
-
-
         PhaseIndexType address;
         address = PhaseIndexType(accumulator);
         samples[block] = sine_lut[(int)address];
-
-
-
     }
 }

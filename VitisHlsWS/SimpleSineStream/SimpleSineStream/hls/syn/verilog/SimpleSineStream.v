@@ -81,19 +81,19 @@ reg    accumulator_o_ap_vld;
 wire   [31:0] phaseInc;
 reg   [31:0] phaseInc_read_reg_106;
 reg   [31:0] accumulator_read_reg_111;
-wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_start;
-wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_done;
-wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_idle;
-wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_ready;
-wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TREADY;
-wire   [23:0] grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TDATA;
-wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TVALID;
-reg    grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_start_reg;
+wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_start;
+wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_done;
+wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_idle;
+wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_ready;
+wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TREADY;
+wire   [23:0] grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TDATA;
+wire    grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TVALID;
+reg    grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_start_reg;
 wire    ap_CS_fsm_state2;
 reg   [23:0] samples_TDATA_reg;
-wire   [31:0] shl_ln38_fu_81_p2;
-wire   [31:0] shl_ln38_1_fu_87_p2;
-wire   [31:0] sub_ln38_fu_93_p2;
+wire   [31:0] shl_ln39_fu_81_p2;
+wire   [31:0] shl_ln39_1_fu_87_p2;
+wire   [31:0] sub_ln39_fu_93_p2;
 wire    ap_CS_fsm_state3;
 wire    regslice_both_samples_U_apdone_blk;
 reg   [2:0] ap_NS_fsm;
@@ -108,21 +108,21 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 3'd1;
-#0 grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_start_reg = 1'b0;
+#0 grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_start_reg = 1'b0;
 end
 
-SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_38_1 grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69(
+SimpleSineStream_SimpleSineStream_Pipeline_VITIS_LOOP_39_1 grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_start),
-    .ap_done(grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_done),
-    .ap_idle(grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_idle),
-    .ap_ready(grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_ready),
-    .samples_TREADY(grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TREADY),
+    .ap_start(grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_start),
+    .ap_done(grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_done),
+    .ap_idle(grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_idle),
+    .ap_ready(grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_ready),
+    .samples_TREADY(grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TREADY),
     .accumulator_load(accumulator_read_reg_111),
     .phaseInc(phaseInc_read_reg_106),
-    .samples_TDATA(grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TDATA),
-    .samples_TVALID(grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TVALID)
+    .samples_TDATA(grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TDATA),
+    .samples_TVALID(grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TVALID)
 );
 
 SimpleSineStream_control_s_axi #(
@@ -166,7 +166,7 @@ regslice_both_samples_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(samples_TDATA_int_regslice),
-    .vld_in(grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TVALID),
+    .vld_in(grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TVALID),
     .ack_in(samples_TREADY_int_regslice),
     .data_out(samples_TDATA),
     .vld_out(regslice_both_samples_U_vld_out),
@@ -184,12 +184,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_start_reg <= 1'b0;
+        grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_start_reg <= 1'b0;
     end else begin
         if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-            grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_start_reg <= 1'b1;
-        end else if ((grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_ready == 1'b1)) begin
-            grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_start_reg <= 1'b0;
+            grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_start_reg <= 1'b1;
+        end else if ((grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_ready == 1'b1)) begin
+            grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -202,8 +202,8 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
-        samples_TDATA_reg <= grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TDATA;
+    if (((grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+        samples_TDATA_reg <= grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TDATA;
     end
 end
 
@@ -224,7 +224,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_done == 1'b0)) begin
+    if ((grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_done == 1'b0)) begin
         ap_ST_fsm_state2_blk = 1'b1;
     end else begin
         ap_ST_fsm_state2_blk = 1'b0;
@@ -264,8 +264,8 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
-        samples_TDATA_int_regslice = grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TDATA;
+    if (((grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+        samples_TDATA_int_regslice = grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TDATA;
     end else begin
         samples_TDATA_int_regslice = samples_TDATA_reg;
     end
@@ -281,7 +281,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
@@ -300,7 +300,7 @@ always @ (*) begin
     endcase
 end
 
-assign accumulator_o = (accumulator_i + sub_ln38_fu_93_p2);
+assign accumulator_o = (accumulator_i + sub_ln39_fu_93_p2);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -312,16 +312,16 @@ always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_start = grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_ap_start_reg;
+assign grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_start = grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_ap_start_reg;
 
-assign grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69_samples_TREADY = (samples_TREADY_int_regslice & ap_CS_fsm_state2);
+assign grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69_samples_TREADY = (samples_TREADY_int_regslice & ap_CS_fsm_state2);
 
 assign samples_TVALID = regslice_both_samples_U_vld_out;
 
-assign shl_ln38_1_fu_87_p2 = phaseInc << 32'd4;
+assign shl_ln39_1_fu_87_p2 = phaseInc << 32'd4;
 
-assign shl_ln38_fu_81_p2 = phaseInc << 32'd6;
+assign shl_ln39_fu_81_p2 = phaseInc << 32'd6;
 
-assign sub_ln38_fu_93_p2 = (shl_ln38_fu_81_p2 - shl_ln38_1_fu_87_p2);
+assign sub_ln39_fu_93_p2 = (shl_ln39_fu_81_p2 - shl_ln39_1_fu_87_p2);
 
 endmodule //SimpleSineStream

@@ -17,7 +17,7 @@ int main(void)
 
     for (int iter = 0; iter < 100; iter++)
     {
-        SimpleSine(accumulator, phaseInc, samples);
+        SimpleSineStream(accumulator, phaseInc, samples);
         for(int sample = 0; sample < cBlockSize; sample++)
         {
                 fprintf(fp,"%f, 0\n", samples[sample].to_float());

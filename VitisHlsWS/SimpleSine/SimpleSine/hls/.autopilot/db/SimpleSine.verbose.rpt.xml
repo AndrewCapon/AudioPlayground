@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'SimpleSine'" level="0">
-<item name = "Date">Sun Dec  7 14:58:51 2025
+<item name = "Date">Mon Dec 15 07:52:28 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">SimpleSine</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79">SimpleSine_Pipeline_VITIS_LOOP_45_1, 52, 52, 0.520 us, 0.520 us, 48, 48, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79">SimpleSine_Pipeline_VITIS_LOOP_38_1, 52, 52, 0.520 us, 0.520 us, 48, 48, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79">SimpleSine_Pipeline_VITIS_LOOP_45_1, 6, 0, 58, 114, 0</column>
+<column name="grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79">SimpleSine_Pipeline_VITIS_LOOP_38_1, 6, 0, 58, 114, 0</column>
 <column name="control_s_axi_U">control_s_axi, 2, 0, 230, 302, 0</column>
 </table>
 </item>
@@ -81,7 +81,7 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="accumulator_o">+, 0, 0, 32, 32, 32</column>
-<column name="sub_ln45_fu_103_p2">-, 0, 0, 32, 32, 32</column>
+<column name="sub_ln38_fu_103_p2">-, 0, 0, 32, 32, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -93,7 +93,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="accumulator_read_reg_121">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
-<column name="grp_SimpleSine_Pipeline_VITIS_LOOP_45_1_fu_79_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_SimpleSine_Pipeline_VITIS_LOOP_38_1_fu_79_ap_start_reg">1, 0, 1, 0</column>
 <column name="phaseInc_read_reg_116">32, 0, 32, 0</column>
 </table>
 </item>

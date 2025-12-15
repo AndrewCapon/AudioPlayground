@@ -173,7 +173,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1232324
+        Offset:          1232288
         Length:          0
         ReplacementText: 'VITIS_LOOP_61_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -182,7 +182,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1233149
+        Offset:          1233113
         Length:          0
         ReplacementText: 'VITIS_LOOP_117_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -191,7 +191,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1235807
+        Offset:          1235771
         Length:          0
         ReplacementText: 'VITIS_LOOP_289_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -200,7 +200,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1238541
+        Offset:          1238505
         Length:          0
         ReplacementText: 'VITIS_LOOP_449_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -209,7 +209,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1241702
+        Offset:          1241666
         Length:          0
         ReplacementText: 'VITIS_LOOP_629_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -218,7 +218,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1241783
+        Offset:          1241747
         Length:          0
         ReplacementText: 'VITIS_LOOP_633_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -227,7 +227,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1244092
+        Offset:          1244056
         Length:          0
         ReplacementText: 'VITIS_LOOP_743_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -236,7 +236,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1245597
+        Offset:          1245561
         Length:          0
         ReplacementText: 'VITIS_LOOP_840_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -245,7 +245,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1245827
+        Offset:          1245791
         Length:          0
         ReplacementText: 'VITIS_LOOP_859_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -254,7 +254,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1252031
+        Offset:          1251995
         Length:          0
         ReplacementText: 'VITIS_LOOP_1173_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -263,7 +263,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1253634
+        Offset:          1253598
         Length:          0
         ReplacementText: 'VITIS_LOOP_1256_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -272,7 +272,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1261514
+        Offset:          1261478
         Length:          0
         ReplacementText: 'VITIS_LOOP_68_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -281,7 +281,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1261664
+        Offset:          1261628
         Length:          0
         ReplacementText: 'VITIS_LOOP_74_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -290,7 +290,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1261761
+        Offset:          1261725
         Length:          0
         ReplacementText: 'VITIS_LOOP_78_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -299,7 +299,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1263632
+        Offset:          1263596
         Length:          0
         ReplacementText: 'VITIS_LOOP_145_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -308,7 +308,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1263782
+        Offset:          1263746
         Length:          0
         ReplacementText: 'VITIS_LOOP_151_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -317,7 +317,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1263879
+        Offset:          1263843
         Length:          0
         ReplacementText: 'VITIS_LOOP_155_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -326,7 +326,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1264260
+        Offset:          1264224
         Length:          0
         ReplacementText: 'VITIS_LOOP_170_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -335,7 +335,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1264491
+        Offset:          1264455
         Length:          0
         ReplacementText: 'VITIS_LOOP_178_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -344,7 +344,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1267938
+        Offset:          1267902
         Length:          0
         ReplacementText: 'VITIS_LOOP_243_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -353,7 +353,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1268090
+        Offset:          1268054
         Length:          0
         ReplacementText: 'VITIS_LOOP_249_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -362,7 +362,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1268190
+        Offset:          1268154
         Length:          0
         ReplacementText: 'VITIS_LOOP_253_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -371,7 +371,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1268572
+        Offset:          1268536
         Length:          0
         ReplacementText: 'VITIS_LOOP_268_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -380,7 +380,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1268810
+        Offset:          1268774
         Length:          0
         ReplacementText: 'VITIS_LOOP_276_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -389,7 +389,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1284365
+        Offset:          1284329
         Length:          0
         ReplacementText: 'VITIS_LOOP_505_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -398,7 +398,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1284517
+        Offset:          1284481
         Length:          0
         ReplacementText: 'VITIS_LOOP_511_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -407,7 +407,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1284616
+        Offset:          1284580
         Length:          0
         ReplacementText: 'VITIS_LOOP_515_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -416,7 +416,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1284793
+        Offset:          1284757
         Length:          0
         ReplacementText: 'VITIS_LOOP_525_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -425,7 +425,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1284891
+        Offset:          1284855
         Length:          0
         ReplacementText: 'VITIS_LOOP_529_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -434,7 +434,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1285176
+        Offset:          1285140
         Length:          0
         ReplacementText: 'VITIS_LOOP_539_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -443,7 +443,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1285431
+        Offset:          1285395
         Length:          0
         ReplacementText: 'VITIS_LOOP_547_20: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -452,7 +452,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1317670
+        Offset:          1317634
         Length:          0
         ReplacementText: 'VITIS_LOOP_908_21: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -461,7 +461,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1317822
+        Offset:          1317786
         Length:          0
         ReplacementText: 'VITIS_LOOP_914_22: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -470,7 +470,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1317922
+        Offset:          1317886
         Length:          0
         ReplacementText: 'VITIS_LOOP_918_23: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -479,7 +479,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1320598
+        Offset:          1320562
         Length:          0
         ReplacementText: 'VITIS_LOOP_1034_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -488,7 +488,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1320748
+        Offset:          1320712
         Length:          0
         ReplacementText: 'VITIS_LOOP_1040_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -497,7 +497,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1320846
+        Offset:          1320810
         Length:          0
         ReplacementText: 'VITIS_LOOP_1044_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -506,7 +506,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1324316
+        Offset:          1324280
         Length:          0
         ReplacementText: 'VITIS_LOOP_1131_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -515,7 +515,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1324467
+        Offset:          1324431
         Length:          0
         ReplacementText: 'VITIS_LOOP_1137_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -524,7 +524,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1324566
+        Offset:          1324530
         Length:          0
         ReplacementText: 'VITIS_LOOP_1141_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -533,7 +533,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1325046
+        Offset:          1325010
         Length:          0
         ReplacementText: 'VITIS_LOOP_1160_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -542,7 +542,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1325288
+        Offset:          1325252
         Length:          0
         ReplacementText: 'VITIS_LOOP_1167_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -551,7 +551,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1330860
+        Offset:          1330824
         Length:          0
         ReplacementText: 'VITIS_LOOP_1283_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -560,7 +560,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1331012
+        Offset:          1330976
         Length:          0
         ReplacementText: 'VITIS_LOOP_1289_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -569,7 +569,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1331111
+        Offset:          1331075
         Length:          0
         ReplacementText: 'VITIS_LOOP_1293_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -578,7 +578,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1331620
+        Offset:          1331584
         Length:          0
         ReplacementText: 'VITIS_LOOP_1313_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -587,7 +587,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1331869
+        Offset:          1331833
         Length:          0
         ReplacementText: 'VITIS_LOOP_1320_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -596,7 +596,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1349226
+        Offset:          1349190
         Length:          0
         ReplacementText: 'VITIS_LOOP_1582_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -605,7 +605,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1349378
+        Offset:          1349342
         Length:          0
         ReplacementText: 'VITIS_LOOP_1588_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -614,7 +614,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1349478
+        Offset:          1349442
         Length:          0
         ReplacementText: 'VITIS_LOOP_1592_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -623,7 +623,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1349952
+        Offset:          1349916
         Length:          0
         ReplacementText: 'VITIS_LOOP_1616_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -632,7 +632,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1350219
+        Offset:          1350183
         Length:          0
         ReplacementText: 'VITIS_LOOP_1623_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -641,7 +641,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1388790
+        Offset:          1388754
         Length:          0
         ReplacementText: 'VITIS_LOOP_2053_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -650,7 +650,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1388942
+        Offset:          1388906
         Length:          0
         ReplacementText: 'VITIS_LOOP_2059_20: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -659,7 +659,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1389042
+        Offset:          1389006
         Length:          0
         ReplacementText: 'VITIS_LOOP_2063_21: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -668,7 +668,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1391662
+        Offset:          1391626
         Length:          0
         ReplacementText: 'VITIS_LOOP_2193_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -677,7 +677,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1391825
+        Offset:          1391789
         Length:          0
         ReplacementText: 'VITIS_LOOP_2200_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -686,7 +686,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1391917
+        Offset:          1391881
         Length:          0
         ReplacementText: 'VITIS_LOOP_2204_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -695,7 +695,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1393526
+        Offset:          1393490
         Length:          0
         ReplacementText: 'VITIS_LOOP_2251_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -704,7 +704,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1393688
+        Offset:          1393652
         Length:          0
         ReplacementText: 'VITIS_LOOP_2258_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -713,7 +713,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1393780
+        Offset:          1393744
         Length:          0
         ReplacementText: 'VITIS_LOOP_2262_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -722,7 +722,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1394153
+        Offset:          1394117
         Length:          0
         ReplacementText: 'VITIS_LOOP_2280_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -731,7 +731,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1396619
+        Offset:          1396583
         Length:          0
         ReplacementText: 'VITIS_LOOP_2335_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -740,7 +740,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1396786
+        Offset:          1396750
         Length:          0
         ReplacementText: 'VITIS_LOOP_2342_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -749,7 +749,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1396879
+        Offset:          1396843
         Length:          0
         ReplacementText: 'VITIS_LOOP_2346_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -758,7 +758,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1397260
+        Offset:          1397224
         Length:          0
         ReplacementText: 'VITIS_LOOP_2364_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -767,7 +767,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1402701
+        Offset:          1402665
         Length:          0
         ReplacementText: 'VITIS_LOOP_2453_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -776,7 +776,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1402869
+        Offset:          1402833
         Length:          0
         ReplacementText: 'VITIS_LOOP_2460_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -785,7 +785,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1402963
+        Offset:          1402927
         Length:          0
         ReplacementText: 'VITIS_LOOP_2464_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -794,7 +794,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1403134
+        Offset:          1403098
         Length:          0
         ReplacementText: 'VITIS_LOOP_2474_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -803,7 +803,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1403225
+        Offset:          1403189
         Length:          0
         ReplacementText: 'VITIS_LOOP_2478_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -812,7 +812,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1403507
+        Offset:          1403471
         Length:          0
         ReplacementText: 'VITIS_LOOP_2489_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -821,7 +821,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1403694
+        Offset:          1403658
         Length:          0
         ReplacementText: 'VITIS_LOOP_2497_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -830,7 +830,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1438164
+        Offset:          1438128
         Length:          0
         ReplacementText: 'VITIS_LOOP_2822_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -839,7 +839,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1438332
+        Offset:          1438296
         Length:          0
         ReplacementText: 'VITIS_LOOP_2829_20: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -848,7 +848,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1438426
+        Offset:          1438390
         Length:          0
         ReplacementText: 'VITIS_LOOP_2833_21: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -857,7 +857,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1440228
+        Offset:          1440192
         Length:          0
         ReplacementText: 'VITIS_LOOP_2921_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -866,7 +866,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1440336
+        Offset:          1440300
         Length:          0
         ReplacementText: 'VITIS_LOOP_2928_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -875,7 +875,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1440407
+        Offset:          1440371
         Length:          0
         ReplacementText: 'VITIS_LOOP_2932_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -884,7 +884,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1440695
+        Offset:          1440659
         Length:          0
         ReplacementText: 'VITIS_LOOP_2947_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -893,7 +893,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1441909
+        Offset:          1441873
         Length:          0
         ReplacementText: 'VITIS_LOOP_2979_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -902,7 +902,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1442020
+        Offset:          1441984
         Length:          0
         ReplacementText: 'VITIS_LOOP_2986_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -911,7 +911,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1442093
+        Offset:          1442057
         Length:          0
         ReplacementText: 'VITIS_LOOP_2990_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -920,7 +920,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1442388
+        Offset:          1442352
         Length:          0
         ReplacementText: 'VITIS_LOOP_3005_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -929,7 +929,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1445721
+        Offset:          1445685
         Length:          0
         ReplacementText: 'VITIS_LOOP_3055_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -938,7 +938,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1445832
+        Offset:          1445796
         Length:          0
         ReplacementText: 'VITIS_LOOP_3062_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -947,7 +947,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1445905
+        Offset:          1445869
         Length:          0
         ReplacementText: 'VITIS_LOOP_3066_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -956,7 +956,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1446201
+        Offset:          1446165
         Length:          0
         ReplacementText: 'VITIS_LOOP_3081_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -965,7 +965,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1465513
+        Offset:          1465477
         Length:          0
         ReplacementText: 'VITIS_LOOP_3218_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -974,7 +974,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1465627
+        Offset:          1465591
         Length:          0
         ReplacementText: 'VITIS_LOOP_3225_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -983,7 +983,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1465702
+        Offset:          1465666
         Length:          0
         ReplacementText: 'VITIS_LOOP_3229_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -992,7 +992,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1465989
+        Offset:          1465953
         Length:          0
         ReplacementText: 'VITIS_LOOP_3244_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1001,7 +1001,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1491599
+        Offset:          1491563
         Length:          0
         ReplacementText: 'VITIS_LOOP_3404_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1010,7 +1010,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1491713
+        Offset:          1491677
         Length:          0
         ReplacementText: 'VITIS_LOOP_3411_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1019,7 +1019,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1491790
+        Offset:          1491754
         Length:          0
         ReplacementText: 'VITIS_LOOP_3415_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1028,7 +1028,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1525901
+        Offset:          1525865
         Length:          0
         ReplacementText: 'VITIS_LOOP_703_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1037,7 +1037,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1534290
+        Offset:          1534254
         Length:          0
         ReplacementText: 'VITIS_LOOP_921_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1046,7 +1046,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1553274
+        Offset:          1553238
         Length:          0
         ReplacementText: 'VITIS_LOOP_1345_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1055,7 +1055,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1568183
+        Offset:          1568147
         Length:          0
         ReplacementText: 'VITIS_LOOP_240_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1064,7 +1064,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1568704
+        Offset:          1568668
         Length:          0
         ReplacementText: 'VITIS_LOOP_268_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1073,7 +1073,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1584714
+        Offset:          1584678
         Length:          0
         ReplacementText: 'VITIS_LOOP_48_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1082,7 +1082,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1585875
+        Offset:          1585839
         Length:          0
         ReplacementText: 'VITIS_LOOP_109_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1091,7 +1091,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1586184
+        Offset:          1586148
         Length:          0
         ReplacementText: 'VITIS_LOOP_123_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1100,7 +1100,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1586694
+        Offset:          1586658
         Length:          0
         ReplacementText: 'VITIS_LOOP_153_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1109,7 +1109,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1588630
+        Offset:          1588594
         Length:          0
         ReplacementText: 'VITIS_LOOP_281_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1118,7 +1118,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1588995
+        Offset:          1588959
         Length:          0
         ReplacementText: 'VITIS_LOOP_301_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1127,7 +1127,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1589303
+        Offset:          1589267
         Length:          0
         ReplacementText: 'VITIS_LOOP_315_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1136,7 +1136,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1591142
+        Offset:          1591106
         Length:          0
         ReplacementText: 'VITIS_LOOP_433_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1145,7 +1145,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1591467
+        Offset:          1591431
         Length:          0
         ReplacementText: 'VITIS_LOOP_447_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1154,7 +1154,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1594173
+        Offset:          1594137
         Length:          0
         ReplacementText: 'VITIS_LOOP_33_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1163,7 +1163,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1597098
+        Offset:          1597062
         Length:          0
         ReplacementText: 'VITIS_LOOP_183_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1172,7 +1172,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1598396
+        Offset:          1598360
         Length:          0
         ReplacementText: 'VITIS_LOOP_248_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1181,7 +1181,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1609475
+        Offset:          1609439
         Length:          0
         ReplacementText: 'VITIS_LOOP_16_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1190,7 +1190,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1609650
+        Offset:          1609614
         Length:          0
         ReplacementText: 'VITIS_LOOP_27_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1199,7 +1199,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1609811
+        Offset:          1609775
         Length:          0
         ReplacementText: 'VITIS_LOOP_38_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1208,7 +1208,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1609973
+        Offset:          1609937
         Length:          0
         ReplacementText: 'VITIS_LOOP_49_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1217,7 +1217,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1610147
+        Offset:          1610111
         Length:          0
         ReplacementText: 'VITIS_LOOP_60_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1226,7 +1226,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1610322
+        Offset:          1610286
         Length:          0
         ReplacementText: 'VITIS_LOOP_71_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1235,7 +1235,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1610483
+        Offset:          1610447
         Length:          0
         ReplacementText: 'VITIS_LOOP_82_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1244,7 +1244,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1610645
+        Offset:          1610609
         Length:          0
         ReplacementText: 'VITIS_LOOP_93_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1253,7 +1253,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_mad_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1682648
+        Offset:          1682612
         Length:          0
         ReplacementText: 'VITIS_LOOP_26_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1262,7 +1262,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cbrt_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1684424
+        Offset:          1684388
         Length:          0
         ReplacementText: 'VITIS_LOOP_40_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1271,7 +1271,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1689017
+        Offset:          1688981
         Length:          0
         ReplacementText: 'VITIS_LOOP_49_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1280,7 +1280,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1689759
+        Offset:          1689723
         Length:          0
         ReplacementText: 'VITIS_LOOP_81_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1289,7 +1289,7 @@ Diagnostics:
     FilePath:        /home/andrewcapon/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1691455
+        Offset:          1691419
         Length:          0
         ReplacementText: 'VITIS_LOOP_169_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1298,16 +1298,16 @@ Diagnostics:
     FilePath:        SimpleSineMaster.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1744618
+        Offset:          1744575
         Length:          0
         ReplacementText: 'VITIS_LOOP_19_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_46_1:  '
-    FileOffset:      46
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
     FilePath:        SimpleSineMaster.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineMaster/SimpleSineMaster/hls/.autopilot/db/SimpleSineMaster.pp.0.cpp
-        Offset:          1745308
+        Offset:          1745258
         Length:          0
-        ReplacementText: 'VITIS_LOOP_46_1: '
+        ReplacementText: 'VITIS_LOOP_39_1: '
 ...

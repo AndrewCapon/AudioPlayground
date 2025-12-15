@@ -1,8 +1,17 @@
 {
-    "1": {
-        "name": "SimpleSineStream_Pipeline_VITIS_LOOP_38_1",
+    "0": {
+        "name": "SimpleSineStream",
         "file": "SimpleSineStream.cpp",
-        "fileloc": "38",
+        "fileloc": "30",
+        "instructions": "19",
+        "total_instructions": "44",
+        "calls": "1",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "SimpleSineStream_Pipeline_VITIS_LOOP_39_1",
+        "file": "SimpleSineStream.cpp",
+        "fileloc": "39",
         "instructions": "25",
         "total_instructions": "25",
         "calls": "",
@@ -17,14 +26,5 @@
         "loops": {
             "L": "1"
         }
-    },
-    "0": {
-        "name": "SimpleSineStream",
-        "file": "SimpleSineStream.cpp",
-        "fileloc": "29",
-        "instructions": "19",
-        "total_instructions": "44",
-        "calls": "1",
-        "basicblocks": "1"
     }
 }

@@ -5,8 +5,8 @@
 <ModuleName>SimpleSineStream</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_SimpleSineStream_Pipeline_VITIS_LOOP_38_1_fu_69</InstName>
-<ModuleName>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</ModuleName>
+<InstName>grp_SimpleSineStream_Pipeline_VITIS_LOOP_39_1_fu_69</InstName>
+<ModuleName>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>69</ID>
 </Instance>
@@ -16,9 +16,9 @@
 
 <ModuleInformation>
 <Module>
-<Name>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</Name>
+<Name>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</Name>
 <Loops>
-<VITIS_LOOP_38_1></VITIS_LOOP_38_1>
+<VITIS_LOOP_39_1></VITIS_LOOP_39_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -37,8 +37,8 @@
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_38_1>
-<Name>VITIS_LOOP_38_1</Name>
+<VITIS_LOOP_39_1>
+<Name>VITIS_LOOP_39_1</Name>
 <Slack>7.30</Slack>
 <TripCount>48</TripCount>
 <Latency>49</Latency>
@@ -48,19 +48,19 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_38_1>
+</VITIS_LOOP_39_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>SimpleSineStream.cpp:41</SourceLocation>
+<SourceLocation>SimpleSineStream.cpp:42</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_38_1>
-<Name>VITIS_LOOP_38_1</Name>
+<VITIS_LOOP_39_1>
+<Name>VITIS_LOOP_39_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>SimpleSineStream.cpp:41</SourceLocation>
-</VITIS_LOOP_38_1>
+<SourceLocation>SimpleSineStream.cpp:42</SourceLocation>
+</VITIS_LOOP_39_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -86,7 +86,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</Object>
+<Object>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -97,7 +97,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</Object>
+<Object>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -108,7 +108,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</Object>
+<Object>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -119,7 +119,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</Object>
+<Object>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -130,7 +130,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</Object>
+<Object>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -141,7 +141,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>SimpleSineStream_Pipeline_VITIS_LOOP_38_1</Object>
+<Object>SimpleSineStream_Pipeline_VITIS_LOOP_39_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -228,7 +228,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>SimpleSineStream.cpp:29</SourceLocation>
+<SourceLocation>SimpleSineStream.cpp:30</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>

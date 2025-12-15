@@ -3241,7 +3241,7 @@
       <key>filename</key>
       <string>MultiSine.cpp</string>
       <key>line</key>
-      <integer>36</integer>
+      <integer>32</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3257,7 +3257,7 @@
       <key>filename</key>
       <string>MultiSine.cpp</string>
       <key>line</key>
-      <integer>37</integer>
+      <integer>33</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3273,7 +3273,7 @@
       <key>filename</key>
       <string>MultiSine.cpp</string>
       <key>line</key>
-      <integer>38</integer>
+      <integer>34</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3289,23 +3289,7 @@
       <key>filename</key>
       <string>MultiSine.cpp</string>
       <key>line</key>
-      <integer>40</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MultiSine_XLX_SEP_ PragmaOptions=mode=s_axilite port=debug_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>MultiSine.cpp</string>
-      <key>line</key>
-      <integer>48</integer>
+      <integer>41</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>

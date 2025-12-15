@@ -2,16 +2,16 @@
     "0": {
         "name": "SimpleSine",
         "file": "SimpleSine.cpp",
-        "fileloc": "32",
+        "fileloc": "29",
         "instructions": "21",
         "total_instructions": "49",
         "calls": "1",
         "basicblocks": "1"
     },
     "1": {
-        "name": "SimpleSine_Pipeline_VITIS_LOOP_45_1",
+        "name": "SimpleSine_Pipeline_VITIS_LOOP_38_1",
         "file": "SimpleSine.cpp",
-        "fileloc": "45",
+        "fileloc": "38",
         "instructions": "28",
         "total_instructions": "28",
         "calls": "",

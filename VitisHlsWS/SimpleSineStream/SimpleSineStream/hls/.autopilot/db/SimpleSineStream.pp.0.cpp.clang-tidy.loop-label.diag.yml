@@ -1302,12 +1302,12 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_19_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_38_1:  '
-    FileOffset:      38
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
     FilePath:        SimpleSineStream.cpp
     Replacements:    
       - FilePath:        /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHlsWS/SimpleSineStream/SimpleSineStream/hls/.autopilot/db/SimpleSineStream.pp.0.cpp
-        Offset:          2462690
+        Offset:          2462691
         Length:          0
-        ReplacementText: 'VITIS_LOOP_38_1: '
+        ReplacementText: 'VITIS_LOOP_39_1: '
 ...

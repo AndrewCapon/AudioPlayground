@@ -4,7 +4,7 @@
     "xci_name": "AudioPlatform_MultiSineStreamBidir_0_0",
     "cell_name": "MultiSineStreamBi",
     "component_reference": "xilinx.com:hls:MultiSineStreamBidirectional:1.0",
-    "ip_revision": "2114390951",
+    "ip_revision": "2114392208",
     "gen_directory": "../../../../../../VivadoProject.gen/sources_1/bd/AudioPlatform/ip/AudioPlatform_MultiSineStreamBidir_0_0",
     "parameters": {
       "component_parameters": {
@@ -30,7 +30,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114390951" } ],
+        "IPREVISION": [ { "value": "2114392208" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../VivadoProject.gen/sources_1/bd/AudioPlatform/ip/AudioPlatform_MultiSineStreamBidir_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

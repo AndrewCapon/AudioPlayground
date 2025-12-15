@@ -33,13 +33,7 @@ int main()
     // output Samples
     for(int iter=0; iter < 10; iter++)
     {
-#if DEBUG        
-        MultiSineMaster(phaseInc, sines, debug);
-        for(int nVoice = 0; nVoice < cVoices; nVoice++)
-            printf("Debug[%u] = %x\n", nVoice, debug[nVoice]);
-#else
         MultiSineMaster(phaseInc, sines);
-#endif
         
         for(int nSample = 0; nSample < cBlockSamples; nSample++)
         {

@@ -26,20 +26,13 @@ void InitSinTable(DataType sine_lut[cSineLutSize])
 
 DataType  sine_lut[cSineLutSize];
 
-#if DEBUG
-void SimpleSineMaster(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples], uint32_t debug[cBlockSamples])
-#else
 void SimpleSineMaster(PhaseType &accumulator, const PhaseType phaseInc, DataType samples[cBlockSamples])
-#endif
 {
     #pragma HLS INTERFACE mode=s_axilite        port=return         
     #pragma HLS INTERFACE mode=s_axilite        port=accumulator           
     #pragma HLS INTERFACE mode=s_axilite        port=phaseInc       
     #pragma HLS INTERFACE m_axi port=samples    depth=cBlockSamples offset=slave   
 
-#if DEBUG    
-    #pragma HLS INTERFACE m_axi port=debug      depth=cBlockSize    offset=slave   
-#endif
 
     InitSinTable(sine_lut);
 
@@ -47,16 +40,8 @@ void SimpleSineMaster(PhaseType &accumulator, const PhaseType phaseInc, DataType
     {
         // Now generate the samples, no interpolation
         accumulator += phaseInc;
-#if USE_FLOAT
-#pragma HLS pipeline off        
-        if(accumulator > cSineLutSize)
-            accumulator -= cSineLutSize;
-#endif                    
         PhaseIndexType address;
         address = PhaseIndexType(accumulator); 
         samples[block] = sine_lut[(int)address]; 
-#if DEBUG        
-        debug[block] = accumulator.range();
-#endif        
     }  
 }

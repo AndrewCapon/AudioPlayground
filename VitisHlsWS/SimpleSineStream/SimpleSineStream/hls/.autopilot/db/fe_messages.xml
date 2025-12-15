@@ -605,19 +605,19 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="SimpleSineStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=SimpleSineStream" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineStream.cpp:31:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineStream.cpp:32:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="SimpleSineStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineStream.cpp:32:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineStream.cpp:33:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="SimpleSineStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=accumulator" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineStream.cpp:33:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineStream.cpp:34:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="SimpleSineStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=phaseInc" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineStream.cpp:34:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="SimpleSineStream.cpp:35:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="SimpleSineStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=samples" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-142" msg_severity="WARNING" msg_loc="SimpleSineStream.cpp:30:0" msg_body="Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'samples'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-142" msg_severity="WARNING" msg_loc="SimpleSineStream.cpp:31:0" msg_body="Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'samples'">
         <args Name="samples"/>
     </msg>
 </xilinx:hls_fe_msgs>
