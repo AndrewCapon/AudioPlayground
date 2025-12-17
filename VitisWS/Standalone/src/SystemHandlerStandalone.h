@@ -57,14 +57,31 @@ public:
 
 	FORCE_INLINE bool WaitForAudioProcessing(void)
 	{
-		// spin lock
-		while(!m_bAudioProcessingSemaphore)
-			;
+		static Timer timer;
+		constexpr uint32_t uTimeout = 100000;
+
+		uint32_t uTimeStart = timer.GetValue();
+		uint32_t uTimeUsed = 0;
+
+		// spin lock with timeout
+		bool bTimedOut = false;
+		while(!m_bAudioProcessingSemaphore && !bTimedOut)
+		{
+			uint32_t uTimeNow = timer.GetValue();
+
+			if(uTimeNow < uTimeStart)
+				uTimeUsed = uTimeNow + (0xffffffff - uTimeStart);
+			else
+				uTimeUsed = uTimeNow - uTimeStart;
+
+			bTimedOut = (uTimeUsed > uTimeout);
+		}
+
 
 		// reset semaphore
 		m_bAudioProcessingSemaphore = false;
 
-		return true;
+		return !bTimedOut;
 	}
 
 	FORCE_INLINE bool WaitForDmaDone(void) override

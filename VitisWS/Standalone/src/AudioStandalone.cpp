@@ -17,7 +17,6 @@
 
 #define TEST_DMA 0
 #define CSV_TEST 0
-#define LOG_TIMINGS 1
 
 #if TEST_DMA
 #define TEST_BUFFER_WORDS 16
@@ -53,8 +52,6 @@ typedef enum _TestState
 	tsRunAll
 } TestState;
 
-#if LOG_TIMINGS
-
 
 static const constexpr char *sCodeTimerLabels[tsRunAll] =
 {
@@ -70,7 +67,6 @@ static const constexpr char *sCodeTimerLabels[tsRunAll] =
 
 CodeTimer<tsRunAll> codeTimer("Code Timings", const_cast<const char **>(sCodeTimerLabels), hardwareSystem.GetTimer());
 
-#endif
 
 
 #if TEST_DMA
@@ -111,15 +107,13 @@ void TestDma(void)
 }
 #endif // TEST_DMA
 
-int main(void)
+void DisplayHelp(void)
 {
-#ifdef RTOS
-	#error RTOS should not be defined
-#endif // RTOS
-
 	xil_printf("\033[2J\033[H");
 	xil_printf("Audio Playground Tests\n");
 	xil_printf("  Press 1-8 to choose wave (1=100hz, 2=200hz etc)\n");
+	xil_printf("  Press h to display this help\n");
+	xil_printf("  Press l to toggle log\n");
 	xil_printf("  Press q to run all tests for timing info\n");
 	xil_printf("  Press w to test simple sine slave\n");
 	xil_printf("  Press e to test simple sine master\n");
@@ -129,8 +123,17 @@ int main(void)
 	xil_printf("  Press u to test multi sine master\n");
 	xil_printf("  Press i to test multi sine stream\n");
 	xil_printf("  Press o to test multi sine stream bidirectional\n");
+}
 
+int main(void)
+{
+#ifdef RTOS
+	#error RTOS should not be defined
+#endif // RTOS
 
+	DisplayHelp();
+
+	bool bLog = false;
 
 	uint32_t *pStereoOutputSampleBuffer = hardwareSystem.GetI2sAudio().GetSampleBuffer();
 
@@ -180,10 +183,6 @@ int main(void)
 
 		uint16_t uVoice = 0;
 
-		// for some reason we need the following to get the i2s going, why?
-		// something to do with not getting the first interrupt
-		hardwareSystem.GetI2sAudio().TransferSilence();
-
 		while(true)
     {
       if (systemHandler.WaitForAudioProcessing())
@@ -214,6 +213,8 @@ int main(void)
 						}
 						break;
 
+						case 'l' : bLog = !bLog; DisplayHelp();break;
+						case 'h' : DisplayHelp(); break;
 						case 'q' : testState = tsRunAll; 					xil_printf("Run All\n");break;
 						case 'w' : testState = tsSimple; 					xil_printf("Simple\n");break;
 						case 'e' : testState = tsSimpleMaster; 		xil_printf("Simple Master\n");break;
@@ -228,111 +229,119 @@ int main(void)
       		}
       	}
 
-#if LOG_TIMINGS
       	static uint32_t uCount = 0;
-				if(uCount++ == 1000-1)
+				if(bLog && (uCount++ == 1000-1))
 				{
+					xil_printf("\033[2J\033[H");
 					codeTimer.LogTimes(1000);
 					uCount = 0;
 				}
-#endif
+
       	// always use simple sine as default
     		volatile uint32_t *pMonoSineSampleBuffer = simpleSine.GetSampleBuffer(uVoice);;
 
 				if(testState == tsRunAll || testState == tsSimple)
 				{
-#if LOG_TIMINGS
-					codeTimer.StartTiming(tsSimple);
+					if (bLog)
+						codeTimer.StartTiming(tsSimple);
+
 					simpleSine.ProcessBlocking();
-					codeTimer.StopTiming(tsSimple);
-#else
-					simpleSine.ProcessBlocking();
-#endif
+
+					if (bLog)
+						codeTimer.StopTiming(tsSimple);
+
 	    		pMonoSineSampleBuffer = simpleSine.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsSimpleMaster)
 				{
-#if LOG_TIMINGS
-					codeTimer.StartTiming(tsSimpleMaster);
+					if (bLog)
+						codeTimer.StartTiming(tsSimpleMaster);
+
 					simpleSineMaster.ProcessBlocking();
-					codeTimer.StopTiming(tsSimpleMaster);
-#else
-					simpleSineMaster.ProcessBlocking();
-#endif
-	    		pMonoSineSampleBuffer = simpleSineMaster.GetSampleBuffer(uVoice);
+
+					if(bLog)
+						codeTimer.StopTiming(tsSimpleMaster);
+
+					pMonoSineSampleBuffer = simpleSineMaster.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsSimpleStream)
 				{
-#if LOG_TIMINGS
-					codeTimer.StartTiming(tsSimpleStream);
+					if(bLog)
+						codeTimer.StartTiming(tsSimpleStream);
+
 					simpleSineStream.ProcessBlocking();
-					codeTimer.StopTiming(tsSimpleStream);
-#else
-					simpleSineStream.ProcessBlocking();
-#endif
-	    		pMonoSineSampleBuffer = simpleSineStream.GetSampleBuffer(uVoice);
+
+					if(bLog)
+						codeTimer.StopTiming(tsSimpleStream);
+
+					pMonoSineSampleBuffer = simpleSineStream.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsSimpleStreamBi)
 				{
-#if LOG_TIMINGS
-					codeTimer.StartTiming(tsSimpleStreamBi);
+					if(bLog)
+						codeTimer.StartTiming(tsSimpleStreamBi);
+
 					simpleSineStreamBi.ProcessBlocking();
-					codeTimer.StopTiming(tsSimpleStreamBi);
-#else
-					simpleSineStreamBi.ProcessBlocking();
-#endif
+
+					if(bLog)
+						codeTimer.StopTiming(tsSimpleStreamBi);
+
 					pMonoSineSampleBuffer = simpleSineStreamBi.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsMulti)
 				{
-#if LOG_TIMINGS
-					codeTimer.StartTiming(tsMulti);
-					multiSine.ProcessBlocking();
+					if(bLog)
+						codeTimer.StartTiming(tsMulti);
+
+					if(bLog)
+						multiSine.ProcessBlocking();
+
 					codeTimer.StopTiming(tsMulti);
-#else
-					multiSine.ProcessBlocking();
-#endif
-	    		pMonoSineSampleBuffer = multiSine.GetSampleBuffer(uVoice);
+
+					pMonoSineSampleBuffer = multiSine.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsMultiMaster)
 				{
-#if LOG_TIMINGS
-					codeTimer.StartTiming(tsMultiMaster);
+					if(bLog)
+						codeTimer.StartTiming(tsMultiMaster);
+
 					multiSineMaster.ProcessBlocking();
-					codeTimer.StopTiming(tsMultiMaster);
-#else
-					multiSineMaster.ProcessBlocking();
-#endif
-	    		pMonoSineSampleBuffer = multiSineMaster.GetSampleBuffer(uVoice);
+
+					if(bLog)
+						codeTimer.StopTiming(tsMultiMaster);
+
+					pMonoSineSampleBuffer = multiSineMaster.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsMultiStream)
 				{
-#if LOG_TIMINGS
-					codeTimer.StartTiming(tsMultiStream);
+					if(bLog)
+						codeTimer.StartTiming(tsMultiStream);
+
 					multiSineStream.ProcessBlocking();
-					codeTimer.StopTiming(tsMultiStream);
-#else
-					multiSineStream.ProcessBlocking();
-#endif
-	    		pMonoSineSampleBuffer = multiSineStream.GetSampleBuffer(uVoice);
+
+					if(bLog)
+						codeTimer.StopTiming(tsMultiStream);
+
+					pMonoSineSampleBuffer = multiSineStream.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsMultiStreamBi)
 				{
-#if LOG_TIMINGS
-					codeTimer.StartTiming(tsMultiStreamBi);
+					if(bLog)
+						codeTimer.StartTiming(tsMultiStreamBi);
+
 					multiSineStreamBi.ProcessBlocking();
-					codeTimer.StopTiming(tsMultiStreamBi);
-#else
-					multiSineStreamBi.ProcessBlocking();
-#endif
-	    		pMonoSineSampleBuffer = multiSineStreamBi.GetSampleBuffer(uVoice);
+
+					if(bLog)
+						codeTimer.StopTiming(tsMultiStreamBi);
+
+					pMonoSineSampleBuffer = multiSineStreamBi.GetSampleBuffer(uVoice);
 				}
 
 				uint16_t uDestSample = 0;
@@ -343,6 +352,11 @@ int main(void)
 				}
 
       	systemHandler.EnableInterrupt(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_OUTPUTS_AXISTOI2SFIFO_0_MOREDATANEEDEDINTERRUPT_INTR);
+      }
+      else
+      {
+      	// if we timed out waiting for audio int then transfer silence to recover
+      	hardwareSystem.GetI2sAudio().TransferSilence();
       }
     }
 	}

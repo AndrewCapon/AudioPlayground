@@ -31,7 +31,6 @@ public:
 	FORCE_INLINE uint32_t GetValue(void)
 	{
 		return *m_pTimer0Value;
-//		return XTmrCtr_ReadReg(m_instance.BaseAddress, 0, XTC_TCR_OFFSET);
 	}
 
 private:
