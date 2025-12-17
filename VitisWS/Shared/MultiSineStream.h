@@ -14,8 +14,7 @@ class MultiSineStream
 {
 public:
 	MultiSineStream(HardwareSystem &hardwareSystem, uint16_t uDeviceId, volatile uint32_t *pSampleStorage)
-	: m_debug(hardwareSystem.GetDebug()),
-		m_systemHandler(hardwareSystem.GetSystemHandler()),
+	: m_systemHandler(hardwareSystem.GetSystemHandler()),
 		m_uDeviceId(uDeviceId),
 		m_pSampleStorage(pSampleStorage)
 	{
@@ -103,7 +102,6 @@ private:
 		a[15] = a15; a[13] = a13; a[14] = a14; a[12] = a12;
 	}
 
-	Debug								&m_debug;
 	ISystemHandler 			&m_systemHandler;
 	uint16_t 						m_uDeviceId;
 	bool 								m_bIsConfigured = false;

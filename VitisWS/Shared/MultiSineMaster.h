@@ -11,11 +11,9 @@
 class MultiSineMaster
 {
 public:
-	MultiSineMaster(Debug &debug, uint16_t uDeviceId, volatile uint32_t *pSampleStorage, volatile uint32_t *pPhaseIncStorage, volatile uint32_t *pDebugStorage=nullptr)
-	: m_debug(debug),
-		m_pSampleStorage(pSampleStorage),
-		m_pPhaseIncStorage(pPhaseIncStorage),
-		m_pDebugStorage(pDebugStorage)
+	MultiSineMaster(uint16_t uDeviceId, volatile uint32_t *pSampleStorage, volatile uint32_t *pPhaseIncStorage)
+	: m_pSampleStorage(pSampleStorage),
+		m_pPhaseIncStorage(pPhaseIncStorage)
 	{
 		m_uDeviceId = uDeviceId;
 
@@ -29,9 +27,6 @@ public:
 
 				XMultisinemaster_Set_samples(&m_instance, reinterpret_cast<uint32_t>(m_pSampleStorage));
 				XMultisinemaster_Set_phaseInc(&m_instance, reinterpret_cast<uint32_t>(m_pPhaseIncStorage));
-#if DEBUG_MULTISINEMASTER
-				XMultisinemaster_Set_debug(&m_instance, reinterpret_cast<uint32_t>(m_pDebugStorage));
-#endif
 			}
 		}
 	}
@@ -62,14 +57,6 @@ public:
 		return &m_pSampleStorage[uVoice*cBlockSamples];
 	}
 
-	volatile uint32_t *GetDebugBuffer(void)
-	{
-#if DEBUG_MULTISINEMASTER
-		return m_pDebugStorage;
-#else
-		assert (false && "Don't call this");
-#endif
-	}
 
 	void ProcessBlocking(void)
 	{
@@ -92,13 +79,11 @@ private:
 		return static_cast<PhaseType>(fAcumPerSample);
 	}
 
-	Debug											&m_debug;
 	uint16_t 									m_uDeviceId;
 	bool 											m_bIsConfigured = false;
 
 	volatile uint32_t					*m_pSampleStorage;
 	volatile uint32_t					*m_pPhaseIncStorage;
-	volatile uint32_t					*m_pDebugStorage;
 
 	XMultisinemaster 					m_instance;
 	XMultisinemaster_Config 	*m_pConfig = nullptr;

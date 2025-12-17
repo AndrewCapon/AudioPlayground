@@ -15,15 +15,11 @@
 #include "CodeTimer.h"
 #include "microblaze_sleep.h"
 
-uint32_t multiSineSamples[cVoices*cBlockSamples];
-
-int  __attribute__((section(".close_coupled_ram"))) nShit;
-
 #define TEST_DMA 0
 #define CSV_TEST 0
+#define LOG_TIMINGS 1
 
 #if TEST_DMA
-
 #define TEST_BUFFER_WORDS 16
 volatile uint32_t SrcBufferLocal[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 volatile uint32_t DestBufferLocal[TEST_BUFFER_WORDS] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
@@ -32,14 +28,6 @@ volatile uint32_t DestBufferLocal[TEST_BUFFER_WORDS] __attribute__((aligned (64)
 volatile uint32_t SamplesStorageLocalRam[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 volatile uint32_t PhaseIncsStorageLocalRam[cVoices] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
 
-#if DEBUG_MULTISINEMASTER | DEBUG_MULTISINE | DEBUG_SIMPLESINE | DEBUG_SIMPLESINEMASTER
-volatile uint32_t DebugStorage[cBlockSamples] __attribute__((aligned (64))) __attribute__((section(".local_ram")));
-#else
-volatile uint32_t *DebugStorage = nullptr;
-#endif
-
-//volatile uint32_t SamplesDMA[cBlockSamples*cVoices] __attribute__((aligned (64))) __attribute__((section(".local")));
-
 
 SystemHandlerStandalone systemHandler;
 HardwareSystem hardwareSystem(systemHandler);
@@ -47,22 +35,13 @@ SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStora
 SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageLocalRam);
 SimpleSineStream simpleSineStream(hardwareSystem, XPAR_XSIMPLESINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
 SimpleSineStreamBi simpleSineStreamBi(hardwareSystem, SamplesStorageLocalRam);
-MultiSine multiSine(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID);
-MultiSineMaster multiSineMaster(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID, SamplesStorageLocalRam, PhaseIncsStorageLocalRam, DebugStorage);
+MultiSine multiSine(XPAR_XMULTISINE_0_DEVICE_ID);
+MultiSineMaster multiSineMaster(XPAR_XMULTISINE_0_DEVICE_ID, SamplesStorageLocalRam, PhaseIncsStorageLocalRam);
 MultiSineStream multiSineStream(hardwareSystem, XPAR_XMULTISINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
 MultiSineStreamBi multiSineStreamBi(hardwareSystem, SamplesStorageLocalRam);
 
-//SimpleSine simpleSine(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageAudioRam);
-//SimpleSineMaster simpleSineMaster(hardwareSystem, XPAR_XSIMPLESINE_0_DEVICE_ID, SamplesStorageAudioRam);
-//SimpleSineStream simpleSineStream(hardwareSystem, XPAR_XSIMPLESINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
-//MultiSine multiSine(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID);
-//MultiSineMaster multiSineMaster(hardwareSystem.GetDebug(), XPAR_XMULTISINE_0_DEVICE_ID, SamplesStorageAudioRam, PhaseIncsStorageAudioRam, DebugStorage);
-//MultiSineStream multiSineStream(hardwareSystem, XPAR_XMULTISINESTREAM_0_DEVICE_ID, SamplesStorageLocalRam);
-
-
 typedef enum _TestState
 {
-	tsRunAll,
 	tsSimple,
 	tsSimpleMaster,
 	tsSimpleStream,
@@ -70,8 +49,29 @@ typedef enum _TestState
 	tsMulti,
 	tsMultiMaster,
 	tsMultiStream,
-	tsMultiStreamBi
+	tsMultiStreamBi,
+	tsRunAll
 } TestState;
+
+#if LOG_TIMINGS
+
+
+static const constexpr char *sCodeTimerLabels[tsRunAll] =
+{
+	"Simple           ",
+	"SimpleMaster     ",
+	"SimpleStream     ",
+	"SimpleStreamBi   ",
+	"Multi            ",
+	"MultiMaster      ",
+	"MultiStream      ",
+	"MultiStreamBi    "
+};
+
+CodeTimer<tsRunAll> codeTimer("Code Timings", const_cast<const char **>(sCodeTimerLabels), hardwareSystem.GetTimer());
+
+#endif
+
 
 #if TEST_DMA
 void TestDma(void)
@@ -134,12 +134,8 @@ int main(void)
 
 	uint32_t *pStereoOutputSampleBuffer = hardwareSystem.GetI2sAudio().GetSampleBuffer();
 
-#if DEBUG
-	uint32_t *pDebugBuffer = simpleSine.GetDebugBuffer();
-#endif
 	if(hardwareSystem.IsConfigured())
 	{
-		Debug &debug = hardwareSystem.GetDebug();
 		for(uint8_t uVoice = 0; uVoice < cVoices; uVoice++)
 		{
 			float fFrequency = 100.0f * (uVoice+1);
@@ -232,84 +228,121 @@ int main(void)
       		}
       	}
 
+#if LOG_TIMINGS
+      	static uint32_t uCount = 0;
+				if(uCount++ == 1000-1)
+				{
+					codeTimer.LogTimes(1000);
+					uCount = 0;
+				}
+#endif
       	// always use simple sine as default
     		volatile uint32_t *pMonoSineSampleBuffer = simpleSine.GetSampleBuffer(uVoice);;
 
 				if(testState == tsRunAll || testState == tsSimple)
 				{
-					debug.SetDebug(Debug::dpPio29_processing, 1);
+#if LOG_TIMINGS
+					codeTimer.StartTiming(tsSimple);
 					simpleSine.ProcessBlocking();
-					debug.SetDebug(Debug::dpPio29_processing, 0);
+					codeTimer.StopTiming(tsSimple);
+#else
+					simpleSine.ProcessBlocking();
+#endif
 	    		pMonoSineSampleBuffer = simpleSine.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsSimpleMaster)
 				{
-					debug.SetDebug(Debug::dpPio29_processing, 1);
+#if LOG_TIMINGS
+					codeTimer.StartTiming(tsSimpleMaster);
 					simpleSineMaster.ProcessBlocking();
-					debug.SetDebug(Debug::dpPio29_processing, 0);
+					codeTimer.StopTiming(tsSimpleMaster);
+#else
+					simpleSineMaster.ProcessBlocking();
+#endif
 	    		pMonoSineSampleBuffer = simpleSineMaster.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsSimpleStream)
 				{
-					debug.SetDebug(Debug::dpPio29_processing, 1);
+#if LOG_TIMINGS
+					codeTimer.StartTiming(tsSimpleStream);
 					simpleSineStream.ProcessBlocking();
-					debug.SetDebug(Debug::dpPio29_processing, 0);
+					codeTimer.StopTiming(tsSimpleStream);
+#else
+					simpleSineStream.ProcessBlocking();
+#endif
 	    		pMonoSineSampleBuffer = simpleSineStream.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsSimpleStreamBi)
 				{
-					debug.SetDebug(Debug::dpPio29_processing, 1);
+#if LOG_TIMINGS
+					codeTimer.StartTiming(tsSimpleStreamBi);
 					simpleSineStreamBi.ProcessBlocking();
-					debug.SetDebug(Debug::dpPio29_processing, 0);
-	    		pMonoSineSampleBuffer = simpleSineStreamBi.GetSampleBuffer(uVoice);
+					codeTimer.StopTiming(tsSimpleStreamBi);
+#else
+					simpleSineStreamBi.ProcessBlocking();
+#endif
+					pMonoSineSampleBuffer = simpleSineStreamBi.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsMulti)
 				{
-					debug.SetDebug(Debug::dpPio29_processing, 1);
+#if LOG_TIMINGS
+					codeTimer.StartTiming(tsMulti);
 					multiSine.ProcessBlocking();
-					debug.SetDebug(Debug::dpPio29_processing, 0);
+					codeTimer.StopTiming(tsMulti);
+#else
+					multiSine.ProcessBlocking();
+#endif
 	    		pMonoSineSampleBuffer = multiSine.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsMultiMaster)
 				{
-					debug.SetDebug(Debug::dpPio29_processing, 1);
+#if LOG_TIMINGS
+					codeTimer.StartTiming(tsMultiMaster);
 					multiSineMaster.ProcessBlocking();
-					debug.SetDebug(Debug::dpPio29_processing, 0);
+					codeTimer.StopTiming(tsMultiMaster);
+#else
+					multiSineMaster.ProcessBlocking();
+#endif
 	    		pMonoSineSampleBuffer = multiSineMaster.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsMultiStream)
 				{
-					debug.SetDebug(Debug::dpPio29_processing, 1);
+#if LOG_TIMINGS
+					codeTimer.StartTiming(tsMultiStream);
 					multiSineStream.ProcessBlocking();
-					debug.SetDebug(Debug::dpPio29_processing, 0);
+					codeTimer.StopTiming(tsMultiStream);
+#else
+					multiSineStream.ProcessBlocking();
+#endif
 	    		pMonoSineSampleBuffer = multiSineStream.GetSampleBuffer(uVoice);
 				}
 
 				if(testState == tsRunAll || testState == tsMultiStreamBi)
 				{
-					debug.SetDebug(Debug::dpPio29_processing, 1);
+#if LOG_TIMINGS
+					codeTimer.StartTiming(tsMultiStreamBi);
 					multiSineStreamBi.ProcessBlocking();
-					debug.SetDebug(Debug::dpPio29_processing, 0);
+					codeTimer.StopTiming(tsMultiStreamBi);
+#else
+					multiSineStreamBi.ProcessBlocking();
+#endif
 	    		pMonoSineSampleBuffer = multiSineStreamBi.GetSampleBuffer(uVoice);
 				}
 
-				debug.SetDebug(Debug::dpPio31_sampleCopy, 1);
 				uint16_t uDestSample = 0;
 				for(uint16_t uSample = 0; uSample < 48; uSample++)
 				{
 					pStereoOutputSampleBuffer[uDestSample++] = pMonoSineSampleBuffer[uSample];
 					pStereoOutputSampleBuffer[uDestSample++] = uSample<24 ? 0x00800000 : 0x007fffff;
 				}
-				debug.SetDebug(Debug::dpPio31_sampleCopy, 0);
 
       	systemHandler.EnableInterrupt(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_OUTPUTS_AXISTOI2SFIFO_0_MOREDATANEEDEDINTERRUPT_INTR);
-
       }
     }
 	}

@@ -8,15 +8,14 @@ class Debug
 public:
 	typedef enum _DebugPin
 	{
-		dpPio26_needData,
-		dpPio27_done,
-		dpPio28_ready,
-		dpPio29_processing,
-		dpPio30_interrupt,
-		dpPio31_sampleCopy,
-		dpPio32_dmaInterrupt,
+		dpPio26,
+		dpPio27,
+		dpPio28,
+		dpPio29,
+		dpPio30,
+		dpPio31,
+		dpPio32,
 		dpPio33,
-
 		dpPio34,
 		dpPio35,
 		dpPio36,

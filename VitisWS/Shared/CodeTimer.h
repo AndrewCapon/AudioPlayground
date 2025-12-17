@@ -4,7 +4,7 @@
 #include "Timer.h"
 
 #define HANDLE_WRAP 1
-#define ENABLE_CODE_TIMING 0
+#define ENABLE_CODE_TIMING 1
 
 template <unsigned int SIZE>
 class CodeTimer

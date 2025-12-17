@@ -18,3 +18,4 @@ platform generate
 bsp reload
 platform generate -domains 
 platform generate
+platform generate -domains standalone_domain 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="sine_lut_U" SOURCE="" VARIABLE="sine_lut" MODULE="SineLookup" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="6" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE="24 4096 1"/>
+</BindInfo>

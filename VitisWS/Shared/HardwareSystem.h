@@ -22,8 +22,8 @@ public:
 	: m_systemHandler(systemHandler),
 		m_debug(),
 		m_timer(),
-		m_i2sAudio(m_debug, systemHandler),
-		m_dma(m_debug, systemHandler)
+		m_i2sAudio(systemHandler),
+		m_dma(systemHandler)
 	{
 		EnableCaches();
 

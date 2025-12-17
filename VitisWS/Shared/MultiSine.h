@@ -11,8 +11,7 @@
 class MultiSine
 {
 public:
-	MultiSine(Debug &debug, uint16_t uDeviceId)
-	: m_debug(debug)
+	MultiSine(uint16_t uDeviceId)
 	{
 		m_uDeviceId = uDeviceId;
 
@@ -43,15 +42,6 @@ public:
 		return reinterpret_cast<uint32_t *>(XMultisine_Get_samples_BaseAddress(&m_instance)) + (uVoice*cBlockSamples);
 	}
 
-	uint32_t *GetDebugBuffer(void)
-	{
-#if DEBUG_MULTISINE
-		return reinterpret_cast<uint32_t *>(XMultisine_Get_debug_BaseAddress(&m_instance));
-#else
-		assert (false && "Don't call this");
-#endif
-	}
-
 	void ProcessBlocking(void)
 	{
 		while (!XMultisine_IsReady(&m_instance))
@@ -73,7 +63,6 @@ private:
 		return static_cast<PhaseType>(fAcumPerSample);
 	}
 
-	Debug								&m_debug;
 	uint16_t 						m_uDeviceId;
 	bool 								m_bIsConfigured = false;
 

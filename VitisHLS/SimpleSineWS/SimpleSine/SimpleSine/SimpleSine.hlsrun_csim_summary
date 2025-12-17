@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHLS/SimpleSineWS/SimpleSine/SimpleSine/SimpleSine.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Dec 15 16:14:27 2025",
+ "timestampMillis": "1765815267078",
+ "buildStep": {
+  "cmdId": "9d821655-995e-4011-9013-33871f95ec89",
+  "name": "vitis-run",
+  "logFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHLS/SimpleSineWS/SimpleSine/SimpleSine/logs/SimpleSine.steps.log",
+  "commandLine": "/home/andrewcapon/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHLS/SimpleSineWS/SimpleSine/hls_config.cfg --work_dir SimpleSine ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHLS/SimpleSineWS/SimpleSine/hls_config.cfg",
+   "--work_dir",
+   "SimpleSine"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHLS/SimpleSineWS/SimpleSine"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec 15 16:14:27 2025",
+ "timestampMillis": "1765815267079",
+ "status": {
+  "cmdId": "9d821655-995e-4011-9013-33871f95ec89",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Dec 15 16:14:32 2025",
+ "timestampMillis": "1765815272963",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "SimpleSine",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHLS/SimpleSineWS/SimpleSine/SimpleSine.cpp",
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHLS/SimpleSineWS/SimpleSine/SimpleSine.h",
+     "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHLS/SimpleSineWS/SimpleSine/DataTypes.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Dec 15 16:14:32 2025",
+ "timestampMillis": "1765815272964",
+ "buildStep": {
+  "cmdId": "3b241091-b84b-4dd5-b644-4c60a5a2adf2",
+  "name": "",
+  "logFile": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHLS/SimpleSineWS/SimpleSine/SimpleSine/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/andrewcapon/fpga/ArtixA7/AudioPlayground/VitisHLS/SimpleSineWS/SimpleSine"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec 15 16:14:32 2025",
+ "timestampMillis": "1765815272964",
+ "status": {
+  "cmdId": "3b241091-b84b-4dd5-b644-4c60a5a2adf2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec 15 16:14:34 2025",
+ "timestampMillis": "1765815274047",
+ "status": {
+  "cmdId": "3b241091-b84b-4dd5-b644-4c60a5a2adf2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Dec 15 16:14:34 2025",
+ "timestampMillis": "1765815274210",
+ "status": {
+  "cmdId": "9d821655-995e-4011-9013-33871f95ec89",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Dec 15 16:14:34 2025",
+ "timestampMillis": "1765815274211",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Dec 15 16:14:34 2025",
+ "timestampMillis": "1765815274211",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -11,9 +11,8 @@
 class Dma
 {
 public:
-	Dma(Debug &debug, ISystemHandler &systemHandler)
-	: m_debug(debug),
-		m_systemHandler(systemHandler)
+	Dma(ISystemHandler &systemHandler)
+	: m_systemHandler(systemHandler)
 	{
 		m_pConfig =  XAxiCdma_LookupConfig(XPAR_AXICDMA_0_DEVICE_ID);
 
@@ -155,11 +154,9 @@ public:
 
 	void InterruptHandler(uint32_t uIrqMask)
 	{
-		m_debug.SetDebug(Debug::dpPio32_dmaInterrupt, 1);
 		bool higherPriorityTaskWoken;
 		m_systemHandler.SignalDmaDoneFromISR((uIrqMask & XAXICDMA_XR_IRQ_ERROR_MASK), higherPriorityTaskWoken);
 		m_systemHandler.ExitInterruptHandler(higherPriorityTaskWoken);
-		m_debug.SetDebug(Debug::dpPio32_dmaInterrupt, 0);
 	}
 
 	static void InterruptHandlerStatic(void *pInstance, uint32_t uIrqMask, int *IgnorePtr)
@@ -170,7 +167,6 @@ public:
 	}
 
 private:
-	Debug 					&m_debug;
 	ISystemHandler 	&m_systemHandler;
 
 	XAxiCdma 						m_instance;

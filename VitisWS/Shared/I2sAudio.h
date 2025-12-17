@@ -8,9 +8,8 @@
 class I2sAudio
 {
 public:
-	I2sAudio(Debug &debug, ISystemHandler &systemHandler)
-	: m_debug(debug),
-		m_systemHandler(systemHandler)
+	I2sAudio(ISystemHandler &systemHandler)
+	: m_systemHandler(systemHandler)
 	{
 		m_bIsConfigured = systemHandler.AddInterruptCallback(XPAR_PROCESSOR_MICROBLAZE_0_AXI_INTC_OUTPUTS_AXISTOI2SFIFO_0_MOREDATANEEDEDINTERRUPT_INTR, NeedDataInterruptHandlerStatic, this);
 	}
@@ -41,9 +40,7 @@ public:
 
 	void NeedDataInterruptHandler(void)
 	{
-		m_debug.SetDebug(Debug::dpPio26_needData, 1);
 		TransferSampleBuffer();
-		m_debug.SetDebug(Debug::dpPio26_needData, 0);
 
 		bool higherPriorityTaskWoken;
 		m_systemHandler.SignalAudioProcessingFromISR(higherPriorityTaskWoken);
@@ -78,7 +75,6 @@ private:
 		putfsl(a0,  0); putfsl(a1,  0); putfsl(a2,  0); putfsl(a3,  0);
 	}
 
-	Debug 					&m_debug;
 	ISystemHandler 	&m_systemHandler;
 	uint32_t				m_sampleBuffer[2*48];
 

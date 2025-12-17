@@ -13,8 +13,7 @@ class SimpleSineStreamBi
 {
 public:
 	SimpleSineStreamBi(HardwareSystem &hardwareSystem, volatile uint32_t *pSampleStorage)
-	: m_debug(hardwareSystem.GetDebug()),
-		m_systemHandler(hardwareSystem.GetSystemHandler()),
+	: m_systemHandler(hardwareSystem.GetSystemHandler()),
 		m_pSampleStorage(pSampleStorage)
 	{
 		m_bIsConfigured = true;
@@ -39,15 +38,6 @@ public:
 	volatile uint32_t *GetSampleBuffer(uint8_t uVoice)
 	{
 		return &(m_pSampleStorage[uVoice * cBlockSamples]);
-	}
-
-	uint32_t *GetDebugBuffer(void)
-	{
-#if DEBUG
-		return reinterpret_cast<uint32_t *>(XSimplesine_Get_debug_BaseAddress(&m_instance));
-#else
-		assert (false && "Don't call this");
-#endif
 	}
 
 	void ProcessBlocking(void)
@@ -114,83 +104,8 @@ private:
 		a[15] = a15; a[13] = a13; a[14] = a14; a[12] = a12;
 	}
 
-
-	typedef enum
-	{
-		ctProcessBlocking,
-		ctWaitReady,
-		ctStart,
-		ctWaitDone,
-		ctProcessNonBlocking,
-		ctInterruptHandler,
-		ctInterruptStart,
-		ctCopy,
-		ctGetAcumulator,
-		ctInterruptEnd,
-		ctStartProcessing,
-		ctInterruptEnable,
-		ctUpdateData,
-		ctStartStart,
-		ctContinueProcessing,
-		ctContinueStart,
-		ctFrequencyToAccumPerSample,
-		ctTop
-	} CodeTimers;
-
-	static const constexpr char *m_sTimerLabels[ctTop] =
-	{
-		"ctProcessBlocking          ",
-		"ctWaitReady                ",
-		"ctStart                    ",
-		"ctWaitDone                 ",
-		"ctProcessNonBlocking       ",
-		"ctInterruptHandler         ",
-		"ctInterruptStart           ",
-		"ctCopy                     ",
-		"ctGetAcumulator            ",
-		"ctInterruptEnd             ",
-		"ctStartProcessing          ",
-		"ctInterruptEnable          ",
-		"ctUpdateData               ",
-		"ctStartStart               ",
-		"ctContinueProcessing       ",
-		"ctContinueStart            ",
-		"ctFrequencyToAccumPerSample"
-	};
-
-//	typedef enum
-//	{
-//		ctProcessNonBlocking,
-//		ctInterruptHandler,
-//		ctStartProcessing,
-//		ctInterruptEnable,
-//		ctUpdateData,
-//		ctStartStart,
-//		ctContinueProcessing,
-//		ctContinueStart,
-//		ctFrequencyToAccumPerSample,
-//		ctTop
-//	} CodeTimers;
-//
-//	static const constexpr char *m_sTimerLabels[ctTop] =
-//	{
-//		"ctProcessNonBlocking       ",
-//		"ctInterruptHandler         ",
-//		"ctStartProcessing          ",
-//		"ctInterruptEnable          ",
-//		"ctUpdateData               ",
-//		"ctStartStart               ",
-//		"ctContinueProcessing       ",
-//		"ctContinueStart            ",
-//		"ctFrequencyToAccumPerSample"
-//	};
-
-	Debug								&m_debug;
 	ISystemHandler 			&m_systemHandler;
 	bool 								m_bIsConfigured = false;
-
-//	XSimplesinestreambidirectional 				m_instance;
-//	XSimplesinestreambidirectional_Config 	*m_pConfig = nullptr;
 
 	float					 			m_fFrequencies[cVoices];
 	uint32_t						m_uPhaseIncs[cVoices];

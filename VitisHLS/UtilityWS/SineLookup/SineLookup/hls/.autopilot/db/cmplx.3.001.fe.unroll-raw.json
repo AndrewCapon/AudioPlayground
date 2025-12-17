@@ -1,0 +1,14 @@
+{
+  "0": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "SineLookup.cpp",
+    "fileloc": 30,
+    "instructions": 15,
+    "loads": {
+      "G": 1
+    },
+    "name": "SineLookup",
+    "total_instructions": 15
+  }
+}

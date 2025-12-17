@@ -13,8 +13,7 @@ class MultiSineStreamBi
 {
 public:
 	MultiSineStreamBi(HardwareSystem &hardwareSystem, volatile uint32_t *pSampleStorage)
-	: m_debug(hardwareSystem.GetDebug()),
-		m_systemHandler(hardwareSystem.GetSystemHandler()),
+	: m_systemHandler(hardwareSystem.GetSystemHandler()),
 		m_pSampleStorage(pSampleStorage)
 	{
 		m_bIsConfigured = true;
@@ -39,15 +38,6 @@ public:
 	volatile uint32_t *GetSampleBuffer(uint8_t uVoice)
 	{
 		return &(m_pSampleStorage[uVoice * cBlockSamples]);
-	}
-
-	uint32_t *GetDebugBuffer(void)
-	{
-#if DEBUG
-		return reinterpret_cast<uint32_t *>(XSimplesine_Get_debug_BaseAddress(&m_instance));
-#else
-		assert (false && "Don't call this");
-#endif
 	}
 
 	void ProcessBlocking(void)
@@ -116,8 +106,6 @@ private:
 		putfsl(a4, 3); putfsl(a5, 3); putfsl(a6, 3); putfsl(a7, 3);
 	}
 
-
-	Debug								&m_debug;
 	ISystemHandler 			&m_systemHandler;
 	bool 								m_bIsConfigured = false;
 

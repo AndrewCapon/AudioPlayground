@@ -1,0 +1,3 @@
+"MODULES & LOOPS","ISSUE TYPE","VIOLATION TYPE","LATENCY(CYCLES)","LATENCY(NS)","ITERATION LATENCY","INTERVAL","TRIP COUNT","PIPELINED","BRAM","DSP","FF","LUT","URAM"
+"MultiSine (1)",,,390,3.900E3,"-",436,"-","loop auto-rewind stp (delay=52 clock cycles(s))",8,0,2065,3618,0
+"VITIS_LOOP_46_1","II Violation","Resource Limitation",388,3.880E3,53,48,8,"yes","-","-","-","-","-"

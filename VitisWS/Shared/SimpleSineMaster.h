@@ -14,8 +14,7 @@ class SimpleSineMaster
 {
 public:
 	SimpleSineMaster(HardwareSystem &hardwareSystem, uint16_t uDeviceId, volatile uint32_t *pSampleStorage)
-	: m_debug(hardwareSystem.GetDebug()),
-		m_dma(hardwareSystem.GetDma()),
+	: m_dma(hardwareSystem.GetDma()),
 		m_systemHandler(hardwareSystem.GetSystemHandler()),
 		m_uDeviceId(uDeviceId),
 		m_pSampleStorage(pSampleStorage)
@@ -60,14 +59,6 @@ public:
 		return &(m_pSampleStorage[uVoice * cBlockSamples]);
 	}
 
-	uint32_t *GetDebugBuffer(void)
-	{
-#if DEBUG
-		return reinterpret_cast<uint32_t *>(XSimplesine_Get_debug_BaseAddress(&m_instance));
-#else
-		assert (false && "Don't call this");
-#endif
-	}
 
 	void ProcessBlocking(void)
 	{
@@ -151,11 +142,9 @@ public:
 
 	FORCE_INLINE void InterruptHandler(void)
 	{
-		m_debug.SetDebug(Debug::dpPio30_interrupt, 1);
 		uint32_t uMask = XSimplesinemaster_InterruptGetStatus(&m_instance);
 		if(uMask & 0x1)
 		{
-			m_debug.SetDebug(Debug::dpPio27_done, 1);
 			XSimplesinemaster_InterruptClear(&m_instance, 0x1);
 
 			// update accumulator
@@ -176,20 +165,16 @@ public:
 				XSimplesinemaster_InterruptEnable(&m_instance, 0x0);
 			}
 
-			m_debug.SetDebug(Debug::dpPio27_done, 0);
 		}
 
 		if(uMask & 0x2)
 		{
-			m_debug.SetDebug(Debug::dpPio28_ready, 1);
 			XSimplesinemaster_InterruptClear(&m_instance, 0x2);
 			StartProcessing();
-			m_debug.SetDebug(Debug::dpPio28_ready, 0);
 		}
 
 		bool higherPriorityTaskWoken = false;
 		m_systemHandler.ExitInterruptHandler(higherPriorityTaskWoken);
-		m_debug.SetDebug(Debug::dpPio30_interrupt, 0);
 	}
 
 	static void InterruptHandlerStatic( void *pInstance )
@@ -201,7 +186,6 @@ public:
 
 
 private:
-	Debug								&m_debug;
 	Dma									&m_dma;
 	ISystemHandler 			&m_systemHandler;
 	uint16_t 						m_uDeviceId;
@@ -213,7 +197,6 @@ private:
 	float					 			m_fFrequencies[cVoices];
 	uint32_t						m_uPhaseIncs[cVoices];
 	uint32_t 						m_uAccumulators[cVoices] = {0};
-	//uint32_t						m_uSamples[cVoices][cBlockSamples];
 	volatile uint32_t		*m_pSampleStorage;
 	uint16_t						m_uCurrentVoice = 0;
 
